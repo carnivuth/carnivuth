@@ -17,15 +17,21 @@
   ],
   "hobbies": [
     {
-      "name": "",
-      "description": ""
-    }
+      "name": "gaming",
+      "description": "interessato al mondo del gaming e dei prodotti legati al videoludico sia software che hardware"
+    },
+    {
+        "name": "storia della prima repubblica",
+        "description": "interessato alle vicende politico sociali legate alla prima repubblica "
+      }
+
   ],
   "projects": [
     {
-      "name": "",
-      "description": "",
-      "links": ["", "", ""]
+      "name": "YouCook",
+      "description": "applicazione web per la gestione di ricette di cucina",
+      "tecnologies":"Angular",
+      "links": [""]
     }
   ],
   "formation": [
