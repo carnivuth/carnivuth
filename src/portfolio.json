@@ -7,9 +7,13 @@
   "city":"Bologna",
   "skills": [
     {
-      "name": "",
-      "description": ""
-    }
+      "name": "Linguaggio C",
+      "description": "Conoscenze di programmazione in linguaggio C tra cui programmazione di rete e concorrente, interazione con file system"
+    },
+    {
+        "name": "Linguaggio Java",
+        "description": "Conoscenze di programmazione in linguaggio Java tra cui programmazione di rete e concorrente, interazione con file system"
+      }
   ],
   "hobbies": [
     {
