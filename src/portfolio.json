@@ -1,0 +1,39 @@
+{
+  "name": "Matteo",
+  "surname": "longhi",
+  "birthdate": "20/01/2000",
+  "phone":"3889903749",
+  "email":"matti200042@gmail.com",
+  "city":"Bologna",
+  "skills": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "description": "",
+      "links": ["", "", ""]
+    }
+  ],
+  "formation": [
+    {
+      "title": "Diploma istituto tecnico ITIS E.Mattei",
+      "school": "Istituto tecnico industriale statale Enrico Mattei di Urbino",
+      "score":92
+    },
+    {
+      "title": "Laurea Triennale ingegneria informatica",
+      "school": "Alma Mater Studiorum Universita di Bologna",
+      "score":104
+    }
+  ]
+}
