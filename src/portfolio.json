@@ -1,19 +1,21 @@
 {
-  "name": "Matteo",
-  "surname": "longhi",
-  "birthdate": "20/01/2000",
-  "phone":"3889903749",
-  "email":"matti200042@gmail.com",
-  "city":"Bologna",
+  "personalData": {
+    "name": "Matteo",
+    "surname": "longhi",
+    "birthdate": "20/01/2000",
+    "phone": "3889903749",
+    "email": "matti200042@gmail.com",
+    "city": "Bologna"
+  },
   "skills": [
     {
       "name": "Linguaggio C",
       "description": "Conoscenze di programmazione in linguaggio C tra cui programmazione di rete e concorrente, interazione con file system"
     },
     {
-        "name": "Linguaggio Java",
-        "description": "Conoscenze di programmazione in linguaggio Java tra cui programmazione di rete e concorrente, interazione con file system"
-      }
+      "name": "Linguaggio Java",
+      "description": "Conoscenze di programmazione in linguaggio Java tra cui programmazione di rete e concorrente, interazione con file system"
+    }
   ],
   "hobbies": [
     {
@@ -21,16 +23,15 @@
       "description": "interessato al mondo del gaming e dei prodotti legati al videoludico sia software che hardware"
     },
     {
-        "name": "storia della prima repubblica",
-        "description": "interessato alle vicende politico sociali legate alla prima repubblica "
-      }
-
+      "name": "storia della prima repubblica",
+      "description": "interessato alle vicende politico sociali legate alla prima repubblica "
+    }
   ],
   "projects": [
     {
       "name": "YouCook",
       "description": "applicazione web per la gestione di ricette di cucina",
-      "tecnologies":"Angular",
+      "tecnologies": "Angular",
       "links": [""]
     }
   ],
@@ -38,12 +39,12 @@
     {
       "title": "Diploma istituto tecnico ITIS E.Mattei",
       "school": "Istituto tecnico industriale statale Enrico Mattei di Urbino",
-      "score":92
+      "score": 92
     },
     {
       "title": "Laurea Triennale ingegneria informatica",
       "school": "Alma Mater Studiorum Universita di Bologna",
-      "score":104
+      "score": 104
     }
   ]
 }
