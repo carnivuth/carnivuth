@@ -1,47 +1,20 @@
-<nb-layout-column>
-    <nb-card size="medium">
-        <nb-card-header>
-            Dati personali
-        </nb-card-header>
-        <nb-card-body>
-            <nb-list *ngIf="pd">
-                <nb-list-item  >
-                    {{pd.name}}
-                </nb-list-item>
-
-                <nb-list-item  >
-                    {{pd.surname}}
-                </nb-list-item>
-                <nb-list-item  >
-                    {{pd.birthdate}}
-                </nb-list-item>
-                <nb-list-item  >
-                    {{pd.email}}
-                </nb-list-item>
-                <nb-list-item  >
-                    {{pd.phone}}
-                </nb-list-item>
-                <nb-list-item  >
-                    {{pd.city}}
-                </nb-list-item>
-            </nb-list>
-    
-        </nb-card-body>
-    </nb-card>
-</nb-layout-column>
-
-<nb-layout-column>
-    <nb-card>
-        <nb-card-header>
-    
-        </nb-card-header>
-        <nb-card-body>
-            <nb-list>
-                <nb-list-item>
-                    prova
-                </nb-list-item>
-            </nb-list>
-    
-        </nb-card-body>
-    </nb-card>
-</nb-layout-column>
+<div class="card-row">
+	<div class="card-col">
+		<nb-card size="medium">
+			<nb-card-header>Dati personali</nb-card-header>
+			<nb-card-body>
+				<nb-list *ngIf="pd">
+					<nb-list-item>{{pd.name}}</nb-list-item>
+					<nb-list-item>{{pd.surname}}</nb-list-item>
+					<nb-list-item>{{pd.birthdate}}</nb-list-item>
+					<nb-list-item>{{pd.email}}</nb-list-item>
+					<nb-list-item>{{pd.phone}}</nb-list-item>
+					<nb-list-item>{{pd.city}}</nb-list-item>
+				</nb-list>
+			</nb-card-body>
+		</nb-card>
+	</div>
+    <div class="card-col">
+		
+	</div>
+</div>

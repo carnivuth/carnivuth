@@ -1,14 +1,14 @@
 {
   "personalData": {
     "name": "Matteo",
-    "surname": "longhi",
+    "surname": "Longhi",
     "birthdate": "20/01/2000",
     "phone": "3889903749",
     "email": "matti200042@gmail.com",
     "city": "Bologna",
     "bio": "Bologna"
   },
-  "skills": [
+  "skills": [ 
     {
       "name": "Linguaggio C",
       "description": "Conoscenze di programmazione in linguaggio C tra cui programmazione di rete e concorrente, interazione con file system"
