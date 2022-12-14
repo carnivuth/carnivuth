@@ -5,7 +5,8 @@
     "birthdate": "20/01/2000",
     "phone": "3889903749",
     "email": "matti200042@gmail.com",
-    "city": "Bologna"
+    "city": "Bologna",
+    "bio": "Bologna"
   },
   "skills": [
     {
@@ -32,7 +33,7 @@
       "name": "YouCook",
       "description": "applicazione web per la gestione di ricette di cucina",
       "tecnologies": "Angular",
-      "links": [""]
+      "links": ["https://github.com/carnivuth/youCook"]
     }
   ],
   "formation": [
