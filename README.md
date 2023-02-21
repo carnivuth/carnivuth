@@ -1,3 +1,3 @@
 # Carnivuth
 
-## just a random nerd :)
+## just a random nerd :computer:
