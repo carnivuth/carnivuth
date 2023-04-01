@@ -1,11 +1,11 @@
 # About me 
- - I'm a nerd intrested in linux open source and OS with a knowledge background in web development
+ - I'm a nerd intrested in linux open source and **Operating Systems** with a  background knowledge in web development
  - I'm intrested in 
-    - linux stuff
-    - AI
+    - **linux stuff**
+    - **AI**
 
  #  Achievements
-  -  Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
+  - Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
  # HW-setup
   ![GPU](https://img.shields.io/badge/NVIDIA-RTX%203070--TI-success) ![CPU](https://img.shields.io/badge/INTEL-i7--12700--K-informational)
  
@@ -22,8 +22,8 @@
 
 ### ✍️ 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 😂
+<!--### 😂
 <img src="https://rm.up.railway.app/" width="512px"/>
+-->
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
