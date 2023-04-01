@@ -6,6 +6,7 @@
 
  #  Achievements
   - Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
+  - high school diploma At [I.T.I.S.-E.Mattei-Urbino](https://www.itisurbino.edu.it/)
  # HW-setup
   ![GPU](https://img.shields.io/badge/NVIDIA-RTX%203070--TI-success) ![CPU](https://img.shields.io/badge/INTEL-i7--12700--K-informational)
  
