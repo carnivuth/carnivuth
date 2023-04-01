@@ -3,6 +3,7 @@
  - I'm intrested in 
     - **linux stuff**
     - **AI**
+    - **System administration**
 
  #  Achievements
   - Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
