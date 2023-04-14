@@ -4,7 +4,7 @@
     - **linux stuff**
     - **AI**
     - **System administration**
-    - - **system architectures**
+    - **system architectures**
 
  #  Achievements
   - Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
