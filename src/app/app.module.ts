@@ -7,19 +7,16 @@ import { NbThemeModule, NbLayoutModule, NbCardModule, NbListModule } from '@nebu
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
-import { SkillItemComponent } from './skill-item/skill-item.component';
-import { SkillListComponent } from './skill-list/skill-list.component';
-import { HobbiesListComponent } from './hobbies-list/hobbies-list.component';
-import { HobbiesItemComponent } from './hobbies-item/hobbies-item.component';
+
+import { WorkExperiencesComponent } from './work-experiences/work-experiences.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonalDataComponent,
-    SkillItemComponent,
-    SkillListComponent,
-    HobbiesListComponent,
-    HobbiesItemComponent
+    WorkExperiencesComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
