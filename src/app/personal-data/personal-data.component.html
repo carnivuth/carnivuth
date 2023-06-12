@@ -1,1 +1,39 @@
-<p>personal-data works!</p>
+<div class="card-row">
+<div class="card-col-1-3">
+
+	<nb-card size="small" status="success">
+		<nb-card-header>
+			Personal informations
+		</nb-card-header>
+		<nb-card-body >
+            <p class="personal-data">Name</p>
+            <p class="bio-text">{{pd?.name}} {{pd?.surname}}</p>
+
+            <p class="personal-data">Email</p>
+            <p class="bio-text"><a href="mailto:">{{pd?.email}}</a></p>
+
+            <p class="personal-data">City</p>
+            <p class="bio-text">{{pd?.city}}</p>
+
+           
+        </nb-card-body>
+        <nb-card-footer>
+            <p class="personal-data">Bio</p>
+            <p class="bio-text">{{pd?.bio}}</p>
+        </nb-card-footer>
+
+	</nb-card>
+</div>
+<div class="card-col-1-3">
+
+    <nb-card size="small" >
+		<nb-card-body >
+           <img src="../../assets/foto.jpg"  alt="foto" >
+
+        </nb-card-body>
+	</nb-card>
+</div>
+<div class="card-col-1-3">
+
+</div>
+</div>
