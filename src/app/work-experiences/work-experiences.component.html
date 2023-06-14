@@ -1,1 +1,9 @@
-<p>work-experiences works!</p>
+<h3 class="title"> WORK EXPERIENCES</h3>
+<div class="card-row">
+	<nb-card size="tiny" *ngFor="let experience of experiences">
+		<nb-card-header>{{experience?.name}}</nb-card-header>
+		<nb-card-body>
+			{{experience?.description}}
+		</nb-card-body>
+	</nb-card>
+</div>
