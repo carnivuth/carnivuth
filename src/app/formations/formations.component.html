@@ -1,0 +1,9 @@
+<h3 class="title"> FORMATIONS</h3>
+<div class="card-row">
+	<nb-card size="tiny" *ngFor="let formation of formations">
+		<nb-card-header>{{formation?.school}}</nb-card-header>
+		<nb-card-body>
+			{{formation?.title}}
+		</nb-card-body>
+	</nb-card>
+</div>
