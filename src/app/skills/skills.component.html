@@ -1,1 +1,9 @@
-<p>skills works!</p>
+<h3 class="title"> SKILLS</h3>
+<div class="card-row">
+	<nb-card *ngFor="let skill of skills">
+		<nb-card-header>{{skill?.name}}</nb-card-header>
+		<nb-card-body>
+			{{skill?.description}}
+		</nb-card-body>
+	</nb-card>
+</div>
