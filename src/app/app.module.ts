@@ -10,13 +10,17 @@ import { PersonalDataComponent } from './personal-data/personal-data.component';
 
 import { WorkExperiencesComponent } from './work-experiences/work-experiences.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FormationsComponent } from './formations/formations.component';
+import { ImageComponent } from './image/image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonalDataComponent,
     WorkExperiencesComponent,
-    SkillsComponent
+    SkillsComponent,
+    FormationsComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,
