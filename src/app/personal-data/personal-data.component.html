@@ -1,4 +1,4 @@
-<nb-card   class="personal-data-card">
+<nb-card   class="personal-data-card nb-card-zoom-animation nb-card-shadow">
     <nb-card-header class="main-title">
         Personal informations
     </nb-card-header>
@@ -7,7 +7,7 @@
         <p class="texts">{{pd?.name}} {{pd?.surname}}</p>
 
         <p class="title">Email</p>
-        <p class="texts"><a href="mailto:">{{pd?.email}}</a></p>
+        <p class="texts"><a href="mailto:{{pd?.email}}">{{pd?.email}}</a></p>
 
         <p class="title">City</p>
         <p class="texts">{{pd?.city}}</p>

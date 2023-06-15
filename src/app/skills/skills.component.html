@@ -1,11 +1,11 @@
 <h3 class="main-title"> SKILLS</h3>
 <div class="skills-grid">
-	<nb-card size="tiny" *ngFor="let skill of skills" class="skill-card">
+	<nb-card size="tiny" *ngFor="let skill of skills" class="skill-card nb-card-zoom-animation nb-card-shadow">
 		<nb-card-header class="title">{{skill?.name}}</nb-card-header>
 		<nb-card-body class="texts">
 			{{skill?.description}}
 		</nb-card-body>
-		<nb-card-footer>
+		<nb-card-footer class="nb-card-footer-text">
 			<img src="{{skill?.link}}" alt="">
 		</nb-card-footer>
 	</nb-card>
