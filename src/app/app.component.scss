@@ -11,17 +11,16 @@
     column-gap: 5%;
     align-items: right;
   }
-  .title{
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
-}
+
 .main-grid{
   display: grid;
   grid-template-columns: 55%  40% ;
   grid-template-rows: 20%;
   column-gap: 5%;
+}
+.foto-grid{
+  display: grid;
+  grid-template-columns: 100% ;
 }
 .personal-data-formation-grid{
   display: grid;

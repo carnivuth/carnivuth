@@ -1,8 +1,42 @@
-@use 'themes' as *;
+@use "themes" as *;
 
-@use '@nebular/theme/styles/globals' as *;
+@use "@nebular/theme/styles/globals" as *;
 
 @include nb-install() {
   @include nb-theme-global();
-};
+}
 /* You can add global styles to this file, and also import other style files */
+
+//text styles
+.texts {
+  text-align: center;
+  font-size: large;
+}
+.title {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+.main-title {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+.card-footer-text{
+  text-align: center;
+}
+
+//animations
+.nb-card-zoom-animation {
+  transition: transform 0.15s;
+}
+
+.nb-card-zoom-animation:hover {
+  transform: scale(1.1);
+}
+
+.nb-card-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
