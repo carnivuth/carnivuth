@@ -2,18 +2,58 @@
   "personalData": {
     "name": "Matteo",
     "surname": "Longhi",
-    "email": "matti200042@gmail.com",
+    "email": "todo",
     "city": "Bologna",
-    "bio": "Bologna"
+    "bio": ""
   },
   "skills": [ 
     {
-      "name": "Linguaggio C",
-      "description": "Conoscenze di programmazione in linguaggio C tra cui programmazione di rete e concorrente, interazione con file system"
+      "name": "C Language",
+      "description": "advanced knowledge of C "
     },
     {
-      "name": "Linguaggio Java",
-      "description": "Conoscenze di programmazione in linguaggio Java tra cui programmazione di rete e concorrente, interazione con file system"
+      "name": "JAVA Language",
+      "description": "advanced knowledge of JAVA "
+    }
+    ,
+    {
+      "name": "PHP Language",
+      "description": "advanced knowledge of PHP language, PHP web development  "
+    } ,
+    {
+      "name": "GO Language",
+      "description": "knowledge of GO language and concurrent programming"
+    }
+    ,
+    {
+      "name": "Framework ANGULAR",
+      "description": "todo"
+    }
+    ,
+    {
+      "name": "Framework LARAVEL",
+      "description": "todo"
+    }
+    ,
+    {
+      "name": "High Performance Computing libraries Open MP, MPI",
+      "description": "todo"
+    }
+    ,
+    {
+      "name": "Version Control System GIT",
+      "description": "advanced knowledge of GIT and GIT usage"
+    }
+
+    ,
+    {
+      "name": "Containerization with DOCKER",
+      "description": "knowledge of docker containers"
+    }
+    ,
+    {
+      "name": "Web technologies",
+      "description": "knowledge of basic web technologies (HTML/CSS/JAVASCRIPT)"
     }
   ],
   "hobbies": [
@@ -36,14 +76,35 @@
   ],
   "formation": [
     {
-      "title": "Diploma istituto tecnico ITIS E.Mattei",
-      "school": "Istituto tecnico industriale statale Enrico Mattei di Urbino",
-      "score": 92
+      "title": "Diploma",
+      "school": "ITIS E.Mattei"
     },
     {
-      "title": "Laurea Triennale ingegneria informatica",
-      "school": "Alma Mater Studiorum Universita di Bologna",
-      "score": 104
+      "title": "Bachelor's Degree",
+      "school": "Alma Mater Studiorum University of Bologna"
+    }
+  ],
+  "workexperiences": [
+    {
+      "name": "Internship at a.d.v. media lab",
+      "description": "data analysis for marketing purposes",
+      "time": "2 months"
+    },
+    {
+      "name": "Internship at comune Mercatello sul Metauro",
+      "description": "web development with PHP and Wordpress technologies",
+      "time": "2 months"
+    }
+    ,
+    {
+      "name": "Internship at ciollo service s.r.l.",
+      "description": "web development, project analysis for digital signature integration",
+      "time": "1 month"
+    },
+    {
+      "name": "Web developer at ciollo service s.r.l.",
+      "description": "development of digital signature integration",
+      "time": "6 months"
     }
   ]
 }
