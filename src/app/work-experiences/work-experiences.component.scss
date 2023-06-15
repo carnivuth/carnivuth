@@ -3,11 +3,46 @@
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: auto;
     }
-  .title{
+  .main-title{
         align-items: center;
         text-align: center;
         font-weight: bold;
   }
+  .title{
+      align-items: center;
+      text-align: center;
+      font-weight: bold;
+      font-size: larger;
+  }
+  .texts{
+      font-size: large;
+  }
   .experience-card{
       margin:  1rem;
   }
+  /*@keyframes change-color {
+      from{
+            background-color: white;
+      }
+      to{
+            background-color: green;
+      }
+  }*/
+  .card-footer{
+      text-align: center;
+  }
+  nb-card{
+      transition: transform .15s;
+ 
+  }
+
+
+nb-card:hover{
+      transform: scale(1.1);
+     // animation-duration: .15s;
+      //animation-name: change-color;
+      //animation-fill-mode: forwards;
+    
+
+}
+
