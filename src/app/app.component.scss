@@ -6,8 +6,26 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto;
+    grid-template-columns: 28%  28% 28% ;
+    grid-template-rows: auto  ;
+    column-gap: 5%;
+    align-items: right;
   }
-
+  .title{
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+.main-grid{
+  display: grid;
+  grid-template-columns: 55%  40% ;
+  grid-template-rows: 20%;
+  column-gap: 5%;
+}
+.personal-data-formation-grid{
+  display: grid;
+  grid-template-rows: 55%  40% ;
+  row-gap: 5%;
+}
 
