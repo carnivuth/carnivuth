@@ -1,9 +1,23 @@
-.card-row {
-    display: flex;
-    padding: 3rem;
-  }
+.formation-grid {
+      display: grid;
+      grid-template-columns: 50% 50% ;
+      grid-template-rows: auto;
+    }
   .title{
         align-items: center;
         text-align: center;
         font-weight: bold;
+        font-size: larger;
+  }
+  .texts{
+      font-size: large;
+  }
+
+  .main-title{
+      align-items: center;
+      text-align: center;
+      font-weight: bold;
+}
+  .formation-card{
+      margin:  1rem;
   }

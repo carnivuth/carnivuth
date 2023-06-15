@@ -1,9 +1,9 @@
-<h3 class="title"> FORMATIONS</h3>
-<div class="card-row">
-	<nb-card size="tiny" *ngFor="let formation of formations">
-		<nb-card-header>{{formation?.school}}</nb-card-header>
-		<nb-card-body>
-			{{formation?.title}}
+<h3 class="main-title"> FORMATION</h3>
+<div class="formation-grid">
+	<nb-card size="tiny" *ngFor="let formation of formations" class="formation-card">
+		<nb-card-header class="title">{{formation?.title}}</nb-card-header>
+		<nb-card-body class="texts">
+			{{formation?.school}}
 		</nb-card-body>
 	</nb-card>
 </div>
