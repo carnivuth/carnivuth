@@ -19,6 +19,14 @@
 .skill-card {
   margin: 1rem;
 }
-.texts{
-    font-size: large;
+.texts {
+  font-size: large;
+}
+//animations
+nb-card {
+  transition: transform 0.15s;
+}
+
+nb-card:hover {
+  transform: scale(1.1);
 }

@@ -1,23 +1,32 @@
 .formation-grid {
-      display: grid;
-      grid-template-columns: 50% 50% ;
-      grid-template-rows: auto;
-    }
-  .title{
-        align-items: center;
-        text-align: center;
-        font-weight: bold;
-        font-size: larger;
-  }
-  .texts{
-      font-size: large;
-  }
-
-  .main-title{
-      align-items: center;
-      text-align: center;
-      font-weight: bold;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
 }
-  .formation-card{
-      margin:  1rem;
-  }
+.title {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+.texts {
+  font-size: large;
+}
+
+.main-title {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+.formation-card {
+  margin: 1rem;
+}
+
+//animations
+nb-card {
+  transition: transform 0.15s;
+}
+
+nb-card:hover {
+  transform: scale(1.1);
+}
