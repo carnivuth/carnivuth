@@ -1,6 +1,6 @@
 <h3 class="title"> SKILLS</h3>
-<div class="card-row">
-	<nb-card *ngFor="let skill of skills">
+<div class="skills-grid">
+	<nb-card size="tiny" *ngFor="let skill of skills" class="skill-card">
 		<nb-card-header>{{skill?.name}}</nb-card-header>
 		<nb-card-body>
 			{{skill?.description}}

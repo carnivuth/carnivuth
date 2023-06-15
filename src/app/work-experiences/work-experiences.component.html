@@ -1,6 +1,6 @@
 <h3 class="title"> WORK EXPERIENCES</h3>
-<div class="card-row">
-	<nb-card size="tiny" *ngFor="let experience of experiences">
+<div class="experience-grid">
+	<nb-card size="tiny" *ngFor="let experience of experiences" class="experience-card">
 		<nb-card-header>{{experience?.name}}</nb-card-header>
 		<nb-card-body>
 			{{experience?.description}}

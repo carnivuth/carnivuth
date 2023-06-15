@@ -1,9 +1,14 @@
-.card-row {
-    display: flex;
-    padding: 3rem;
+.skills-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
   }
+  
   .title{
         align-items: center;
         text-align: center;
         font-weight: bold;
+  }
+  .skill-card{
+      margin:  1rem;
   }
