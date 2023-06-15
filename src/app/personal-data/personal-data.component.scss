@@ -5,31 +5,5 @@
   font-size: 15px;
   font-weight: bold;
 }
-.personal-data-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.main-title {
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: larger;
-}
-.texts {
-  text-align: center;
-  font-size: large;
-}
-.title {
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: larger;
-}
 
-//animations
-nb-card {
-  transition: transform 0.15s;
-}
 
-nb-card:hover {
-  transform: scale(1.1);
-}
