@@ -1,4 +1,7 @@
 {
+  "texts":[
+
+  ],
   "personalData": {
     "name": "Matteo",
     "surname": "Longhi",
@@ -89,7 +92,7 @@
   "formation": [
     {
       "title": "Diploma",
-      "school": "ITIS E.Mattei"
+      "school": "ITIS E.Mattei Urbino"
     },
     {
       "title": "Bachelor's Degree",
@@ -98,7 +101,7 @@
   ],
   "workexperiences": [
     {
-      "name": "Internship at a.d.v. media lab",
+      "name": "Internship at A.D.V. Media Lab",
       "description": "data analysis for marketing purposes",
       "time": "2 months",
       "link": [
@@ -114,7 +117,7 @@
       ]
     },
     {
-      "name": "Internship at ciollo service s.r.l.",
+      "name": "Internship at Ciollo Service s.r.l.",
       "description": "web development, project analysis for digital signature integration",
       "time": "1 month",
       "link": [
@@ -126,7 +129,7 @@
       ]
     },
     {
-      "name": "Web developer at ciollo service s.r.l.",
+      "name": "Web developer at Ciollo Service s.r.l.",
       "description": "development of digital signature integration",
       "time": "6 months",
       "link": [
