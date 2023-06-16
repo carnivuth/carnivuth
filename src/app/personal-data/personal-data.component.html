@@ -1,22 +1,24 @@
-<nb-card   class="personal-data-card nb-card-zoom-animation nb-card-shadow">
-    <nb-card-header class="main-title">
-        Personal informations
-    </nb-card-header>
-    <nb-card-body >
-        <p class="title">Name</p>
-        <p class="texts">{{pd?.name}} {{pd?.surname}}</p>
-
-        <p class="title">Email</p>
-        <p class="texts"><a href="mailto:{{pd?.email}}">{{pd?.email}}</a></p>
-
-        <p class="title">City</p>
-        <p class="texts">{{pd?.city}}</p>
-
-       
-    </nb-card-body>
-    <nb-card-footer>
-        <p class="title">Bio</p>
-        <p class="texts">{{pd?.bio}}</p>
-    </nb-card-footer>
-
+<nb-card class=" nb-card-zoom-animation nb-card-shadow">
+	<nb-card-header class="main-title">Personal details</nb-card-header>
+	<div class="personal-data-container">
+		<app-image></app-image>
+		<div class="text-container">
+			<nb-card-body>
+				<div class="title">Name</div>
+				<div class="texts">
+					{{pd?.name}} {{pd?.surname}}
+				</div>
+				<div class="title">Email</div>
+				<div class="texts">
+					<a href="mailto:{{pd?.email}}">{{pd?.email}}</a>
+				</div>
+				<div class="title">City</div>
+				<div class="texts">{{pd?.city}}</div>
+			</nb-card-body>
+		</div>
+	</div>
+	<nb-card-footer class="nb-card-footer-text">
+		<div class="title">Bio</div>
+		<div class="texts">{{pd?.bio}}</div>
+	</nb-card-footer>
 </nb-card>

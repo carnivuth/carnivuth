@@ -1,16 +1,16 @@
 img {
-    max-height: 100%;
-    max-width: 100%;
-    //height: 40%;
-    //width: 40%;
-    border: 1px solid #ddd;
-    border-radius: 3%;
-    padding: 5px;
-
-  }
-.foto-card{
-  align-items: center;
+  max-height: 100%;
+  max-width: 100%;
+  height: 50%;
+  width: 50%;
+  border: 1px solid #ddd;
   border-radius: 3%;
-  margin-left: 25%;
-  margin-right: 25%;
+  padding: 5px;
+}
+.image-container {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
 }
