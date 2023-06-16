@@ -42,7 +42,7 @@
     },
     {
       "name": "C Language",
-      "description": "advanced knowledge of C ",
+      "description": "advanced knowledge of C for general purpose programming, knowledge of open MPI libraries for high performance computing",
       "link": ["https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white",
       "https://img.shields.io/badge/mpi-%2300599C.svg?style=for-the-badge&logo=libmpi&logoColor=white"]
     },
@@ -59,16 +59,13 @@
       "description": "knowledge of GO language and concurrent programming",
       "link": ["https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white"]
     },
-
-    {
-      "name": "High Performance Computing libraries Open MP, MPI",
-      "description": "knowledge of C libraries for High performance computing",
-      "link": []
-    },
     {
       "name": "Version Control System GIT",
       "description": "advanced knowledge of GIT and GIT usage",
-      "link": []
+      "link": [
+        "https://img.shields.io/badge/git-%23DD0031.svg?style=for-the-badge&logo=git&logoColor=white"
+
+      ]
     }
   ],
   "hobbies": [
