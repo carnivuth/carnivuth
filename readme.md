@@ -1,5 +1,5 @@
 # About me 
- - I'm a nerd intrested in linux open source and **Operating Systems** with a  background knowledge in web development
+ - I'm a nerd intrested in linux, open source and **Operating Systems** with a  background knowledge in web development
  - I'm intrested in 
     - **linux stuff**
     - **AI**
