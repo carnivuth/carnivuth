@@ -18,7 +18,7 @@
       ]
     },
     {
-      "name": "fronted web development technologies",
+      "name": "frontend web development technologies",
       "description": "advanced knowledge of basic frontend technologies (HTML/CSS/JAVASCRIPT) and jquery technologies, knowledge of Angular for frontend UI design ",
       "link": [
         "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
@@ -48,7 +48,7 @@
     },
     {
       "name": "JAVA Language",
-      "description": "advanced knowledge of JAVA and gradle tools for build and test project, knowledge of javaFX for building UIs ",
+      "description": "advanced knowledge of JAVA and gradle tools to build and test project, knowledge of javaFX for building UIs ",
       "link": [
         "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
         "https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white"
