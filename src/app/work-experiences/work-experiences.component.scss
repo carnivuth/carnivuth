@@ -12,17 +12,14 @@
             background-color: white;
       }
       to{
-            background-color: green;
+            background-color: #1303fc30;
       }
   }
 
-  nb-card{
-      transition: transform .15s;
- 
-  }
 
 
-nb-card:hover{
+
+.nb-card-change-color:hover{
       animation-duration: .15s;
       animation-name: change-color;
       animation-fill-mode: forwards;
