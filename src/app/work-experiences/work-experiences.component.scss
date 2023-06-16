@@ -1,4 +1,4 @@
-.experience-grid {
+.experience-container {
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: auto;
@@ -7,5 +7,12 @@
   .experience-card{
       margin:  1rem;
   }
-
+  @media only screen and (max-width: 600px) {
+    .experience-container{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+  }
 
