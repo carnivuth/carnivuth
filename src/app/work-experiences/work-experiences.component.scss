@@ -7,23 +7,5 @@
   .experience-card{
       margin:  1rem;
   }
-  @keyframes change-color {
-      from{
-            background-color: white;
-      }
-      to{
-            background-color: #1303fc30;
-      }
-  }
 
-
-
-
-.nb-card-change-color:hover{
-      animation-duration: .15s;
-      animation-name: change-color;
-      animation-fill-mode: forwards;
-    
-
-}
 
