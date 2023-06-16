@@ -6,7 +6,8 @@
 			{{skill?.description}}
 		</nb-card-body>
 		<nb-card-footer class="nb-card-footer-text">
-			<img src="{{skill?.link}}" alt="">
+			
+			<img src="{{skill?.link}}" alt="" *ngFor="let link of skill.link">
 		</nb-card-footer>
 	</nb-card>
 </div>
