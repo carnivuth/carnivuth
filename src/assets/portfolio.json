@@ -18,6 +18,12 @@
       "link": "https://github.com/carnivuth",
       "icon": "assets/icons/github.svg"
     }
+    ,
+    {
+      "name": "email",
+      "link": "mailto:matti200042@gmail.com",
+      "icon": "assets/icons/gmail.svg"
+    }
   ],
   "formation": [
     {
