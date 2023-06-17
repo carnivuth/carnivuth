@@ -12,6 +12,7 @@ import { WorkExperiencesComponent } from './work-experiences/work-experiences.co
 import { SkillsComponent } from './skills/skills.component';
 import { FormationsComponent } from './formations/formations.component';
 import { ImageComponent } from './image/image.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ImageComponent } from './image/image.component';
     WorkExperiencesComponent,
     SkillsComponent,
     FormationsComponent,
-    ImageComponent
+    ImageComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
