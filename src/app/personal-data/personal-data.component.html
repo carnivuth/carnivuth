@@ -4,21 +4,16 @@
 		<app-image></app-image>
 		<div class="text-container">
 			<nb-card-body>
-				<div class="title">Name</div>
+				<div class="text-container title">Name</div>
 				<div class="texts">
 					{{pd?.name}} {{pd?.surname}}
 				</div>
-				<div class="title">Email</div>
-				<div class="texts">
-					<a href="mailto:{{pd?.email}}">{{pd?.email}}</a>
-				</div>
-				<div class="title">City</div>
-				<div class="texts">{{pd?.city}}</div>
+				<div class="text-container title">City</div>
+				<div class="text-container texts">{{pd?.city}}</div>
+				<div class="text-container title">Bio</div>
+				<div class="text-container texts">{{pd?.bio}}</div>
 			</nb-card-body>
 		</div>
 	</div>
-	<nb-card-footer class="nb-card-footer-text">
-		<div class="title">Bio</div>
-		<div class="texts">{{pd?.bio}}</div>
-	</nb-card-footer>
+
 </nb-card>
