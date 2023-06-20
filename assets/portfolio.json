@@ -17,8 +17,7 @@
       "name": "Github",
       "link": "https://github.com/carnivuth",
       "icon": "assets/icons/github.svg"
-    }
-    ,
+    },
     {
       "name": "email",
       "link": "mailto:matti200042@gmail.com",
@@ -54,7 +53,7 @@
     },
     {
       "name": "Internship at Ciollo Service s.r.l.",
-      "description": "web development, project analysis for digital signature integration",
+      "description": "Web development, project analysis for digital signature integration",
       "time": "1 month",
       "link": [
         "https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white",
@@ -66,7 +65,7 @@
     },
     {
       "name": "Web developer at Ciollo Service s.r.l.",
-      "description": "development of digital signature integration",
+      "description": "Development of digital signature integration",
       "time": "6 months",
       "link": [
         "https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white",
@@ -80,7 +79,7 @@
   "skills": [
     {
       "name": "Web development backend technologies",
-      "description": "advanced knowledge of PHP language and PHP web development,backend development with the framework laravel,and node.js runtime",
+      "description": "Advanced knowledge of PHP language and PHP web development,backend development with the framework laravel,and node.js runtime",
       "link": [
         "https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white",
         "https://img.shields.io/badge/composer-%23777BB4.svg?style=for-the-badge&logo=composer&logoColor=white",
@@ -89,8 +88,8 @@
       ]
     },
     {
-      "name": "frontend web development technologies",
-      "description": "advanced knowledge of basic frontend technologies (HTML/CSS/JAVASCRIPT) and jquery technologies, knowledge of Angular for frontend UI design ",
+      "name": "Frontend web development technologies",
+      "description": "Advanced knowledge of basic frontend technologies (HTML/CSS/JAVASCRIPT) and jquery technologies, knowledge of Angular for frontend UI design ",
       "link": [
         "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
         "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
@@ -98,6 +97,14 @@
         "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
         "https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white",
         "https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white"
+      ]
+    },
+    {
+      "name": "Database",
+      "description": "comprensive knowledge of relational database administration",
+      "link": [
+        "https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white",
+        "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
       ]
     },
     {
