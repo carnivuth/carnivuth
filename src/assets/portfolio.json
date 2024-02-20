@@ -75,6 +75,18 @@
         "https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white"
       ]
     }
+
+    ,{
+      "name": "Devops & System administrator at Laboratori gugliemo marconi s.p.a.",
+      "description": "Development of deployment automation systems for internal applications",
+      "time": "current job",
+      "link": [
+        "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black",
+        "https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white",
+        "https://img.shields.io/badge/ansible-red?style=for-the-badge&logo=ansible&logoColor=white",
+        "https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white"
+      ]
+    }
   ],
   "skills": [
     {
@@ -105,6 +117,16 @@
       "link": [
         "https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white",
         "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
+      ]
+    },
+    {
+      "name": "Data science",
+      "description": "knowledge of models and algorithms for data mining processes",
+      "link": [
+        "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+        "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+        "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
+        "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"
       ]
     },
     {
