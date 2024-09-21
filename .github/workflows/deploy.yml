@@ -22,9 +22,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: All things angular
-        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1
         with:
-          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+          github_access_token: ${{ secrets.GHPAGES_TOKEN }}
           build_configuration: staging
           base_href: https://carnivuth.github.io/carnivuth/
           deploy_branch: gh-pages
