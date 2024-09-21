@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build-prod": "ng build --base-href='/carnivuth'",
+    "build-prod": "ng build --base-href='/carnivuth' --deploy-url='https://carnivuth.github.io/carnivuth/'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
