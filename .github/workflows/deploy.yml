@@ -18,14 +18,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: Adding Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: All things angular
-        uses: AhsanAyaz/angular-deploy-gh-pages-actions
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Angular App
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_access_token: ${{ secrets.GHPAGES_TOKEN }}
-          build_configuration: staging
-          base_href: https://carnivuth.github.io/carnivuth/
-          deploy_branch: gh-pages
-          angular_dist_build_folder: dist/carnivuth
+          path: dist/carnivuth
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
