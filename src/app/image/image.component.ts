@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Location, LocationStrategy } from '@angular/common';
+
 
 @Component({
   selector: 'app-image',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageComponent implements OnInit {
 
-  constructor() { }
+  href='';
+  constructor(private location: Location, private locationStrategy: LocationStrategy) { }
+
 
   ngOnInit(): void {
+  this.href= this.locationStrategy.getBaseHref();
   }
 
 }
