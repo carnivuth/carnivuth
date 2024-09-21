@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-  paths-ignore:
-    - ".gitignore"
-    - "readme.md"
+    paths-ignore:
+      - ".gitignore"
+      - "readme.md"
 
 permissions:
   contents: read
