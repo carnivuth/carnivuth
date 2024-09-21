@@ -9,10 +9,12 @@ import { Contact } from '../model/Contact';
 })
 export class ContactsComponent implements OnInit {
   contacts?:Contact[]
-  constructor(private db:DatabrokerService) { }
+  href=''
+  constructor(private db:DatabrokerService,private location: Location, private locationStrategy: LocationStrategy) { }
 
   ngOnInit(): void {
     this.contacts=this.db.contacts
+    this.href= this.locationStrategy.getBaseHref();
   }
 
 }
