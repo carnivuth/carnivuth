@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DatabrokerService } from '../databroker.service';
 import { Contact } from '../model/Contact';
+import { Location, LocationStrategy } from '@angular/common';
 
 @Component({
   selector: 'app-contacts',
