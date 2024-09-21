@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: All things angular
-        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions
         with:
           github_access_token: ${{ secrets.GHPAGES_TOKEN }}
           build_configuration: staging
