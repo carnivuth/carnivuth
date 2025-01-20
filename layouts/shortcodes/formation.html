@@ -1,0 +1,16 @@
+{{ with $file := .Get 0 }}
+  {{ with resources.Get $file }}
+    {{ with . | transform.Unmarshal }}
+
+<h2 class="text-center bold">Formation</h2>
+<div class="flex flex-wrap justify-center">
+        {{ range .formation }}
+<div class="card">
+    <h5 class="card-title text-2xl">{{ .title }}</h5>
+    <p class="card-content text-lg">{{ .school }}</p>
+          </div>
+        {{ end }}
+</div>
+    {{ end }}
+  {{ end }}
+{{ end }}

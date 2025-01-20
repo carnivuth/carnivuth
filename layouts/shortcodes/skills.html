@@ -1,0 +1,22 @@
+{{ with $file := .Get 0 }}
+{{ with resources.Get $file }}
+{{ with . | transform.Unmarshal }}
+
+<h2 class="text-center bold">Tech Skills</h2>
+
+<div class="flex flex-wrap justify-center">
+  {{ range .skills }}
+  <div class="card">
+    <h5 class="card-title text-2xl">{{ .name }}</h5>
+    <p class=" card-content text-lg">{{ .description }}</p>
+    <div class="card-footer flex flex-wrap">
+      {{ range .link }}
+      <img src="{{ . }}" class="card-footer-img"></img>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}
+{{ end }}

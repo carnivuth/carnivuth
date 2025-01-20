@@ -1,0 +1,21 @@
+[[main]]
+  name = "Blog"
+  pageRef = "blog"
+  weight = 10
+
+[[main]]
+  name = "portfolio"
+  pageRef = "about/portfolio"
+#  url = "https://github.com/carni/congo"
+  weight = 30
+#  [main.params]
+#    icon = "github"
+#    showName = false
+#    target = "_blank"
+
+[[main]]
+  identifier = "search"
+  weight = 99
+  [main.params]
+    action = "search"
+    icon = "search"
