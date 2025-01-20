@@ -21,7 +21,7 @@ Here are also my personal notes for university courses:
 - [computer graphics](https://carnivuth.github.io/computer_graphics)
 - [computer vision](https://carnivuth.github.io/computer_vision)
 - [mobile systems](https://carnivuth.github.io/mobile_systems)
-- [datamining](https://carnivuth.github.io/computer_vision)
+- [datamining](https://carnivuth.github.io/datamining)
 - [information security](https://carnivuth.github.io/sicurezza_informazione)
 - [languages and computational models](https://carnivuth.github.io/linguaggi_modelli_computazionali)
 - [system administration](https://github.com/carnivuth/LAS)
