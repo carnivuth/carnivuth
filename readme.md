@@ -16,7 +16,7 @@ Some interesting projects i have done over the years:
 
 I also host a personal [blog](https://www.carnivuth.org) where i post some interesting stuff about my digital life 😊
 
-Here are also my personal notes for university courses:
+Here are also my personal notes for university courses (*some of them are written in italian*):
 
 - [computer graphics](https://carnivuth.github.io/computer_graphics)
 - [computer vision](https://carnivuth.github.io/computer_vision)
