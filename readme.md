@@ -6,12 +6,12 @@ My knowledge revolves around architectures, deployment, administration and devel
 
 Some interesting projects i have done over the years:
 
-- [personal homelab project managed trough ansible and terraform](https://github.com/carnivuth/labcraft)
-- [tatodrone: computer graphics web application](https://github.com/carnivuth/tatodrone)
+- [personal homelab project managed trough ansible and terraform 🛻](https://github.com/carnivuth/labcraft)
+- [tatodrone: computer graphics web application 🚁](https://github.com/carnivuth/tatodrone)
 - [simulation of an IoT environment using edgex tecnology](https://github.com/carnivuth/edgex_iot_simulation)
 - [computer vision project to sense depth and object with a drone video input](https://github.com/carnivuth/stereo_robot_navigation)
-- [mini development environment using arch, neovim and docker](https://github.com/carnivuth/toolbox)
-- [telegram bot for home management](https://github.com/carnivuth/curiel_bot)
+- [mini development environment using arch, neovim and docker 🐳](https://github.com/carnivuth/toolbox)
+- [telegram bot for home management 🤖](https://github.com/carnivuth/curiel_bot)
 - [personal dotfiles](https://github.com/carnivuth/scripts)
 
 I also host a personal [blog](https://www.carnivuth.org) where i post some interesting stuff about my digital life 😊
