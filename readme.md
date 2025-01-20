@@ -1,4 +1,4 @@
-# Hi i'm Carnivuth 😄
+# Hi i'm Carnivuth 💻
 
 I'm a software engineer with a passion for food, dogs, videogames and open source software, i'm currently working on my master degree at [UNIBO](https://www.unibo.it/it) and i'm also working as a devops engineer and system administrator at [Laboratori Guglielmo Marconi](https://www.labs.it)
 
