@@ -1,17 +1,17 @@
 [[main]]
-  name = "Blog"
-  pageRef = "blog"
+  name = "portfolio"
+  pageRef = "about/portfolio"
   weight = 10
 
 [[main]]
-  name = "portfolio"
-  pageRef = "about/portfolio"
-#  url = "https://github.com/carni/congo"
+  name = "projects"
+  pageRef = "about/projects"
+  weight = 20
+
+[[main]]
+  name = "Blog"
+  pageRef = "blog"
   weight = 30
-#  [main.params]
-#    icon = "github"
-#    showName = false
-#    target = "_blank"
 
 [[main]]
   identifier = "search"

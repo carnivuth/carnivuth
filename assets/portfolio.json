@@ -171,11 +171,55 @@
     }
   ],
   "projects": [
+
     {
-      "name": "YouCook",
-      "description": "applicazione web per la gestione di ricette di cucina",
-      "tecnologies": "Angular",
-      "links": ["https://github.com/carnivuth/youCook"]
+      "name": "labcraft",
+      "description": "personal homelab project managed trough ansible and terraform 🛻",
+      "project_link": "https://github.com/carnivuth/labcraft",
+      "tecnologies": ["terraform","ansible", "proxmox", "shell scripting"],
+      "links": []
+    },
+    {
+      "name": "tatodrone",
+      "description": "computer graphics web application 🚁",
+      "project_link": "https://github.com/carnivuth/tatodrone",
+      "tecnologies": ["webgl","css", "javascript", "jquery", "ajax"],
+      "links": []
+    },
+    {
+      "name": "edgex IoT Monitoring",
+      "description": "simulation of an IoT environment using edgex tecnology",
+      "project_link": "https://github.com/carnivuth/edgex_iot_simulation",
+      "tecnologies": ["ansible","vagrant", "bash", "docker", "docker compose", "python"],
+      "links": []
+    },
+    {
+      "name": "robot stereo navigation system",
+      "description": "computer vision project to sense depth and object with a drone video input",
+      "project_link": "https://github.com/carnivuth/stereo_robot_navigation",
+      "tecnologies": ["python","numpy", "shell scripting", "opencv"],
+      "links": []
+    },
+    {
+      "name": "toolbox",
+      "description": "mini development environment using arch, neovim and docker 🐳",
+      "project_link": "https://github.com/carnivuth/toolbox",
+      "tecnologies": ["docker","github actions", "shell scripting"],
+      "links": []
+    },
+    {
+      "name": "curiel bot",
+      "description": "telegram bot for home management 🤖",
+      "project_link": "https://github.com/carnivuth/curiel_bot",
+      "tecnologies": ["javascript","nodejs", "expressjs", "json"],
+      "links": []
+    },
+    {
+      "name": "scripts",
+      "description": "personal arch linux dotfiles",
+      "project_link": "https://github.com/carnivuth/scripts",
+      "tecnologies": ["shell scripting"],
+      "links": []
     }
   ]
 }

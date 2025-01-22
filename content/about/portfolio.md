@@ -2,7 +2,7 @@
 title: Portfolio
 date: 2024-12-30
 draft: false
-layout: about/portfolio
+layout: about/single
 description: My personal portfolio
 ---
 

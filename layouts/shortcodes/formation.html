@@ -3,11 +3,11 @@
     {{ with . | transform.Unmarshal }}
 
 <h2 class="text-center bold">Formation</h2>
-<div class="flex flex-wrap justify-center">
+<div class="card-container">
         {{ range .formation }}
 <div class="card">
-    <h5 class="card-title text-2xl">{{ .title }}</h5>
-    <p class="card-content text-lg">{{ .school }}</p>
+    <h5 class="card-title">{{ .title }}</h5>
+    <p class="card-content">{{ .school }}</p>
           </div>
         {{ end }}
 </div>

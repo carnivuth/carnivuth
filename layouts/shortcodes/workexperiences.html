@@ -3,12 +3,12 @@
 {{ with . | transform.Unmarshal }}
 
 <h2 class="text-center bold">Work Experiences</h2>
-<div class="flex flex-wrap justify-center">
+<div class="card-container">
   {{ range .workexperiences }}
   <div class="card">
-    <h5 class="card-title text-2xl">{{ .name }}</h5>
-    <p class="card-content text-lg">{{ .description }}</p>
-    <div class="card-footer flex flex-wrap">
+    <h5 class="card-title">{{ .name }}</h5>
+    <p class="card-content">{{ .description }}</p>
+    <div class="card-footer">
       {{ range .link }}
       <img src="{{ . }}" class="card-footer-img"></img>
       {{ end }}
