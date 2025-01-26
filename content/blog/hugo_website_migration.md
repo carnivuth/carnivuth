@@ -1,8 +1,8 @@
 ---
-draft: true
 title: How i came up with this blog
 date: '2025-01-26'
 description: Migrating from obsidian note system to a hugo blog
+draft: false
 tags:
   - obsidian
   - hugo
@@ -53,13 +53,14 @@ done
 
 ### Migrate my portfolio
 
-Then after some time i decided to make this my personal website and migrate here my personal portfolio that at the time was an [angular](https://angular.dev) application,
+Then after some time i decided to make this my personal website and migrate here my portfolio that at the time was an [angular](https://angular.dev) application a little too over engineered for a simple static webpage.
 
-{{< mermaid >}}
-flowchart TD
-A[angular]
-B[json data]
-C[json data]
-{{</ mermaid >}}
+the angular components where acting as a view for data written in a JSON file and applying some custom CSS to improve visual effect,JSON was used to decouple data from view logic to prevent situations like this where i want to recreate the view but keep the data as they where before
 
-a little too over engineered for a simple static webpage, the angular components where acting as a view for data written in a JSON file and applying some custom CSS to improve visual effect, So given the JSON file i wrote some hugo shortcodes to render it as it was done using angular and write some CSS code to style it
+### Automate!!!!
+
+The last thing to do was to automate deployment on github pages with a simple [action](https://github.com/carnivuth/carnivuth/blob/main/.github/workflows/deploy.yml) to build the website and make deployment operations
+
+
+
+
