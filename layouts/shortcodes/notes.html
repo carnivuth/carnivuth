@@ -2,7 +2,7 @@
 {{ with resources.Get $file }}
 {{ with . | transform.Unmarshal }}
 
-<h2 class="text-center bold">Projects</h2>
+<h2 class="text-center bold">Notes</h2>
 
 <div class="card-container">
   {{ range .notes }}
