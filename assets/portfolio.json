@@ -221,5 +221,37 @@
       "tecnologies": ["shell scripting"],
       "links": []
     }
+  ],
+  "notes": [
+    {
+      "name": "datamining",
+      "description": "datamining and machine learning",
+      "link": "https://carnivuth.github.io/datamining/"
+    },
+    {
+      "name": "languages and computational models",
+      "description": "notes on languages and computational models",
+      "link": "https://carnivuth.github.io/linguaggi_modelli_computazionali/"
+    },
+    {
+      "name": "computer vision",
+      "description": "computer vision and machine learning",
+      "link": "https://carnivuth.github.io/computer_vision/"
+    },
+    {
+      "name": "mobile systems",
+      "description": "mobile systems",
+      "link": "https://carnivuth.github.io/mobile_systems/"
+    },
+    {
+      "name": "information security",
+      "description": "information security",
+      "link": "https://carnivuth.github.io/sicurezza_informazione/"
+    },
+    {
+      "name": "computer graphics",
+      "description": "computer graphics and rendering pipeline",
+      "link": "https://carnivuth.github.io/computer_graphics/"
+    }
   ]
 }
