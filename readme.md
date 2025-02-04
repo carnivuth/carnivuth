@@ -24,6 +24,7 @@ Here are also my personal notes for university courses (*some of them are writte
 - [datamining](https://carnivuth.github.io/datamining)
 - [information security](https://carnivuth.github.io/sicurezza_informazione)
 - [languages and computational models](https://carnivuth.github.io/linguaggi_modelli_computazionali)
+- [technologies for databases and big data](https://carnivuth.github.io/tecnologie_basi_dati)
 - [system administration](https://github.com/carnivuth/LAS)
 
 ##  Achievements 🏆
