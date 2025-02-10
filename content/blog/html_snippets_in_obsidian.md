@@ -13,7 +13,7 @@ I recently started to take notes for a computer graphics course and i struggled 
 
 I quickly tried some plugins and configurations until i come with this strange but working (*at least locally*) solution to integrate some html snippet in obsidian
 
-## THE IDEA
+## The idea
 
 So if obsidian does not render my html i guess i could try to embed some html sites that does it, this is the architecture that i came up with
 

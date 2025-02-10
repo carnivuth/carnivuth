@@ -14,7 +14,7 @@ tags:
 >some_command_that_prints_on_stdout | awk -F'[SEPARATOR]'  '{print $[FIELD]}'
 >```
 
-## PROCESSING MODEL
+## Processing model
 
 awk starts by loading user defined functions than execute `BEGIN` block that process text one record at a time (*default behavior is line filter*) :
 
@@ -31,7 +31,7 @@ D --> C
 D --> E
 {{< /mermaid >}}
 
-## SYNTAX
+## Syntax
 
 Blocks are delimited by `{}` each line contains an isntruction, instructoins can be separated by `;`
 
@@ -41,7 +41,7 @@ BEGIN{  }
 END{  }
 ```
 
-## REGEX FILTERS AND ~ OPERATOR
+## Regex filters and `~` operator
 
 lines can be regex parsed using a variable with a regular expression and then filter the input using the `~` operator
 
@@ -56,7 +56,7 @@ $0 ~ filter{
 }
 ```
 
-## MATCH FUNCTION
+## Match function
 
 match regex element and put beckrefs in an array
 
@@ -65,7 +65,7 @@ match regex element and put beckrefs in an array
     print arr[1]
 ```
 
-## ONELINERS
+## Oneliners
 
 - print all token except first one
 

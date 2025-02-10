@@ -30,7 +30,7 @@ the command creates a subdirectory under the `.password_store` folder and opens 
 
 folder structure can be showed with the `pass list` command
 
-## GIT CONFIGURATION
+## Git configuration
 
 `pass` can be configured to store history of the folder with `git` so to maintain the password history
 
@@ -38,7 +38,7 @@ folder structure can be showed with the `pass list` command
  pass git init
 ```
 
-### PUSHING TO REMOTE (*GITHUB*)
+### Pushing to remote (*github*)
 
 the git repository can be synced with a remote server as shown with github here as an example
 

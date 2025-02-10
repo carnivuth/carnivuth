@@ -57,5 +57,3 @@ function configure_hook(){
 #!/bin/bash
 ./scripts.sh
 ```
-
-

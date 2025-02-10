@@ -33,7 +33,7 @@ There where also other problems with subpaths, the ansible playbook that manages
 
 So after some time i have decided to address the elephant in the room: **no more hosting in subpaths** let's manage a public domain.
 
-## DESIGNING THE MIGRATION
+## Designing the migration
 
 So what to do now? First thing first i have to choose a provider to host a domain that i can play with, so after some research i selected [cloudflare](https://www.cloudflare.com) as my savior from subpaths, the reason? It was the cheaper and i can manage my ddns entries with some server script that connects to the cloudflare API.
 

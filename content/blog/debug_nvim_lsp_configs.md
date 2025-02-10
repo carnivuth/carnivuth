@@ -9,7 +9,7 @@ draft: true
 
 Brief guide to debug [neovim](https://neovim.io/) lsp server configuration
 
-## LANGUAGE SERVER PROTOCOL RECAP
+## Language server protocol recap
 
 it's a standard protocol  to manage interaction between code editors and process providing code completion and  syntax highlighting
 
@@ -37,7 +37,7 @@ neovim provides integrated support as it feature a builtin lsp client, in my per
 - [lspconfig](https://github.com/neovim/nvim-lspconfig) for lsp configuration
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim) for automatic lsp management
 
-## ADD A LANGUAGE SERVER
+## Add a language server
 
 a language server needs to be installed with `mason` and then it needs to be activated with `lspconfig` then when the correspondent filetype is detected lspconfig will start the server and attach the client to it for the active buffer
 
@@ -63,7 +63,7 @@ LSP configs active in this buffer (bufnr: 1)
 Docs for active configs:
 ```
 
-## SETTING FILETYPE
+## Setting filetype
 
 In order to limit a language server to a specific set of files (*e.g. `ansiblels`*) configure lspconfig to run the lsp server on a specific filetype (`ansible`) and configure neovim to set the filetype for the specific set of file
 

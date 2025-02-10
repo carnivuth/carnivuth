@@ -7,7 +7,7 @@ draft: true
 
 General mathjax quick reference
 
-##  PARENTHESES
+##  Parentheses
 
 | Symbol                | Code                  |
 | --------------------- | --------------------- |
@@ -40,7 +40,7 @@ General mathjax quick reference
   $\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)$
   `\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)`
 
-##  LOGICAL SYMBOLS
+##  Logical symbols
 
 | Symbol       | Code         |
 | ------------ | ------------ |

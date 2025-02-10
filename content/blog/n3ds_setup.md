@@ -8,7 +8,7 @@ draft: false
 
 >My personal ultimate guide to setup a bullet proof nintendo 3ds emulator machine to take around and don't lose data
 
-## THE PROBLEM
+## The problem
 
 In my daily routine there are often dead moments, like when i travel to work/university with public transport or when i simply need to take a break from the terminal, i was looking for an idea to fill up this moments, and one day, staring at my shelves the idea jumps to mind:
 
@@ -18,7 +18,7 @@ In my daily routine there are often dead moments, like when i travel to work/uni
 
 But as always, i have to to overengineer thinks and make it extremely hard for myself (*of course*)
 
-## WORKING ON THE PATIENT
+## Working on the patient
 
 So as a first step i modded it to use some custom software following [this guide](https://3ds.hacks.guide/), this way i can run things from sd card an manage data in a more human way using my pc
 
@@ -38,7 +38,7 @@ udiskctl mount /dev/sda1
 rsync -r ~/Games/roms/* /run/media/$USER/3DS/roms
 ```
 
-## WHAT IF SD CARD BREAKS?
+## What if sd card breaks?
 
 The SD card is **not a reliable memory support**, it will fail taking with it all the precious save data (*it's already happened to me and i have learned my lesson, DO BACKUPS*), but i also know that if i manage the backup procedure manually by extracting the sd card periodically and copy save files, restore wouldn't be possible and i will forget or simply refuse to do it cause i'm lazy a.f. basically
 

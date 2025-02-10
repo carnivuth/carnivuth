@@ -18,7 +18,7 @@ where:
 - `criteria` is a filter for the element that have to match
 - `action` is the action to perform on the elements that matches the `criteria`
 
-## LIMIT FILE SEARCH
+## Limit file search
 
 In order to limit the depth level of the search the ` -maxdepth` option can be used
 
@@ -26,7 +26,7 @@ In order to limit the depth level of the search the ` -maxdepth` option can be u
 find dir -maxdepth <VALUE> criteria [action]
 ```
 
-## ONELINERS
+## Oneliners
 
 - remove files only in current dir with confirmation
 
