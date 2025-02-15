@@ -1,11 +1,12 @@
 ---
-title: mathjax cheetsheet
-date: 2024-11-03
-tags: []
-draft: true
+title: 'Mathjax'
+date: '2024-11-03'
+draft: false
+description: "General mathjax quick reference"
+tags: ["guide"]
 ---
 
-General mathjax quick reference
+Personal mathjax symbols reference
 
 ##  Parentheses
 
@@ -74,7 +75,7 @@ General mathjax quick reference
 | $\lhd$       | `\lhd`       |
 | $\therefore$ | `\therefore` |
 
-## OPERATORS
+## Operators
 
 | Symbol       | Code      |
 | ------------ | --------- |
@@ -89,7 +90,7 @@ General mathjax quick reference
 | $\circ$   | `\circ`   |
 | $\bullet$ | `\bullet` |
 
-## SETS
+## Sets
 
 | Sol           | Code          |
 | ------------- | ------------- |
@@ -105,7 +106,7 @@ General mathjax quick reference
 | $\emptyset$   | `\emptyset`   |
 | $\varnothing$ | `\varnothing` |
 
-## ARROWS
+## Arrows
 
 | Symbol            | Code              |
 | ----------------- | ----------------- |
@@ -117,7 +118,7 @@ General mathjax quick reference
 | $\Leftrightarrow$ | `\Leftrightarrow` |
 | $\mapsto$         | `\mapsto`         |
 
-## SPECIAL SYMBOLS
+## Special symbols
 
 | Symbol     | Code       |
 | ---------- | ---------- |
@@ -130,7 +131,7 @@ General mathjax quick reference
 | $\cdots$   | `\cdots`   |
 | $\ell$     | `\ell`     |
 
-## TRIGONOMETRY
+## Trigonometry
 
 | Symbol      | Code        |
 | ----------- | ----------- |
@@ -144,7 +145,7 @@ General mathjax quick reference
 | $\arccos x$ | `\arccos x` |
 | $\arctan x$ | `\arctan x` |
 
-## FUNCTIONAL SYMBOLS
+## Functional symbols
 
 | Symbol                    | Code                                  |
 | ------------------------- | ------------------------------------- |
@@ -163,7 +164,7 @@ General mathjax quick reference
 | ${n+1 \choose 2k}$        | `${n+1 \choose 2k}$`                  |
 | $\binom{n+1}{2k} (n+12k)$ | `$\binom{n+1}{2k} (n+12k)$`           |
 
-## GREEK LETTERS
+## Greek letters
 
 
 | Symbol        | Code          |
@@ -212,7 +213,7 @@ General mathjax quick reference
 | $\Psi$     | `\Psi`     |
 | $\Omega$   | `\Omega`   |
 
-## FONTS
+## Fonts
 
 | Symbol                                          | Code                                            |
 | ----------------------------------------------- | ----------------------------------------------- |
@@ -234,13 +235,13 @@ General mathjax quick reference
 | $\mathscr{script letters}$                      | `\mathscr{script letters}`                      |
 | $\mathfrak{Fraktur (old German style) letters}$ | `\mathfrak{Fraktur (old German style) letters}` |
 
-## SPACES
+## Spaces
 
 | Symbol   | Code     |
 | -------- | -------- |
 | $\space$ | `\space` |
 
-## ACCENTS AND MARKS
+## Accents and marks
 
 | Symbol                    | Code                      |
 | ------------------------- | ------------------------- |
