@@ -14,9 +14,14 @@
   weight = 30
 
 [[main]]
+  name = "Guides"
+  pageRef = "guide"
+  weight = 40
+
+[[main]]
   name = "Blog"
   pageRef = "blog"
-  weight = 40
+  weight = 50
 
 [[main]]
   identifier = "search"
