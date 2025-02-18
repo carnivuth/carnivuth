@@ -34,10 +34,6 @@ Personal mathjax symbols reference
 | \\( \left\lceil ... \right\rceil \\)   | `\left\lceil ... \right\rceil`   |
 | \\( \left\lfloor ... \right\rfloor \\) | `\left\lfloor ... \right\rfloor` |
 
-| Symbol                | Code                 |
-| --------------------- | -------------------- |
-| \\( \left\\ ... \right. \\) | `\left{ ... \right.` |
-| \\( \left. ... \right] \\)  | `\left. ... \right]` |
 
 - manual adjustment:
   \\( \Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr) \\)
