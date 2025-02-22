@@ -3,7 +3,7 @@ title: 'jq'
 date: '2025-02-17'
 draft: false
 description: "Personal jq expression language reference"
-tags: ["guide"]
+tags: ["snippets","jq","bash scripting"]
 ---
 
 Personal `jq` expression language reference

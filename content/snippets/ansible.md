@@ -3,7 +3,7 @@ title: 'Ansible snippets'
 date: '2025-02-15'
 draft: false
 description: "ansible personal snippets and reference"
-tags: ["guide","ansible","playbooks"]
+tags: ["snippet","ansible","playbooks","inventories","ansible vault"]
 ---
 
 Personal snippets for ansible playbooks development and reference
