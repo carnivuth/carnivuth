@@ -59,4 +59,4 @@ This steps could translate into a enormous number of tasks, checks, if then else
 
 ## Conclusions
 
-After a year of working with ansible i still have a lot to learn about the logic and problems behind provisioning and application management, new ideas and inputs for optimizing workflows development and management of playbooks comes to my mind daily and this post comes from the urgency of writing down what i have found so far to be some general guidelines to follow as my personal ansible bible 📖, link here some [snippets](guide/ansible.md) for writing down good playbook faster
+After a year of working with ansible i still have a lot to learn about the logic and problems behind provisioning and application management, new ideas and inputs for optimizing workflows development and management of playbooks comes to my mind daily and this post comes from the urgency of writing down what i have found so far to be some general guidelines to follow as my personal ansible bible 📖, link here some [snippets](snippets/ansible.md) for writing down good playbook faster
