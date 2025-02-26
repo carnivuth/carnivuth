@@ -51,3 +51,12 @@ cd ~/.password-store
 gh repo create --source=. --private [repo-name]
 git push --set-upstream origin main
 ```
+
+## Backup gpg key
+
+To backup keys in a text based format run
+
+```bash
+gpg --output backupkeys.pgp --armor --export-secret-keys --export-options export-backup [gpg_id]
+```
+
