@@ -1,13 +1,13 @@
 ---
-title: Awk personal guide
+title: Awk
 date: 2024-11-16
-draft: true
+draft: false
 tags:
   - oneliners
   - command guide
 ---
 
-`awk` is a language for text parsing and manipulation, it's often used as a tokenizer in bash pipes but it can do a lot more of that here i will document my knowledge about it
+`awk` is a language for text parsing and manipulation, it's often used as a tokenizer in bash pipes but it can do a lot more of that
 
 > before starting i write down the most common use case of awk
 >```bash

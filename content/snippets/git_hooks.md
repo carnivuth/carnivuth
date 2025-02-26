@@ -1,6 +1,6 @@
 ---
 date: 2024-10-25
-title: Automate systems with git hooks
+title: Git hooks
 aliases: []
 tags: []
 draft: false

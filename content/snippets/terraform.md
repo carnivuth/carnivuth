@@ -1,9 +1,13 @@
 ---
-title: terraform loops
+title: Terraform
 date: 2024-11-17
 index: 16
 draft: true
 ---
+
+Terraform is a tool for IaC (*infrastructure as code*) that can work with multiple cloud platforms and virtualizers here i will wrote down some snippets and best practices
+
+## Defining hosts with loops
 
 Loops can be defined  specifying the variable `count` inside a specific resource, then the index of the loop  can be accessed via the `count.index` variable
 
@@ -34,5 +38,3 @@ resource "proxmox_lxc" "ct-test" {
 this will produce the following output on the proxmox host
 
 ![](/images/Pasted%20image%2020241117151330.png)
-
-

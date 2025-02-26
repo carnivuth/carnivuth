@@ -1,5 +1,5 @@
 ---
-title: 'Ansible snippets'
+title: 'Ansible'
 date: '2025-02-15'
 draft: false
 description: "ansible personal snippets and reference"
