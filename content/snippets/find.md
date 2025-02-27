@@ -1,7 +1,7 @@
 ---
-title: My personal find command guide
+title: Find
 date: 2024-11-11
-draft: true
+draft: false
 tags:
   - ONELINERS
 ---
@@ -12,7 +12,7 @@ The `find` command is handy tool to manage files inside the file system, the com
 find dir criteria [action]
 ```
 
-where:
+Where:
 
 - `dir` is the starting dir
 - `criteria` is a filter for the element that have to match
@@ -45,5 +45,3 @@ find . -not -regex 'REGEX'
 ```bash
 find . -name 'REGEX'
 ```
-
-
