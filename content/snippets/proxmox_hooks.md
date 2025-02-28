@@ -1,21 +1,20 @@
 ---
 date: 2024-09-16
-title: how to use proxmox hooks!
+title: Proxmox hooks
 aliases: []
 tags: []
-draft: true
+draft: false
 ---
 
-Scripts are runned in multiple moments of the ct/vm lifecicle, they can be of different types (*e.g. bash perl python*) they run inside the proxmox host.
+Proxmox hooks are a feature that allows to run custom scripts when a Proxmox managed virtual machine or container generate some events.
+Scripts are executed in multiple moments of the ct/vm life-cycle, they can be of different types (*e.g. bash perl python*) they run inside the proxmox host.
 
-they are called as `scriptname <vmid> <phase>` where
+They are called as `scriptname <vmid> <phase>` where
 
-- vmid is the id of the container/vm
-- phase is a string that refers the lifecicle hook, can have 4 values: `pre-start post-start pre-stop post-stop`
+- `vmid` is the id of the container/vm
+- `phase` is a string that refers the lifecicle hook, can have 4 values: `pre-start post-start pre-stop post-stop`
 
-they must reside under `/var/lib/vz/snippets/` and be executable, shbang is also needed to run with the correct interpreter
-
-template for a bash hook:
+They must reside under `/var/lib/vz/snippets/` and be executable, shbang is also needed to run with the correct interpreter, a template for a bash hook looks like this:
 
 ```bash
 #!/bin/bash
@@ -39,7 +38,7 @@ if [[ "$phase" == 'post-start' ]]; then
 fi
 ```
 
-then the hookscript can be added to a ct or a vm like this
+Then the hook script can be added to a ct or a vm like this
 
 ```bash
 # for containers
@@ -47,5 +46,3 @@ pct set 100 --hookscript local:snippets/script.sh
 # for vms
 qm set 100 --hookscript local:snippets/script.sh
 ```
-
-
