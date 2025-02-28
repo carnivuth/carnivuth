@@ -2,10 +2,35 @@
 title: Terraform
 date: 2024-11-17
 index: 16
-draft: true
+draft: false
 ---
 
 Terraform is a tool for IaC (*infrastructure as code*) that can work with multiple cloud platforms and virtualizers here i will wrote down some snippets and best practices
+
+## Using variables and secrets
+
+Terraform can build hosts based on var files and secrets stored outside of the versioning system
+
+{{< mermaid >}}
+flowchart LR
+A[variables.tf]
+B[terraform.tfvars]
+A --> B
+{{< /mermaid >}}
+
+> sample of a `variables.tf` file
+```terraform
+variable "dev_ct_template" {
+  default     = "local:vztmpl/archlinux-base_20230608-1_amd64.tar.zst"
+  description = "template for development containers"
+}
+```
+
+Vars can then be referred with the `var` keyword
+
+```terraform
+template = var.dev_ct_template
+```
 
 ## Defining hosts with loops
 
