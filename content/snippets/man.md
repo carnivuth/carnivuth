@@ -1,8 +1,8 @@
 ---
 date: 2024-11-22
-title: "Setup man command"
-index: 7
-draft: true
+title: "Use man efficiently"
+draft: false
+tags: ["man","vim","nvim","tealdeer","arch wiki","wikiman"]
 ---
 
 Linux ships with a lot of documentation in the form of man pages, that are too complex and time consuming to read for quick access to oneliners, too many times i have encountered myself with the problem of finding a pipe command to do a specific task and the man is not helpful in this cases, here my personal configuration to make man pages and command more pleasant to use:
@@ -34,7 +34,7 @@ export MANPAGER="nvim +Man!"
 export MANPAGER="vim -M +MANPAGER - "
 ```
 
-quick script to set manpager based on distro
+Quick script to set manpager based on distro
 
 ```bash
 source /etc/os-release
@@ -46,5 +46,3 @@ fi
 ```
 
 Now man can be browsed with vim keybindings and for quick oneliners the `tldr` command can be used
-
-
