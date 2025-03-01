@@ -1,22 +1,34 @@
 ---
-title: Configure jenkins ci with github repos
+title: jenkins ci
 date: 2024-09-16
-id: CREATE_CI_JENKINS
 aliases: []
-tags: []
-index: 13
-draft: true
+tags: ["jenkins","github","jenkinsfile","jenkins pipeline"]
+draft: false
 ---
 
-Jenkins is a CI service that can build and test software from different VCS, in order to create a new pipeline to build and compile software from github repos, in this setup github will trigger with a webhook the jenkins instance to run a build defined in a Jenkinsfile inside the repo, events that triggers the CI pipeline can be specified in the github repo config section
+Jenkins is a CI service that can build and test software from different VCS, run automation tasks, integrate with ansible and much more, it's based around the concept of **builds**, builds are composed of a sequence of actions that  are executed on **build nodes**, build notes are enivronments that run the software build workflow
+
+{{< mermaid >}}
+flowchart LR
+A[JENKINS INSTANCE]
+B[build node 1]
+C[build node 2]
+D[build node 3]
+A -- execute build pipelines --> B & C & D
+{{< /mermaid >}}
+
+
+## Create a Jenkins CI pipeline for github repository
+
+One way to use Jenkins is to run build processes for github hosted software as a substitute of github actions, in this setup github will trigger with a webhook the Jenkins instance in order to run a build defined in a Jenkinsfile inside the repo, events that triggers the CI pipeline can be specified in the github repo config section
 
 - Create a new pipeline on Jenkins and add a GitHub repository url
 
-![](/images/Pasted%20image%2020240416132959.png)
+![](jenkins1.png)
 
 - Set the CI script to pull from SCM
 
-![](/images/Pasted%20image%2020240416133043.png)
+![](jenkins2.png)
 
 - Create a `Jenkinsfile` with the Jenkins CI pipeline (here example for building docker images)
 
@@ -65,5 +77,3 @@ pipeline {
 ```
 
 - Configure Jenkins to add GitHub hooks automatically to the repo
-
-
