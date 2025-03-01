@@ -1,12 +1,13 @@
 ---
-title: Create continous integration pipelines with `github` actions
+title: Github actions
 date: 2024-09-16
 aliases: []
-tags: []
-draft: true
+tags: ["github", "automation", "ci/cd"]
+draft: false
 ---
 
 `Github` offers a CI service called `github actions`, the service runs workflows defined for the repo in a dedicated server called workers, workflows are defined in yaml format under the folder `.github/workflows/`.
+
 
 each workflow must specify:
 
@@ -16,7 +17,7 @@ each workflow must specify:
 
 In order to create a CI pipeline with GitHub actions
 
-- create a GitHub action yaml file in a new branch in the repository
+- create a GitHub action `yaml` file in a new branch in the repository
 
 ```bash
 git switch main
@@ -24,7 +25,7 @@ git branch github_actions
 git switch github_actions
 ```
 
-example for docker image build:
+Example for docker image build:
 
 ```yaml
 name: build docker container
@@ -64,8 +65,7 @@ jobs:
 
 - add secrets in GitHub secret project session
 
-example for docker image build
-
+> Example for docker image build
 ```bash
 cd <repo>
 gh secret set DOCKERHUB_USERNAME
@@ -83,4 +83,13 @@ pr_to_main_branch
 
 - test with some commits in the main branch
 
+## Github permissions
 
+Action can require certain permission to operate inside the repository
+
+```yaml
+# -------
+    permissions:
+      contents: write
+# -------
+```
