@@ -19,3 +19,10 @@ Personal `jq` expression language reference
 ```bash
 .[] | length
 ```
+
+- loop an array and run command for each element
+
+```bash
+jq -c '.[]' input.json | while read i; do
+done
+```
