@@ -12,6 +12,7 @@ Some interesting projects i have done over the years:
 - [computer vision project to sense depth and object with a drone video input](https://github.com/carnivuth/stereo_robot_navigation)
 - [mini development environment using arch, neovim and docker 🐳](https://github.com/carnivuth/toolbox)
 - [telegram bot for home management 🤖](https://github.com/carnivuth/curiel_bot)
+- [cli tool to transfer file using TCP protocol 🗃️](https://github.com/carnivuth/lesgofile)
 - [personal dotfiles](https://github.com/carnivuth/scripts)
 
 I also host a personal [blog](https://www.carnivuth.org) where i post some interesting stuff about my digital life 😊

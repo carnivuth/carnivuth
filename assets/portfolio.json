@@ -215,6 +215,13 @@
       "links": []
     },
     {
+      "name": "lesgofile",
+      "description": "cli tool to transfer file using TCP protocol 🗃️",
+      "project_link": "https://github.com/carnivuth/lesgofile",
+      "tecnologies": ["go","docker", "goreleaser", "json"],
+      "links": []
+    },
+    {
       "name": "scripts",
       "description": "personal arch linux dotfiles",
       "project_link": "https://github.com/carnivuth/scripts",
