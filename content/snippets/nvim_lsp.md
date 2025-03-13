@@ -12,7 +12,7 @@ Brief guide to [neovim](https://neovim.io/) LSP server configuration
 
 it's a standard protocol  to manage interaction between code editors and process providing code completion and  syntax highlighting
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 subgraph editors
 direction TB
@@ -28,7 +28,7 @@ F[dockerls]
 end
 editors --send file content--> language_servers
 language_servers --code completition--> editors
-```
+{{</ mermaid >}}
 
 Neovim provides integrated support as it feature a builtin LSP client, in my personal configuration this plugins are also enabled to improve the LSP management experience
 
