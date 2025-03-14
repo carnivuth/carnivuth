@@ -13,6 +13,7 @@ Some interesting projects i have done over the years:
 - [mini development environment using arch, neovim and docker 🐳](https://github.com/carnivuth/toolbox)
 - [telegram bot for home management 🤖](https://github.com/carnivuth/curiel_bot)
 - [cli tool to transfer file using TCP protocol 🗃️](https://github.com/carnivuth/lesgofile)
+- [make backups of repository of a github account 💾](https://github.com/carnivuth/github_sync)
 - [personal dotfiles](https://github.com/carnivuth/scripts)
 
 I also host a personal [blog](https://www.carnivuth.org) where i post some interesting stuff about my digital life 😊

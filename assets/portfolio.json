@@ -222,6 +222,13 @@
       "links": []
     },
     {
+      "name": "github sync",
+      "description": "make backups of repository of a github account 💾",
+      "project_link": "https://github.com/carnivuth/github_sync",
+      "tecnologies": ["bash","docker", "cron", "github-api"],
+      "links": []
+    },
+    {
       "name": "scripts",
       "description": "personal arch linux dotfiles",
       "project_link": "https://github.com/carnivuth/scripts",
