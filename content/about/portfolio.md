@@ -9,4 +9,6 @@ description: My personal portfolio
  {{< profile align="center" >}}
  {{< formation "portfolio.json" >}}
  {{< workexperiences "portfolio.json" >}}
+ {{< projects "portfolio.json" >}}
  {{< skills "portfolio.json" >}}
+ {{< notes "portfolio.json" >}}
