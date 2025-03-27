@@ -8,6 +8,7 @@ description: My personal portfolio
 
  {{< profile align="center" >}}
  {{< formation "portfolio.json" >}}
+ {{< theses "portfolio.json" >}}
  {{< workexperiences "portfolio.json" >}}
  {{< projects "portfolio.json" >}}
  {{< skills "portfolio.json" >}}

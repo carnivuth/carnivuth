@@ -1,5 +1,4 @@
 {
-  "texts": [],
   "personalData": {
     "name": "Matteo",
     "surname": "Longhi",
@@ -30,7 +29,11 @@
       "school": "ITIS E.Mattei Urbino"
     },
     {
-      "title": "Bachelor's Degree",
+      "title": "Bachelor's Degree in computer engineering",
+      "school": "Alma Mater Studiorum University of Bologna"
+    },
+    {
+      "title": "Master Degree in computer engineering",
       "school": "Alma Mater Studiorum University of Bologna"
     }
   ],
@@ -168,6 +171,23 @@
     {
       "name": "storia della prima repubblica",
       "description": "interessato alle vicende politico sociali legate alla prima repubblica "
+    }
+  ],
+  "theses": [
+
+    {
+      "name": "web app for smart home",
+      "description": "web application as single page application for smart home using angular technologies",
+      "thesis_link": "https://github.com/carnivuth/web_app_for_smart_home",
+      "tecnologies": ["angular","css", "javascript", "shell scripting", "ajax"],
+      "links": []
+    },
+    {
+      "name": "deployment lifecycle design in monitoring applications ",
+      "description": "management of the life-cycle of the sanet software",
+      "thesis_link": "https://github.com/carnivuth/deployment_lifecycle_design_in_monitoring_applications",
+      "tecnologies": ["lxc","ansible", "shell scripting"],
+      "links": []
     }
   ],
   "projects": [
