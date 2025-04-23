@@ -1,7 +1,7 @@
 ---
 title: 'Mimic overleaf using vim and make'
 date: '2025-04-09'
-draft: true
+draft: false
 description: "how to recreate overleaf with style locally"
 tags: ["vim", "overleaf", "latex","make"]
 ---
@@ -59,4 +59,4 @@ monitor ->> monitor: run build
 
 ## Aftermath
 
-The new build system worked perfectly and can be managed using git and GitHub, i also implemented a GitHub action to create releases of the thesis work using git tags. After all this side project was fun and engaging and i have learned a lot on optimizing procedures, builds and managing file system events,
+The new build system worked perfectly and can be managed using git and GitHub, i also implemented a GitHub action to create releases of the thesis work using git tags. After all this side project was fun and engaging and i have learned a lot on optimizing procedures, builds and managing file system events.
