@@ -14,9 +14,9 @@ In my daily routine there are often dead moments, like when i travel to work/uni
 
 > my 3DS of course! I can just revive it and fill the SD card with roms !!!
 
-![3ds.png](/images/3ds.jpg)
+![3ds.png](3ds.jpg)
 
-But as always, i have to to overengineer thinks and make it extremely hard for myself (*of course*)
+But as always, i have to to over engineer thinks and make it extremely hard for myself (*of course*)
 
 ## Working on the patient
 
@@ -26,7 +26,7 @@ After modding the 3ds one of my principal concern was to get something to quickl
 
 Then i proceed to install a bunch of software:
 
-- `twilight menu` for running ds and gba games
+- `twilight menu` for running DS and GBA games
 - `ftpd` for make bakups
 
 Here is where i need to add juice to the mix by installing some roms that i have laying around (*quick reminder for commands*)
