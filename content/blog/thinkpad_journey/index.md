@@ -9,14 +9,14 @@ For my personal note taking process and projects i use a dell laptop that as ser
 
 I recently get an old thinkpad T470 from work, is a good laptop with pretty decent specs (*8GB ram, 256GB SSD, 4 cores 4 threads CPU*) that makes it the perfect candidate for the job. So i decided to turn it into my travel/backup PC
 
-![](/images/Pasted%20image%2020241212151035.png)
+![](thinkpad.png)
 > the new backup PC at work
 
 ## HARDWARE
 
 The laptop was dirty so the first step was cleaning off al the dust and plastics with isopropile alcohol, in the process i decided to swap out the disk with an SSD that i have laying around for a slightly improvement in performance (*the old SSD appears to be slow as fuck for some reason*)
 
-![](/images/Pasted%20image%2020241212144557.png)
+![](old_ssd.png)
 > the old SSD
 
 After turning on the machine (*and  installing my [personal arch dotfiles](https://github.com/carnivuth/scripts)*) i realized that one of the two batteries was dead (**yes this think has two batteries, i was surprised too**) so i decided to replace the internal one and keep the external that is still usable, after all is a backup PC

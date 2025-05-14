@@ -17,7 +17,7 @@ My experience in university has teach me an important life lesson:
 
 it doesn't matter what am i doing or the argument, the writing process is essential to me in order to engraving information and elaborate links and improving my knowledge. So after some time i started to feel the need of streamline the note taking process.
 
-## WHAT HAVE I TRIED SO FAR?
+## What have i tried so far?
 
 My first note taking system was based on a Samsung tablet with pen, good for writing, especially maths related stuff but limited to the tablet only, yes i could export pdfs but they are a read only system and not so easy to manage when sharing to multiple devices.
 
@@ -25,7 +25,7 @@ After some time i realized that if one of my big concerns was to share notes acr
 
 So after some testing with logseq i decided to fully commit to the markdown note taking powerhouse, obsidian
 
-## THE OBSIDIAN EXPERIENCE
+## The obsidian experience
 
 I don't want to make a deep dive in obsidian capabilities, it's the most complete and customizable markdown note taking experience that i have seen so far so after some notes here is my personal, after some tinkering i reached a pretty productive workflow based on some plugins:
 
@@ -43,7 +43,7 @@ Overtime i also built my personal [obsidian utility](https://github.com/carnivut
 
 It's all perfect and dandy until i need to visualize my work from other devices, yes! github can sync content with other git capable devices but on android ones is a major pain to configure it, and when my laptop runs out of charge if i don't find a plug to charge it i can't write anything without need to manually backport modifications
 
-## THE SOLUTION: AS ALWAYS WEB
+## The solution: as always web
 
 So my second option was to generate a static website for mobile device access and after some research i found [quartz](https://quartz.jzhao.xyz/), an amazing tool to generate a feature rich website from an obsidian vault, some of the features includes:
 

@@ -89,6 +89,6 @@ sudo certbot certonly -d *.carnivuth.org     --dns-cloudflare --dns-cloudflare-c
 certbot renew --dry-run
 ```
 
-## OUTCOMES
+## Outcomes
 
 The new infrastructure needs more simple ansible logic when exposing new applications, it also avoids weird application behaviors when hosting in subpaths like error in generated links or ajax requests, overall it was a big success!!
