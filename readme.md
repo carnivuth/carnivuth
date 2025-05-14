@@ -31,6 +31,7 @@ Here are also my personal notes for university courses (*some of them are writte
 
 ##  Achievements 🏆
 
+  - Master Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
   - Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
   - high school diploma At [I.T.I.S.-E.Mattei-Urbino](https://www.itisurbino.edu.it/)
 
