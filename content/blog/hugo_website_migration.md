@@ -55,12 +55,12 @@ done
 
 Then after some time i decided to make this my personal website and migrate here my portfolio that at the time was an [angular](https://angular.dev) application a little too over engineered for a simple static webpage.
 
-the angular components where acting as a view for data written in a JSON file and applying some custom CSS to improve visual effect,JSON was used to decouple data from view logic to prevent situations like this where i want to recreate the view but keep the data as they where before
+The angular components where acting as a view for data written in a SON file and applying some custom CSS to improve visual effect,JSON was used to decouple data from view logic to prevent situations like this where i want to recreate the view but keep the data as they where before
 
 ### Automate!!!!
 
-The last thing to do was to automate deployment on github pages with a simple [action](https://github.com/carnivuth/carnivuth/blob/main/.github/workflows/deploy.yml) to build the website and make deployment operations
+The last thing to do was to automate deployment on Github pages with a simple [action](https://github.com/carnivuth/carnivuth/blob/main/.github/workflows/deploy.yml) to build the website and make deployment operations
 
+## Conclusions
 
-
-
+I'm still experimenting with this blog as a way to relax and review my tech projects and reason about the technical decisions, the site has evolved from the idea of a place to write down oneliners and day by day things into a digital history log of my technical skills and opinions
