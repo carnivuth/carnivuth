@@ -12,7 +12,7 @@
 
 [[main]]
   name = "Blog"
-  pageRef = "posts"
+  pageRef = "/posts"
   weight = 10
 
 [[main]]
@@ -25,46 +25,47 @@
   weight = 30
 
 [[main]]
+  name = "technologies"
+  parent = "Notes"
+  pageRef = "technologies"
+  weight = 31
+
+[[main]]
   name = "computer vision"
   parent = "Notes"
-  pageRef = "notes/computer_vision"
-  weight = 31
+  pageRef = "computer_vision"
+  weight = 32
 
 [[main]]
   name = "computer graphics"
   parent = "Notes"
-  pageRef = "notes/computer_graphics"
-  weight = 32
+  pageRef = "computer_graphics"
+  weight = 33
 
 [[main]]
   name = "linguaggi e modelli computazionali"
   parent = "Notes"
-  pageRef = "notes/linguaggi_modelli_computazionali"
-  weight = 33
+  pageRef = "linguaggi_modelli_computazionali"
+  weight = 34
 
 [[main]]
   name = "tecnologie basi di dati"
   parent = "Notes"
-  pageRef = "notes/tecnologie_basi_dati"
-  weight = 34
+  pageRef = "tecnologie_basi_dati"
+  weight = 35
 
 [[main]]
   name = "datamining"
   parent = "Notes"
-  pageRef = "notes/datamining"
-  weight = 35
+  pageRef = "datamining"
+  weight = 36
 
 [[main]]
   name = "mobile systems"
   parent = "Notes"
-  pageRef = "notes/mobile_systems"
-  weight = 36
+  pageRef = "mobile_systems"
+  weight = 37
 
-[[main]]
-  name = "technologies"
-  parent = "Notes"
-  pageRef = "technologies"
-  weight = 90
 
 #[[main]]
 #  name = "example sub-menu 2"

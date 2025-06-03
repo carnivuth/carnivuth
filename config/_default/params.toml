@@ -45,10 +45,10 @@ defaultBackgroundImage = "background.gif" # used as default for background image
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
-  showMoreLinkDest = "/posts/"
+  showMoreLinkDest = "posts"
   cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
   showDate = true
@@ -64,8 +64,8 @@ defaultBackgroundImage = "background.gif" # used as default for background image
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showDraftLabel = true
-  showEdit = false
-  # editURL = "https://github.com/username/repo/"
+  showEdit = true
+  editURL = "https://github.com/carnivuth/carnivuth/"
   editAppendPath = true
   seriesOpened = false
   showHeadingAnchors = true
