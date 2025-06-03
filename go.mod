@@ -1,5 +1,5 @@
-module github.com/carnivuth/blog
+module personal_migration
 
-go 1.23.4
+go 1.24.3
 
-require github.com/jpanther/congo/v2 v2.10.0 // indirect
+require github.com/nunocoracao/blowfish/v2 v2.86.0 // indirect
