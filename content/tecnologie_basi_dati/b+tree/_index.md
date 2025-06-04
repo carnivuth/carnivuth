@@ -1,41 +1,37 @@
 ---
-draft: true
-draft: true
+draft: false
 id: b+tree
+title: Indici b+tree
+description: Indici b-tree bilanciati e paginati dove i dati sono contenuti esclusivamente nelle foglie dell'albero
 aliases: []
 tags:
   - b+tree
   - indici ordinati
   - modello di cardenas
   - modello di yao
-index: 5
-
 series: ["tecnologie e progettazione basi dati"]
-series_order:
-next: pages/tecnologie_basi_dati/GiST.md
-previous: pages/tecnologie_basi_dati/b-tree.md
+series_order: 5
 ---
 
-# Migliorando i [b-tree](pages/tecnologie_basi_dati/b-tree.md): b+tree
-
+{{< katex >}}
 I b+tree sono b-tree in cui le tuple sono contenute solo nelle foglie dell'albero, le foglie sono inoltre contenute in una lista linkata(*possibilmente sfruttando il PID*) per migliorare l'accesso al file
 
 ## Range search con i b+tree
 
 Dato che le foglie sono contenute in una lista linkata per effettuare ricerche range e sufficiente:
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 A[trovare il primo valore k >= k_low]
 B[leggere la lista dal valore k fino al valore k_i <= k_high]
 A --> B
-```
+{{</ mermaid >}}
 
 ## B+tree inserimento
 
-In caso di inserimento si ripercorre l'albero fino alla foglia dove deve essere inserito l'albero, se la foglia e piena (*$2D$ elementi*) allora si ha una situazione di **overflown**, che viene gestita come segue
+In caso di inserimento si ripercorre l'albero fino alla foglia dove deve essere inserito l'albero, se la foglia e piena (*\\(2D\\) elementi*) allora si ha una situazione di **overflown**, che viene gestita come segue
 
-```mermaid
+{{< mermaid >}}
 ---
 title: overflow management
 ---
@@ -44,22 +40,22 @@ A[si computa la mediana dei valori della foglia]
 B[la foglia viene splittata a meta secondo la mediana]
 C[il nodo padre viene aggiornato di conseguenza]
 A --> B --> C
-```
+{{</ mermaid >}}
 
 >[!NOTE] nel caso anche il nodo padre sia pieno, si procede ricorsivamente fino alla radice
 
-Questo procedimento e molto costoso (al massimo $2h +1$ letture), strategie alternative prevedono di cedere delle foglie ai nodi vicini, questo comporta un grosso costo in termini di dati letti in quanto si compiono molte più scritture
+Questo procedimento e molto costoso (al massimo \\(2h +1\\) letture), strategie alternative prevedono di cedere delle foglie ai nodi vicini, questo comporta un grosso costo in termini di dati letti in quanto si compiono molte più scritture
 
 ## Cancellazione
 
-La cancellazione segue le stesse logiche dell'inserimento ma in questo caso il problema si ha quando la foglia contiene $n \lt d$ foglie, si ha un caso di **underflown** che viene gestito come segue
+La cancellazione segue le stesse logiche dell'inserimento ma in questo caso il problema si ha quando la foglia contiene \\(n \lt d\\) foglie, si ha un caso di **underflown** che viene gestito come segue
 
 - si redistribuiscono le foglie dei nodi vicini
-- si elimina il nodo (*possibile solo se le foglie del nodo sono $d$ oppure $d+1$*)
+- si elimina il nodo (*possibile solo se le foglie del nodo sono \\(d\\) oppure \\(d+1\\)*)
 
 ## Occupazione in memoria
 
-Ogni nodo intermedio contiene  al più $2d$ chiavi e $2d+1$ PID, di conseguenza l'ordine dell'albero e uguale a
+Ogni nodo intermedio contiene  al più \\(2d\\) chiavi e \\(2d+1\\) PID, di conseguenza l'ordine dell'albero e uguale a
 
 $$
 d = \Big\lfloor \frac{pagesize - PIDsize}{2(keysize + PIDsize)}\Big\rfloor
@@ -97,15 +93,15 @@ Si possono sfruttare indici in diverse modalità per accedere ai dati
 
 entrambi i sistemi possono vanificare il vantaggio di usare indici, un alternativa consiste nell'usare **indici multi attributo**
 
-> [!WARNING] tali indici non sono vantaggiosi per fare ricerche ranged sui successivi $n-1$ campi della chiave
+> [!WARNING] tali indici non sono vantaggiosi per fare ricerche ranged sui successivi \\(n-1\\) campi della chiave
 
-E inoltre necessario valutare l'uso di tali indici con criterio in quanto se si hanno $n$ attributi il numero di possibili indici multi attributo e pari a $n!$, non il massimo per l'occupazione del disco
+E inoltre necessario valutare l'uso di tali indici con criterio in quanto se si hanno \\(n\\) attributi il numero di possibili indici multi attributo e pari a \\(n!\\), non il massimo per l'occupazione del disco
 
 ## Bulk loading
 
 Gli indici vengono creati a db esistente (*in corsa*), e dunque necessario ottimizzarne la creazione
 
-```mermaid
+{{< mermaid >}}
 ---
 title: bulk loading
 ---
@@ -113,7 +109,7 @@ flowchart TD
 A[viene creata una lista di <key,RID> ordinata e paginata]
 B[viene creata una lista di <key,PID> leggendo le entry della lista precedente]
 A --> B -- fino a raggiungere la root del indice--> A
-```
+{{</ mermaid >}}
 
 ## Performance come indice secondario
 
@@ -127,7 +123,7 @@ Nel caso il B+tree venga utilizzato come indice secondario e necessario determin
 
 ### Modello di cardenas
 
-Il numero di pagine in media a cui e necessario accedere per recuperare $R$ in $P$ pagine e dato dal seguente modello
+Il numero di pagine in media a cui e necessario accedere per recuperare \\(R\\) in \\(P\\) pagine e dato dal seguente modello
 
 $$
 \Phi(R,P)=P(1-(1-\frac{1}{P})^R)
@@ -137,14 +133,12 @@ Tale modello assume pagine di dimensione infinita, che porta a una sottostima ne
 
 ### Superando cardenas: il modello di yao
 
-Il modello di Yao tiene in considerazione anche la capacita $C=N/P$ delle pagine, si ha che il numero di pagine da accedere in media e dato da
+Il modello di Yao tiene in considerazione anche la capacita \\(C=N/P\\) delle pagine, si ha che il numero di pagine da accedere in media e dato da
 
 $$
 \Phi(R,N,C) = NP \times (1- \frac{\binom{N-C}{R}}{\binom{N}{R}})
 $$
 
-Sotto le assunzioni precedenti e dimostrabile che la formula di Yao sovrastima i costi di accesso, tuttavia per query che implicano un alto numero di record $R$ Il modello di Yao e piu costoso del modello di Cardenas
+Sotto le assunzioni precedenti e dimostrabile che la formula di Yao sovrastima i costi di accesso, tuttavia per query che implicano un alto numero di record \\(R\\) Il modello di Yao e piu costoso del modello di Cardenas
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250204145210.png)
-
-[<](pages/tecnologie_basi_dati/b-tree.md)
+![](yao_cardenas_performance_estimations.png)
