@@ -1,18 +1,16 @@
 ---
-draft: true
-draft: true
+draft: false
 id: GiST
+title: La specifica GiST
+descrizione: Una interfaccia per la definizione di indici
 aliases: []
 tags:
   - implementazione r-tree
   - implementazione b+tree
   - GiST
-index: 6
-next: pages/tecnologie_basi_dati/indici_hash.md
-previous: pages/tecnologie_basi_dati/b+tree.md
+series: ["tecnologie e progettazione basi dati"]
+series_order: 6
 ---
-
-# Implementando i [b+tree](pages/tecnologie_basi_dati/b+tree.md): gist
 
 Generalized search tree (*[GiST](https://en.wikipedia.org/wiki/GiST)*) e una struttura generalizzata per l'implementazione di indici, che se opportunamente istanziata può comportarsi da diverse tipologie di albero ([b+tree](pages/tecnologie_basi_dati/b+tree.md), [r-tree](pages/tecnologie_basi_dati/r-tree.md))
 
@@ -40,4 +38,3 @@ pages/
 - `adjustKeys` aggiusta il valore delle chiavi dei nodi intermedi e controlla che il predicato dei figli corrisponda a quello del padre per mezzo di `union`
 - `condenseTree` effettua il reinserimento di entry orfane nell'albero
 
-[<](pages/tecnologie_basi_dati/b+tree.md)[>](pages/tecnologie_basi_dati/indici_hash.md)
