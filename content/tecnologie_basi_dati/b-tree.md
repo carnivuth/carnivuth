@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 id: b-tree
 title: Indici b-tree
 description: Indici ad albero bilanciati e paginati
