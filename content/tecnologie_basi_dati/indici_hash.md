@@ -1,5 +1,6 @@
 ---
 draft: true
+draft: true
 id: Indici hash
 aliases:
   - indici hash

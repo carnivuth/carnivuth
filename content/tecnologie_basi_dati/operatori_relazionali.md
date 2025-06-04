@@ -1,5 +1,6 @@
 ---
 draft: true
+draft: true
 id: operatori_relazionali
 next: "pages/tecnologie_basi_dati/sorting.md"
 previous: "pages/tecnologie_basi_dati/durability_control.md"

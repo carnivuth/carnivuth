@@ -1,5 +1,6 @@
 ---
 draft: true
+draft: true
 id: big_data
 previous: "pages/tecnologie_basi_dati/skyline_queries.md"
 aliases: []

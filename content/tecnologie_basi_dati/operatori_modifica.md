@@ -1,5 +1,6 @@
 ---
 draft: true
+draft: true
 id: operatori_modifica
 aliases: []
 tags: []

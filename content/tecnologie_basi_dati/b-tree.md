@@ -1,5 +1,6 @@
 ---
 draft: true
+draft: true
 id: b-tree
 next: "pages/tecnologie_basi_dati/b+tree.md"
 previous: "pages/tecnologie_basi_dati/indici.md"
