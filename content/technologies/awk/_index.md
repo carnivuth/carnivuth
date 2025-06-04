@@ -76,5 +76,3 @@ match regex element and put beckrefs in an array
 ```bash
 awk '{$1=""; print $0}'
 ```
-
-[<](pages/technologies/ansible.md)[>](pages/technologies/find.md)
