@@ -1,15 +1,14 @@
 ---
 draft: true
-draft: true
 id: b-tree
-next: "pages/tecnologie_basi_dati/b+tree.md"
-previous: "pages/tecnologie_basi_dati/indici.md"
+title: Indici b-tree
+description: Indici ad albero bilanciati e paginati
 tags: ["indici", "b-tree", "indici ordinati"]
-aliases: 
-index: 4
+aliases:
+series: ["tecnologie e progettazione basi dati"]
+series_order: 4
 ---
-
-# La soluzione b-tree
+{{< katex >}}
 
 Gli indici B-tree sono strutture dati ad albero bilanciate in cui i singoli nodi rappresentano delle pagine dati, il bilanciamento e mantenuto dalle operazioni di inserimento e update.
 
@@ -19,7 +18,7 @@ il numero di nodi figli e $m+1$ e oscilla nell'intervallo $d+1 - 2d+1$
 
 ### Algoritmo di ricerca di un b-tree
 
-L'algoritmo di ricerca, dato un valore della chiave percorre l'albero prendendo in considerazione il figlio $i$-esimo con tale per cui $k_{i-1}<k<k_i$ 
+L'algoritmo di ricerca, dato un valore della chiave percorre l'albero prendendo in considerazione il figlio $i$-esimo con tale per cui $k_{i-1}<k<k_i$
 
 ### Costo di una ricerca in un b-tree
 
@@ -65,5 +64,3 @@ $$
 ### Limitazioni di un b-tree
 
 Un B-tree risulta inefficente nelle ricerche a range in quanto le entry sono contenute anche nei nodi intermedi, per risolvere questo problema si introducono i B+tree
-
-[<](pages/tecnologie_basi_dati/indici.md)[>](pages/tecnologie_basi_dati/b+tree.md)
