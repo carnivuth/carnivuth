@@ -10,19 +10,18 @@ series: ["tecnologie e progettazione basi dati"]
 series_order: 3
 ---
 
-# Quando la struttura del file non e sufficiente: indici
-
-[L'organizzazione dei file](pages/tecnologie_basi_dati/gestione_disco.md#Organizzazione%20dei%20file) da sola non e sufficiente, in molti casi sia [Heap file](pages/tecnologie_basi_dati/gestione_disco.md#Heap%20file) che [Sequential file](pages/tecnologie_basi_dati//gestione_disco.md#sequential%20file) hanno i loro limiti, per esempio la ricerca nel primo caso e costosa e nel secondo e efficiente solo se effettuata sul campo di ordinamento del file
+{{< katex >}}
+[L'organizzazione dei file](/tecnologie_basi_dati/gestione_disco#Organizzazione-dei-file) da sola non e sufficiente, in molti casi sia [Heap file](/tecnologie_basi_dati/gestione_disco#Heap-file) che [Sequential file](/tecnologie_basi_dati//gestione_disco#sequential-file) hanno i loro limiti, per esempio la ricerca nel primo caso e costosa e nel secondo e efficiente solo se effettuata sul campo di ordinamento del file
 
 Per questo si introducono gli **indici**, strutture dati ausiliarie per facilitare l'accesso ai dati in fase di ricerca per uno specifico termine di ricerca
 
 >[!TIP] il vantaggio sta nel fatto che l'indice e più piccolo -> ricerca più veloce
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250130171838.png)
+![](struttura_indice.png)
 
-Da un punto di vista logico un indice e una collezione di coppie $(k_i,p_i)$ dove:
-- $k$ e il valore di un attributo su cui l'indice e costruito
-- $p$ e un RID (*massimo un PID*)  della tupla con il dato valore
+Da un punto di vista logico un indice e una collezione di coppie \\((k_i,p_i)\\) dove:
+- \\(k\\) e il valore di un attributo su cui l'indice e costruito
+- \\(p\\) e un RID (*massimo un PID*)  della tupla con il dato valore
 
 esistono 2 tipologie principali di indici:
 
@@ -35,10 +34,8 @@ Ci sono inoltre diverse nomenclature applicate agli indici
 - **clustered/unclustered** un indice si dice clustered se e costruito sull'attributo con cui e ordinato il data file
 - **primary/secondary** se costruito su un attributo `unique` (tutto ciò che può essere chiave primaria)
 - **dense/sparse** il numero di coppie nell'indice e uguale al numero di entry nel data file
-- **single level/multi level** un indice multi livello e composto da indici sparsi che indicizzano altri indici (*possibili $n$ livelli*)
+- **single level/multi level** un indice multi livello e composto da indici sparsi che indicizzano altri indici (*possibili \\(n\\) livelli*)
 
 ## E nel disco? come rappresentare gli indici
 
 Gli indici esattamente come il data file sono strutture dati che vanno caricate dal disco in memoria centrale, e necessario di conseguenza rappresentarle in maniera efficiente per non perdere i vantaggi di ricerca del indice.
-
-[<](pages/tecnologie_basi_dati/gestione_disco.md)[>](pages/tecnologie_basi_dati/b-tree.md)
