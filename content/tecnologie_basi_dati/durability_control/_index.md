@@ -1,21 +1,20 @@
 ---
-draft: true
 date: 2025-02-08
-draft: true
+draft: false
 id: durability_control
+title: Garantire la persistenza nei dbms
+descrizione: strategie per la gestione della persistenza delle transazioni
 aliases: []
 tags:
   - transazioni
   - WAL
   - ARIES
-index: 9
-next: pages/tecnologie_basi_dati/operatori_relazionali.md
-previous: pages/tecnologie_basi_dati/transazioni.md
+series: ["tecnologie e progettazione basi dati"]
+series_order: 9
 ---
 
-# Garantire la durabilità di una transazione
-
-Per poter garantire le proprietà di [atomicità e durabilità](pages/tecnologie_basi_dati/transazioni.md#transazioni) di una transazione e necessario garantire che gli effetti di una transazione sopravvivano a un crash del sistema:
+{{< katex >}}
+Per poter garantire le proprietà di [atomicità e durabilità](tecnologie_basi_dati/transazioni#transazioni) di una transazione e necessario garantire che gli effetti di una transazione sopravvivano a un crash del sistema:
 
 I crash del sistema si dividono in 3 tipologie:
 
@@ -27,7 +26,7 @@ I crash del sistema si dividono in 3 tipologie:
 
 ## Politiche di gestione del buffer
 
-Data una transazione $T$ che modifica una pagina $P$ il DBMS ha due possibilità per la gestione della stessa
+Data una transazione \\(T\\) che modifica una pagina \\(P\\) il DBMS ha due possibilità per la gestione della stessa
 
 - **no steal** le pagine modificate vengono scritte solo dopo che una transazione è terminata con successo
 - **steal** le pagine vengono scritte quando è più opportuno con l'obbiettivo di ottimizzare l' I/O
@@ -63,11 +62,11 @@ raccoglie informazioni riguardanti le operazioni eseguite dalle transazioni, vie
 
 ### Record di update
 
-Il record di update per una transazione $T$ di una pagina $P$ e formato dai seguenti campi
+Il record di update per una transazione \\(T\\) di una pagina \\(P\\) e formato dai seguenti campi
 
 | LSN(Log sequence number)  | prevLSN                                               | T                    | type                                      | PID                         | before(P)                          | after(P)                       |
 | ------------------------- | ----------------------------------------------------- | -------------------- | ----------------------------------------- | --------------------------- | ---------------------------------- | ------------------------------ |
-| id univoco del record<br> | indice del' record di log precedente che riguarda $T$ | id della transazione | tipo del record (*in questo caso update*) | PID della pagina modificata | immagine di P prima della modifica | immagine di P dopo la modifica |
+| id univoco del record<br> | indice del' record di log precedente che riguarda \\(T\\) | id della transazione | tipo del record (*in questo caso update*) | PID della pagina modificata | immagine di P prima della modifica | immagine di P dopo la modifica |
 
 ### Record di compensation
 
@@ -75,29 +74,29 @@ Nel momento in cui le modifiche registrate in un record di update vengono elimin
 
 | LSN(Log sequence number)  | prevLSN                                               | T                    | type                                      | PID                         | before(P)                          | undoNextLSN                                                                                                    |
 | ------------------------- | ----------------------------------------------------- | -------------------- | ----------------------------------------- | --------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| id univoco del record<br> | indice del' record di log precedente che riguarda $T$ | id della transazione | tipo del record (*in questo caso update*) | PID della pagina modificata | immagine di P prima della modifica | id del prossimo record da annullare, per esempio se si annulla il record $U$ allora $undoNextLSN = prevLSN(U)$ |
+| id univoco del record<br> | indice del' record di log precedente che riguarda \\(T\\) | id della transazione | tipo del record (*in questo caso update*) | PID della pagina modificata | immagine di P prima della modifica | id del prossimo record da annullare, per esempio se si annulla il record \\(U\\) allora \\(undoNextLSN = prevLSN(U)\\) |
 
 ## Quando scrivere nel log: protocollo wal
 
 Per far si che il log risulti efficace il DBMS per ogni operazione deve scrivere sul log **PRIMA** di salvare le modifiche di una pagina sul disco (*write-ahead logging*)
 
-La responsabilità di garantire il WAL e affidata al [buffer manager](pages/tecnologie_basi_dati/struttura_database.md#struttura%20fisica)
+La responsabilità di garantire il WAL e affidata al [buffer manager](/tecnologie_basi_dati/struttura_database#struttura-fisica)
 
-![image.png](assets/image_1680172466593_0.png)
+![](wal_by_buffer_manager.png)
 
 ## Log e gestione dei fallimenti delle transazioni
 
-Grazie al log e possibile gestire i fallimenti di una transazione anche con politica [steal](#Politiche%20di%20gestione%20del%20buffer), e sufficiente ripercorrere il log all'indietro e annullare tutte le operazioni di update della transazione
+Grazie al log e possibile gestire i fallimenti di una transazione anche con politica [steal](#Politiche-di-gestione-del-buffer), e sufficiente ripercorrere il log all'indietro e annullare tutte le operazioni di update della transazione
 
 ## Log e gestione dei fallimenti di sistema
 
-In caso di fallimento di sistema tutte le transazioni che non hanno scritto nel log il record di [commit](#Log) vanno annullate, inoltre se si applica la politica di [no force](#Commit%20di%20una%20transazione) e possibile che alcune pagine $P$ di una transazione $T$ committata non siano state scritte nel disco, e necessario dunque rifare queste transazioni
+In caso di fallimento di sistema tutte le transazioni che non hanno scritto nel log il record di [commit](#Log) vanno annullate, inoltre se si applica la politica di [no force](#Commit-di-una-transazione) e possibile che alcune pagine \\(P\\) di una transazione \\(T\\) committata non siano state scritte nel disco, e necessario dunque rifare queste transazioni
 
 ### Evitare di riscrivere pagine già scritte
 
-Per evitare di riscrivere tutti i parametri $After$  delle pagine di una transazione da rifare si adotta il seguente approccio
+Per evitare di riscrivere tutti i parametri \\(After\\)  delle pagine di una transazione da rifare si adotta il seguente approccio
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 subgraph page update
 A[update di P]
@@ -112,17 +111,17 @@ F[pagina riscritta]
 D -- si --> E
 D -- no --> F
 end
-```
+{{</ mermaid >}}
 
 ### Record di checkpoint
 
-Per ottimizzare la procedura di [restore](#Log%20e%20gestione%20dei%20fallimenti%20di%20sistema) da un fallimento di sistema si introduce nel log un record di checkpoint periodicamente, dove vengono inserite la **tabella delle dirty pages** e la **tabella delle transazioni**
+Per ottimizzare la procedura di [restore](#Log-e-gestione-dei-fallimenti-di-sistema) da un fallimento di sistema si introduce nel log un record di checkpoint periodicamente, dove vengono inserite la **tabella delle dirty pages** e la **tabella delle transazioni**
 
->[!TIP] in questo modo set $T$ e stata committata prima del record di checkpoint non deve essere rifatta
+>[!TIP] in questo modo set \\(T\\) e stata committata prima del record di checkpoint non deve essere rifatta
 
 ## Algoritmo aries e gestione della recovery
 
-L'algoritmo di ARIES consente l'utilizzo di politiche di [steal](#Politiche%20di%20gestione%20del%20buffer) e [no force](#Commit%20di%20una%20transazione), si divide in 3 fasi principali
+L'algoritmo di ARIES consente l'utilizzo di politiche di [steal](#Politiche-di-gestione-del-buffer) e [no force](#Commit-di-una-transazione), si divide in 3 fasi principali
 
 - **analisi** viene determinato un insieme di pagine e transazioni attive al momento del crash
 - **redo** ripete tutte le azioni a partire da un dato punto del log
@@ -132,7 +131,7 @@ L'algoritmo di ARIES consente l'utilizzo di politiche di [steal](#Politiche%20di
 
 Nella fase di analisi l'obbiettivo e quello di ripristinare lo stato delle pagine e della tabella delle transazioni al momento del crash, si procede come segue:
 
-```mermaid
+{{< mermaid >}}
 ---
 title: analysis phase
 ---
@@ -149,13 +148,13 @@ A --> B --> C & E & G
 C --> D
 E --> F
 G --> H
-```
+{{</ mermaid >}}
 
 ### Fase di redo
 
 Nella fase di redo si svolgono tutte le modifiche alle pagine effettuate prima del crash
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 A[si identifica il record con LSN minore tra quello delle pagine sporche ovvero la pagina che e stata modificata per prima]
 B[si ripercorre il log in avanti considerando i record di UPDATE/COMPENSATION]
@@ -163,13 +162,13 @@ C{se LSN della pagina < LSN record <br/> pagina e sporca}
 D[si ripete la modifica del record]
 E[si aggiorna LSN della pagina]
 A --> B --> C --> D --> E
-```
+{{</ mermaid >}}
 
 ### Fase di undo
 
 In questa fase tutte le transazioni attive al momento del crash vengono annullate
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 A[si identificano le transazioni attive al momento del crash]
 B[partendo da quella con LSN piu alto si percorre il log all'indetro]
@@ -180,7 +179,5 @@ F[si annulla il record e si scrive un record di compensazione, si procede al pre
 A --> B --> C & E
 C --> D
 E --> F
-```
+{{</ mermaid >}}
 >[!TIP] scrivere [compensation record](#Log) nella fase di undo semplifica la procedura in caso di guasti ripetuti, dato che si e in grado di comprendere alla prossima esecuzione della procedura che le modifiche alle pagine sono già state apportate
-
-[<](pages/tecnologie_basi_dati/transazioni.md)[>](pages/tecnologie_basi_dati/operatori_relazionali.md)
