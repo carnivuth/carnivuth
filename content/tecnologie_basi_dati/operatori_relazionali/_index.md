@@ -1,17 +1,16 @@
 ---
-draft: true
 date: 2025-02-09
 draft: true
 id: operatori_relazionali
-next: "pages/tecnologie_basi_dati/sorting.md"
-previous: "pages/tecnologie_basi_dati/durability_control.md"
+title: Operatori relazionali
+description: Come rispondere alle interrogazioni
 tags: ["operatori relazionali","operatori logici", "operatori fisici"]
-aliases: 
-index: 10
+aliases: []
+series: ["tecnologie e progettazione basi dati"]
+series_order: 10
 ---
 
-# Rispondere alle interrogazioni: operatori relazionali
-
+{{< katex >}}
 Nei DBMS relazionali le interrogazioni vengono risolte combinando in maniera opportuna un insieme di operatori, di conseguenza e necessario
 
 - implementare in maniera efficiente tali operatori
@@ -44,12 +43,10 @@ Gli operatori logici sono i seguenti:
 
 Per poter stimare il costo di un operatore si prendono in considerazione i seguenti parametri (*reperibili dai cataloghi del database*)
 
-- $N(R)$ = numero di record di $R$
-- $P(R)$ = numero di pagine di $R$
-- $Len(R)$ = lunghezza (in byte) di un record di $R$
-- $NK(R.A)$ = numero di valori distinti dell'attributo $R.A$
-- $TP(R)$ = numero di tuple per pagina
-- $B$ = numero di pagine buffer a disposizione per l'operatore
-- $L(IX)$ = numero di pagine foglia dell’indice $IX$
-
-[<](pages/tecnologie_basi_dati/durability_control.md)[>](pages/tecnologie_basi_dati/sorting.md)
+- \\(N(R)\\) = numero di record di \\(R\\)
+- \\(P(R)\\) = numero di pagine di \\(R\\)
+- \\(Len(R)\\) = lunghezza (in byte) di un record di \\(R\\)
+- \\(NK(R.A)\\) = numero di valori distinti dell'attributo \\(R.A\\)
+- \\(TP(R)\\) = numero di tuple per pagina
+- \\(B\\) = numero di pagine buffer a disposizione per l'operatore
+- \\(L(IX)\\) = numero di pagine foglia dell’indice \\(IX\\)
