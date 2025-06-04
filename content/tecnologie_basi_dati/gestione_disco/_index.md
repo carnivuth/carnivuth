@@ -13,6 +13,7 @@ series: ["tecnologie e progettazione basi dati"]
 series_order: 2
 ---
 
+{{< katex >}}
 Una parte fondamentale di un DBMS per ottimizzare le performance e la gestione del disco
 
 ## Come e fatto un disco?
@@ -22,17 +23,17 @@ E importante sapere come i dischi sono strutturati internamente per comprendere 
 ![](struttura_interna_hdd.png)
 > un giradischi evoluto insomma
 
-per calcolare il transfer rate è sufficiente conoscere rpm numero di blocchi per settore e numero di byte per blocco
+Per calcolare il transfer rate è sufficiente conoscere rpm numero di blocchi per settore e numero di byte per blocco
 
 ## Accesso alle tuple: pages
 
 Per ottimizzare l'accesso **le tuple sono caricate in blocchi**  (*dette page*) che nel disco vengono scritte in un blocco continuo di settori del disco, sono le unita di trasferimento atomiche per un DBMS
 
-Le pages hanno una dimensione variabile ($4,64KB$)
+Le pages hanno una dimensione variabile (\\(4,64KB\\))
 
 >[!NOTE] pagine piu piccole potrebbero richiedere piu operazioni di IO mentre pagine grandi richiedono piu memoria e potrebbero creare problemi di frammentazione
 
-La velocità di trasferimento di una pagina dipende dalla sua dimensione $P$ e dal ratio di trasferimento $T_r$
+La velocità di trasferimento di una pagina dipende dalla sua dimensione \\(P\\) e dal ratio di trasferimento \\(T_r\\)
 
 $$
 V_t = \frac{P}{T_r}
@@ -42,7 +43,7 @@ $$
 
 Dal punto di vista del livello fisico il DB consiste in una collezione di files, dove un file e una collezione di page
 
-```mermaid
+{{< mermaid >}}
 ---
 title: physical view
 ---
@@ -52,7 +53,7 @@ B[pages]
 C[tuples]
 D[fields of fixed and variable size]
 A --> B --> C --> D
-```
+{{</ mermaid >}}
 
 >[!NOTE] in questo caso il termine files non corrisponde a quello usato in sistemi operativi, la gestione di queste strutture e completamente delegata al database che può adottare soluzioni estremamente flessibili e complesse
 
@@ -60,9 +61,9 @@ A --> B --> C --> D
 
 DB2 organizza lo spazio fisico in **tablespace**, ognuno di essi composto da containers, un tablespace contiene in genere una relazione ma può contenerne di più mentre i container possono essere files, devices  oppure directory
 
-![](Pasted%20image%2020250130101923.png)
+![](tablespaces_db2.png)
 
-In particolare un singolo container e suddiviso in extents che sono blocchi di pagine di dimensione $4KB$, la dimensione di un extent e determinata dal tablespace di riferimento e un extent contiene dati di una singola relazione
+In particolare un singolo container e suddiviso in extents che sono blocchi di pagine di dimensione \\(4KB\\), la dimensione di un extent e determinata dal tablespace di riferimento e un extent contiene dati di una singola relazione
 
 ## Tablespaces
 
@@ -105,8 +106,8 @@ Il database associa delle strategie di rappresentazione per ogni tipologia di da
 
 | **DATATYPE**                              | **REPRESENTATION**                                                                   |
 | ----------------------------------------- | ------------------------------------------------------------------------------------ |
-| fixed-length strings char($n$)            | si usano $n$ byte con un carattere terminatore                                       |
-| variable-length string chars varchar($n$) | si usano $m+p$ bytes dove $m<n$ e i $p$ byte iniziali indicano quanto e lunga la stringa |
+| fixed-length strings char(\\(n\\))            | si usano \\(n\\) byte con un carattere terminatore                                       |
+| variable-length string chars varchar(\\(n\\)) | si usano \\(m+p\\) bytes dove \\(m<n\\) e i \\(p\\) byte iniziali indicano quanto e lunga la stringa |
 | DATE e TIME                        | rappresentati come stringhe di lunghezza fissa|
 | Enumerated Types                        | si utilizza un encoding in interi|
 
@@ -116,7 +117,7 @@ I campi a lunghezza variabile risultano un problema in fase di aggiornamento in 
 
 Una soluzione comune e quella di scrivere i campi a lunghezza fissa prima dei campi a lunghezza variabile e salvare un puntatore al primo byte di ogni campo a lunghezza variabile
 
-![](Pasted%20image%2020250130112347.png)
+![](struttura_record.png)
 
 In generale ogni record contiene un header che contiene le seguenti informazioni
 
@@ -128,7 +129,7 @@ In generale ogni record contiene un header che contiene le seguenti informazioni
 
 Il caso comune prevede che la dimensione del record sia di granlunga inferiore a quella della pagina, nel caso di record a lunghezza fissa la struttura di una pagina si presenta come segue
 
-![](Pasted%20image%2020250130114430.png)
+![](struttura_pagine.png)
 
 dove l'**header della pagina** contiene
 - id della pagina (univoco nel DB)
@@ -139,7 +140,7 @@ dove l'**header della pagina** contiene
 
 Tuttavia questa organizzazione spreca troppo spazio e incrementa troppo il tempo di accesso, normalmente il formato di una pagina e il seguente:
 
-![](Pasted%20image%2020250130115338.png)
+![](struttura_pagine_2.png)
 >[!TIP] in questo modo e possibile riallocare i record all'interno della pagina senza cambiare il RID
 
 Dove nella directory e contenuto un riferimento al primo bite per ogni record, in questo modo il RID può essere composto da PID (*page identifier*) e Slot (*indice nella directory*)
@@ -148,13 +149,13 @@ Dove nella directory e contenuto un riferimento al primo bite per ogni record, i
 
 Se un record eccede la dimensione della pagina esso viene spostato in un altra pagina ma il RID non viene modificato, viene invece introdotto un livello di indirezione per mezzo dei riferimenti delle directory che peggiora le prestazioni
 
-![](Pasted%20image%2020250130120637.png)
+![](page_overflow.png)
 
 ## Lettura e scrittura delle pagine
 
 Leggere una tupla significa spostare la pagina corrispondente dal disco nella memoria centrale in una struttura denominata buffer pool.La gestione del Buffer pool e fondamentale per le performance del DBMS, tale compito e affidato al **BUFFER MANAGER**
 
-```mermaid
+{{< mermaid >}}
 ---
 title: load page alghorithm
 ---
@@ -174,7 +175,7 @@ end
 buffer_manager ->> disk: read requested page
 buffer_manager ->> requestor: return page address
 end
-```
+{{</ mermaid >}}
 
 L'interfaccia offerta dal buffer manager agli altri componenti del DBMS e la seguente
 
@@ -183,7 +184,7 @@ L'interfaccia offerta dal buffer manager agli altri componenti del DBMS e la seg
 - `setDirty()` imposta la pagina come modificata
 - `fushPage()` scrive la pagina e rimuove il dirty flag
 
-![](Pasted%20image%2020250130124107.png)
+![](buffer_manager_structure.png)
 
 ### Come scegliere quale pagina rimpiazzare
 
@@ -217,10 +218,9 @@ In questa tipologia di file i record sono ordinati in base a un dato attributo
 
 | OPERATION     | HEAP COST                          | SEQUENTIAL COST                            |
 | ------------- | ---------------------------------- | ------------------------------------------ |
-| search by key | $NP/2$ in media<br>$NP$ al massimo | $\log_2{NP}$                               |
-| range search  | $NP$                               | $costofsearch -1 + \frac{(H-L)*NP}{HK-LK}$ |
-|               | $2$                                | $costofsearch +1$                          |
-| deletion      | $cost of search +1$                | $costofsearch +1$                          |
-| update        | $cost of search + 1$               | $costofsearch +1$                          |
+| search by key | \\(NP/2\\) in media<br>\\(NP\\) al massimo | \\(\log_2{NP}\\)                               |
+| range search  | \\(NP\\)                               | \\(costofsearch -1 + \frac{(H-L)*NP}{HK-LK}\\) |
+|               | \\(2\\)                                | \\(costofsearch +1\\)                          |
+| deletion      | \\(cost of search +1\\)                | \\(costofsearch +1\\)                          |
+| update        | \\(cost of search + 1\\)               | \\(costofsearch +1\\)                          |
 
-[<](pages/tecnologie_basi_dati/struttura_database.md)[>](pages/tecnologie_basi_dati/indici.md)
