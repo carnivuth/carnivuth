@@ -1,5 +1,6 @@
 ---
 draft: true
+series: ["tecnologie e progettazione basi dati"]
 date: 2025-02-20
 id: top_k_join_queries
 aliases: []

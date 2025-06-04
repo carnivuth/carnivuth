@@ -1,5 +1,6 @@
 ---
 title: Dbms e disco
+series: ["tecnologie e progettazione basi dati"]
 date: 2025-01-30
 description: "Gestione del supporto fisico da parte dei dbms"
 draft: true
@@ -10,7 +11,6 @@ tags:
   - perche evitare il fylesystem
   - pages
   - page overflow
-series: ["tecnologie e progettazione basi dati"]
 series_order: 2
 ---
 

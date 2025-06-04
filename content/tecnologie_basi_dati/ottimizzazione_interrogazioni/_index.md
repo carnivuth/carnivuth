@@ -1,5 +1,6 @@
 ---
 draft: true
+series: ["tecnologie e progettazione basi dati"]
 date: 2025-02-15
 id: ottimizzazione_interrogazioni
 aliases: []

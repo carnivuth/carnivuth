@@ -1,5 +1,6 @@
 ---
 draft: true
+series: ["tecnologie e progettazione basi dati"]
 date: 2025-02-09
 id: selezione
 aliases: []
@@ -9,7 +10,7 @@ tags:
   - selezione con disgiunzione
   - selezione con disgiunzione
   - tipologie di predicati DB2
-index: 12
+series_order: 12
 ---
 
 # Selezione

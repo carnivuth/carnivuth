@@ -1,5 +1,6 @@
 ---
 draft: true
+series: ["tecnologie e progettazione basi dati"]
 date: 2023-04-19
 draft: true
 id: proiezione

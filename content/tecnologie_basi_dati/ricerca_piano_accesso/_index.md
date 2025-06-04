@@ -1,5 +1,6 @@
 ---
 draft: true
+series: ["tecnologie e progettazione basi dati"]
 date: 2025-02-16
 draft: true
 id: ricerca_piano_accesso

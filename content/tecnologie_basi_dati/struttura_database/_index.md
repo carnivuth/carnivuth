@@ -1,12 +1,12 @@
 ---
 id: struttura database
+series: ["tecnologie e progettazione basi dati"]
 date: 2025-01-30
 title: "Come e fatto un database?"
 description: "Struttura architetturale dei database e considerazioni sulle motivazioni"
 tags: ["struttura fisica","struttura logica","ottimizzazione di accesso"]
 aliases: []
 draft: true
-series: ["tecnologie e progettazione basi dati"]
 series_order: 1
 ---
 {{< katex >}}

@@ -1,5 +1,6 @@
 ---
 draft: true
+series: ["tecnologie e progettazione basi dati"]
 date: 2025-02-09
 id: sorting
 title: "Ordinare i dati: sort"
@@ -9,7 +10,6 @@ tags:
   - sort merge
   - sort merge a z vie
   - sort merge con indici
-series: ["tecnologie e progettazione basi dati"]
 series_order: 11
 ---
 
