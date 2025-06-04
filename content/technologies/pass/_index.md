@@ -1,5 +1,5 @@
 ---
-title: "pass"
+title: "Password store"
 description: "password store configuration and setup"
 date: 2025-01-20
 series:
@@ -11,8 +11,6 @@ tags:
   - git
   - gpg
 ---
-
-# Password store
 
 `pass` is a handy program to manage passwords locally to a specific environment, it basically manage a local directory of text files encrypted with `gpg`
 
@@ -67,5 +65,3 @@ To backup keys in a text based format run
 ```bash
 gpg --output backupkeys.pgp --armor --export-secret-keys --export-options export-backup [gpg_id]
 ```
-
-[<](pages/technologies/nvim.md)[>](pages/technologies/proxmox.md)

@@ -13,18 +13,16 @@ draft: false
 series_order: 6
 ---
 
-# Jenkins
-
 Jenkins is a CI service that can build and test software from different VCS, run automation tasks, integrate with ansible and much more, it's based around the concept of **builds**, builds are composed of a sequence of actions that  are executed on **build nodes**, build notes are enivronments that run the software build workflow
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 A[JENKINS INSTANCE]
 B[build node 1]
 C[build node 2]
 D[build node 3]
 A -- execute build pipelines --> B & C & D
-```
+{{</ mermaid >}}
 
 
 ## Create a Jenkins CI pipeline for github repository
@@ -33,11 +31,11 @@ One way to use Jenkins is to run build processes for github hosted software as a
 
 - Create a new pipeline on Jenkins and add a GitHub repository url
 
-![](assets/technologies/jenkins1.png)
+![](jenkins1.png)
 
 - Set the CI script to pull from SCM
 
-![](assets/technologies/jenkins2.png)
+![](jenkins2.png)
 
 - Create a `Jenkinsfile` with the Jenkins CI pipeline (here example for building docker images)
 
@@ -86,5 +84,3 @@ pipeline {
 ```
 
 - Configure Jenkins to add GitHub hooks automatically to the repository
-
-[<](pages/technologies/git.md)[>](pages/technologies/jq.md)

@@ -15,28 +15,34 @@ series_order: 9
 
 Make is a powerful build system with the simple concept of transforming files in other files based on a recipe
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 A[source files]
 B(( recipe ))
 C[output files]
 A --> B --> C
-```
+{{</ mermaid >}}
 
-## special chars
+## Special chars
 
-- `%`
-- `@`
-- `<`
-- `^`
+The makefile syntax involves some character that expands to specific files when make is executed, such as:
+
+- `$%` the target member name
+- `$@` expands to the target file
+- `$<` expands to the first requisite
+- `$^` expands to all requisites
 
 ## PHONY targets
+
+Phony targets are targets that doesn't generate any file, they are a useful way to group other targets together
 
 ```make
 .PHONY: build clean
 ```
 
-## Make files for specific types of files
+## Examples
+
+- makefile with build directory that generates png from mermaid graph files
 
 ```make
 BUILDDIR = ./build
@@ -50,5 +56,3 @@ clean:
 
 build: $(patsubst %.mmd,%.png,$(wildcard *.mmd))
 ```
-
-[<](pages/technologies/kubernetes.md)[>](pages/technologies/man.md)

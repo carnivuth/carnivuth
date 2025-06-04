@@ -64,5 +64,3 @@ done
 ```bash
 0 10 * * * /usr/local/bin/sync_with_remote.sh >> /var/log/sync_with_remote.log 2>1
 ```
-
-[<](pages/technologies/terraform.md)[>](pages/technologies/navidrome.md)

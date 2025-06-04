@@ -1,5 +1,5 @@
 ---
-title: "mathjax"
+title: "Mathjax"
 description: "mathjax reference symbols"
 date: 2025-01-20
 series:
@@ -257,4 +257,3 @@ Personal mathjax symbols reference
 | \\( \dot{x} \\)                 | `\dot{x}`                 |
 | \\( \ddot{x} \\)                | `\ddot{x}`                |
 
-[<](pages/technologies/man.md)[>](pages/technologies/nvim.md)

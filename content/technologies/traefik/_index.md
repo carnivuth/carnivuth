@@ -9,16 +9,13 @@ series_order: 18
 date: 2025-05-30
 ---
 
-# traefik
-
-Traefik is an opensource application proxy to route traffic inside containers, it's based on 4 based principles
+Traefik is an open source application proxy to route traffic inside containers, it's based on 4 based principles
 
 - `services` services to forward traffic to
 - `providers` where traefik gets configuration for routing traffic (*eg docker*)
 - `routes` dinamically generated rules
 - `entrypoints` where traefik receives traffic to route (eg ports `80,443,UDP,TCP`)
 - `middleware`  middleware to process traffic (*login ecc*)
-
 
 ## Configuration with docker provider
 
@@ -72,5 +69,3 @@ services:
 ### labels
 
 Possible labels for routers when using the docker provider can be found [here](https://doc.traefik.io/traefik/routing/routers/#rule)
-
-[<](pages/technologies/navidrome.md)

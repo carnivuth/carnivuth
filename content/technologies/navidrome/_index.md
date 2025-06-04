@@ -1,5 +1,5 @@
 ---
-title: "navidrome"
+title: "Navidrome"
 description: "Notes on my personal music streaming service"
 date: 2025-05-28
 series:
@@ -9,9 +9,7 @@ series_order: 17
 date: 2025-05-28
 ---
 
-# navidrome
-
- Here i will store some tips and tricks about [navidrome](https://www.navidrome.org/), a subsonic compatible musing streaming services that i use every day
+ [navidrome](https://www.navidrome.org/) is a subsonic compatible musing streaming service that relies on metadata to catalog a music library
 
 ## Manage metadata
 
@@ -84,5 +82,3 @@ this json files are composed by a sequence of statements in the form
 ```
 
 The tracks with metadata that matches the statement are included inside the smart playlist, here a complete list of [fields and operators](https://www.navidrome.org/docs/usage/smartplaylists/#additional-resources)
-
-[<](pages/technologies/hetzner.md)[>](pages/technologies/traefik.md)

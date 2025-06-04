@@ -14,12 +14,12 @@ Terraform is a tool for IaC (*infrastructure as code*) that can work with multip
 
 Terraform can build hosts based on var files and secrets stored outside of the versioning system
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 A[variables.tf]
 B[terraform.tfvars]
 A --> B
-```
+{{</ mermaid >}}
 
 > sample of a `variables.tf` file
 ```terraform
@@ -62,9 +62,3 @@ resource "proxmox_lxc" "ct-test" {
 	}
 }
 ```
-
-this will produce the following output on the proxmox host
-
-![](/images/Pasted%20image%2020241117151330.png)
-
-[<](pages/technologies/proxmox.md)[>](pages/technologies/navidrome.md)

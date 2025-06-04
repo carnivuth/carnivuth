@@ -12,10 +12,9 @@ draft: false
 series_order: 4
 ---
 
-`Github` offers a CI service called `github actions`, the service runs workflows defined for the repo in a dedicated server called workers, workflows are defined in yaml format under the folder `.github/workflows/`.
+`Github` offers a CI service called `github actions`, the service runs workflows defined for the repo in a dedicated server called workers, workflows are defined in `yaml` format under the folder `.github/workflows/`.
 
-
-each workflow must specify:
+Each workflow must specify:
 
 - which event triggers the workflow (*eg. push/commit/merge*)
 - which operating system is required
@@ -99,5 +98,3 @@ Action can require certain permission to operate inside the repository
       contents: write
 # -------
 ```
-
-[<](pages/technologies/find.md)[>](pages/technologies/git.md)

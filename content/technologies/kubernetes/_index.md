@@ -13,15 +13,13 @@ draft: false
 series_order: 8
 ---
 
-# Kubernetes
-
 Kubernetes is a container orchestrator for managing high scale deployment challenges
 
 ## Architecture
 
 The kubernetes cluster architecture presents itself as follows:
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 subgraph control_plane
 A[api-server]
@@ -54,7 +52,7 @@ P[pod]
 end
 end
 control_plane --> worker_1 & worker_2 & worker_3
-```
+{{</ mermaid >}}
 
 Where the **control plane** node manages the worker nodes that run pods, pods are managed trough a container runtime (*for example `containerd`*) that runs the containers, the control plane is  also responsible for managing deployments
 
@@ -105,6 +103,4 @@ In worker nodes after installing the `kubeadm` tool, init the kubelet process
 systemctl enable --now kubelet
 ```
 
-then join the kluster using `kubeadm join` command
-
-[<](pages/technologies/jq.md)[>](pages/technologies/make.md)
+Then join the kluster using `kubeadm join` command

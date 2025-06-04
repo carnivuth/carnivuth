@@ -68,5 +68,3 @@ function configure_hook(){
 #!/bin/bash
 ./scripts.sh
 ```
-
-[<](pages/technologies/github_actions.md)[>](pages/technologies/jenkins.md)

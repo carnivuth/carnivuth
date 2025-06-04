@@ -1,5 +1,5 @@
 ---
-title: "proxmox"
+title: "Proxmox"
 description: "proxmox notes and personal reference"
 date: 2025-01-20
 series:
@@ -8,7 +8,7 @@ draft: false
 series_order: 14
 tags:
   - virtualization
-  - machine lifecicle
+  - machine life-cycle
   - hooks
   - disk management
   - lvm
@@ -22,9 +22,7 @@ tags:
   - infrastructure as code
 ---
 
-# Proxmox
-
-Proxmox is an open source solution for management of server resources with a focus on virtualization, it's based on a set of open source tecnologies like:
+Proxmox is an open source solution for management of server resources with a focus on virtualization, it's based on a set of open source technologies like:
 
 - kvm
 - qemu
@@ -39,7 +37,7 @@ Scripts are executed in multiple moments of the ct/vm life-cycle, they can be of
 They are called as `scriptname <vmid> <phase>` where
 
 - `vmid` is the id of the container/vm
-- `phase` is a string that refers the lifecicle hook, can have 4 values: `pre-start post-start pre-stop post-stop`
+- `phase` is a string that refers the life-cycle hook, can have 4 values: `pre-start post-start pre-stop post-stop`
 
 They must reside under `/var/lib/vz/snippets/` and be executable, shbang is also needed to run with the correct interpreter, a template for a bash hook looks like this:
 
@@ -109,5 +107,3 @@ qm set 9000 --agent enabled=1
 ```bash
 qm template 9000
 ```
-
-[<](pages/technologies/pass.md)[>](pages/technologies/terraform.md)
