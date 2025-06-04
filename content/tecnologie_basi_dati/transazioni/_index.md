@@ -1,8 +1,9 @@
 ---
-draft: true
+draft: false
 date: 2025-02-08
-draft: true
 id: transazioni
+title: Transazioni
+description: gestione della concorrenza nell'accesso ai dati
 aliases: []
 tags:
   - transazioni
@@ -15,13 +16,11 @@ tags:
   - schedule
   - S2PL
   - 2PL
-index: 8
-next: pages/tecnologie_basi_dati/durability_control.md
-previous: pages/tecnologie_basi_dati/indici_hash.md
+series: ["tecnologie e progettazione basi dati"]
+series_order: 8
 ---
 
-# transazioni
-
+{{< katex >}}
 Le transazioni sono operazioni logiche che portano il db da uno stato consistente ad un altro rispettando le proprieta dette **ACID**
 
 - **Atomicity** la transazione non può essere interrotta da altra operazioni
@@ -33,13 +32,13 @@ Garantire tali proprietà e compito dei  [componenti del DBMS](pages/tecnologie_
 
 Una transazione e composta da una moltitudine di operazioni che portano la base dati in stati intermedi
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 A[Start state]
 B((Intermediate <br/> state))
 C[End state]
 A -- RW operations --> B -- RW operations --> C
-```
+{{</ mermaid >}}
 
 Una transazione può completarsi con successo (`commit`) oppure fallire, in questo caso il db viene riportato allo stato precedente alla transazione (`rollback`)
 
@@ -62,7 +61,7 @@ L'esecuzione concorrente delle transazioni può portare a 4 tipologie di inconsi
 
 Il DBMS può organizzare le operazioni di due transazioni in molteplici ordini, la struttura che mostra tale ordinamento si chiama **schedule**
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250208125350.png)
+![](schedule.png)
 
 ### Proprietà di schedule
 
@@ -72,7 +71,7 @@ Esistono diverse proprietà di schedule:
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **Serial**       | le transazioni sono eseguite in maniera sequenziale                                                                             |
 | **Serializable** | uno schedule che conivolge solo transizioni committate i cui effetti sul db sono riconducibili a quello di uno schedule Seriale |
-| **Recoverable**  | Se la transazione $T1$ legge una modifica di una transazione $T2$ $T2$ committa per prima                                       |
+| **Recoverable**  | Se la transazione \\(T1\\) legge una modifica di una transazione \\(T2\\) \\(T2\\) committa per prima                                       |
 | **Cascadeless**  | Una transazione può leggere modifiche solo di transizioni committate                                                            |
 | **Strict**       | Una transazione non tocca valori modificati da un altra transazione attiva                                                      |
 
@@ -97,22 +96,22 @@ il [transaction manager](pages/tecnologie_basi_dati/struttura_database.md#strutt
 
 L'isolamento di una transazione e garantito se essa acquisisce tutti i lock necessari ad operare subito e li rilascia alla fine (*sia in caso di commit che di rollback*)
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250206143218.png)
+![](strict_2_phase_lock_protocol.png)
 
 Tuttavia questo può portare a situazioni di **deadlock** che possono essere risolte abortendo una transazione
 
 ## Modellare i conflitti: grafo di serializzabilita
 
-Per poter comprendere se un insieme di transazioni genera un deadlock si introduce il grafo di serializzabilita, ogni transazione viene modellata come un nodo del grafo e un arco tra due transazioni $T_i$ e $T_j$ simboleggia un conflitto tra le azioni delle due transazioni. un **deadlock si presenta se il grafo non e aciclico**
+Per poter comprendere se un insieme di transazioni genera un deadlock si introduce il grafo di serializzabilita, ogni transazione viene modellata come un nodo del grafo e un arco tra due transazioni \\(T_i\\) e \\(T_j\\) simboleggia un conflitto tra le azioni delle due transazioni. un **deadlock si presenta se il grafo non e aciclico**
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 A((T1))
 B((T2))
 C((T3))
 A --> B --> A & C
 A --> C
-```
+{{</ mermaid >}}
 
 ## Migliorando [s2pl](#gestire%20i%20lock%20strict%202-phase%20lock%20protocol): 2-phase lock protocol
 
@@ -121,7 +120,7 @@ In questa variante una transazione non può richiedere altri lock nel momento in
 - nella prima fase la transazione accresce il numero di lock acquisiti
 - nella seconda fase la transazione rilascia i lock acquisiti
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250208131535.png)
+![](2_phase_lock_protocol.png)
 >[!WARNING] gli [schedule](#Determinare%20l'ordine%20nelle%20transazioni%20Schedule) generati dal protocollo 2PL non sono [strict](#Proprietà%20di%20schedule)
 
 ## Prevenire il problema della phantom row
@@ -138,7 +137,7 @@ Per poter implementare la gestione dei lock il [lock manager](pages/tecnologie_b
 - una **tabella delle transazioni attive** con una lista di lock per ogni transazione
 - una **tabella dei lock** dove per ogni oggetto viene segnato il tipo di lock, il numero della transazione che lo detiene e una lista di richieste per quel dato lock
 
-```mermaid
+{{< mermaid >}}
 ---
 title: lock protocol implementation
 ---
@@ -150,7 +149,7 @@ D[viene richiesto un X lock]
 E{non ci sono lock sull'oggetto}
 A --> B -- si --> C
 D --> E -- si --> C
-```
+{{</ mermaid >}}
 
 Al termine di una transazione tutti i suoi lock sono rilasciati (*sia in caso di commit che di abort*)
 
@@ -167,10 +166,10 @@ Ci sono due tipologie principali di strategie:
 
 ### Prevenzione della deadlock
 
-Si assegna una priorità alle transazioni, se $T_1$ richiede un lock su $O$  e $T_2$ ha un lock su $O$ che crea conflitto:
+Si assegna una priorità alle transazioni, se \\(T_1\\) richiede un lock su \\(O\\)  e \\(T_2\\) ha un lock su \\(O\\) che crea conflitto:
 
-- **wait-die** se $T_1 \gt T_2$ allora $T_1$ attende $T_2$ altrimenti $T_1$ viene abortita
-- **wound-wait** se $T_1 \gt T_2$ allora $T_1$ attende $T_2$ altrimenti $T_1$ viene abortita
+- **wait-die** se \\(T_1 \gt T_2\\) allora \\(T_1\\) attende \\(T_2\\) altrimenti \\(T_1\\) viene abortita
+- **wound-wait** se \\(T_1 \gt T_2\\) allora \\(T_1\\) attende \\(T_2\\) altrimenti \\(T_1\\) viene abortita
 
 ### Individuazione della deadlock
 
@@ -195,5 +194,3 @@ I DBMS offrono la possibilità di determinare un livello di isolamento, diversi 
 ## Gestire la concorrenza con granularita
 
 Un DBMS dovrebbe essere in grado di gestire la concorrenza con diversi livelli di granularita, estendendo i meccanismi anche agli indici.
-
-[<](pages/tecnologie_basi_dati/indici_hash.md)[>](pages/tecnologie_basi_dati/durability_control.md)
