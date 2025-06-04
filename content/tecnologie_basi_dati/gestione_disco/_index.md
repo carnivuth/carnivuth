@@ -189,7 +189,7 @@ L'interfaccia offerta dal buffer manager agli altri componenti del DBMS e la seg
 
 ### Come scegliere quale pagina rimpiazzare
 
-I sistemi operativi utilizzano la politica del LRU (last recently used) che per i DBMS non e una scelta valida in quanto il pattern di accesso ai dati di una query e noto (un altro motivo per [non far manipolare il disco al filesystem](#Perché%20non%20viene%20utilizzato%20il%20fylesystem))
+I sistemi operativi utilizzano la politica del LRU (last recently used) che per i DBMS non e una scelta valida in quanto il pattern di accesso ai dati di una query e noto (un altro motivo per [non far manipolare il disco al filesystem](#Perché-non-viene-utilizzato-il-fylesystem))
 
 ## Organizzazione dei file
 
