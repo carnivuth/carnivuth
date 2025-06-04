@@ -1,5 +1,6 @@
 ---
 draft: false
+date: 2025-02-04
 id: Indici hash
 title: Indici hash
 description: Indici che fanno uso di funzioni hash

@@ -1,5 +1,6 @@
 ---
 draft: true
+date: 2025-02-16
 draft: true
 id: progetto_fisico_tuning
 aliases: []

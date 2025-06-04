@@ -1,5 +1,6 @@
 ---
 draft: true
+date: 2025-02-08
 draft: true
 id: transazioni
 aliases: []

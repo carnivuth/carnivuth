@@ -1,5 +1,6 @@
 ---
 draft: true
+date: 2025-02-28
 draft: true
 id: big_data
 previous: "pages/tecnologie_basi_dati/skyline_queries.md"

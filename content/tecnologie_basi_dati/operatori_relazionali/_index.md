@@ -1,5 +1,6 @@
 ---
 draft: true
+date: 2025-02-09
 draft: true
 id: operatori_relazionali
 next: "pages/tecnologie_basi_dati/sorting.md"

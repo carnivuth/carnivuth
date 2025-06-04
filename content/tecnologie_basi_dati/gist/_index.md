@@ -1,5 +1,6 @@
 ---
 draft: false
+date: 2023-03-15
 id: GiST
 title: La specifica GiST
 descrizione: Una interfaccia per la definizione di indici

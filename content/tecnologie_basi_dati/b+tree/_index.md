@@ -1,5 +1,6 @@
 ---
 draft: false
+date: 2025-02-04
 id: b+tree
 title: Indici b+tree
 description: Indici b-tree bilanciati e paginati dove i dati sono contenuti esclusivamente nelle foglie dell'albero

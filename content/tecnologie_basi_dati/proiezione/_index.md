@@ -1,5 +1,6 @@
 ---
 draft: true
+date: 2023-04-19
 draft: true
 id: proiezione
 aliases: []
