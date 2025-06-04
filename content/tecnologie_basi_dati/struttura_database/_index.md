@@ -5,7 +5,7 @@ title: "Come e fatto un database?"
 description: "Struttura architetturale dei database e considerazioni sulle motivazioni"
 tags: ["struttura fisica","struttura logica","ottimizzazione di accesso"]
 aliases: []
-draft: false
+draft: true
 series: ["tecnologie e progettazione basi dati"]
 series_order: 1
 ---

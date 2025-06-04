@@ -2,7 +2,7 @@
 title: Indici
 date: 2025-01-30
 description: "Strutture ausiliarie per l'accesso ai dati"
-draft: false
+draft: true
 aliases: []
 tags:
   - data access

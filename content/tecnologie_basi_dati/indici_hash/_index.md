@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: 2025-02-04
 id: Indici hash
 title: Indici hash

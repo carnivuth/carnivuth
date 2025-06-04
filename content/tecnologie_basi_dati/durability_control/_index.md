@@ -1,6 +1,6 @@
 ---
 date: 2025-02-08
-draft: false
+draft: true
 id: durability_control
 title: Garantire la persistenza nei dbms
 descrizione: strategie per la gestione della persistenza delle transazioni
