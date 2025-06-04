@@ -86,11 +86,11 @@ La responsabilità di garantire il WAL e affidata al [buffer manager](/tecnologi
 
 ## Log e gestione dei fallimenti delle transazioni
 
-Grazie al log e possibile gestire i fallimenti di una transazione anche con politica [steal](#Politiche-di-gestione-del-buffer), e sufficiente ripercorrere il log all'indietro e annullare tutte le operazioni di update della transazione
+Grazie al log e possibile gestire i fallimenti di una transazione anche con politica [steal](/tecnologie_basi_dati/durability_control#Politiche-di-gestione-del-buffer), e sufficiente ripercorrere il log all'indietro e annullare tutte le operazioni di update della transazione
 
 ## Log e gestione dei fallimenti di sistema
 
-In caso di fallimento di sistema tutte le transazioni che non hanno scritto nel log il record di [commit](#Log) vanno annullate, inoltre se si applica la politica di [no force](#Commit-di-una-transazione) e possibile che alcune pagine \\(P\\) di una transazione \\(T\\) committata non siano state scritte nel disco, e necessario dunque rifare queste transazioni
+In caso di fallimento di sistema tutte le transazioni che non hanno scritto nel log il record di [commit](/tecnologie_basi_dati/durability_control#Log) vanno annullate, inoltre se si applica la politica di [no force](/tecnologie_basi_dati/durability_control#Commit-di-una-transazione) e possibile che alcune pagine \\(P\\) di una transazione \\(T\\) committata non siano state scritte nel disco, e necessario dunque rifare queste transazioni
 
 ### Evitare di riscrivere pagine già scritte
 
@@ -115,13 +115,13 @@ end
 
 ### Record di checkpoint
 
-Per ottimizzare la procedura di [restore](#Log-e-gestione-dei-fallimenti-di-sistema) da un fallimento di sistema si introduce nel log un record di checkpoint periodicamente, dove vengono inserite la **tabella delle dirty pages** e la **tabella delle transazioni**
+Per ottimizzare la procedura di [restore](/tecnologie_basi_dati/durability_control#Log-e-gestione-dei-fallimenti-di-sistema) da un fallimento di sistema si introduce nel log un record di checkpoint periodicamente, dove vengono inserite la **tabella delle dirty pages** e la **tabella delle transazioni**
 
 >[!TIP] in questo modo set \\(T\\) e stata committata prima del record di checkpoint non deve essere rifatta
 
 ## Algoritmo aries e gestione della recovery
 
-L'algoritmo di ARIES consente l'utilizzo di politiche di [steal](#Politiche-di-gestione-del-buffer) e [no force](#Commit-di-una-transazione), si divide in 3 fasi principali
+L'algoritmo di ARIES consente l'utilizzo di politiche di [steal](/tecnologie_basi_dati/durability_control#Politiche-di-gestione-del-buffer) e [no force](/tecnologie_basi_dati/durability_control#Commit-di-una-transazione), si divide in 3 fasi principali
 
 - **analisi** viene determinato un insieme di pagine e transazioni attive al momento del crash
 - **redo** ripete tutte le azioni a partire da un dato punto del log
@@ -180,4 +180,4 @@ A --> B --> C & E
 C --> D
 E --> F
 {{</ mermaid >}}
->[!TIP] scrivere [compensation record](#Log) nella fase di undo semplifica la procedura in caso di guasti ripetuti, dato che si e in grado di comprendere alla prossima esecuzione della procedura che le modifiche alle pagine sono già state apportate
+>[!TIP] scrivere [compensation record](tecnologie_basi_dati/durability_control#Log) nella fase di undo semplifica la procedura in caso di guasti ripetuti, dato che si e in grado di comprendere alla prossima esecuzione della procedura che le modifiche alle pagine sono già state apportate
