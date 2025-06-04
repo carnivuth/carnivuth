@@ -3,17 +3,18 @@ draft: true
 series: ["tecnologie e progettazione basi dati"]
 date: 2025-02-13
 id: join
+title: Join
+description: Eseguire il join relazionale
 aliases: []
 tags:
   - indexed nested loop join
   - paged nested loop join
   - block nested loop join
   - merge-scan join
-index: 14
+series_order: 14
 ---
 
-# Join
-
+{{< katex >}}
 Uno degli operatori fondamentali, data la query che segue
 
 ```sql
@@ -28,11 +29,11 @@ Determinare la maniera più efficiente per rispondere non e banale in quanto l'o
 - ordinamento dei dati
 - quantità di buffers
 - possibilità di restituire i risultati
-> lasciamo perdere l'opzione di fare il prodotto cartesiano e applicare una [selezione](pages/tecnologie_basi_dati/selezione.md).....
+> lasciamo perdere l'opzione di fare il prodotto cartesiano e applicare una [selezione](/tecnologie_basi_dati/selezione).....
 
 ## Nested loop join
 
-La soluzione più semplice prevede il confronto fra i record delle due relazioni $R,S$
+La soluzione più semplice prevede il confronto fra i record delle due relazioni \\(R,S\\)
 
 ```python
 for r in R:
@@ -65,15 +66,15 @@ for Rpage in R:
 
 ## Sfruttando i buffer, block nested loops join
 
-Gli algoritmi sopracitati non tengono in conto la dimensione del buffer, in caso di $B$ pagine di buffer si possono utilizzare $B-2$ pagine per la relazione esterna $1$ per la relazione interna e $1$ per l'output
+Gli algoritmi sopracitati non tengono in conto la dimensione del buffer, in caso di \\(B\\) pagine di buffer si possono utilizzare \\(B-2\\) pagine per la relazione esterna \\(1\\) per la relazione interna e \\(1\\) per l'output
 
 >[!TIP] ci può essere un caso in cui la relazione interna a il maggior numero di buffer ovvero quando si **può contenere interamente in memoria**
 
 ### Matching nel block nested loop join
 
-Per effettuare il matching nel [block nested loop join](#Sfruttando%20i%20buffer,%20Block%20nested%20loops%20join) si può sfruttare una funzione di hash per allocare i record della relazione $R$, le pagine di $S$ vengono lette sequenzialmente e le tuple sottoposte alla stessa  funzione di hash per trovare il match
+Per effettuare il matching nel [block nested loop join](#sfruttando-i-buffer-block-nested-loops-join) si può sfruttare una funzione di hash per allocare i record della relazione \\(R\\), le pagine di \\(S\\) vengono lette sequenzialmente e le tuple sottoposte alla stessa  funzione di hash per trovare il match
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 A[(relazione R)]
 subgraph central_memory
@@ -89,14 +90,14 @@ N[(relazione S)]
 A ~~~ central_memory ~~~ N
  F --> g & h & i & j ~~~ k
  K --> g
-```
+{{</ mermaid >}}
 
 ## Sfruttando gli indici: index nested loop join
 
-e possibile utilizzare un indice per accedere alla relazione interna, il costo dipende dal tipo di indice (*[b+tree](pages/tecnologie_basi_dati/b+tree.md) oppure [indici_hash](pages/tecnologie_basi_dati/indici_hash.md)*) e da se l'indice e clustered o meno
+e possibile utilizzare un indice per accedere alla relazione interna, il costo dipende dal tipo di indice (*[b+tree](/tecnologie_basi_dati/b+tree) oppure [indici_hash](/tecnologie_basi_dati/indici_hash)*) e da se l'indice e clustered o meno
 
 
-![image.png](assets/image_1681899225713_0.png)
+![](index_nested_loop_join.png)
 
 >[!TIP]  si possono sfruttare operazioni di push down delle selezioni per alleggerire l'esecuzione di query di ricerca
 ```sql
@@ -109,7 +110,7 @@ AND R.RIVISTA= "sapore di vino"
 
 si basa sul fatto che entrambe le relazioni siano **ordinati sull'attributo di join** (*in caso non sia vero e necessario ordinarle*). Le due relazioni vengono scandite e accoppiate secondo la chiave di join
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250213151824.png)
+![](merge_scan_join.png)
 
 ```python
 result=[]
@@ -138,13 +139,13 @@ while !F.empty() and G.empty():
         g = G.next()
 ```
 
-Il costo  e la somma del numero di pagine di entrambe le relazioni $P(R)+P(S)$
+Il costo  e la somma del numero di pagine di entrambe le relazioni \\(P(R)+P(S)\\)
 
 >[!TIP] Se si ha un indice sugli attributi di join non e necessario ordinare le relazioni, se unclustered il costo e comunque elevato
 
 ## Hash join
 
-il vantaggio del [Merge-scan join](#Merge-scan%20join) è che viene ridotto il numero di confronti fra i record delle relazioni, lo stesso obbiettivo si può ottenere con una funzione di hash sui valor degli attributi di join, la strategia e quella vista per la [proiezione fatta con hashing](pages/tecnologie_basi_dati/proiezione.md#proiettare%20usando%20hashing), mentre la fase di matching può essere realizzata per mezzo del [block nested loop join](#matching%20nel%20block%20nested%20loop%20join)
+il vantaggio del [Merge-scan join](#merge-scan-join) è che viene ridotto il numero di confronti fra i record delle relazioni, lo stesso obbiettivo si può ottenere con una funzione di hash sui valor degli attributi di join, la strategia e quella vista per la [proiezione fatta con hashing](/tecnologie_basi_dati/proiezione#proiettare-usando-hashing), mentre la fase di matching può essere realizzata per mezzo del [block nested loop join](#matching-nel-block-nested-loop-join)
 
 >[!WARNING] sia hash join che merge scan join sono utilizzabili solo per equi join
 
@@ -160,14 +161,12 @@ ON (E.WorkDept = D.DeptNo)
 
 Gli algoritmi precedenti si modificano come segue
 
-- [Nested loop join](#Nested%20loop%20join): si usa $D$ come relazione esterna e si aggiunge all'output ogni tupla di $D$ che non trova match in $E$
-- [Merge-scan join](#Merge-scan%20join): si usa $D$ come relazione esterna e, quando non si trova un match per una tupla di $D$, la si aggiunge al risultato
-- [Hash join](#Hash%20join): si usa come relazione esterna $E$. Dopo aver partizionato $E$ e $D$, per ogni partizione di $E$ si costruisce una hash table e si fa il probing per tutti i record di $D$ nella partizione omologa. Se il probing non trova match si aggiunge il record di $D$ all'output
+- [Nested loop join](#nested-loop-join): si usa \\(D\\) come relazione esterna e si aggiunge all'output ogni tupla di \\(D\\) che non trova match in \\(E\\)
+- [Merge-scan join](#merge-scan-join): si usa \\(D\\) come relazione esterna e, quando non si trova un match per una tupla di \\(D\\), la si aggiunge al risultato
+- [Hash join](#hash-join): si usa come relazione esterna \\(E\\). Dopo aver partizionato \\(E\\) e \\(D\\), per ogni partizione di \\(E\\) si costruisce una hash table e si fa il probing per tutti i record di \\(D\\) nella partizione omologa. Se il probing non trova match si aggiunge il record di \\(D\\) all'output
 
 In caso di full join:
 
-- [Nested loop join](#Nested%20loop%20join): non è applicabile
-- [Merge-scan join](#Merge-scan%20join): aggiunge le tuple dangling di entrambi gli input
-- [Hash join](#Hash%20join): per aggiungere anche le tuple dangling della relazione esterna, quando si costruisce la hash table si aggiunge un flag per tener traccia di quali tuple hanno trovato un match. Al termine si fa un passo finale sulla hash table per collezionare tutte le tuple dangling
-
-[<](pages/tecnologie_basi_dati/proiezione.md)[>](pages/tecnologie_basi_dati/group_by.md)
+- [Nested loop join](#nested-loop-join): non è applicabile
+- [Merge-scan join](#merge-scan-join): aggiunge le tuple dangling di entrambi gli input
+- [Hash join](#hash-join): per aggiungere anche le tuple dangling della relazione esterna, quando si costruisce la hash table si aggiunge un flag per tener traccia di quali tuple hanno trovato un match. Al termine si fa un passo finale sulla hash table per collezionare tutte le tuple dangling
