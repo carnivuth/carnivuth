@@ -1,7 +1,7 @@
 ---
 title: "jenkins"
 description: "pipeline service"
-date: 2024-09-29
+date: 2025-04-29
 tags:
   - jenkins
   - github

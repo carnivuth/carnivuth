@@ -1,12 +1,12 @@
 ---
 title: "traefik"
 description: "Notes application proxy for cloud based environments"
-date: 2024-09-29
+date: 2025-05-30
 series:
   - "Technologies notes"
 draft: false
 series_order: 18
-date: 2024-09-29
+date: 2025-05-30
 ---
 
 # traefik

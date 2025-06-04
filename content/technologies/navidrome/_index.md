@@ -1,12 +1,12 @@
 ---
 title: "navidrome"
 description: "Notes on my personal music streaming service"
-date: 2024-09-29
+date: 2025-05-28
 series:
   - "Technologies notes"
 draft: false
 series_order: 17
-date: 2024-09-29
+date: 2025-05-28
 ---
 
 # navidrome

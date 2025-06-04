@@ -1,7 +1,7 @@
 ---
 title: "kubernetes"
 description: "container orchestrator notes"
-date: 2024-09-29
+date: 2025-04-17
 tags:
   - "container orchestrator"
   - "kubernetes cluster"

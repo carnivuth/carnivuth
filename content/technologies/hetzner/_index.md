@@ -1,12 +1,12 @@
 ---
 title: "hetzner"
 description: "personal hetzner services usage guide"
-date: 2024-09-29
+date: 2025-05-28
 series:
   - "Technologies notes"
 draft: false
 series_order: 16
-date: 2024-09-29
+date: 2025-05-28
 ---
 
 Hetzner is a cloud provider that offers various services, Paas and Saas and also cloud storage, in the form of storageboxes, in order to configure a backup for a new host
