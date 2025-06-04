@@ -1,7 +1,6 @@
 ---
 draft: true
 date: 2025-02-15
-draft: true
 id: ottimizzazione_interrogazioni
 aliases: []
 tags:
@@ -10,8 +9,6 @@ tags:
   - esecuzione per materializzazione
   - esecuzione in pipeline
 index: 17
-next: pages/tecnologie_basi_dati/ricerca_piano_accesso.md
-previous: pages/tecnologie_basi_dati/operatori_modifica.md
 ---
 
 # Ottimizzazione delle interrogazioni

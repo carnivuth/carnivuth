@@ -1,14 +1,11 @@
 ---
 draft: true
 date: 2025-02-18
-draft: true
 id: top_k_queries
 aliases: []
 tags:
   - knnoptimal
 index: 22
-next: pages/tecnologie_basi_dati/top_k_join_queries.md
-previous: pages/tecnologie_basi_dati/r-tree.md
 ---
 
 # Top-$k$ queries

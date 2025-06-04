@@ -1,13 +1,10 @@
 ---
 draft: true
 date: 2025-02-22
-draft: true
 id: skyline_queries
 aliases: []
 tags: []
 index: 25
-next: pages/tecnologie_basi_dati/big_data.md
-previous: pages/tecnologie_basi_dati/rankSQL.md
 ---
 
 # Oltre le top-$k$: skyline queries

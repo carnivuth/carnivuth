@@ -1,13 +1,10 @@
 ---
 draft: true
 date: 2025-02-13
-draft: true
 id: operatori_modifica
 aliases: []
 tags: []
 index: 16
-next: pages/tecnologie_basi_dati/ottimizzazione_interrogazioni.md
-previous: pages/tecnologie_basi_dati/group_by.md
 ---
 
 # Operatori di modifica

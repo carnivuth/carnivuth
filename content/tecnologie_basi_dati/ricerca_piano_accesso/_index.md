@@ -10,8 +10,6 @@ tags:
   - istogrammi
   - join ordering
 index: 18
-next: pages/tecnologie_basi_dati/progetto_fisico_tuning.md
-previous: pages/tecnologie_basi_dati/ottimizzazione_interrogazioni.md
 ---
 
 ## Ricerca del piano di accesso ottimale

@@ -1,7 +1,6 @@
 ---
 draft: true
 date: 2025-02-09
-draft: true
 id: selezione
 aliases: []
 tags:
@@ -11,8 +10,6 @@ tags:
   - selezione con disgiunzione
   - tipologie di predicati DB2
 index: 12
-next: pages/tecnologie_basi_dati/proiezione.md
-previous: pages/tecnologie_basi_dati/sorting.md
 ---
 
 # Selezione

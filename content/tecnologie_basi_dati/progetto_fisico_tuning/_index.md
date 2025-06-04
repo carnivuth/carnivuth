@@ -9,8 +9,6 @@ tags:
   - data partitioning
   - selezione di indici
 index: 19
-next: pages/tecnologie_basi_dati/indici_multidimensionali.md
-previous: pages/tecnologie_basi_dati/ricerca_piano_accesso.md
 ---
 
 # progetto fisico e tuning del DB

@@ -10,8 +10,6 @@ tags:
   - MBB
   - search with r-tree
 index: 21
-next: pages/tecnologie_basi_dati/top_k_queries.md
-previous: pages/tecnologie_basi_dati/indici_multidimensionali.md
 ---
 
 # R-tree

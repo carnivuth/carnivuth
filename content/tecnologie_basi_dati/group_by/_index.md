@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2025-02-13
 draft: true
 id: group_by
@@ -10,8 +9,6 @@ tags:
   - group by con hashing
   - group by con indice
 index: 15
-next: pages/tecnologie_basi_dati/operatori_modifica.md
-previous: pages/tecnologie_basi_dati/join.md
 ---
 
 # Funzioni aggregate

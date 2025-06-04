@@ -11,8 +11,6 @@ tags:
   - sort merge con indici
 series: ["tecnologie e progettazione basi dati"]
 series_order: 11
-next: pages/tecnologie_basi_dati/selezione.md
-previous: pages/tecnologie_basi_dati/operatori_relazionali.md
 ---
 
 {{< katex >}}

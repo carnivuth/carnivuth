@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2025-02-16
 draft: true
 id: indici_multidimensionali
@@ -10,8 +9,6 @@ tags:
   - k-d-tree
   - k-d-B-tree
 index: 20
-next: pages/tecnologie_basi_dati/r-tree.md
-previous: pages/tecnologie_basi_dati/progetto_fisico_tuning.md
 ---
 
 # Indici $n$-dimensionali

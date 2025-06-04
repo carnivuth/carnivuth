@@ -1,13 +1,10 @@
 ---
 draft: true
 date: 2025-02-20
-draft: true
 id: top_k_join_queries
 aliases: []
 tags: []
 index: 23
-next: pages/tecnologie_basi_dati/rankSQL.md
-previous: pages/tecnologie_basi_dati/top_k_queries.md
 ---
 
 # Top-$k$ join queries

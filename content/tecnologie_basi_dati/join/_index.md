@@ -1,7 +1,6 @@
 ---
 draft: true
 date: 2025-02-13
-draft: true
 id: join
 aliases: []
 tags:
@@ -10,8 +9,6 @@ tags:
   - block nested loop join
   - merge-scan join
 index: 14
-next: pages/tecnologie_basi_dati/group_by.md
-previous: pages/tecnologie_basi_dati/proiezione.md
 ---
 
 # Join

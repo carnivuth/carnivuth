@@ -6,8 +6,6 @@ id: rankSQL
 aliases: []
 tags: []
 index: 24
-next: pages/tecnologie_basi_dati/skyline_queries.md
-previous: pages/tecnologie_basi_dati/top_k_join_queries.md
 ---
 
 # Introdurre il concetto di rank nei dbms

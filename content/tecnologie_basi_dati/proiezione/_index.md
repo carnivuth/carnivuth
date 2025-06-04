@@ -8,8 +8,6 @@ tags:
   - proiezione con sorting
   - proiezione con hashing
 index: 13
-next: pages/tecnologie_basi_dati/join.md
-previous: pages/tecnologie_basi_dati/selezione.md
 ---
 
 # proiezione
