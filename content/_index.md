@@ -1,4 +1,4 @@
-# Hi i'm Carnivuth 💻
+# Hi i'm Carnivuth 🖐️
 
 I'm a software engineer with a passion for food, dogs, videogames and open source software
 
@@ -13,6 +13,14 @@ I'm currently working as a devops engineer and a system administrator in the fie
   - Master Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
   - Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
   - high school diploma At [I.T.I.S.-E.Mattei-Urbino](https://www.itisurbino.edu.it/)
+
+##  Work experiences 💻
+
+- Internship at A.D.V. Media Lab
+- Internship at comune Mercatello sul Metauro
+- Internship at Ciollo Service s.r.l.
+- Web developer at Ciollo Service s.r.l.
+- system and network administrator at Laboratori Guglielmo Marconi s.p.a.
 
 ## Projects ⚙️
 
