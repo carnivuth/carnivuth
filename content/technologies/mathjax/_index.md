@@ -1,7 +1,7 @@
 ---
 title: "mathjax"
 description: "mathjax reference symbols"
-date: 2024-09-29
+date: 2025-01-20
 series:
   - "Technologies notes"
 draft: false

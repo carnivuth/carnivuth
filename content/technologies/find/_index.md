@@ -1,6 +1,6 @@
 ---
 title: "find"
-date: 2024-09-29
+date: 2025-01-20
 tags:
   - oneliners
 description: "how to find"

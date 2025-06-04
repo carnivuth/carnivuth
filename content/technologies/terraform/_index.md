@@ -1,7 +1,7 @@
 ---
 title: "terraform"
 description: "docs for the most used IaC tool"
-date: 2024-09-29
+date: 2025-01-20
 series:
   - "Technologies notes"
 draft: false

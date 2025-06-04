@@ -1,7 +1,7 @@
 ---
 title: "git"
 description: "how to version control"
-date: 2024-09-29
+date: 2025-01-20
 tags:
   - version control
   - git hooks

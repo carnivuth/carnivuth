@@ -1,7 +1,7 @@
 ---
 title: "jq"
 description: "manipulate json content"
-date: 2024-09-29
+date: 2025-02-18
 tags:
   - snippets
   - jq

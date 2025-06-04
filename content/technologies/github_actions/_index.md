@@ -1,7 +1,7 @@
 ---
 title: "github actions"
 description: "automate procedures in a github project"
-date: 2024-09-29
+date: 2025-01-20
 tags:
   - github
   - automation

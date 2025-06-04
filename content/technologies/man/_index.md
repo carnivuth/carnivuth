@@ -1,7 +1,7 @@
 ---
 title: "man"
 description: "man setup"
-date: 2024-09-29
+date: 2025-01-20
 tags:
   - man
   - vim

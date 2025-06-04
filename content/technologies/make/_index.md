@@ -1,7 +1,7 @@
 ---
 title: "make"
 description: "make and makefile guide"
-date: 2024-09-29
+date: 2025-02-22
 tags:
   - snippets
   - make

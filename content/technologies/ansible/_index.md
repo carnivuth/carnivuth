@@ -1,6 +1,6 @@
 ---
 title: "ansible"
-date: 2024-09-29
+date: 2025-02-15
 description: "ansible snippets and personal docs"
 tags:
   - "snippet"
