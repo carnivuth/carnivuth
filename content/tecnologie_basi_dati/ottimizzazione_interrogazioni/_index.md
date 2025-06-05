@@ -3,30 +3,31 @@ draft: true
 series: ["tecnologie e progettazione basi dati"]
 date: 2025-02-15
 id: ottimizzazione_interrogazioni
+title: Ottimizzazione delle interrogazioni
+description: Come il dbms riscrive le query prima di operare la risoluzione
 aliases: []
 tags:
   - ottimizzazione delle interrogazioni
   - interfaccia a iteratore
   - esecuzione per materializzazione
   - esecuzione in pipeline
-index: 17
+series_order: 17
 ---
 
-# Ottimizzazione delle interrogazioni
 
-Per rispondere a una query il DBMS necessita di determinare qual'e il piano di accesso ottimale per tirare su i dati richiesti dal disco, Il componente dedito a questa mansione e il [query optimizer](pages/tecnologie_basi_dati/struttura_database.md#struttura%20fisica) che data una query genera un **piano di accesso** ottimale
+Per rispondere a una query il DBMS necessita di determinare qual'e il piano di accesso ottimale per tirare su i dati richiesti dal disco, Il componente dedito a questa mansione e il [query optimizer](/tecnologie_basi_dati/struttura_database#struttura-fisica) che data una query genera un **piano di accesso** ottimale
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
 A((query))
 B[query optimizer]
 C((access plan))
 A --> B --> C
-```
+{{</ mermaid >}}
 
 Il query optimizer e strutturato come segue
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 A((query))
 subgraph query compiler
@@ -50,7 +51,7 @@ I --> F & H & G
 F & G --> J --> H --> L
 H --> L
 J --> M
-```
+{{</ mermaid >}}
 
 >[!TIP] Il funzionamento dell'ottimizzatore si basa su una **rappresentazione interna della query ad albero**
 
@@ -60,9 +61,9 @@ La query viene sottoposta a una sequenza di step da cui viene generata la rappre
 
 viene controllata la sintassi e il rispetto di vincoli sulla base dati (*query esistenti*)
 
-l'output di questo componente e una **rappresentazione ad albero della query** simile alla forma sql con gli [Operatori logici](pages/tecnologie_basi_dati/operatori_relazionali.md#operatori%20logici)  come nodi dell'albero e le relazioni come foglie
+l'output di questo componente e una **rappresentazione ad albero della query** simile alla forma sql con gli [Operatori logici](/tecnologie_basi_dati/operatori_relazionali#operatori-logici)  come nodi dell'albero e le relazioni come foglie
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250215163029.png)
+![](rappresentazione_interna_query.png)
 
 ## Riscrittura della query
 
@@ -89,7 +90,7 @@ FROM Department
 WHERE DeptName = ‘Operations’ )
 ```
 
-viene riscritta come:
+Viene riscritta come:
 
 ```sql
 SELECT E.EmpNo, E.PhoneNo
@@ -99,7 +100,7 @@ AND LastName LIKE 'L%'
 AND D.DeptName = ‘Operations’
 ```
 
-rendendo quindi esplicito il join e fornendo maggior flessibilità all'ottimizzatore
+Rendendo quindi esplicito il join e fornendo maggior flessibilità all'ottimizzatore
 
 ## Ottimizzazione cost-based
 
@@ -112,7 +113,7 @@ Una volta determinato il piano di accesso questo deve essere eseguito per ottene
 - **esecuzione per materializzazione** gli operatori memorizzano il loro risultato in una tabella temporanea e restituiscono all'operatore padre il risultato
 >[!ERROR] estremamente inefficiente in quanto la dimensione dei risultati intermedi può portare alla necessita di salvarli nel disco
 - **esecuzione in pipeline** ogni operatore fornisce un record all'operatore padre non appena disponibile
->[!WARNING] non e sempre possibile, per esempio l' operatore [sort](pages/tecnologie_basi_dati/sorting.md) necessita di visionare tutto l'input prima di fornire la prima tupla di output
+>[!WARNING] non e sempre possibile, per esempio l' operatore [sort](/tecnologie_basi_dati/sorting) necessita di visionare tutto l'input prima di fornire la prima tupla di output
 
 ### Implementare l'esecuzione in pipeline: interfaccia a iteratore
 
@@ -131,4 +132,3 @@ close():
 	# termina e rilascia le risorse
 ```
 
-[<](pages/tecnologie_basi_dati/operatori_modifica.md)[>](pages/tecnologie_basi_dati/ricerca_piano_accesso.md)
