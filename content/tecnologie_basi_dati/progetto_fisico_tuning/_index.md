@@ -2,17 +2,16 @@
 draft: true
 series: ["tecnologie e progettazione basi dati"]
 date: 2025-02-16
-draft: true
 id: progetto_fisico_tuning
+title: Progetto fisico e tuning del DB
+description: Strategie e best practices per la gestione del progetto fisico e i parametri di ottimizzazione di un DB
 aliases: []
 tags:
   - data clustering
   - data partitioning
   - selezione di indici
-index: 19
+series_order: 19
 ---
-
-# progetto fisico e tuning del DB
 
 La valutazione del progetto fisico di  un db avviene tramite la misura delle prestazioni del db alle query più frequenti richieste dall'applicazione. Le  prestazioni possono essere migliorate
 
@@ -40,7 +39,7 @@ Per effettuare un tuning efficace e fondamentale avere informazioni sull'utilizz
 
 ## Selezione degli indici
 
-Il problema della selezione degli indici può essere modellato con un **problema di ottimizzazione**, dato che lo spazio delle possibili soluzioni dato un [Workload](#Workload) e enorme, le best practices sono le seguenti:
+Il problema della selezione degli indici può essere modellato con un **problema di ottimizzazione**, dato che lo spazio delle possibili soluzioni dato un [Workload](#workload) e enorme, le best practices sono le seguenti:
 
 - considerare prima gli indici che possono migliorare le **query più importanti** e poi gli indici più marginali
 - Non creare indici inutili (*che non vengono utilizzati da query del workload*)
@@ -58,7 +57,7 @@ AND D.name = 'Toy'
 
 In questo caso un piano di accesso ragionevole potrebbe essere questo:
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 E((D))
 D((E))
@@ -68,9 +67,9 @@ A{{OUTPUT}}
 E --> C --> B
 D --> B
 B --> A
-```
+{{</ mermaid >}}
 
-In questo caso sono necessari un indice su `D.name` e un indice su `E.dno` (*possibilmente [hash](pages/tecnologie_basi_dati/indici_hash.md)*)
+In questo caso sono necessari un indice su `D.name` e un indice su `E.dno` (*possibilmente [hash](/tecnologie_basi_dati/indici_hash)*)
 
 ### Esempio: join con filtro su due relazioni
 
@@ -82,7 +81,7 @@ AND D.name = 'Toy'
 AND E.age = 25
 ```
 
-In questo caso se si possiede un indice su `E.age` potrebbe non essere necessario l'indice per fare [index nested loop join](pages/tecnologie_basi_dati/join.md#sfruttando%20gli%20indici%20index%20nested%20loop%20join), dipende da quanto e selettivo
+In questo caso se si possiede un indice su `E.age` potrebbe non essere necessario l'indice per fare [index nested loop join](/tecnologie_basi_dati/join#sfruttando-gli-indici-index-nested-loop-join), dipende da quanto e selettivo
 
 ### Esempio: indici per query range
 
@@ -98,14 +97,14 @@ WHERE E.sal BETWEEN 3000 AND 5000
 AND E.age = 25
 ```
 
-Nel primo caso un indice ([b+tree](pages/tecnologie_basi_dati/b+tree.md)) su `age,sal` può risultare conveniente, nel secondo caso l'ordine degli attributi nella query e più rilevante, in particolare:
+Nel primo caso un indice ([b+tree](/tecnologie_basi_dati/b+tree)) su `age,sal` può risultare conveniente, nel secondo caso l'ordine degli attributi nella query e più rilevante, in particolare:
 
 - `age,sal` entrambi i predicati sono range delimiting
 - `sal,age` il predicato su age e index-sargable
 
 ## Data clustering
 
-Come mostrato in precedenza DB2 contempla la presenza [di indici non perfettamente clustered](pages/tecnologie_basi_dati/operatori_modifica.md#update%20della%20clustering%20key), di conseguenza e necessario che attributi scegliere per un indice clustered e determinare il livello di clustering desiderato
+Come mostrato in precedenza DB2 contempla la presenza [di indici non perfettamente clustered](/tecnologie_basi_dati/operatori_modifica#update-della-clustering-key), di conseguenza e necessario che attributi scegliere per un indice clustered e determinare il livello di clustering desiderato
 
 >[!TIP] Le query di range sono quelle che **beneficiano maggiormente dalla clusterizzazione di un indice**, insieme alle ricerche `=`  su attributi non chiave traggono vantaggio da indici clustered in caso di molti duplicati
 
@@ -130,7 +129,7 @@ La forma `DETAILED INDEXES ALL` genera informazioni utili per capire lo "stato d
 
 Il partizionamento dei dati viene svolto per diverse motivazioni tra cui suddividere il costo computazionale su piu server, escludere parti di table a priori data una query  e ridurre il numero di transazioni in conflitto
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250216162844.png)
+![](partizionamento_dati.png)
 
 Le strategie di partizionamento si dividono in due categorie
 
@@ -164,5 +163,3 @@ Un aspetto fondamentale per il tuning e la gestione delle transazioni in partico
 - **SQL server-side**: Spostare lato server quante più operazioni possibili, al fine di ridurre il flusso di comunicazione client-server
 
 a tal fine possono essere impiegati trigger o stored procedures
-
-[<](pages/tecnologie_basi_dati/ricerca_piano_accesso.md)[>](pages/tecnologie_basi_dati/indici_multidimensionali.md)
