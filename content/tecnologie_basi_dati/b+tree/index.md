@@ -10,7 +10,7 @@ tags:
   - indici ordinati
   - modello di cardenas
   - modello di yao
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 5
 ---
 

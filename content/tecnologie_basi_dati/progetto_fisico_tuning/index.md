@@ -1,6 +1,6 @@
 ---
 draft: true
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 date: 2025-02-16
 id: progetto_fisico_tuning
 title: Progetto fisico e tuning del DB

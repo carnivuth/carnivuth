@@ -9,7 +9,7 @@ tags:
   - implementazione r-tree
   - implementazione b+tree
   - GiST
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 6
 ---
 

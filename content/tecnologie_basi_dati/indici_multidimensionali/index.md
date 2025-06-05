@@ -1,6 +1,6 @@
 ---
 date: 2025-02-16
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 draft: true
 id: indici_multidimensionali
 aliases: []

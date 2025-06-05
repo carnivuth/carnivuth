@@ -1,6 +1,6 @@
 ---
 title: Dbms e disco
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 date: 2025-01-30
 description: "Gestione del supporto fisico da parte dei dbms"
 draft: true

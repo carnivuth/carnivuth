@@ -9,7 +9,7 @@ tags:
   - transazioni
   - WAL
   - ARIES
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 9
 ---
 

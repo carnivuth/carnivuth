@@ -6,7 +6,7 @@ title: Indici b-tree
 description: Indici ad albero bilanciati e paginati
 tags: ["indici", "b-tree", "indici ordinati"]
 aliases:
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 4
 ---
 

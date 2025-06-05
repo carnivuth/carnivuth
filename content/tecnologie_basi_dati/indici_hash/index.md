@@ -8,7 +8,7 @@ aliases:
   - indici hash
 tags:
   - indici
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 7
 ---
 

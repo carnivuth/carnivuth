@@ -1,6 +1,6 @@
 ---
 draft: true
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 date: 2025-02-28
 id: big_data
 aliases: []

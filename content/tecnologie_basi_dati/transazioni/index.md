@@ -16,7 +16,7 @@ tags:
   - schedule
   - S2PL
   - 2PL
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 8
 ---
 

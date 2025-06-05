@@ -6,7 +6,7 @@ draft: true
 aliases: []
 tags:
   - data access
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 3
 ---
 

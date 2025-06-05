@@ -1,6 +1,6 @@
 ---
 draft: true
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 12
 date: 2025-02-09
 id: selezione

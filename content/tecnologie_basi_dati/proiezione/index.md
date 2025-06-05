@@ -1,6 +1,6 @@
 ---
 draft: true
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 date: 2023-04-19
 id: proiezione
 title: Proiezione

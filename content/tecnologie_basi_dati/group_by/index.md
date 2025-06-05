@@ -1,6 +1,6 @@
 ---
 date: 2025-02-13
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 draft: true
 id: group_by
 title: Group_by

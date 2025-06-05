@@ -1,6 +1,6 @@
 ---
 draft: true
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 title: Ricerca del piano di accesso
 description: Metodologie per la ricerca del piano di accesso ai dati meno costoso
 date: 2025-02-16

@@ -6,7 +6,7 @@ title: Operatori relazionali
 description: Come rispondere alle interrogazioni
 tags: ["operatori relazionali","operatori logici", "operatori fisici"]
 aliases: []
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 series_order: 10
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: struttura database
-series: ["tecnologie e progettazione basi dati"]
+series: ["Tecnologie progettazione basi di dati"]
 date: 2025-01-30
 title: "Come e fatto un database?"
 description: "Struttura architetturale dei database e considerazioni sulle motivazioni"
