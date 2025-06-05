@@ -5,8 +5,7 @@ tags:
   - "oneliners"
   - "command guide"
 description: "awk guide and snippets"
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 2
 ---

@@ -9,8 +9,7 @@ tags:
   - tealdeer
   - arch wiki
   - wikiman
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 10
 ---

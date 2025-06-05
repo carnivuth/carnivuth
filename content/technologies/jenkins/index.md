@@ -7,8 +7,7 @@ tags:
   - github
   - jenkinsfile
   - jenkins pipeline
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 6
 ---

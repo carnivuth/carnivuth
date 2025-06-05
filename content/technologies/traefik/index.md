@@ -2,8 +2,7 @@
 title: "traefik"
 description: "Notes application proxy for cloud based environments"
 date: 2025-05-30
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 18
 date: 2025-05-30

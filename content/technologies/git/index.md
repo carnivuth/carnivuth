@@ -5,8 +5,7 @@ date: 2025-01-20
 tags:
   - version control
   - git hooks
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 5
 ---

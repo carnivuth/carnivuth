@@ -2,8 +2,7 @@
 title: "Password store"
 description: "password store configuration and setup"
 date: 2025-01-20
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 13
 tags:

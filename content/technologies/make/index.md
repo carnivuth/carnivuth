@@ -7,8 +7,7 @@ tags:
   - make
   - makefile
   - make best practices
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 9
 ---

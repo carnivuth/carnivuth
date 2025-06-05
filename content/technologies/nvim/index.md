@@ -2,8 +2,7 @@
 title: "Neovim"
 description: "nvim personal reference"
 date: 2025-01-20
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 12
 tags:

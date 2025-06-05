@@ -7,8 +7,7 @@ tags:
   - "kubernetes cluster"
   - kubectl
   - kubeadm
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 8
 ---

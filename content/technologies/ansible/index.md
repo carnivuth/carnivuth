@@ -8,8 +8,7 @@ tags:
   - "playbooks"
   - "inventories"
   - "ansible vault"
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 1
 ---

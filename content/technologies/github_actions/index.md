@@ -6,8 +6,7 @@ tags:
   - github
   - automation
   - ci/cd
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 4
 ---

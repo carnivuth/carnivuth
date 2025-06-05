@@ -2,8 +2,7 @@
 title: "Mathjax"
 description: "mathjax reference symbols"
 date: 2025-01-20
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 11
 tags:

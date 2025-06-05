@@ -2,8 +2,7 @@
 title: "hetzner"
 description: "personal hetzner services usage guide"
 date: 2025-05-28
-series:
-  - "Technologies notes"
+series: ["Technologies notes"]
 draft: false
 series_order: 16
 date: 2025-05-28
