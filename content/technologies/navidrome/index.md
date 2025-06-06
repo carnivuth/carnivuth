@@ -12,7 +12,7 @@ date: 2025-05-28
 
 ## Manage metadata
 
-In order to work properly navidrome needs that tracks have metadata populated, to compile them there are a pletora of software, one of them beeing [picard](https://picard.musicbrainz.org/).
+In order to work properly navidrome needs that tracks have metadata populated, to compile them there are a pletora of software, one of them being [picard](https://picard.musicbrainz.org/)
 
 ### Collection file structure
 
@@ -33,8 +33,9 @@ collection/
 ```
 
 In order to divide tracks in album folder run the following oneliners
+>[!TIP] [picard](https://picard.musicbrainz.org/) can move files based on metadata values inside folders so this 2 snippets aren't needed
 
->[!TIP] this will create folder based on ALBUM metadata
+> this will create folder based on ALBUM metadata
 ```bash
 find . -type f | parallel 'ffmpeg -i {} -f ffmetadata' 2>&1 | grep 'ALBUM ' |awk -F':' '{$1=""; print $0}' | while read dir; do
     if [[ -d "$dir" ]]; then
@@ -45,7 +46,7 @@ find . -type f | parallel 'ffmpeg -i {} -f ffmetadata' 2>&1 | grep 'ALBUM ' |awk
 done
 ```
 
->[!TIP] this will move tracks in ALBUM folder according to metadata
+> this will move tracks in ALBUM folder according to metadata
 ```bash
 find . -type f | while read f; do ALBUM="$(ffmpeg -i "$f" -f ffmetadata 2>&1 | grep 'ALBUM ' | awk -F':' '{$1="";print $0}' | awk '{$1=$1;print}')";
 if [[ -f "$ALBUM/$f" ]]; then
@@ -74,10 +75,26 @@ Smart playlists are ways of grouping tracks together based on metadata values, t
 }
 ```
 
-this json files are composed by a sequence of statements in the form
+This `json` files are composed by a sequence of statements in the form
 
 ```json
     {"operator": {"field": "value"}}
 ```
 
 The tracks with metadata that matches the statement are included inside the smart playlist, here a complete list of [fields and operators](https://www.navidrome.org/docs/usage/smartplaylists/#additional-resources)
+
+## Backup physical collection
+
+To backup the physical collection the process requires to acquire the audio tracks of a cd in a file format (*typically `wav`*) and then [edit metadata](#Manage-metadata), under archlinux the utility `cdda2wav` can do the job
+
+> from the arch wiki
+```bash
+cdda2wav -vall cddb=-1 speed=4 -paranoia paraopts=proof -B -D /dev/sr0
+```
+>[!WARNING] Notes that paranoia parameters make the process slower, for cd that are in good conditions they can be omitted
+
+An handy alias to avoid memorizing parameters
+
+```bash
+alias ripCD='mkdir temp && cd temp && cdda2wav -vall cddb=-1 speed=4 -paranoia paraopts=proof -B -D /dev/sr0'
+```
