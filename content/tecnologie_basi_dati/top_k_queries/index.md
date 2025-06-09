@@ -1,24 +1,25 @@
 ---
 draft: true
 series: ["Tecnologie progettazione basi di dati"]
+series_order: 22
 date: 2025-02-18
 id: top_k_queries
+title: Top-k queries
+Description: Restituire i migliori N risultati
 aliases: []
 tags:
   - knnoptimal
-index: 22
 ---
 
-# Top-$k$ queries
+{{< katex >}}
+L'obbiettivo quando si parla di top-\\(k\\) queries e quello di **fornire i primi \\(k\\) risultati che più si avvicinano alla richiesta della query**
 
-l'obbiettivo quando si parla di top-$k$ queries e quello di **fornire i primi $k$ risultati che più si avvicinano alla richiesta della query**
-
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250218103304.png)
+![](top_k_query.png)
 >Gli utilizzi più frequenti di questa tecnologia si hanno dei DB scientifici, motori di ricerca e-commerce sistemi multimediali
 
 ## Approccio naive
 
-La soluzione più banale al problema consiste nell'avere una scoring function $S$ che restituisce un punteggio in funzione dei valori della tupla.
+La soluzione più banale al problema consiste nell'avere una scoring function \\(S\\) che restituisce un punteggio in funzione dei valori della tupla.
 
 ```python
 to_be_sorted =[]
@@ -30,7 +31,7 @@ for tuple in R:
 return to_be_sorted.sort().head(k)
 ```
 
->[!WARNING] questo approccio e estremamente costoso in quanto prevede il [sorting](pages/tecnologie_basi_dati/sorting.md) di tutte le tuple, ancora peggio se la query prevede uno o più [join](pages/tecnologie_basi_dati/join.md)
+>[!WARNING] questo approccio e estremamente costoso in quanto prevede il [sorting](/tecnologie_basi_dati/sorting) di tutte le tuple, ancora peggio se la query prevede uno o più [join](/tecnologie_basi_dati/join)
 
 Inoltre si possono verificare casi di near miss o information overload, per esempio le query
 
@@ -46,14 +47,14 @@ ORDER BY 0.8*Price + 0.2*Mileage
 
  soffrono rispettivamente di escludere elementi con prezzo di poco maggiore ma un numero di chilometri estremamente basso (near-miss) e l'altra di dare in output tutti i veicoli di un dato modello (information overload)
 
-## Valutazione di una query top-$k$
+## Valutazione di una query top-\\(k\\)
 
 Per la valutazione e necessario considerare due aspetti principali:
 
-- numero di relazioni da accedere, valori [aggregati](pages/tecnologie_basi_dati/group_by.md)
+- numero di relazioni da accedere, valori [aggregati](/tecnologie_basi_dati/group_by)
 - modalità di accesso ai dati (*indici in qualche attributo di ranking*)
 
-prendendo come riferimento la forma più semplice di query top-$k$
+prendendo come riferimento la forma più semplice di query top-\\(k\\)
 
 ```sql
 SELECT <some attributes>
@@ -63,31 +64,30 @@ ORDER BY S(<some attributes>)
 STOP AFTER k
 ```
 
-E necessario estendere l'algebra relazionale con un operatore $\tau_{k,S}$ che restituisca le $k$ tuple migliori secondo la funzione di scoring $S$
+E necessario estendere l'algebra relazionale con un operatore \\(\tau_{k,S}\\) che restituisca le \\(k\\) tuple migliori secondo la funzione di scoring \\(S\\)
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 top_operator --> filter --> Relation_R
-```
+{{</ mermaid >}}
 
-## Implementazione dell'operatore top $\tau_{k,s}$
+## Implementazione dell'operatore top \\(\tau_{k,s}\\)
 
 L'operatore top può essere implementato in due modalità
 
-- **top-scan** la stream di tuple in ingresso e già ordinata e di conseguenza e sufficiente fornire in output le prime $k$ tuple
-> [!TIP] questo operatore puo lavorare in [pipeline](pages/tecnologie_basi_dati/ottimizzazione_interrogazioni.md#implementare%20l'esecuzione%20in%20pipeline%20interfaccia%20a%20iteratore)
+- **top-scan** la stream di tuple in ingresso e già ordinata e di conseguenza e sufficiente fornire in output le prime \\(k\\) tuple
+> [!TIP] questo operatore puo lavorare in [pipeline](/tecnologie_basi_dati/ottimizzazione_interrogazioni#implementare-lesecuzione-in-pipeline-interfaccia-a-iteratore)
 - **top-sort** la stream non e ordinata e l'operatore la deve ordinare per poi fornire le tuple in output
->[!WARNING] questa implementazione non può lavorare in [pipeline](pages/tecnologie_basi_dati/ottimizzazione_interrogazioni.md#implementare%20l'esecuzione%20in%20pipeline%20interfaccia%20a%20iteratore) in quanto necessita di fare [sorting](pages/tecnologie_basi_dati/sorting.md)
+>[!WARNING] questa implementazione non può lavorare in [pipeline](/tecnologie_basi_dati/ottimizzazione_interrogazioni#implementare-lesecuzione-in-pipeline-interfaccia-a-iteratore) in quanto necessita di fare [sorting](/tecnologie_basi_dati/sorting)
 
 ### top-sort operator
 
-Per implementare l'operatore top-sort e sufficiente allocare un buffer $B$ che contenga le $k$ tuple, ad ogni tupla letta la si confronta con la $k$-esima già nel buffer e la si scarta se non maggiore
->[!NOTE] se una tupla non e maggiore dell'ultima migliore $k$-esima si presume non fara parte del risultato finale
+Per implementare l'operatore top-sort e sufficiente allocare un buffer \\(B\\) che contenga le \\(k\\) tuple, ad ogni tupla letta la si confronta con la \\(k\\)-esima già nel buffer e la si scarta se non maggiore
+>[!NOTE] se una tupla non e maggiore dell'ultima migliore \\(k\\)-esima si presume non fara parte del risultato finale
 
+## Query top-\\(k\\) multidimensionali
 
-## Query top-$k$ multidimensionali
-
-Le query top-$k$ coinvolgono spesso più di un attributo nella funzione di scoring $S$
+Le query top-\\(k\\) coinvolgono spesso più di un attributo nella funzione di scoring \\(S\\)
 
 ```sql
 SELECT *
@@ -107,52 +107,52 @@ In questo caso la situazione e più complessa:
 **Cosa possiamo fare se avessimo un indice sugli attributi di ranking?, come dovrebbe essere l'indice?**
 > analizziamo la geometria :)
 
-Se si plottano le tuple in un grafo basato sugli attributi di scoring si ottiene che le tuple che soddisfano la top-$k$  query si trovano tutte sotto una data linea
+Se si plottano le tuple in un grafo basato sugli attributi di scoring si ottiene che le tuple che soddisfano la top-\\(k\\)  query si trovano tutte sotto una data linea
 
 > si considera di cercare macchine con i parametri di scoring più bassi possibili
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250218122553.png)
+![](top_elements.png)
 
-Si può generalizzare a un punto qualunque dello spazio $q$, in questo caso si ottiene che i punti che soddisfano la top-$k$ query sono quelli all'interno di una regione di spazio intorno al punto di query $q$
+Si può generalizzare a un punto qualunque dello spazio \\(q\\), in questo caso si ottiene che i punti che soddisfano la top-\\(k\\) query sono quelli all'interno di una regione di spazio intorno al punto di query \\(q\\)
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250218122755.png)
+![](points_in_circle.png)
 
-Di conseguenza il problema delle top-$k$ query **si riduce al problema di trovare i $k$ nearest neighbors  rispetto al query point $q$**
+Di conseguenza il problema delle top-\\(k\\) query **si riduce al problema di trovare i \\(k\\) nearest neighbors  rispetto al query point \\(q\\)**
 
-## top-$k$ query come problemi di $k$-NN
+## top-\\(k\\) query come problemi di \\(k\\)-NN
 
 Di conseguenza il problema può essere modellato come segue, dato il seguente modello
 
-- uno spazio $D$-dimensionale formato dagli attributi di scoring $A = (A_1,A_2,...,A_D)$
-- una relazione $R(A_1,A_2,...,R_1,R_2,....)$
-- un query point $q = (q_1,q_2,..,q_D)$
-- una funzione $d: A \times A \rightarrow \Re$ che misura la distanza fra due punti di $A$
+- uno spazio \\(D\\)-dimensionale formato dagli attributi di scoring \\(A = (A_1,A_2,...,A_D)\\)
+- una relazione \\(R(A_1,A_2,...,R_1,R_2,....)\\)
+- un query point \\(q = (q_1,q_2,..,q_D)\\)
+- una funzione \\(d: A \times A \rightarrow \Re\\) che misura la distanza fra due punti di \\(A\\)
 
 Il problema diventa:
 
->[!CITE] dati un punto $q$ una relazione $R$, un intero $k \geq 1$ e una funzione distanza $d$ determinare le $k$ tuple in $R$ che sono le più vicine a $q$ secondo $d$
+>[!CITE] dati un punto \\(q\\) una relazione \\(R\\), un intero \\(k \geq 1\\) e una funzione distanza \\(d\\) determinare le \\(k\\) tuple in \\(R\\) che sono le più vicine a \\(q\\) secondo \\(d\\)
 
-## Risolvere query top-$k$ con indici
+## Risolvere query top-\\(k\\) con indici
 
-Una possibilità per risolvere le query top-$k$ e quello di usare [b+tree multiattributo](pages/tecnologie_basi_dati/b+tree.md#ricerche%20multi%20attributo), questa soluzione non e ottimale. e molto meglio usare indici multidimensionali come i [r-tree](pages/tecnologie_basi_dati/r-tree.md)
->[!NOTE] i b+tree multi-attributo mostrano gli stessi problemi che si hanno in caso di [window query](pages/tecnologie_basi_dati/indici_multidimensionali.md#limiti%20del%20[b+tree](pages/tecnologie_basi_dati/b+tree.md))
+Una possibilità per risolvere le query top-\\(k\\) e quello di usare [b+tree multiattributo](/tecnologie_basi_dati/b+tree#ricerche-multi-attributo), questa soluzione non e ottimale. e molto meglio usare indici multidimensionali come i [r-tree](/tecnologie_basi_dati/r-tree)
+>[!NOTE] i b+tree multi-attributo mostrano gli stessi problemi che si hanno in caso di [window query](/tecnologie_basi_dati/indici_multidimensionali#limiti-del-b+tree)
 
-###  Determinare se un nodo contiene foglie utili: $d_{MIN}$ limite
+###  Determinare se un nodo contiene foglie utili: \\(d_{MIN}\\) limite
 
-Per determinare se un nodo dell'albero deve essere considerato in fase di ricerca si definisce la **distanza del nodo come la distanza della foglia più vicina al punto di ricerca $q$**
+Per determinare se un nodo dell'albero deve essere considerato in fase di ricerca si definisce la **distanza del nodo come la distanza della foglia più vicina al punto di ricerca \\(q\\)**
 
 $$
 d_{MIN}(q,Reg(N)) = inf\{d(q,p) | P \in Reg(N)\}
 $$
 
-Di conseguenza si ha che se il nodo $N$ contiene punti interessanti deve essere vero che $d_{MIN}$ deve essere inferiore del raggio di ricerca $r$
+Di conseguenza si ha che se il nodo \\(N\\) contiene punti interessanti deve essere vero che \\(d_{MIN}\\) deve essere inferiore del raggio di ricerca \\(r\\)
 
 $$
 Reg(q) \cap Reg(N) \neq \emptyset \Leftrightarrow d_{MIN}(q,Reg(N)) \leq r
 $$
 
-### Risolvere le query top-$k$: algoritmo knnoptimal
+### Risolvere le query top-\\(k\\): algoritmo knnoptimal
 
-Per risolvere le query con il modello sopracitato si introduce l'algoritmo KNNOptimal, l'algoritmo scandisce l'albero considerando i nodi $d_{MIN}(q,Reg(N)) < r$ e memorizza la tupla $t$ con $d(q,t)$ minore
+Per risolvere le query con il modello sopracitato si introduce l'algoritmo KNNOptimal, l'algoritmo scandisce l'albero considerando i nodi \\(d_{MIN}(q,Reg(N)) < r\\) e memorizza la tupla \\(t\\) con \\(d(q,t)\\) minore
 
 ```python
 # query point input
@@ -185,7 +185,7 @@ return result, rNN
 
 L'algoritmo KNNOptimal e corretto e I/O-ottimale in quanto accede solo pagine in cui e possibile trovare foglie vicine al risultato
 
-### Knnoptimal e query top-$k$ con filtro
+### Knnoptimal e query top-\\(k\\) con filtro
 
 In caso di query della forma
 
@@ -197,8 +197,6 @@ ORDER BY 0.8*Price + 0.2*Mileage
 STOP AFTER 5;
 ```
 
-non  e detto che l'algoritmo [KNNOptimal](#Risolvere%20le%20query%20top-$k$%20algoritmo%20KNNOptimal) restituisca tuple concordi con il parametro di filtering, per supportare la casistica si utilizza una variante del [KNNOptimal](#Risolvere%20le%20query%20top-$k$%20algoritmo%20KNNOptimal) con supporto al **distance browsing**
+Non  e detto che l'algoritmo [KNNOptimal](#risolvere-le-query-top-k-algoritmo-knnoptimal) restituisca tuple concordi con il parametro di filtering, per supportare la casistica si utilizza una variante del [KNNOptimal](#risolvere-le-query-top-k-algoritmo-knnoptimal) con supporto al **distance browsing**
 
-nella coda `PQ` si includono anche le tuple e **l'algoritmo termina quando il primo elemento della coda e una tupla**
-
-[<](pages/tecnologie_basi_dati/r-tree.md)[>](pages/tecnologie_basi_dati/top_k_join_queries.md)
+Nella coda `PQ` si includono anche le tuple e **l'algoritmo termina quando il primo elemento della coda e una tupla**
