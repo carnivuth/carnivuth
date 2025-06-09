@@ -1,16 +1,14 @@
 ---
 draft: true
 series: ["Tecnologie progettazione basi di dati"]
+series_order: 26
 date: 2025-02-28
+title: Big data architectures
+description: Process big data flows
 id: big_data
 aliases: []
 tags: []
-index: 26
 ---
-
-# Big data architectures
-
-Si parla di big data quando il volume di dati da amministrare supera le capacita di storage e gestione dei normali sistemi DBMS, possibili contesti sono:
 
 - analisi di dati per infrastrutture IOT
 - analisi di dati di grandi banche dati
@@ -18,7 +16,7 @@ Si parla di big data quando il volume di dati da amministrare supera le capacita
 
 In queste situazioni il paradigma si sposta da un potenziamento della singola istanza che gestisce il dato a un aumento del numero di istanze (*scale out non scale up*)
 
-![](assets/tecnologie_basi_dati/Pasted%20image%2020250225145904.png)
+![](scale_out.png)
 
 Questo porta alla necessita di gestire i dati all'interno di cluster di macchine connesse in rete e limitare i flussi di trasferimento di dati non necessari, aumentando il numero di macchine e di componenti hardware aumentano anche le probabilità che ci siano guasti hardware e software, e necessario pensare sistemi in grado di operare in ambienti ostili
 
@@ -44,7 +42,7 @@ Paradigma di sviluppo pensato per gestire la concorrenza in ambienti distribuiti
 - **map** i chunk di dati vengono convertiti in coppie `<key,value>`
 - **reduce** le coppie con lo stesso  valore di `<key>` vengono raggruppate e combinate nel risultato
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 A[map]
 B[map]
@@ -53,7 +51,7 @@ D[aggregation layer]
 E{{reduce}}
 F{{reduce}}
 A & B & C --> D --> E & F
-```
+{{</ mermaid >}}
 
 Le operazioni di map e reduce sono eseguite su nodi in parallelo,  secondo un paradigma SIMD
 
@@ -62,5 +60,3 @@ I nodi vengono assegnati al cluster in base a dove si trovano i dati in input in
 ## Map reduce, execution
 
 Al momento dell'esecuzione, il supporto runtime crea un processo **jobtracker** che a sua volta crea un certo numero di **tasktracker** distribuiti nei vari nodi del cluster
-
-[<](pages/tecnologie_basi_dati/skyline_queries.md)
