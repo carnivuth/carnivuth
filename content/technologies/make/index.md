@@ -31,6 +31,23 @@ The makefile syntax involves some character that expands to specific files when 
 - `$<` expands to the first requisite
 - `$^` expands to all requisites
 
+### makefile vars
+
+A var in a makefile is defined as follows:
+
+```make
+BUILDDIR = ./build
+```
+
+And is referred with the `$()` notations
+
+```make
+mytarget:
+  some_long_command $(BUILDDIR)
+```
+
+>[!TIP] ENVIRONMENT variables are automatic exposed with the same notation `$()`, example `$(HOME)`
+
 ## PHONY targets
 
 Phony targets are targets that doesn't generate any file, they are a useful way to group other targets together
