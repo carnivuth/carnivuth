@@ -91,7 +91,8 @@ To backup the physical collection the process requires to acquire the audio trac
 ```bash
 cdda2wav -vall cddb=-1 speed=4 -paranoia paraopts=proof -B -D /dev/sr0
 ```
->[!WARNING] Notes that paranoia parameters make the process slower, for cd that are in good conditions they can be omitted
+> [!WARNING]
+> Notes that paranoia parameters make the process slower, for cd that are in good conditions they can be omitted
 
 An handy alias to avoid memorizing parameters
 

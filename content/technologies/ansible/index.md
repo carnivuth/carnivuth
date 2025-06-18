@@ -18,7 +18,8 @@ series_order: 1
 - a list of a task to be executed called `playbook`
 - a list of host machines to target called `inventory`
 
->[!NOTE] ansible uses ssh connection and copies python script to execute modules, so the target machine must have ssh enabled and configured and a compatible python interpreter
+> [!NOTE]
+> ansible uses ssh connection and copies python script to execute modules, so the target machine must have ssh enabled and configured and a compatible python interpreter
 
 {{< mermaid >}}
 ---
