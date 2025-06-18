@@ -20,11 +20,17 @@ To keep things ordered and clean files inside the collection folder are organize
 
 ```txt
 collection/
-├── album 1
-│   └── track 1
-├── album 2
-│   ├── track 1
-│   └── track 2
+├── artist 1
+│   └── album 1
+│       └── track 1
+│   └── album 2
+│       ├── track 1
+│       ├── track 2
+│       └── .....
+├── artist 2
+│   └── album 1
+│       ├── track 1
+│       └── .....
 ├── playlists
 │   ├── ....nsp
 │   ├── ....nsp
