@@ -88,6 +88,31 @@ require('lspconfig').ansiblels.setup{
 
 The `pattern` objects requires a [lua pattern](https://www.lua.org/manual/5.1/manual.html#5.4.1) as argument
 
+## Macros
+
+Macros are a vim feature that allow to record and replay a commands, useful when making a single set of operations on a lot of lines or in multiple files with the same structure
+
+To register a macro press `q` followed by the register where the macro will be stored for example `e`, then press the commands you want to record and then `q` again to stop registering
+
+#### Macro visualize
+
+To visualize a macro use the `:reg` command (*macros are stored in vim registers*)
+
+```vim
+:reg " shows content of all registers
+:reg e " shows content of the `e` register
+```
+
+#### Macro replay
+
+To replay a macro use `@` in normal mode followed by the register name, for example `@e`, number of times can also be specified, for example `5@e`, to replay a macro on all lines:
+
+```vim
+:%:normal @e
+```
+
+It will run the commands in the `e` register from `normal` mode on the all buffer `%`
+
 ## Quick command reference
 
 - To add argument to the command line inside vim (*e.g. to add file and also buffers*)
