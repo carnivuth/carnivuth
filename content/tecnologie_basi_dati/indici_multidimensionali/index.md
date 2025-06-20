@@ -5,7 +5,7 @@ aliases:
   - /tecnologie_basi_dati/indici_multidimensionali
 permalink: /tecnologie_basi_dati/indici_multidimensionali/index.md
 series: ["Tecnologie progettazione basi di dati"]
-draft: true
+draft: false
 id: indici_multidimensionali
 description: Indici per la risoluzione di query spaziali
 title: Indici multidimensionali

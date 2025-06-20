@@ -5,7 +5,7 @@ aliases:
   - /tecnologie_basi_dati/group_by
 permalink: /tecnologie_basi_dati/group_by/index.md
 series: ["Tecnologie progettazione basi di dati"]
-draft: true
+draft: false
 id: group_by
 title: Group_by
 description: Computare funzioni aggregate

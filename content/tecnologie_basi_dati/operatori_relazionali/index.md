@@ -4,7 +4,7 @@ aliases:
   - /tecnologie_basi_dati/operatori_relazionali/index.md
   - /tecnologie_basi_dati/operatori_relazionali
 permalink: /tecnologie_basi_dati/operatori_relazionali/index.md
-draft: true
+draft: false
 id: operatori_relazionali
 title: Operatori relazionali
 description: Come rispondere alle interrogazioni

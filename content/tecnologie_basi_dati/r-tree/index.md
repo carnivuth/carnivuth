@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 aliases:
   - /tecnologie_basi_dati/r-tree/index.md
   - /tecnologie_basi_dati/r-tree

@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 aliases:
   - /tecnologie_basi_dati/transazioni/index.md
   - /tecnologie_basi_dati/transazioni

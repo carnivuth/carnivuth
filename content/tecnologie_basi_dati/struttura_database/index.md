@@ -11,7 +11,7 @@ description: "Struttura architetturale dei database e considerazioni sulle motiv
 tags: ["struttura fisica","struttura logica","ottimizzazione di accesso"]
 aliases:
   - /tecnologie_basi_dati/struttura_database/index.md []
-draft: true
+draft: false
 series_order: 1
 ---
 {{< katex >}}

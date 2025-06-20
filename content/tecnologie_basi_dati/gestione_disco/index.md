@@ -7,7 +7,7 @@ permalink: /tecnologie_basi_dati/gestione_disco/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2025-01-30
 description: "Gestione del supporto fisico da parte dei dbms"
-draft: true
+draft: false
 aliases:
   - /tecnologie_basi_dati/gestione_disco/index.md []
 tags:

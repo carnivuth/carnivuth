@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 aliases:
   - /tecnologie_basi_dati/top_k_join_queries/index.md
   - /tecnologie_basi_dati/top_k_join_queries

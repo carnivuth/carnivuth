@@ -6,7 +6,7 @@ aliases:
 permalink: /tecnologie_basi_dati/indici/index.md
 date: 2025-01-30
 description: "Strutture ausiliarie per l'accesso ai dati"
-draft: true
+draft: false
 aliases:
   - /tecnologie_basi_dati/indici/index.md []
 tags:

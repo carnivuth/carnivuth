@@ -4,7 +4,7 @@ aliases:
   - /tecnologie_basi_dati/durability_control/index.md
   - /tecnologie_basi_dati/durability_control
 permalink: /tecnologie_basi_dati/durability_control/index.md
-draft: true
+draft: false
 id: durability_control
 title: Garantire la persistenza nei dbms
 descrizione: strategie per la gestione della persistenza delle transazioni
