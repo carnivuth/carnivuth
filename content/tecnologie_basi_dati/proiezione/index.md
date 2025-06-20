@@ -17,7 +17,7 @@ tags:
 series_order: 13
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 L'[operatore](/tecnologie_basi_dati/operatori_relazionali) di proiezione consente di eliminare attributi dal risultato di una query, data una query del tipo:
 
 ```sql

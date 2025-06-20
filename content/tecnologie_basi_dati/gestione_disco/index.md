@@ -19,7 +19,7 @@ tags:
 series_order: 2
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Una parte fondamentale di un DBMS per ottimizzare le performance e la gestione del disco
 
 ## Come e fatto un disco?

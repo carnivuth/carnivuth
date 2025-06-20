@@ -25,7 +25,7 @@ series: ["Tecnologie progettazione basi di dati"]
 series_order: 8
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Le transazioni sono operazioni logiche che portano il db da uno stato consistente ad un altro rispettando le proprieta dette **ACID**
 
 - **Atomicity** la transazione non può essere interrotta da altra operazioni

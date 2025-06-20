@@ -15,7 +15,7 @@ tags: []
 series_order: 16
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Le operazioni che scatenano operatori di modifica sono `INSERT` `UPDATE` e `DELETE` ma **solo le ultime due necessitano di un percorso di accesso ai dati**
 
 Il costo di queste operazioni e diviso in tre componenti:

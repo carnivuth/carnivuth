@@ -15,7 +15,7 @@ aliases:
 tags: []
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Una delle sfide nelle query [top k](/tecnologie_basi_dati/top_k_queries) e quello  di introdurre nei DBMS il concetto di ranking, come first class citizen, un primo approccio al problema e stato fornito dal progetto RankDB definendo i seguenti concetti:
 
 - splitting e interleaving del ranking degli oggetti

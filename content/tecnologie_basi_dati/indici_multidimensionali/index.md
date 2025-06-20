@@ -19,7 +19,7 @@ tags:
 series_order: 20
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Nati per soddisfare query che coinvolgono molteplici attributi, tra cui
 
 - query puntuali \\(A_1 = v_1, A_2 = v_2, … , A_n = v_n\\)

@@ -18,7 +18,7 @@ tags:
 series_order: 11
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 L'azione di sort dei dati non e un operatore dell'algebra ma risulta molto utile per risolvere alcune situazioni tra cui query `ORDER BY`, [bulk loading](/tecnologie_basi_dati/b+tree#bulk-loading) degli indici e operatori di `JOIN` e `GROUP BY`.
 
 Gli algoritmi di sort possono essere suddivisi in base alla memoria in cui vengono svolti:

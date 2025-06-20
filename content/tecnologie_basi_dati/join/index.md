@@ -19,7 +19,7 @@ tags:
 series_order: 14
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Uno degli operatori fondamentali, data la query che segue
 
 ```sql

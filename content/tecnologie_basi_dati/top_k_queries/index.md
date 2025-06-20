@@ -16,7 +16,7 @@ tags:
   - knnoptimal
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 L'obbiettivo quando si parla di top-\\(k\\) queries e quello di **fornire i primi \\(k\\) risultati che più si avvicinano alla richiesta della query**
 
 ![](top_k_query.png)

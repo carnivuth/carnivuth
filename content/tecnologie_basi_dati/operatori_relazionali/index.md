@@ -15,7 +15,7 @@ series: ["Tecnologie progettazione basi di dati"]
 series_order: 10
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Nei DBMS relazionali le interrogazioni vengono risolte combinando in maniera opportuna un insieme di operatori, di conseguenza e necessario
 
 - implementare in maniera efficiente tali operatori

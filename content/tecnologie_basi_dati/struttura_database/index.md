@@ -14,7 +14,7 @@ aliases:
 draft: false
 series_order: 1
 ---
-{{< katex >}}
+{{< mathjax >}}
 
 Per comprendere come lavora un database e necessario conoscere la sua architettura. Essa può essere scomposta per responsabilità in due componenti principali:
 

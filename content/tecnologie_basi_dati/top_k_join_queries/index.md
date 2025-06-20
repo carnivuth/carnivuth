@@ -15,7 +15,7 @@ aliases:
 tags: []
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Fino ad ora si sono prese in considerazione query top-\\(k\\) con una sola relazione \\(R\\), tuttavia e necessario considerare anche query della forma come segue:
 
 ```sql

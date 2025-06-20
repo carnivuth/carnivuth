@@ -17,7 +17,7 @@ series: ["Tecnologie progettazione basi di dati"]
 series_order: 7
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 a differenza degli [Indici ordinati](pages/tecnologie_basi_dati/indici.md#indici%20ordinati) gli indici hash non mantengono l'associazione `key -> RID` in maniera esplicita ma sfruttano una funzione hash
 
 ```mermaid

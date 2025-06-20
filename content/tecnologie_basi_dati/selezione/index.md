@@ -20,7 +20,7 @@ tags:
   - tipologie di predicati DB2
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Data una query di selezione come la seguente
 
 ```sql

@@ -17,7 +17,7 @@ Personal mathjax symbols reference
 
 ##  Parentheses
 
-{{< katex >}}
+{{< mathjax >}}
 
 | Symbol                | Code                  |
 | --------------------- | --------------------- |

@@ -14,6 +14,7 @@ series: ["Technologies notes"]
 draft: false
 series_order: 7
 ---
+{{< mathjax >}}
 
 Personal `jq` expression language reference
 

@@ -15,7 +15,7 @@ aliases:
 tags: []
 ---
 
-{{< katex >}}
+{{< mathjax >}}
 Le query [top k](/tecnologie_basi_dati/top_k_queries) hanno dei limiti in termine di espressività, in quanto possono solo catturare preferenze che si **traducono in valori numerici**
 
 ## Dominanza delle tuple
