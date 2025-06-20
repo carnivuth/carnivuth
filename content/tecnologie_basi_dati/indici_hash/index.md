@@ -1,10 +1,15 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/indici_hash/index.md
+  - /tecnologie_basi_dati/indici_hash
+permalink: /tecnologie_basi_dati/indici_hash/index.md
 date: 2025-02-04
 id: Indici hash
 title: Indici hash
 description: Indici che fanno uso di funzioni hash
 aliases:
+  - /tecnologie_basi_dati/indici_hash/index.md
   - indici hash
 tags:
   - indici
@@ -15,13 +20,13 @@ series_order: 7
 {{< katex >}}
 a differenza degli [Indici ordinati](pages/tecnologie_basi_dati/indici.md#indici%20ordinati) gli indici hash non mantengono l'associazione `key -> RID` in maniera esplicita ma sfruttano una funzione hash
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[key k]
 B[(hash function H)]
 C[RID or records with key = k]
 A --> B --> C
-{{</ mermaid >}}
+```
 
 Le funzioni **hash non sono iniettive** quindi sono possibili collisioni fra le chiavi,
 
@@ -106,7 +111,7 @@ Nel caso di tecniche di open addressing per ogni valore della chiave \\(k_i\\) s
 
 Nel caso di una ricerca nell'indice e necessario cercare \\(k_i\\) in tutti i bucket \\(H_0(k_i)....H_l(k_i)\\), inoltre l'operazione di eliminazione di un record deve essere effettuata con cautela in quanto trasforma un bucket pieno in un bucket non pieno che può arrestare la ricerca in fase di inserimento
 
-{{< mermaid >}}
+```mermaid
 ---
 title: bucket status in open addressing
 ---
@@ -117,7 +122,7 @@ C((non occupied))
 A -- insert -->B
 B -- delete -->C
 C -- insert -->B
-{{</ mermaid >}}
+```
 
 Possibili tecniche di open addressing sono
 
@@ -165,7 +170,7 @@ Ogni bucket ha un valore di local depth \\(p^{'}\\)  utilizzato per segnalare il
 
 In caso di overflow si procede come segue
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A{se p' < p}
 B{se p' = p}
@@ -174,7 +179,7 @@ D[si raddoppiano i bucket incrementando p]
 A -- si --> C
 A -- no --> B
 B --> D --> C
-{{</ mermaid >}}
+```
 
 In caso di eliminazione i bucket possono essere uniti se il numero di record del bucket e del buddy sono inferiori alla capacita \\(C\\)
 
@@ -182,7 +187,7 @@ In caso di eliminazione i bucket possono essere uniti se il numero di record del
 
 Nell'approccio a linear hashing il bucket che viene diviso non e quello in overflow ma un altro scelto in base a un dato criterio
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A[splitpointer and bucket initialization]
 B[overflow occours]
@@ -190,7 +195,7 @@ C[a new bucket is created at SP + P position]
 D[SP increase by one]
 E[records are re distributed]
 A --> B --> C --> D --> E
-{{</ mermaid >}}
+```
 
 Uno dei principali contro di questa strategia e che all'aumentare di SP gli split sono sempre più costosi
 

@@ -1,10 +1,15 @@
 ---
 title: Dbms e disco
+aliases:
+  - /tecnologie_basi_dati/gestione_disco/index.md
+  - /tecnologie_basi_dati/gestione_disco
+permalink: /tecnologie_basi_dati/gestione_disco/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2025-01-30
 description: "Gestione del supporto fisico da parte dei dbms"
 draft: true
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/gestione_disco/index.md []
 tags:
   - livello fisico
   - struttura
@@ -44,7 +49,7 @@ $$
 
 Dal punto di vista del livello fisico il DB consiste in una collezione di files, dove un file e una collezione di page
 
-{{< mermaid >}}
+```mermaid
 ---
 title: physical view
 ---
@@ -54,7 +59,7 @@ B[pages]
 C[tuples]
 D[fields of fixed and variable size]
 A --> B --> C --> D
-{{</ mermaid >}}
+```
 
 >[!NOTE] in questo caso il termine files non corrisponde a quello usato in sistemi operativi, la gestione di queste strutture e completamente delegata al database che può adottare soluzioni estremamente flessibili e complesse
 
@@ -156,7 +161,7 @@ Se un record eccede la dimensione della pagina esso viene spostato in un altra p
 
 Leggere una tupla significa spostare la pagina corrispondente dal disco nella memoria centrale in una struttura denominata buffer pool.La gestione del Buffer pool e fondamentale per le performance del DBMS, tale compito e affidato al **BUFFER MANAGER**
 
-{{< mermaid >}}
+```mermaid
 ---
 title: load page alghorithm
 ---
@@ -176,7 +181,7 @@ end
 buffer_manager ->> disk: read requested page
 buffer_manager ->> requestor: return page address
 end
-{{</ mermaid >}}
+```
 
 L'interfaccia offerta dal buffer manager agli altri componenti del DBMS e la seguente
 

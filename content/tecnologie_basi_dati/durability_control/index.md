@@ -1,10 +1,15 @@
 ---
 date: 2025-02-08
+aliases:
+  - /tecnologie_basi_dati/durability_control/index.md
+  - /tecnologie_basi_dati/durability_control
+permalink: /tecnologie_basi_dati/durability_control/index.md
 draft: true
 id: durability_control
 title: Garantire la persistenza nei dbms
 descrizione: strategie per la gestione della persistenza delle transazioni
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/durability_control/index.md []
 tags:
   - transazioni
   - WAL
@@ -95,7 +100,7 @@ In caso di fallimento di sistema tutte le transazioni che non hanno scritto nel 
 
 Per evitare di riscrivere tutti i parametri \\(After\\)  delle pagine di una transazione da rifare si adotta il seguente approccio
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 subgraph page update
 A[update di P]
@@ -110,7 +115,7 @@ F[pagina riscritta]
 D -- si --> E
 D -- no --> F
 end
-{{</ mermaid >}}
+```
 
 ### Record di checkpoint
 
@@ -130,7 +135,7 @@ L'algoritmo di ARIES consente l'utilizzo di politiche di [steal](#Politiche-di-g
 
 Nella fase di analisi l'obbiettivo e quello di ripristinare lo stato delle pagine e della tabella delle transazioni al momento del crash, si procede come segue:
 
-{{< mermaid >}}
+```mermaid
 ---
 title: analysis phase
 ---
@@ -147,13 +152,13 @@ A --> B --> C & E & G
 C --> D
 E --> F
 G --> H
-{{</ mermaid >}}
+```
 
 ### Fase di redo
 
 Nella fase di redo si svolgono tutte le modifiche alle pagine effettuate prima del crash
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A[si identifica il record con LSN minore tra quello delle pagine sporche ovvero la pagina che e stata modificata per prima]
 B[si ripercorre il log in avanti considerando i record di UPDATE/COMPENSATION]
@@ -161,13 +166,13 @@ C{se LSN della pagina < LSN record <br/> pagina e sporca}
 D[si ripete la modifica del record]
 E[si aggiorna LSN della pagina]
 A --> B --> C --> D --> E
-{{</ mermaid >}}
+```
 
 ### Fase di undo
 
 In questa fase tutte le transazioni attive al momento del crash vengono annullate
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A[si identificano le transazioni attive al momento del crash]
 B[partendo da quella con LSN piu alto si percorre il log all'indetro]
@@ -178,5 +183,5 @@ F[si annulla il record e si scrive un record di compensazione, si procede al pre
 A --> B --> C & E
 C --> D
 E --> F
-{{</ mermaid >}}
+```
 >[!TIP] scrivere [compensation record](#Log) nella fase di undo semplifica la procedura in caso di guasti ripetuti, dato che si e in grado di comprendere alla prossima esecuzione della procedura che le modifiche alle pagine sono già state apportate

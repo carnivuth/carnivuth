@@ -1,5 +1,9 @@
 ---
 title: "Password store"
+aliases:
+  - /technologies/pass/index.md
+  - /technologies/pass
+permalink: /technologies/pass/index.md
 description: "password store configuration and setup"
 date: 2025-01-20
 series: ["Technologies notes"]

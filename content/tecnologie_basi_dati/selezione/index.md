@@ -1,12 +1,17 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/selezione/index.md
+  - /tecnologie_basi_dati/selezione
+permalink: /tecnologie_basi_dati/selezione/index.md
 series: ["Tecnologie progettazione basi di dati"]
 series_order: 12
 date: 2025-02-09
 id: selezione
 title: Selezione
 description: Filtrare per valori
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/selezione/index.md []
 tags:
   - selezione
   - stima risultati

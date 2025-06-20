@@ -1,5 +1,9 @@
 ---
 title: "Navidrome"
+aliases:
+  - /technologies/navidrome/index.md
+  - /technologies/navidrome
+permalink: /technologies/navidrome/index.md
 description: "Notes on my personal music streaming service"
 date: 2025-05-28
 series: ["Technologies notes"]

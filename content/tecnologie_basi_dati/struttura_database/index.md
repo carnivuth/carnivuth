@@ -1,11 +1,16 @@
 ---
 id: struttura database
+aliases:
+  - /tecnologie_basi_dati/struttura_database/index.md
+  - /tecnologie_basi_dati/struttura_database
+permalink: /tecnologie_basi_dati/struttura_database/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2025-01-30
 title: "Come e fatto un database?"
 description: "Struttura architetturale dei database e considerazioni sulle motivazioni"
 tags: ["struttura fisica","struttura logica","ottimizzazione di accesso"]
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/struttura_database/index.md []
 draft: true
 series_order: 1
 ---
@@ -17,7 +22,7 @@ Per comprendere come lavora un database e necessario conoscere la sua architettu
 
 componente che si occupa delle funzionalità logiche di un database, gestione utenti informazioni prestazionali e ottimizzazione di query
 
-{{< mermaid >}}
+```mermaid
 ---
 title: DB logical layer
 ---
@@ -35,14 +40,14 @@ F[query plan evaluator]
 end
 end
 A & B --> Logical_layer
-{{</ mermaid >}}
+```
 
 ## Struttura fisica
 
 Componente che si occupa dell' accesso e della gestione della memoria secondaria, del salvataggio e recupero dei dati
 
 
-{{< mermaid >}}
+```mermaid
 ---
 title: DB physical layer
 ---
@@ -62,7 +67,7 @@ B & C & D & E --> F
 end
 G[(Data,Indices,Catalogs,Log)]
 physical_layer --> G
-{{</ mermaid >}}
+```
 
 Questa suddivisione va a creare due livelli di indipendenza, uno fra gli utilizzatori del database e i modellatori del database mentre l'altro fra i modellatori della struttura logica e i db admin che si occupano del tuning fisico dei parametri di accesso al disco
 

@@ -1,12 +1,17 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/top_k_join_queries/index.md
+  - /tecnologie_basi_dati/top_k_join_queries
+permalink: /tecnologie_basi_dati/top_k_join_queries/index.md
 series: ["Tecnologie progettazione basi di dati"]
 series_order: 23
 date: 2025-02-20
 id: top_k_join_queries
 title: Top-k join queries
 description: Query Top-k che coinvolgono piu relazioni
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/top_k_join_queries/index.md []
 tags: []
 ---
 
@@ -51,7 +56,7 @@ AND FuelConsumption < 7
 
 Viene risolta per mezzo del seguente sistema
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A[(Mediator)]
 B[wrapper]
@@ -62,7 +67,7 @@ A -- "select * from MyCars where Price < 15000"--> B
 A --"select * from MyCars where FuelConsumption < 7"--> C
 B --> D
 C --> E
-{{</ mermaid >}}
+```
 >[!TIP] il caso del **middleware scenario** non e diverso dal caso delle top-\\(k\\) join 1-1 query, con la differenza che nel caso delle query gli input sono locali, tuttavia le logiche algoritmiche sono le stesse :)
 
 ### input di query top-\\(k\\): assunzioni

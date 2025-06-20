@@ -1,5 +1,9 @@
 ---
 title: Combining obsidian github and quartz for the ultimate note taking experience
+aliases:
+  - /posts/obsidian_quartz_workflow/_index.md
+  - /posts/obsidian_quartz_workflow
+permalink: /posts/obsidian_quartz_workflow/_index.md
 description: "my personal journay to the definitive obsidian experience"
 date: 2024-09-17
 draft: false
@@ -55,14 +59,14 @@ So my second option was to generate a static website for mobile device access an
 
 Then i designed a workflow to generate the website deploying on github pages:
 
-{{< mermaid >}}
+```mermaid
 sequenceDiagram
 participant me
 participant github_repo
 participant github_pages
 me ->> github_repo: push changes to obsidian vault
 github_repo ->> github_pages: deploys new site version
-{{< /mermaid >}}
+```
 
 The next step was obvious in my mind: **AUTOMATION** cause if something pisses me off is manually building software so i came up with a github action to automate the work for me
 

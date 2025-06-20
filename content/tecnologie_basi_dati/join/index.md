@@ -1,11 +1,16 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/join/index.md
+  - /tecnologie_basi_dati/join
+permalink: /tecnologie_basi_dati/join/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2025-02-13
 id: join
 title: Join
 description: Eseguire il join relazionale
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/join/index.md []
 tags:
   - indexed nested loop join
   - paged nested loop join
@@ -74,7 +79,7 @@ Gli algoritmi sopracitati non tengono in conto la dimensione del buffer, in caso
 
 Per effettuare il matching nel [block nested loop join](#sfruttando-i-buffer-block-nested-loops-join) si può sfruttare una funzione di hash per allocare i record della relazione \\(R\\), le pagine di \\(S\\) vengono lette sequenzialmente e le tuple sottoposte alla stessa  funzione di hash per trovare il match
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[(relazione R)]
 subgraph central_memory
@@ -90,7 +95,7 @@ N[(relazione S)]
 A ~~~ central_memory ~~~ N
  F --> g & h & i & j ~~~ k
  K --> g
-{{</ mermaid >}}
+```
 
 ## Sfruttando gli indici: index nested loop join
 

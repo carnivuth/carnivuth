@@ -1,5 +1,9 @@
 ---
 title: "git"
+aliases:
+  - /technologies/git/index.md
+  - /technologies/git
+permalink: /technologies/git/index.md
 description: "how to version control"
 date: 2025-01-20
 tags:

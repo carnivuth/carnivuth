@@ -1,5 +1,9 @@
 ---
 title: "traefik"
+aliases:
+  - /technologies/traefik/index.md
+  - /technologies/traefik
+permalink: /technologies/traefik/index.md
 description: "Notes application proxy for cloud based environments"
 date: 2025-05-30
 series: ["Technologies notes"]

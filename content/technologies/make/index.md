@@ -1,5 +1,9 @@
 ---
 title: "make"
+aliases:
+  - /technologies/make/index.md
+  - /technologies/make
+permalink: /technologies/make/index.md
 description: "make and makefile guide"
 date: 2025-02-22
 tags:
@@ -14,13 +18,13 @@ series_order: 9
 
 Make is a powerful build system with the simple concept of transforming files in other files based on a recipe
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[source files]
 B(( recipe ))
 C[output files]
 A --> B --> C
-{{</ mermaid >}}
+```
 
 ## Special chars
 

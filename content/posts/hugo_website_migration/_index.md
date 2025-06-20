@@ -1,5 +1,9 @@
 ---
 title: How i came up with this blog
+aliases:
+  - /posts/hugo_website_migration/_index.md
+  - /posts/hugo_website_migration
+permalink: /posts/hugo_website_migration/_index.md
 date: '2025-01-26'
 description: Migrating from obsidian note system to a hugo blog
 draft: false

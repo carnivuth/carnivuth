@@ -1,5 +1,9 @@
 ---
 title: "hetzner"
+aliases:
+  - /technologies/hetzner/index.md
+  - /technologies/hetzner
+permalink: /technologies/hetzner/index.md
 description: "personal hetzner services usage guide"
 date: 2025-05-28
 series: ["Technologies notes"]

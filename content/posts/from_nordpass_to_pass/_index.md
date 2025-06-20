@@ -1,5 +1,9 @@
 ---
 title: 'From nordpass to password store'
+aliases:
+  - /posts/from_nordpass_to_pass/_index.md
+  - /posts/from_nordpass_to_pass
+permalink: /posts/from_nordpass_to_pass/
 date: '2025-06-03'
 draft: true
 description: "My personal journey from nordpass service to password store based system for managing passwords"

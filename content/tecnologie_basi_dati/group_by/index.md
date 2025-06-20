@@ -1,11 +1,16 @@
 ---
 date: 2025-02-13
+aliases:
+  - /tecnologie_basi_dati/group_by/index.md
+  - /tecnologie_basi_dati/group_by
+permalink: /tecnologie_basi_dati/group_by/index.md
 series: ["Tecnologie progettazione basi di dati"]
 draft: true
 id: group_by
 title: Group_by
 description: Computare funzioni aggregate
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/group_by/index.md []
 tags:
   - funzioni aggregate
   - group by ordinando

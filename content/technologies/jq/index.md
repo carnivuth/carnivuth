@@ -1,5 +1,9 @@
 ---
 title: "jq"
+aliases:
+  - /technologies/jq/index.md
+  - /technologies/jq
+permalink: /technologies/jq/index.md
 description: "manipulate json content"
 date: 2025-02-18
 tags:

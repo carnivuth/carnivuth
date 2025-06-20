@@ -1,12 +1,17 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/big_data/index.md
+  - /tecnologie_basi_dati/big_data
+permalink: /tecnologie_basi_dati/big_data/index.md
 series: ["Tecnologie progettazione basi di dati"]
 series_order: 26
 date: 2025-02-28
 title: Big data architectures
 description: Process big data flows
 id: big_data
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/big_data/index.md []
 tags: []
 ---
 
@@ -42,7 +47,7 @@ Paradigma di sviluppo pensato per gestire la concorrenza in ambienti distribuiti
 - **map** i chunk di dati vengono convertiti in coppie `<key,value>`
 - **reduce** le coppie con lo stesso  valore di `<key>` vengono raggruppate e combinate nel risultato
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A[map]
 B[map]
@@ -51,7 +56,7 @@ D[aggregation layer]
 E{{reduce}}
 F{{reduce}}
 A & B & C --> D --> E & F
-{{</ mermaid >}}
+```
 
 Le operazioni di map e reduce sono eseguite su nodi in parallelo,  secondo un paradigma SIMD
 

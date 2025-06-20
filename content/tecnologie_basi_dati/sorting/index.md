@@ -1,11 +1,16 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/sorting/index.md
+  - /tecnologie_basi_dati/sorting
+permalink: /tecnologie_basi_dati/sorting/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2025-02-09
 id: sorting
 title: "Ordinare i dati: sort"
 description: Come ordinare le tuple
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/sorting/index.md []
 tags:
   - sort merge
   - sort merge a z vie
@@ -27,7 +32,7 @@ Gli algoritmi di sort possono essere suddivisi in base alla memoria in cui vengo
 
 Il concetto alla base di questo sistema di sorting e caricare i dati in memoria centrale in sequenze (*dette run*), ordinarle con un merge interno e poi eseguire il merge una per volta
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[(pages in datafile)]
 subgraph internal memory
@@ -38,7 +43,7 @@ F((merge))
 end
 A --> B --> C  -->F
 B --> D <--> F
-{{</ mermaid >}}
+```
 
 >[!NOTE] il primo passo di ordinamento utilizza un sort interno
 
@@ -55,7 +60,7 @@ Con \\(P = 8192\\) e tempo di I/O \\(10ms\\) si ha un costo di \\(38\\) minuti
 
 Un possibile miglioramento consiste nell'utilizzare \\(Z+1\\) buffers (uno sempre per l'output) nella fase di merge, aumentando il fan-in della fase di merge
 
-{{< mermaid >}}
+```mermaid
 ---
 title: z-vie sort merge
 ---
@@ -64,7 +69,7 @@ A[leggi z run dal disco]
 B[fondi le run sul buffer di output]
 C[scrivi il buffer di output sul disco]
 A --> B --> C -- ripeti per finio a che non resta una sola run --> A
-{{</ mermaid >}}
+```
 
 ### Determinare il valore di \\(z\\)
 

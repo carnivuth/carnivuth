@@ -1,5 +1,9 @@
 ---
 title: "Proxmox"
+aliases:
+  - /technologies/proxmox/index.md
+  - /technologies/proxmox
+permalink: /technologies/proxmox/index.md
 description: "proxmox notes and personal reference"
 date: 2025-01-20
 series: ["Technologies notes"]

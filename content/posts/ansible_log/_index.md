@@ -1,5 +1,9 @@
 ---
 title: 'Ansible: what i would like to know when i started'
+aliases:
+  - /posts/ansible_log/_index.md
+  - /posts/ansible_log
+permalink: /posts/ansible_log/_index.md
 date: '2025-02-05'
 draft: false
 description: 'My experience after 1 year of working with ansible'
@@ -34,14 +38,14 @@ It's almost unusable, the user needs to now all the possible parameter combinati
 
 A playbook should be simple and workflow atomic which means that if a workflow requires some complex interactions with different machines the playbook should perform all of them in a single try, for example given the following workflow
 
-{{< mermaid >}}
+```mermaid
 sequenceDiagram
 participant application_a
 participant application_b
 participant sysadmin
 sysadmin ->> application_b: retrieve some data
 sysadmin ->> application_a: make http calls to API based on data
-{{</ mermaid >}}
+```
 
 A playbook should perform all of the operations in a single try reducing overhead in testing phase and development
 

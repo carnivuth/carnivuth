@@ -1,7 +1,12 @@
 ---
 title: Configure nintendo 3DS as a travel buddy
+aliases:
+  - /posts/n3ds_setup/_index.md
+  - /posts/n3ds_setup
+permalink: /posts/n3ds_setup/_index.md
 date: 2024-11-26
-aliases: []
+aliases:
+  - /posts/n3ds_setup/_index.md []
 tags: []
 draft: false
 ---
@@ -44,13 +49,13 @@ The SD card is **not a reliable memory support**, it will fail taking with it al
 
 So what to do? scripting things of course! the idea is to setup some system to search for my 3DS on the network, connect to it using ftp and copy savefiles
 
-{{< mermaid >}}
+```mermaid
 sequenceDiagram
 participant 3ds
 participant server
 3ds ->> 3ds: enter home network
 server ->> 3ds: connects and copy savefiles using ftp
-{{< /mermaid >}}
+```
 
 Here the steps to reproduce a similar architecture:
 

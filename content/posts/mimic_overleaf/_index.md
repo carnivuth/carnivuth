@@ -1,5 +1,9 @@
 ---
 title: 'Mimic overleaf using vim and make'
+aliases:
+  - /posts/mimic_overleaf/_index.md
+  - /posts/mimic_overleaf
+permalink: /posts/mimic_overleaf/_index.md
 date: '2025-04-09'
 draft: false
 description: "how to recreate overleaf with style locally"
@@ -31,12 +35,12 @@ That was a pain to manage, also graph sources and latex sources where stored sep
 
 So the first thing to address was the compilation of latex files cause without it the project was doomed from the beginning so i started to look the latex build system and i quickly discovered `latexmk` which i decided to wrap around a `makefile` that would build also the graphs using mermaid as a dependency
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A[compile graphs using mermaid]
 B[run latexmk to build pdf using generated images]
 A --> B
-{{< /mermaid >}}
+```
 
 ### Implementing live reload
 
@@ -44,7 +48,7 @@ One overleaf feature that i had to implement was the live rebuild system so i ca
 
 The second approach was to run build on file modifications, this is a more efficient approach cause build is run only when needed, after some research i found `inotifywait` a utility that does exactly this, it demonize itself and prints on standard output the filesystem events of the monitored files, then the system runs the make target based on the modified file, this way the live rebuild system is also independent from the editor used.
 
-{{< mermaid >}}
+```mermaid
 sequenceDiagram
 participant editor
 participant filesystem
@@ -52,7 +56,7 @@ participant monitor
 editor ->> filesystem: file modifications
 filesystem ->> monitor: notify event
 monitor ->> monitor: run build
-{{< /mermaid >}}
+```
 
 ![](workspace.png)
 > thesis project workspace

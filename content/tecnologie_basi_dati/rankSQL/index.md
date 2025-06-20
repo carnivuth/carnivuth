@@ -1,12 +1,17 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/rankSQL/index.md
+  - /tecnologie_basi_dati/rankSQL
+permalink: /tecnologie_basi_dati/rankSQL/index.md
 series: ["Tecnologie progettazione basi di dati"]
 series_order: 24
 date: 2025-02-20
 id: rankSQL
 Title: Introdurre il concetto di rank nei dbms
 description: Database e ranking delle tuple
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/rankSQL/index.md []
 tags: []
 ---
 

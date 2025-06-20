@@ -1,8 +1,13 @@
 ---
 title: Dotfiles, how i started my linux adventure
+aliases:
+  - /posts/linux_dotfiles/_index.md
+  - /posts/linux_dotfiles
+permalink: /posts/linux_dotfiles/_index.md
 description: "My personal linux experience with dotfiles, system administration, and distro hopping"
 date: 2024-11-16
-aliases: []
+aliases:
+  - /posts/linux_dotfiles/_index.md []
 tags:
     - shell
     - window managers
@@ -57,13 +62,13 @@ Then i started to save all dotfiles and scripts in a  [github repository](https:
 
 I leave here an installation guide for a freshly arch box, the idea is:
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[insert USB stick]
 B[wget this page]
 C["`**GREP AND PASTE LIKE THERE IS NO TOMORROW**`"]
 A --> B --> C
-{{< /mermaid >}}
+```
 
 ## INSTALLATION GUIDE
 

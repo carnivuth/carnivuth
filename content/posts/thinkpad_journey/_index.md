@@ -1,5 +1,9 @@
 ---
 title: My personal thinkpad journey
+aliases:
+  - /posts/thinkpad_journey/_index.md
+  - /posts/thinkpad_journey
+permalink: /posts/thinkpad_journey/_index.md
 description: "how i built my backup and travel laptop"
 date: 2024-12-12
 draft: false

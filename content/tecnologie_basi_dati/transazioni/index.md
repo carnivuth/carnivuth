@@ -1,10 +1,15 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/transazioni/index.md
+  - /tecnologie_basi_dati/transazioni
+permalink: /tecnologie_basi_dati/transazioni/index.md
 date: 2025-02-08
 id: transazioni
 title: Transazioni
 description: gestione della concorrenza nell'accesso ai dati
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/transazioni/index.md []
 tags:
   - transazioni
   - lock
@@ -32,13 +37,13 @@ Garantire tali proprietà e compito dei  [componenti del DBMS](pages/tecnologie_
 
 Una transazione e composta da una moltitudine di operazioni che portano la base dati in stati intermedi
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[Start state]
 B((Intermediate <br/> state))
 C[End state]
 A -- RW operations --> B -- RW operations --> C
-{{</ mermaid >}}
+```
 
 Una transazione può completarsi con successo (`commit`) oppure fallire, in questo caso il db viene riportato allo stato precedente alla transazione (`rollback`)
 
@@ -71,7 +76,7 @@ Esistono diverse proprietà di schedule:
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **Serial**       | le transazioni sono eseguite in maniera sequenziale                                                                             |
 | **Serializable** | uno schedule che conivolge solo transizioni committate i cui effetti sul db sono riconducibili a quello di uno schedule Seriale |
-| **Recoverable**  | Se la transazione \\(T1\\) legge una modifica di una transazione \\(T2\\) \\(T2\\) committa per prima                                       |
+| **Recoverable**  | Se la transazione \\(T1\\) legge una modifica di una transazione \\(T2\\) \\(T2\\) committa per prima                           |
 | **Cascadeless**  | Una transazione può leggere modifiche solo di transizioni committate                                                            |
 | **Strict**       | Una transazione non tocca valori modificati da un altra transazione attiva                                                      |
 
@@ -104,14 +109,14 @@ Tuttavia questo può portare a situazioni di **deadlock** che possono essere ris
 
 Per poter comprendere se un insieme di transazioni genera un deadlock si introduce il grafo di serializzabilita, ogni transazione viene modellata come un nodo del grafo e un arco tra due transazioni \\(T_i\\) e \\(T_j\\) simboleggia un conflitto tra le azioni delle due transazioni. un **deadlock si presenta se il grafo non e aciclico**
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A((T1))
 B((T2))
 C((T3))
 A --> B --> A & C
 A --> C
-{{</ mermaid >}}
+```
 
 ## Migliorando [s2pl](#gestire%20i%20lock%20strict%202-phase%20lock%20protocol): 2-phase lock protocol
 
@@ -128,7 +133,7 @@ In questa variante una transazione non può richiedere altri lock nel momento in
 Tra i [problemi dell'esecuzione concorrente](#Problemi%20dell'esecuzione%20concorrente) quello della phantom row e il più complesso da gestire, alcune soluzioni prevedono:
 
 - richiedere il lock **sull'indice di tutti i record che soddisfano un dato predicato**
-- in caso di [indici](pages/tecnologie_basi_dati/indici.md) si richiede il lock a livello di foglia che soddisfa il predicato
+- in caso di [indici](/tecnologie_basi_dati/indici/) si richiede il lock a livello di foglia che soddisfa il predicato
 
 ## Lock management: implementazione
 
@@ -137,7 +142,7 @@ Per poter implementare la gestione dei lock il [lock manager](pages/tecnologie_b
 - una **tabella delle transazioni attive** con una lista di lock per ogni transazione
 - una **tabella dei lock** dove per ogni oggetto viene segnato il tipo di lock, il numero della transazione che lo detiene e una lista di richieste per quel dato lock
 
-{{< mermaid >}}
+```mermaid
 ---
 title: lock protocol implementation
 ---
@@ -149,7 +154,7 @@ D[viene richiesto un X lock]
 E{non ci sono lock sull'oggetto}
 A --> B -- si --> C
 D --> E -- si --> C
-{{</ mermaid >}}
+```
 
 Al termine di una transazione tutti i suoi lock sono rilasciati (*sia in caso di commit che di abort*)
 
@@ -194,3 +199,6 @@ I DBMS offrono la possibilità di determinare un livello di isolamento, diversi 
 ## Gestire la concorrenza con granularita
 
 Un DBMS dovrebbe essere in grado di gestire la concorrenza con diversi livelli di granularita, estendendo i meccanismi anche agli indici.
+
+
+[/posts/from_nordpass_to_pass](/posts/from_nordpass_to_pass)

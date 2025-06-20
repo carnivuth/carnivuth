@@ -1,12 +1,17 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/skyline_queries/index.md
+  - /tecnologie_basi_dati/skyline_queries
+permalink: /tecnologie_basi_dati/skyline_queries/index.md
 series: ["Tecnologie progettazione basi di dati"]
 series_order: 25
 date: 2025-02-22
 id: skyline_queries
 title: "Oltre le top-k: skyline queries"
 description: Restituire di elementi non dominanti in una query
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/skyline_queries/index.md []
 tags: []
 ---
 

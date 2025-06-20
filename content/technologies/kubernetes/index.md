@@ -1,5 +1,9 @@
 ---
 title: "kubernetes"
+aliases:
+  - /technologies/kubernetes/index.md
+  - /technologies/kubernetes
+permalink: /technologies/kubernetes/index.md
 description: "container orchestrator notes"
 date: 2025-04-17
 tags:
@@ -18,7 +22,7 @@ Kubernetes is a container orchestrator for managing high scale deployment challe
 
 The kubernetes cluster architecture presents itself as follows:
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 subgraph control_plane
 A[api-server]
@@ -51,7 +55,7 @@ P[pod]
 end
 end
 control_plane --> worker_1 & worker_2 & worker_3
-{{</ mermaid >}}
+```
 
 Where the **control plane** node manages the worker nodes that run pods, pods are managed trough a container runtime (*for example `containerd`*) that runs the containers, the control plane is  also responsible for managing deployments
 

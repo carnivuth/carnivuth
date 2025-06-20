@@ -1,5 +1,9 @@
 ---
 title: "ansible"
+aliases:
+  - /technologies/ansible/index.md
+  - /technologies/ansible
+permalink: /technologies/ansible/index.md
 date: 2025-02-15
 description: "ansible snippets and personal docs"
 tags:
@@ -21,7 +25,7 @@ series_order: 1
 > [!NOTE]
 > ansible uses ssh connection and copies python script to execute modules, so the target machine must have ssh enabled and configured and a compatible python interpreter
 
-{{< mermaid >}}
+```mermaid
 ---
 title: ansible inner working
 ---
@@ -31,7 +35,7 @@ participant ansible_runner
 participant target
 ansible_runner ->> target: copies ansible module (python file)
 target ->> target: executes ansible module
-{{</ mermaid >}}
+```
 
 Ansible content can be distributed in the form of roles or collections, where a role is a set of tasks that made a specific action/configuration (*e.g. Installing docker*) and a collection is a set of roles
 

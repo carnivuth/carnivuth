@@ -1,5 +1,9 @@
 ---
 title: "Man"
+aliases:
+  - /technologies/man/index.md
+  - /technologies/man
+permalink: /technologies/man/index.md
 description: "man setup"
 date: 2025-01-20
 tags:

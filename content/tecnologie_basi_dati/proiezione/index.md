@@ -1,11 +1,16 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/proiezione/index.md
+  - /tecnologie_basi_dati/proiezione
+permalink: /tecnologie_basi_dati/proiezione/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2023-04-19
 id: proiezione
 title: Proiezione
 description: Rimuovere campi dall'output di una query
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/proiezione/index.md []
 tags:
   - proiezione con sorting
   - proiezione con hashing
@@ -44,7 +49,7 @@ Fattibile solo se si hanno un alto numero di pagine, il processo si divide in du
 - si applica una funzione di hash (*a \\(B-1\\) valori*) per suddividere le tuple in base agli attributi rimasti
 - se una pagina e piena la si scrive nel disco
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[(input file)]
 subgraph central memory
@@ -56,7 +61,7 @@ F[B-1]
 end
 G[(partizioni)]
 A --> B --> C & D & E & F --> G
-{{</ mermaid >}}
+```
 
 ### Fase di eliminazione dei duplicati
 

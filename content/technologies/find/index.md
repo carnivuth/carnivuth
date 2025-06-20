@@ -1,5 +1,9 @@
 ---
 title: "find"
+aliases:
+  - /technologies/find/index.md
+  - /technologies/find
+permalink: /technologies/find/index.md
 date: 2025-01-20
 tags:
   - oneliners

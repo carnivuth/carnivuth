@@ -1,5 +1,9 @@
 ---
 title: "github actions"
+aliases:
+  - /technologies/github_actions/index.md
+  - /technologies/github_actions
+permalink: /technologies/github_actions/index.md
 description: "automate procedures in a github project"
 date: 2025-01-20
 tags:

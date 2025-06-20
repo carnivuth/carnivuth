@@ -1,11 +1,16 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/ricerca_piano_accesso/index.md
+  - /tecnologie_basi_dati/ricerca_piano_accesso
+permalink: /tecnologie_basi_dati/ricerca_piano_accesso/index.md
 series: ["Tecnologie progettazione basi di dati"]
 title: Ricerca del piano di accesso
 description: Metodologie per la ricerca del piano di accesso ai dati meno costoso
 date: 2025-02-16
 id: ricerca_piano_accesso
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/ricerca_piano_accesso/index.md []
 tags:
   - programmazione dinamica
   - database profile
@@ -82,7 +87,7 @@ Una delle metriche più fondamentali da stimare e il numero di valori distinti d
 
 Una delle modalita di stima per mezzo di modelli probabilistici e  quello di predisporre un array di \\(B\\) bit  e una funzione hash a \\([0,B-1]\\) si scandisce la relazione e si applica la funzione di hash all'attributo in questione
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[(R)]
 subgraph central memory
@@ -92,7 +97,7 @@ D[B_1]
 E[B_n]
 end
 A --> B -- H --> C & D & E
-{{</ mermaid >}}
+```
 
 il numero di valori distinti viene quindi stimato come \\(NK(A) = Bln(B/Z)\\)
 

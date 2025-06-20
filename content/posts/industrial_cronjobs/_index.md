@@ -1,5 +1,9 @@
 ---
 date: 2024-09-16
+aliases:
+  - /posts/industrial_cronjobs/_index.md
+  - /posts/industrial_cronjobs
+permalink: /posts/industrial_cronjobs/_index.md
 title: Make industrial cronjobs
 draft: false
 tags:

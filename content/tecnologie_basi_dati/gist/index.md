@@ -1,10 +1,15 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/gist/index.md
+  - /tecnologie_basi_dati/gist
+permalink: /tecnologie_basi_dati/gist/index.md
 date: 2023-03-15
 id: GiST
 title: La specifica GiST
 descrizione: Una interfaccia per la definizione di indici
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/gist/index.md []
 tags:
   - implementazione r-tree
   - implementazione b+tree

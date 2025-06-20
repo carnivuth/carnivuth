@@ -1,5 +1,9 @@
 ---
 title: "jenkins"
+aliases:
+  - /technologies/jenkins/index.md
+  - /technologies/jenkins
+permalink: /technologies/jenkins/index.md
 description: "pipeline service"
 date: 2025-04-29
 tags:
@@ -14,14 +18,14 @@ series_order: 6
 
 Jenkins is a CI service that can build and test software from different VCS, run automation tasks, integrate with ansible and much more, it's based around the concept of **builds**, builds are composed of a sequence of actions that  are executed on **build nodes**, build notes are enivronments that run the software build workflow
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[JENKINS INSTANCE]
 B[build node 1]
 C[build node 2]
 D[build node 3]
 A -- execute build pipelines --> B & C & D
-{{</ mermaid >}}
+```
 
 
 ## Create a Jenkins CI pipeline for github repository

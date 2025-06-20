@@ -1,5 +1,9 @@
 ---
 title: "Neovim"
+aliases:
+  - /technologies/nvim/index.md
+  - /technologies/nvim
+permalink: /technologies/nvim/index.md
 description: "nvim personal reference"
 date: 2025-01-20
 series: ["Technologies notes"]
@@ -17,7 +21,7 @@ Neovim is a vim fork with builtin lsp client, support for lua scripting, and ret
 
 it's a standard protocol  to manage interaction between code editors and process providing code completion and  syntax highlighting
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 subgraph editors
 direction TB
@@ -33,7 +37,7 @@ F[dockerls]
 end
 editors --send file content--> language_servers
 language_servers --code completition--> editors
-{{</ mermaid >}}
+```
 
 Neovim provides integrated support as it feature a builtin LSP client, in my personal configuration this plugins are also enabled to improve the LSP management experience
 

@@ -1,5 +1,9 @@
 ---
 title: Integrate html snippets in obsidian
+aliases:
+  - /posts/html_snippets_in_obsidian/_index.md
+  - /posts/html_snippets_in_obsidian
+permalink: /posts/html_snippets_in_obsidian/_index.md
 date: 2024-12-07
 draft: false
 tags:
@@ -17,7 +21,7 @@ I quickly tried some plugins and configurations until i come with this strange b
 
 So if obsidian does not render my html i guess i could try to embed some html sites that does it, this is the architecture that i came up with
 
-{{< mermaid >}}
+```mermaid
 ---
 $html_snippets_in_obsidian.mdlocal machine
 ---
@@ -25,7 +29,7 @@ flowchart LR
 A[(nginx_docker_container)]
 B[obsidian]
 B --embed html -->  A
-{{< /mermaid >}}
+```
 
 In this architecture obsidian embeds the html content (*stored on the same vault*) that is exposed from a nginx docker container, so if i want to add the snippet `foo` to my note:
 

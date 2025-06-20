@@ -1,10 +1,15 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/b+tree/index.md
+  - /tecnologie_basi_dati/b+tree
+permalink: /tecnologie_basi_dati/b+tree/index.md
 date: 2025-02-04
 id: b+tree
 title: Indici b+tree
 description: Indici b-tree bilanciati e paginati dove i dati sono contenuti esclusivamente nelle foglie dell'albero
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/b+tree/index.md []
 tags:
   - b+tree
   - indici ordinati
@@ -21,18 +26,18 @@ I b+tree sono b-tree in cui le tuple sono contenute solo nelle foglie dell'alber
 
 Dato che le foglie sono contenute in una lista linkata per effettuare ricerche range e sufficiente:
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A[trovare il primo valore k >= k_low]
 B[leggere la lista dal valore k fino al valore k_i <= k_high]
 A --> B
-{{</ mermaid >}}
+```
 
 ## B+tree inserimento
 
 In caso di inserimento si ripercorre l'albero fino alla foglia dove deve essere inserito l'albero, se la foglia e piena (*\\(2D\\) elementi*) allora si ha una situazione di **overflown**, che viene gestita come segue
 
-{{< mermaid >}}
+```mermaid
 ---
 title: overflow management
 ---
@@ -41,7 +46,7 @@ A[si computa la mediana dei valori della foglia]
 B[la foglia viene splittata a meta secondo la mediana]
 C[il nodo padre viene aggiornato di conseguenza]
 A --> B --> C
-{{</ mermaid >}}
+```
 
 >[!NOTE] nel caso anche il nodo padre sia pieno, si procede ricorsivamente fino alla radice
 
@@ -102,7 +107,7 @@ E inoltre necessario valutare l'uso di tali indici con criterio in quanto se si 
 
 Gli indici vengono creati a db esistente (*in corsa*), e dunque necessario ottimizzarne la creazione
 
-{{< mermaid >}}
+```mermaid
 ---
 title: bulk loading
 ---
@@ -110,7 +115,7 @@ flowchart TD
 A[viene creata una lista di <key,RID> ordinata e paginata]
 B[viene creata una lista di <key,PID> leggendo le entry della lista precedente]
 A --> B -- fino a raggiungere la root del indice--> A
-{{</ mermaid >}}
+```
 
 ## Performance come indice secondario
 

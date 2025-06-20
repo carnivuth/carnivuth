@@ -1,12 +1,17 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/top_k_queries/index.md
+  - /tecnologie_basi_dati/top_k_queries
+permalink: /tecnologie_basi_dati/top_k_queries/index.md
 series: ["Tecnologie progettazione basi di dati"]
 series_order: 22
 date: 2025-02-18
 id: top_k_queries
 title: Top-k queries
 Description: Restituire i migliori N risultati
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/top_k_queries/index.md []
 tags:
   - knnoptimal
 ---
@@ -66,10 +71,10 @@ STOP AFTER k
 
 E necessario estendere l'algebra relazionale con un operatore \\(\tau_{k,S}\\) che restituisca le \\(k\\) tuple migliori secondo la funzione di scoring \\(S\\)
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 top_operator --> filter --> Relation_R
-{{</ mermaid >}}
+```
 
 ## Implementazione dell'operatore top \\(\tau_{k,s}\\)
 

@@ -1,5 +1,9 @@
 ---
 title: "Mathjax"
+aliases:
+  - /technologies/mathjax/index.md
+  - /technologies/mathjax
+permalink: /technologies/mathjax/index.md
 description: "mathjax reference symbols"
 date: 2025-01-20
 series: ["Technologies notes"]

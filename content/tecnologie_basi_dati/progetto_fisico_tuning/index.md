@@ -1,11 +1,16 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/progetto_fisico_tuning/index.md
+  - /tecnologie_basi_dati/progetto_fisico_tuning
+permalink: /tecnologie_basi_dati/progetto_fisico_tuning/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2025-02-16
 id: progetto_fisico_tuning
 title: Progetto fisico e tuning del DB
 description: Strategie e best practices per la gestione del progetto fisico e i parametri di ottimizzazione di un DB
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/progetto_fisico_tuning/index.md []
 tags:
   - data clustering
   - data partitioning
@@ -57,7 +62,7 @@ AND D.name = 'Toy'
 
 In questo caso un piano di accesso ragionevole potrebbe essere questo:
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 E((D))
 D((E))
@@ -67,7 +72,7 @@ A{{OUTPUT}}
 E --> C --> B
 D --> B
 B --> A
-{{</ mermaid >}}
+```
 
 In questo caso sono necessari un indice su `D.name` e un indice su `E.dno` (*possibilmente [hash](/tecnologie_basi_dati/indici_hash)*)
 

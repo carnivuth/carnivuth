@@ -1,5 +1,9 @@
 ---
 title: "terraform"
+aliases:
+  - /technologies/terraform/index.md
+  - /technologies/terraform
+permalink: /technologies/terraform/index.md
 description: "docs for the most used IaC tool"
 date: 2025-04-28
 series: ["Technologies notes"]
@@ -13,12 +17,12 @@ Terraform is a tool for IaC (*infrastructure as code*) that can work with multip
 
 Terraform can build hosts based on var files and secrets stored outside of the versioning system
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A[variables.tf]
 B[terraform.tfvars]
 A --> B
-{{</ mermaid >}}
+```
 
 > sample of a `variables.tf` file
 ```terraform

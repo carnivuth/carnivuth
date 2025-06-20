@@ -1,11 +1,16 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/operatori_modifica/index.md
+  - /tecnologie_basi_dati/operatori_modifica
+permalink: /tecnologie_basi_dati/operatori_modifica/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2025-02-13
 id: operatori_modifica
 title: Operatori di modifica
 description: Eseguire,insert update e delete
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/operatori_modifica/index.md []
 tags: []
 series_order: 16
 ---

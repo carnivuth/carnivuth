@@ -1,11 +1,16 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/ottimizzazione_interrogazioni/index.md
+  - /tecnologie_basi_dati/ottimizzazione_interrogazioni
+permalink: /tecnologie_basi_dati/ottimizzazione_interrogazioni/index.md
 series: ["Tecnologie progettazione basi di dati"]
 date: 2025-02-15
 id: ottimizzazione_interrogazioni
 title: Ottimizzazione delle interrogazioni
 description: Come il dbms riscrive le query prima di operare la risoluzione
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/ottimizzazione_interrogazioni/index.md []
 tags:
   - ottimizzazione delle interrogazioni
   - interfaccia a iteratore
@@ -17,17 +22,17 @@ series_order: 17
 
 Per rispondere a una query il DBMS necessita di determinare qual'e il piano di accesso ottimale per tirare su i dati richiesti dal disco, Il componente dedito a questa mansione e il [query optimizer](/tecnologie_basi_dati/struttura_database#struttura-fisica) che data una query genera un **piano di accesso** ottimale
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 A((query))
 B[query optimizer]
 C((access plan))
 A --> B --> C
-{{</ mermaid >}}
+```
 
 Il query optimizer e strutturato come segue
 
-{{< mermaid >}}
+```mermaid
 flowchart TD
 A((query))
 subgraph query compiler
@@ -51,7 +56,7 @@ I --> F & H & G
 F & G --> J --> H --> L
 H --> L
 J --> M
-{{</ mermaid >}}
+```
 
 >[!TIP] Il funzionamento dell'ottimizzatore si basa su una **rappresentazione interna della query ad albero**
 

@@ -1,11 +1,16 @@
 ---
 date: 2025-02-09
+aliases:
+  - /tecnologie_basi_dati/operatori_relazionali/index.md
+  - /tecnologie_basi_dati/operatori_relazionali
+permalink: /tecnologie_basi_dati/operatori_relazionali/index.md
 draft: true
 id: operatori_relazionali
 title: Operatori relazionali
 description: Come rispondere alle interrogazioni
 tags: ["operatori relazionali","operatori logici", "operatori fisici"]
-aliases: []
+aliases:
+  - /tecnologie_basi_dati/operatori_relazionali/index.md []
 series: ["Tecnologie progettazione basi di dati"]
 series_order: 10
 ---

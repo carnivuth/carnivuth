@@ -1,5 +1,9 @@
 ---
 title: "Rust"
+aliases:
+  - content/tecnologies/rust.md
+  - content/tecnologies
+permalink: /tecnologies/rust.md
 date: 2025-06-10T12:01:34+02:00
 draft: true
 description: "Notes on the rust programming language"

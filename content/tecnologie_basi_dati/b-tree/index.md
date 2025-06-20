@@ -1,11 +1,16 @@
 ---
 draft: true
+aliases:
+  - /tecnologie_basi_dati/b-tree/index.md
+  - /tecnologie_basi_dati/b-tree
+permalink: /tecnologie_basi_dati/b-tree/index.md
 date: 2025-02-04
 id: b-tree
 title: Indici b-tree
 description: Indici ad albero bilanciati e paginati
 tags: ["indici", "b-tree", "indici ordinati"]
 aliases:
+  - /tecnologie_basi_dati/b-tree/index.md
 series: ["Tecnologie progettazione basi di dati"]
 series_order: 4
 ---
