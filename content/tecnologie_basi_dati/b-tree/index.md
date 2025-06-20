@@ -18,13 +18,13 @@ series_order: 4
 {{< mathjax >}}
 Gli indici B-tree sono strutture dati ad albero bilanciate in cui i singoli nodi rappresentano delle pagine dati, il bilanciamento e mantenuto dalle operazioni di inserimento e update.
 
-Il numero di entries di un nodo e un valore \\(m\\) nell'intervallo \\(d-2d\\) dove \\(d\\) e detto ordine dell'albero
+Il numero di entries di un nodo e un valore $m$ nell'intervallo $d-2d$ dove $d$ e detto ordine dell'albero
 
-Il numero di nodi figli e \\(m+1\\) e oscilla nell'intervallo \\(d+1 - 2d+1\\)
+Il numero di nodi figli e $m+1$ e oscilla nell'intervallo $d+1 - 2d+1$
 
 ### Algoritmo di ricerca di un b-tree
 
-L'algoritmo di ricerca, dato un valore della chiave percorre l'albero prendendo in considerazione il figlio \\(i\\)-esimo con tale per cui \\(k_{i-1}<k<k_i\\)
+L'algoritmo di ricerca, dato un valore della chiave percorre l'albero prendendo in considerazione il figlio $i$-esimo con tale per cui $k_{i-1}<k<k_i$
 
 ### Costo di una ricerca in un b-tree
 
@@ -37,7 +37,7 @@ $$
 
 Di conseguenza e necessario poter computare l'altezza di un b-tree
 
-Si ha che il numero massimo di nodi di un b-tree e dato quando tutti i nodi hanno \\(2d+1\\) entry di conseguenza si ha che
+Si ha che il numero massimo di nodi di un b-tree e dato quando tutti i nodi hanno $2d+1$ entry di conseguenza si ha che
 
 $$
 b_{max} = \sum_{i=0}^{h-1}{(2d+1)^i} = \frac{(2d-1)^h-1}{2d}
@@ -49,7 +49,7 @@ $$
 N_{max} = 2db_{max} = (2d +1)^h -1
 $$
 
-Viceversa il numero minimo di nodi si ha quando tutti escluso la root sono pieni a meta ovvero hanno \\(d\\) entry
+Viceversa il numero minimo di nodi si ha quando tutti escluso la root sono pieni a meta ovvero hanno $d$ entry
 
 $$
 b_{min} = 1 + 2\sum_{i=0}^{h-2}{(d+1)^i} = 1+ 2\frac{(d+1)^{h-1}-1}{d}

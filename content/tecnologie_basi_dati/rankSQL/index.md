@@ -26,12 +26,12 @@ Una delle sfide nelle query [top k](/tecnologie_basi_dati/top_k_queries) e quell
 
 Una relazione rank e definita come segue
 
->[!CITE] data una relazione \\(R\\) e una funzione di scoring monotona \\(S(p_1,p_2,...,p_m)\\)  una relazione rank  \\(R_P\\) si definisce come una relazione dove gli oggetti sono ordinati per valore decrescente di \\(S_P^+(t)\\) dove \\(S_P^+(t)\\) e definito come il massimo possibile score della tupla \\(t\\)
+>[!CITE] data una relazione $R$ e una funzione di scoring monotona $S(p_1,p_2,...,p_m)$  una relazione rank  $R_P$ si definisce come una relazione dove gli oggetti sono ordinati per valore decrescente di $S_P^+(t)$ dove $S_P^+(t)$ e definito come il massimo possibile score della tupla $t$
 
 ## Rank algebra
 
-Pensata come estensione per supportare le [Relazioni rank](#relazione-rank), introduce l'operatore \\(\mu\\) che applica una preferenza alla relazione rank \\(R_P\\)
+Pensata come estensione per supportare le [Relazioni rank](#relazione-rank), introduce l'operatore $\mu$ che applica una preferenza alla relazione rank $R_P$
 
-Grazie all'operatore \\(\mu\\) e possibile l'interleaving con altri operatori \\(\sigma(\mu(R_P))\\)
+Grazie all'operatore $\mu$ e possibile l'interleaving con altri operatori $\sigma(\mu(R_P))$
 
 ![](operatore_mu.png)

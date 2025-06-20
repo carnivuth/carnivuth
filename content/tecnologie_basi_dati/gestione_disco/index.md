@@ -35,11 +35,11 @@ Per calcolare il transfer rate è sufficiente conoscere rpm numero di blocchi pe
 
 Per ottimizzare l'accesso **le tuple sono caricate in blocchi**  (*dette page*) che nel disco vengono scritte in un blocco continuo di settori del disco, sono le unita di trasferimento atomiche per un DBMS
 
-Le pages hanno una dimensione variabile (\\(4,64KB\\))
+Le pages hanno una dimensione variabile ($4,64KB$)
 
 >[!NOTE] pagine piu piccole potrebbero richiedere piu operazioni di IO mentre pagine grandi richiedono piu memoria e potrebbero creare problemi di frammentazione
 
-La velocità di trasferimento di una pagina dipende dalla sua dimensione \\(P\\) e dal ratio di trasferimento \\(T_r\\)
+La velocità di trasferimento di una pagina dipende dalla sua dimensione $P$ e dal ratio di trasferimento $T_r$
 
 $$
 V_t = \frac{P}{T_r}
@@ -69,7 +69,7 @@ DB2 organizza lo spazio fisico in **tablespace**, ognuno di essi composto da con
 
 ![](tablespaces_db2.png)
 
-In particolare un singolo container e suddiviso in extents che sono blocchi di pagine di dimensione \\(4KB\\), la dimensione di un extent e determinata dal tablespace di riferimento e un extent contiene dati di una singola relazione
+In particolare un singolo container e suddiviso in extents che sono blocchi di pagine di dimensione $4KB$, la dimensione di un extent e determinata dal tablespace di riferimento e un extent contiene dati di una singola relazione
 
 ## Tablespaces
 
@@ -112,8 +112,8 @@ Il database associa delle strategie di rappresentazione per ogni tipologia di da
 
 | **DATATYPE**                              | **REPRESENTATION**                                                                   |
 | ----------------------------------------- | ------------------------------------------------------------------------------------ |
-| fixed-length strings char(\\(n\\))            | si usano \\(n\\) byte con un carattere terminatore                                       |
-| variable-length string chars varchar(\\(n\\)) | si usano \\(m+p\\) bytes dove \\(m<n\\) e i \\(p\\) byte iniziali indicano quanto e lunga la stringa |
+| fixed-length strings char($n$)            | si usano $n$ byte con un carattere terminatore                                       |
+| variable-length string chars varchar($n$) | si usano $m+p$ bytes dove $m<n$ e i $p$ byte iniziali indicano quanto e lunga la stringa |
 | DATE e TIME                        | rappresentati come stringhe di lunghezza fissa|
 | Enumerated Types                        | si utilizza un encoding in interi|
 
@@ -224,9 +224,9 @@ In questa tipologia di file i record sono ordinati in base a un dato attributo
 
 | OPERATION     | HEAP COST                          | SEQUENTIAL COST                            |
 | ------------- | ---------------------------------- | ------------------------------------------ |
-| search by key | \\(NP/2\\) in media<br>\\(NP\\) al massimo | \\(\log_2{NP}\\)                               |
-| range search  | \\(NP\\)                               | \\(costofsearch -1 + \frac{(H-L)*NP}{HK-LK}\\) |
-|               | \\(2\\)                                | \\(costofsearch +1\\)                          |
-| deletion      | \\(cost of search +1\\)                | \\(costofsearch +1\\)                          |
-| update        | \\(cost of search + 1\\)               | \\(costofsearch +1\\)                          |
+| search by key | $NP/2$ in media<br>$NP$ al massimo | $\log_2{NP}$                               |
+| range search  | $NP$                               | $costofsearch -1 + \frac{(H-L)*NP}{HK-LK}$ |
+|               | $2$                                | $costofsearch +1$                          |
+| deletion      | $cost of search +1$                | $costofsearch +1$                          |
+| update        | $cost of search + 1$               | $costofsearch +1$                          |
 

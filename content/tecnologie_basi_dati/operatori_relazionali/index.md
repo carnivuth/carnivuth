@@ -48,10 +48,10 @@ Gli operatori logici sono i seguenti:
 
 Per poter stimare il costo di un operatore si prendono in considerazione i seguenti parametri (*reperibili dai cataloghi del database*)
 
-- \\(N(R)\\) = numero di record di \\(R\\)
-- \\(P(R)\\) = numero di pagine di \\(R\\)
-- \\(Len(R)\\) = lunghezza (in byte) di un record di \\(R\\)
-- \\(NK(R.A)\\) = numero di valori distinti dell'attributo \\(R.A\\)
-- \\(TP(R)\\) = numero di tuple per pagina
-- \\(B\\) = numero di pagine buffer a disposizione per l'operatore
-- \\(L(IX)\\) = numero di pagine foglia dell’indice \\(IX\\)
+- $N(R)$ = numero di record di $R$
+- $P(R)$ = numero di pagine di $R$
+- $Len(R)$ = lunghezza (in byte) di un record di $R$
+- $NK(R.A)$ = numero di valori distinti dell'attributo $R.A$
+- $TP(R)$ = numero di tuple per pagina
+- $B$ = numero di pagine buffer a disposizione per l'operatore
+- $L(IX)$ = numero di pagine foglia dell’indice $IX$

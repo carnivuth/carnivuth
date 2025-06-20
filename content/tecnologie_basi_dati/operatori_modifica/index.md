@@ -28,20 +28,20 @@ Il costo di queste operazioni e diviso in tre componenti:
 
 In caso di inserimento in [file non ordinato](/tecnologie_basi_dati/gestione_disco#heap-file) e necessario considerare il costo di aggiunta in fondo al file  e di modifica degli indici:
 
-- \\(2*Nindici\\) se si fanno le modifiche in maniera indipendente
-- \\(2*\Phi(KI,L)\\) se si ordinano i record per valore di chiave
+- $2*Nindici$ se si fanno le modifiche in maniera indipendente
+- $2*\Phi(KI,L)$ se si ordinano i record per valore di chiave
 
 ## Costo della eliminazione
 
 In caso di eliminazione il costo di modifica dei dati dipende da come si accede ai dati
 
-- scansione ordinata \\(\Phi(E,P)\\) con \\(E = f*N\\) (*fare riferimento a [questa sezione](/tecnologie_basi_dati/operatori_relazionali#stime-di-costo-di-un-operatore)*)
-- scansione disordinata \\(EK*\Phi(N/NK,EP)\\) con \\(EK = f*NK\\) (*in caso di indici un-clustered*)
+- scansione ordinata $\Phi(E,P)$ con $E = f*N$ (*fare riferimento a [questa sezione](/tecnologie_basi_dati/operatori_relazionali#stime-di-costo-di-un-operatore)*)
+- scansione disordinata $EK*\Phi(N/NK,EP)$ con $EK = f*NK$ (*in caso di indici un-clustered*)
 
 Il costo di modifica conseguente degli indici e stimabile come segue
 
-- \\(2*f*N\\) se le eliminazioni sono indipendenti
-- \\(2\Phi(KD,L)\\) se si ordinano i record per valore della chiave
+- $2*f*N$ se le eliminazioni sono indipendenti
+- $2\Phi(KD,L)$ se si ordinano i record per valore della chiave
 
 ## Costo dell'aggiornamento: la sindrome di halloween
 

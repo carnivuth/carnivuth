@@ -35,7 +35,7 @@ Una possibile soluzione e quella di sfruttare l'ordinamento, si procede come seg
 - si ordina per mezzo del [merge sort](/tecnologie_basi_dati/sorting#merge-sort-esterno)
 - si eliminano i duplicati
 
-costo complessivo dato da \\(P(R) +P(T) + 2P(T)\lceil \log_ZP(T)\rceil + P(T)\\)
+costo complessivo dato da $P(R) +P(T) + 2P(T)\lceil \log_ZP(T)\rceil + P(T)$
 
 >[!TIP] si possono squashare la rimozione degli attributi con la fase di sorting e l'eliminazione dei duplicati nella fase di merging del [merge sort](/tecnologie_basi_dati/sorting#merge-sort-esterno)
 
@@ -46,7 +46,7 @@ Fattibile solo se si hanno un alto numero di pagine, il processo si divide in du
 ### Fase di partizionamento
 
 - si leggono le pagine del buffer e si eliminano gli attributi
-- si applica una funzione di hash (*a \\(B-1\\) valori*) per suddividere le tuple in base agli attributi rimasti
+- si applica una funzione di hash (*a $B-1$ valori*) per suddividere le tuple in base agli attributi rimasti
 - se una pagina e piena la si scrive nel disco
 
 ```mermaid
@@ -67,7 +67,7 @@ A --> B --> C & D & E & F --> G
 
 si leggono in sequenza i file generati e si applica una nuova funzione hash (*diversa dalla prima* ) e si redistribuiscono i record nelle pagine e si eliminano i duplicati
 
->[!WARNING] l'ipotesi è che nella seconda fase **non si debbano salvare le pagine su disco**, di conseguenza il numero di pagine del file di input deve essere minore di \\((B-1)^2\\)
+>[!WARNING] l'ipotesi è che nella seconda fase **non si debbano salvare le pagine su disco**, di conseguenza il numero di pagine del file di input deve essere minore di $(B-1)^2$
 
 >[!TIP] in caso sia necessario scrivere su disco si può ripetere il processo con una terza funzione di hash
 ### Sorting vs hashing
@@ -79,4 +79,4 @@ La tecnica basata su sorting risulta migliore nel caso in cui i valori risultino
 
 Questa modalità necessita che tutte le chiavi da restituire in output **siano contenuti nell'indice**, le tecniche sono le precedenti ma si attuano sull'indice e non sul file dati
 
->[!TIP] in caso di indice [b+tree](/tecnologie_basi_dati/b+tree) se gli attributi sono un prefisso della chiave basta scandire le foglie eliminando i duplicati con costo \\(L\\)
+>[!TIP] in caso di indice [b+tree](/tecnologie_basi_dati/b+tree) se gli attributi sono un prefisso della chiave basta scandire le foglie eliminando i duplicati con costo $L$

@@ -76,7 +76,7 @@ Esistono diverse proprietà di schedule:
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **Serial**       | le transazioni sono eseguite in maniera sequenziale                                                                             |
 | **Serializable** | uno schedule che conivolge solo transizioni committate i cui effetti sul db sono riconducibili a quello di uno schedule Seriale |
-| **Recoverable**  | Se la transazione \\(T1\\) legge una modifica di una transazione \\(T2\\) \\(T2\\) committa per prima                           |
+| **Recoverable**  | Se la transazione $T1$ legge una modifica di una transazione $T2$ $T2$ committa per prima                           |
 | **Cascadeless**  | Una transazione può leggere modifiche solo di transizioni committate                                                            |
 | **Strict**       | Una transazione non tocca valori modificati da un altra transazione attiva                                                      |
 
@@ -107,7 +107,7 @@ Tuttavia questo può portare a situazioni di **deadlock** che possono essere ris
 
 ## Modellare i conflitti: grafo di serializzabilita
 
-Per poter comprendere se un insieme di transazioni genera un deadlock si introduce il grafo di serializzabilita, ogni transazione viene modellata come un nodo del grafo e un arco tra due transazioni \\(T_i\\) e \\(T_j\\) simboleggia un conflitto tra le azioni delle due transazioni. un **deadlock si presenta se il grafo non e aciclico**
+Per poter comprendere se un insieme di transazioni genera un deadlock si introduce il grafo di serializzabilita, ogni transazione viene modellata come un nodo del grafo e un arco tra due transazioni $T_i$ e $T_j$ simboleggia un conflitto tra le azioni delle due transazioni. un **deadlock si presenta se il grafo non e aciclico**
 
 ```mermaid
 flowchart LR
@@ -172,10 +172,10 @@ Ci sono due tipologie principali di strategie:
 
 ### Prevenzione della deadlock
 
-Si assegna una priorità alle transazioni, se \\(T_1\\) richiede un lock su \\(O\\)  e \\(T_2\\) ha un lock su \\(O\\) che crea conflitto:
+Si assegna una priorità alle transazioni, se $T_1$ richiede un lock su $O$  e $T_2$ ha un lock su $O$ che crea conflitto:
 
-- **wait-die** se \\(T_1 \gt T_2\\) allora \\(T_1\\) attende \\(T_2\\) altrimenti \\(T_1\\) viene abortita
-- **wound-wait** se \\(T_1 \gt T_2\\) allora \\(T_1\\) attende \\(T_2\\) altrimenti \\(T_1\\) viene abortita
+- **wait-die** se $T_1 \gt T_2$ allora $T_1$ attende $T_2$ altrimenti $T_1$ viene abortita
+- **wound-wait** se $T_1 \gt T_2$ allora $T_1$ attende $T_2$ altrimenti $T_1$ viene abortita
 
 ### Individuazione della deadlock
 

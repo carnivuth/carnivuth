@@ -22,13 +22,13 @@ series_order: 20
 {{< mathjax >}}
 Nati per soddisfare query che coinvolgono molteplici attributi, tra cui
 
-- query puntuali \\(A_1 = v_1, A_2 = v_2, … , A_n = v_n\\)
-- query finestra \\(l_1 \leq A_1 \leq h_0, l_2 \leq A_2 \leq h_2, … , l_n \leq A_n \leq h_n\\)
-- nearest neighbor query \\(A_1 \approx v_1, A_2 \approx v_2, … , A_n \approx v_n\\)
+- query puntuali $A_1 = v_1, A_2 = v_2, … , A_n = v_n$
+- query finestra $l_1 \leq A_1 \leq h_0, l_2 \leq A_2 \leq h_2, … , l_n \leq A_n \leq h_n$
+- nearest neighbor query $A_1 \approx v_1, A_2 \approx v_2, … , A_n \approx v_n$
 
 ## Limiti del [b+tree](/tecnologie_basi_dati/b+tree)
 
-Supponendo di avere una window query su due attributi \\(A,B\\) del tipo
+Supponendo di avere una window query su due attributi $A,B$ del tipo
 
 ```sql
 SELECT * FROM table as T
@@ -86,7 +86,7 @@ In caso di split della root i nodi figli vengono splittati come segue
 
 ## Excell
 
-Tecnica basata su una hash directory fatta a griglia \\(n\\)-dimensionale dove ogni cella corrisponde a una datapage **ma non e vero il contrario**, estendendo il concetto di [extendible hashing](/tecnologie_basi_dati/indici_hash#extendible-hashing) al caso multidimensionale.
+Tecnica basata su una hash directory fatta a griglia $n$-dimensionale dove ogni cella corrisponde a una datapage **ma non e vero il contrario**, estendendo il concetto di [extendible hashing](/tecnologie_basi_dati/indici_hash#extendible-hashing) al caso multidimensionale.
 
 ![](excell.png)
 

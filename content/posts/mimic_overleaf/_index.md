@@ -44,7 +44,7 @@ A --> B
 
 ### Implementing live reload
 
-One overleaf feature that i had to implement was the live rebuild system so i can keep editing without loosing the focus on what i am writing, my first thought was to create a polling based system that with run the build process every \\(X\\) minutes, the problem is that it was too inefficient cause sometimes build is run but is not needed and sometimes you need to build with a much higher frequency so build is never run when you need it 😡.
+One overleaf feature that i had to implement was the live rebuild system so i can keep editing without loosing the focus on what i am writing, my first thought was to create a polling based system that with run the build process every $X$ minutes, the problem is that it was too inefficient cause sometimes build is run but is not needed and sometimes you need to build with a much higher frequency so build is never run when you need it 😡.
 
 The second approach was to run build on file modifications, this is a more efficient approach cause build is run only when needed, after some research i found `inotifywait` a utility that does exactly this, it demonize itself and prints on standard output the filesystem events of the monitored files, then the system runs the make target based on the modified file, this way the live rebuild system is also independent from the editor used.
 

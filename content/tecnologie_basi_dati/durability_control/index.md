@@ -31,7 +31,7 @@ I crash del sistema si dividono in 3 tipologie:
 
 ## Politiche di gestione del buffer
 
-Data una transazione \\(T\\) che modifica una pagina \\(P\\) il DBMS ha due possibilità per la gestione della stessa
+Data una transazione $T$ che modifica una pagina $P$ il DBMS ha due possibilità per la gestione della stessa
 
 - **no steal** le pagine modificate vengono scritte solo dopo che una transazione è terminata con successo
 - **steal** le pagine vengono scritte quando è più opportuno con l'obbiettivo di ottimizzare l' I/O
@@ -66,11 +66,11 @@ raccoglie informazioni riguardanti le operazioni eseguite dalle transazioni, vie
 
 ### Record di update
 
-Il record di update per una transazione \\(T\\) di una pagina \\(P\\) e formato dai seguenti campi
+Il record di update per una transazione $T$ di una pagina $P$ e formato dai seguenti campi
 
 | LSN(Log sequence number)  | prevLSN                                               | T                    | type                                      | PID                         | before(P)                          | after(P)                       |
 | ------------------------- | ----------------------------------------------------- | -------------------- | ----------------------------------------- | --------------------------- | ---------------------------------- | ------------------------------ |
-| id univoco del record<br> | indice del' record di log precedente che riguarda \\(T\\) | id della transazione | tipo del record (*in questo caso update*) | PID della pagina modificata | immagine di P prima della modifica | immagine di P dopo la modifica |
+| id univoco del record<br> | indice del' record di log precedente che riguarda $T$ | id della transazione | tipo del record (*in questo caso update*) | PID della pagina modificata | immagine di P prima della modifica | immagine di P dopo la modifica |
 
 ### Record di compensation
 
@@ -78,7 +78,7 @@ Nel momento in cui le modifiche registrate in un record di update vengono elimin
 
 | LSN(Log sequence number)  | prevLSN                                               | T                    | type                                      | PID                         | before(P)                          | undoNextLSN                                                                                                    |
 | ------------------------- | ----------------------------------------------------- | -------------------- | ----------------------------------------- | --------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| id univoco del record<br> | indice del' record di log precedente che riguarda \\(T\\) | id della transazione | tipo del record (*in questo caso update*) | PID della pagina modificata | immagine di P prima della modifica | id del prossimo record da annullare, per esempio se si annulla il record \\(U\\) allora \\(undoNextLSN = prevLSN(U)\\) |
+| id univoco del record<br> | indice del' record di log precedente che riguarda $T$ | id della transazione | tipo del record (*in questo caso update*) | PID della pagina modificata | immagine di P prima della modifica | id del prossimo record da annullare, per esempio se si annulla il record $U$ allora $undoNextLSN = prevLSN(U)$ |
 
 ## Quando scrivere nel log: protocollo wal
 
@@ -94,11 +94,11 @@ Grazie al log e possibile gestire i fallimenti di una transazione anche con poli
 
 ## Log e gestione dei fallimenti di sistema
 
-In caso di fallimento di sistema tutte le transazioni che non hanno scritto nel log il record di [commit](#Log) vanno annullate, inoltre se si applica la politica di [no force](#Commit-di-una-transazione) e possibile che alcune pagine \\(P\\) di una transazione \\(T\\) committata non siano state scritte nel disco, e necessario dunque rifare queste transazioni
+In caso di fallimento di sistema tutte le transazioni che non hanno scritto nel log il record di [commit](#Log) vanno annullate, inoltre se si applica la politica di [no force](#Commit-di-una-transazione) e possibile che alcune pagine $P$ di una transazione $T$ committata non siano state scritte nel disco, e necessario dunque rifare queste transazioni
 
 ### Evitare di riscrivere pagine già scritte
 
-Per evitare di riscrivere tutti i parametri \\(After\\)  delle pagine di una transazione da rifare si adotta il seguente approccio
+Per evitare di riscrivere tutti i parametri $After$  delle pagine di una transazione da rifare si adotta il seguente approccio
 
 ```mermaid
 flowchart LR
@@ -121,7 +121,7 @@ end
 
 Per ottimizzare la procedura di [restore](#Log-e-gestione-dei-fallimenti-di-sistema) da un fallimento di sistema si introduce nel log un record di checkpoint periodicamente, dove vengono inserite la **tabella delle dirty pages** e la **tabella delle transazioni**
 
->[!TIP] in questo modo set \\(T\\) e stata committata prima del record di checkpoint non deve essere rifatta
+>[!TIP] in questo modo set $T$ e stata committata prima del record di checkpoint non deve essere rifatta
 
 ## Algoritmo aries e gestione della recovery
 

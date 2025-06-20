@@ -24,9 +24,9 @@ Per questo si introducono gli **indici**, strutture dati ausiliarie per facilita
 
 ![](struttura_indice.png)
 
-Da un punto di vista logico un indice e una collezione di coppie \\((k_i,p_i)\\) dove:
-- \\(k\\) e il valore di un attributo su cui l'indice e costruito
-- \\(p\\) e un RID (*massimo un PID*)  della tupla con il dato valore
+Da un punto di vista logico un indice e una collezione di coppie $(k_i,p_i)$ dove:
+- $k$ e il valore di un attributo su cui l'indice e costruito
+- $p$ e un RID (*massimo un PID*)  della tupla con il dato valore
 
 esistono 2 tipologie principali di indici:
 
@@ -39,7 +39,7 @@ Ci sono inoltre diverse nomenclature applicate agli indici
 - **clustered/unclustered** un indice si dice clustered se e costruito sull'attributo con cui e ordinato il data file
 - **primary/secondary** se costruito su un attributo `unique` (tutto ciò che può essere chiave primaria)
 - **dense/sparse** il numero di coppie nell'indice e uguale al numero di entry nel data file
-- **single level/multi level** un indice multi livello e composto da indici sparsi che indicizzano altri indici (*possibili \\(n\\) livelli*)
+- **single level/multi level** un indice multi livello e composto da indici sparsi che indicizzano altri indici (*possibili $n$ livelli*)
 
 ## E nel disco? come rappresentare gli indici
 

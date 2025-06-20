@@ -28,7 +28,7 @@ After turning on the machine (*and  installing my [personal arch dotfiles](https
 
 ## Software configurations 🪛
 
-After installing and configuring my [dotfiles repo](https://github.com/carnivuth/scripts) i was facing an issue with the battery usage, when the battery dropped below \\(75% \\) the cpu frequency dropped down to \\(400MHz\\), after some research i found that it was a problem with CPU signals and registries, the fix was to download this [repo](https://github.com/yyearth/turnoff-BD-PROCHOT) and runs the scripts inside to reset the cpu registry (*if i understand the script correctly, it sets some value in some registry disabling some power saving mode in the CPU*), in order to run the script at startup i wrote a [bunch of files](https://github.com/carnivuth/fix_thinkpad_battery) to create an arch package that installs the script and a Systemd target to run at startup
+After installing and configuring my [dotfiles repo](https://github.com/carnivuth/scripts) i was facing an issue with the battery usage, when the battery dropped below $75% $ the cpu frequency dropped down to $400MHz$, after some research i found that it was a problem with CPU signals and registries, the fix was to download this [repo](https://github.com/yyearth/turnoff-BD-PROCHOT) and runs the scripts inside to reset the cpu registry (*if i understand the script correctly, it sets some value in some registry disabling some power saving mode in the CPU*), in order to run the script at startup i wrote a [bunch of files](https://github.com/carnivuth/fix_thinkpad_battery) to create an arch package that installs the script and a Systemd target to run at startup
 
 ## What i have learned
 

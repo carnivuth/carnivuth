@@ -38,7 +38,7 @@ Determinare la maniera più efficiente per rispondere non e banale in quanto l'o
 
 ## Nested loop join
 
-La soluzione più semplice prevede il confronto fra i record delle due relazioni \\(R,S\\)
+La soluzione più semplice prevede il confronto fra i record delle due relazioni $R,S$
 
 ```python
 for r in R:
@@ -71,13 +71,13 @@ for Rpage in R:
 
 ## Sfruttando i buffer, block nested loops join
 
-Gli algoritmi sopracitati non tengono in conto la dimensione del buffer, in caso di \\(B\\) pagine di buffer si possono utilizzare \\(B-2\\) pagine per la relazione esterna \\(1\\) per la relazione interna e \\(1\\) per l'output
+Gli algoritmi sopracitati non tengono in conto la dimensione del buffer, in caso di $B$ pagine di buffer si possono utilizzare $B-2$ pagine per la relazione esterna $1$ per la relazione interna e $1$ per l'output
 
 >[!TIP] ci può essere un caso in cui la relazione interna a il maggior numero di buffer ovvero quando si **può contenere interamente in memoria**
 
 ### Matching nel block nested loop join
 
-Per effettuare il matching nel [block nested loop join](#sfruttando-i-buffer-block-nested-loops-join) si può sfruttare una funzione di hash per allocare i record della relazione \\(R\\), le pagine di \\(S\\) vengono lette sequenzialmente e le tuple sottoposte alla stessa  funzione di hash per trovare il match
+Per effettuare il matching nel [block nested loop join](#sfruttando-i-buffer-block-nested-loops-join) si può sfruttare una funzione di hash per allocare i record della relazione $R$, le pagine di $S$ vengono lette sequenzialmente e le tuple sottoposte alla stessa  funzione di hash per trovare il match
 
 ```mermaid
 flowchart LR
@@ -144,7 +144,7 @@ while !F.empty() and G.empty():
         g = G.next()
 ```
 
-Il costo  e la somma del numero di pagine di entrambe le relazioni \\(P(R)+P(S)\\)
+Il costo  e la somma del numero di pagine di entrambe le relazioni $P(R)+P(S)$
 
 >[!TIP] Se si ha un indice sugli attributi di join non e necessario ordinare le relazioni, se unclustered il costo e comunque elevato
 
@@ -166,9 +166,9 @@ ON (E.WorkDept = D.DeptNo)
 
 Gli algoritmi precedenti si modificano come segue
 
-- [Nested loop join](#nested-loop-join): si usa \\(D\\) come relazione esterna e si aggiunge all'output ogni tupla di \\(D\\) che non trova match in \\(E\\)
-- [Merge-scan join](#merge-scan-join): si usa \\(D\\) come relazione esterna e, quando non si trova un match per una tupla di \\(D\\), la si aggiunge al risultato
-- [Hash join](#hash-join): si usa come relazione esterna \\(E\\). Dopo aver partizionato \\(E\\) e \\(D\\), per ogni partizione di \\(E\\) si costruisce una hash table e si fa il probing per tutti i record di \\(D\\) nella partizione omologa. Se il probing non trova match si aggiunge il record di \\(D\\) all'output
+- [Nested loop join](#nested-loop-join): si usa $D$ come relazione esterna e si aggiunge all'output ogni tupla di $D$ che non trova match in $E$
+- [Merge-scan join](#merge-scan-join): si usa $D$ come relazione esterna e, quando non si trova un match per una tupla di $D$, la si aggiunge al risultato
+- [Hash join](#hash-join): si usa come relazione esterna $E$. Dopo aver partizionato $E$ e $D$, per ogni partizione di $E$ si costruisce una hash table e si fa il probing per tutti i record di $D$ nella partizione omologa. Se il probing non trova match si aggiunge il record di $D$ all'output
 
 In caso di full join:
 

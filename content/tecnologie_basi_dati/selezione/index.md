@@ -33,20 +33,20 @@ L'obbiettivo e quello di determinare qual'e la strategia di accesso migliore, qu
 
 ## Stimare il numero di risultati
 
-L'efficienza di due strategie di selezione e fortemente dipendente dal numero di record del risultato, non e possibile ovviamente saperlo a priori ma si può ottenere una stima come \\(E = f\times N\\) dove:
+L'efficienza di due strategie di selezione e fortemente dipendente dal numero di record del risultato, non e possibile ovviamente saperlo a priori ma si può ottenere una stima come $E = f\times N$ dove:
 
-- \\(E\\) record in output stimati
-- \\(N\\) numero di record in input
-- \\(f\\) e il **fattore di selettività della query**, una query e molto selettiva se \\(f\\) piccolo
+- $E$ record in output stimati
+- $N$ numero di record in input
+- $f$ e il **fattore di selettività della query**, una query e molto selettiva se $f$ piccolo
 
 > [!NOTE]
-> se i valori dell'attributo di selezione sono uniformemente distribuiti allora \\(f = E/N\\)
+> se i valori dell'attributo di selezione sono uniformemente distribuiti allora $f = E/N$
 
 Anche in questo caso il costo dipende dalla presenza o meno di indici
 
-- se non ci sono indici si deve leggere tutto il file dati (*costo \\(P\\)*)
-- indice clustered (costo \\(h-1 + f*L + f*P\\))
-- indice un-clustered (costo \\(h-1 + f*L + E *\Phi(N/NK,P)\\)) (*si fa uso del [Modello di cardenas](/tecnologie_basi_dati/b+tree#modello-di-cardenas)*)
+- se non ci sono indici si deve leggere tutto il file dati (*costo $P$*)
+- indice clustered (costo $h-1 + f*L + f*P$)
+- indice un-clustered (costo $h-1 + f*L + E *\Phi(N/NK,P)$) (*si fa uso del [Modello di cardenas](/tecnologie_basi_dati/b+tree#modello-di-cardenas)*)
 
 ## Selezione alternativa con indice un-clustered
 

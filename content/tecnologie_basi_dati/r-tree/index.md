@@ -22,7 +22,7 @@ tags:
 {{< mathjax >}}
 Gli r-tree sono alberi paginati e bilanciati dove ogni nodo corrisponde a una regione triangolare detta minimal bounding box (*MMB*) che contiene tutte le regioni figlie
 
-L'utilizzo dello storage da parte di un nodo varia dal \\(100\%\\) a un valore minimo inferiore al \\(50\%\\) (*parametro tunabile*)
+L'utilizzo dello storage da parte di un nodo varia dal $100\%$ a un valore minimo inferiore al $50\%$ (*parametro tunabile*)
 
 Le foglie dell'albero sono entry nella forma  `(key, RID)`, dove il valore di chiave contiene le coordinate
 >[!NOTE] possibile contenere anche oggetti con un estensione spaziale
@@ -33,7 +33,7 @@ I nodi interni dell'albero si presentano nella forma `(MBB, PID)`, dove la chiav
 
 ## Concetto di mbb
 
-La minima bounding box e definita come la regione hyper-rettangolare minima che contiene un set di punti \\(m\\)
+La minima bounding box e definita come la regione hyper-rettangolare minima che contiene un set di punti $m$
 
 ![](minimum_bounding_box.png)
 
