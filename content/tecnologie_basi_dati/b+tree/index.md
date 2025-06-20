@@ -99,7 +99,8 @@ Si possono sfruttare indici in diverse modalità per accedere ai dati
 
 entrambi i sistemi possono vanificare il vantaggio di usare indici, un alternativa consiste nell'usare **indici multi attributo**
 
-> [!WARNING] tali indici non sono vantaggiosi per fare ricerche ranged sui successivi \\(n-1\\) campi della chiave
+> [!WARNING]
+> tali indici non sono vantaggiosi per fare ricerche ranged sui successivi \\(n-1\\) campi della chiave
 
 E inoltre necessario valutare l'uso di tali indici con criterio in quanto se si hanno \\(n\\) attributi il numero di possibili indici multi attributo e pari a \\(n!\\), non il massimo per l'occupazione del disco
 
@@ -111,9 +112,9 @@ Gli indici vengono creati a db esistente (*in corsa*), e dunque necessario ottim
 ---
 title: bulk loading
 ---
-flowchart TD
-A[viene creata una lista di <key,RID> ordinata e paginata]
-B[viene creata una lista di <key,PID> leggendo le entry della lista precedente]
+flowchart LR
+A[viene creata una lista di key,RID ordinata e paginata]
+B[viene creata una lista di key,PID leggendo le entry della lista precedente]
 A --> B -- fino a raggiungere la root del indice--> A
 ```
 

@@ -72,7 +72,8 @@ Deployment on a kubernetes cluster is done trough the use of the api server usin
 - volumes
 - configurations
 
-> [!NOTE] pods are the minimum unit of deployment in kubernetes
+> [!NOTE]
+> pods are the minimum unit of deployment in kubernetes
 
 # Installation using `kubeadm`
 

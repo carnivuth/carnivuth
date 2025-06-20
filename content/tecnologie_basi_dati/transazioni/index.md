@@ -167,7 +167,8 @@ Ci sono due tipologie principali di strategie:
 | strategia wait-die         | waits-for graph               |
 | strategia wait-bleed       |                               |
 
-> [!NOTE] in ogni caso una transazione dovra essere abortita
+> [!NOTE]
+> in ogni caso una transazione dovra essere abortita
 
 ### Prevenzione della deadlock
 

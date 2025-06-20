@@ -81,7 +81,8 @@ top_operator --> filter --> Relation_R
 L'operatore top può essere implementato in due modalità
 
 - **top-scan** la stream di tuple in ingresso e già ordinata e di conseguenza e sufficiente fornire in output le prime \\(k\\) tuple
-> [!TIP] questo operatore puo lavorare in [pipeline](/tecnologie_basi_dati/ottimizzazione_interrogazioni#implementare-lesecuzione-in-pipeline-interfaccia-a-iteratore)
+> [!TIP]
+> questo operatore puo lavorare in [pipeline](/tecnologie_basi_dati/ottimizzazione_interrogazioni#implementare-lesecuzione-in-pipeline-interfaccia-a-iteratore)
 - **top-sort** la stream non e ordinata e l'operatore la deve ordinare per poi fornire le tuple in output
 >[!WARNING] questa implementazione non può lavorare in [pipeline](/tecnologie_basi_dati/ottimizzazione_interrogazioni#implementare-lesecuzione-in-pipeline-interfaccia-a-iteratore) in quanto necessita di fare [sorting](/tecnologie_basi_dati/sorting)
 

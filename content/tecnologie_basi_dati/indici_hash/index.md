@@ -80,7 +80,8 @@ $$
 $$
 \mu = \sum_{j=0}^{P-1}{\frac{X_j}{P}} \space \sigma^2 = \sum_{j=0}^{P-1}{\frac{(X_j-\mu)^2}{P}}
 $$
-> [!TIP] minore il parametro migliori le performance della funzione hash
+> [!TIP]
+> minore il parametro migliori le performance della funzione hash
 
 ## Dimensionare l'indice hash: load factor
 

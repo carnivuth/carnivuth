@@ -39,7 +39,8 @@ L'efficienza di due strategie di selezione e fortemente dipendente dal numero di
 - \\(N\\) numero di record in input
 - \\(f\\) e il **fattore di selettività della query**, una query e molto selettiva se \\(f\\) piccolo
 
-> [!NOTE] se i valori dell'attributo di selezione sono uniformemente distribuiti allora \\(f = E/N\\)
+> [!NOTE]
+> se i valori dell'attributo di selezione sono uniformemente distribuiti allora \\(f = E/N\\)
 
 Anche in questo caso il costo dipende dalla presenza o meno di indici
 
