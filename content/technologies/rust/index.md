@@ -92,3 +92,39 @@ There are 3 statements for loops `loop` `while` `for`
 The `loop` statement loops indefinitely or until a `break` keyword is used loops can be tagged with a label to target a specific loop with a break statement (without it a break targets always the inner loop)
 
 ## Ownership
+
+Ownership is a strange concept developed to manage memory allocation problems (*access to pointers that are not allocated, memory leaks*) at compile time, the concept is as follow:
+
+> [!IMPORTANT]
+> only a variable can posses a block of memory on the heap!!!!
+
+For example if a variable is allocated in the heap (*mutable string in this example*) only the second one is the **owner** of the heap memory block
+
+```rust
+let a = String::from("hello");
+// s gets the ownership
+let s = a
+```
+> [!WARNING]
+> In the example the `s` variable gets ownership and the heap memory block is de-allocated **only when `s` goes out of scope**
+
+### Ownership in functions
+
+In functions ownership is passed to the function's actual parameter
+
+```rust
+fn super_print(s: String) {
+  println!("{s}")
+}
+
+let a = String::from("hello");
+
+// ownership is passed to the actual parameter of the function
+super_print(a);
+// here the memory for the variable is been freed
+
+// compilation error
+println!("{a}")
+```
+> [!WARNING]
+> In the example above `a` is being accessed after the ownership has been passed to the function parameter and it results in a compilation error cause the ownership of the heap memory goes out of scope
