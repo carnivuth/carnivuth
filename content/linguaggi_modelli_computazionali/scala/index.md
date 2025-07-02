@@ -9,6 +9,7 @@ tags: []
 series_order: 19
 ---
 
+{{< mathjax >}}
 Scala e uno degli esempi più fiorenti di [linguaggio blended](/linguaggi_modelli_computazionali/linguaggi_blended), riprende molte caratteristiche dei linguaggi funzionali e possiede inoltre un type system forte
 
 ## Caratteristiche
