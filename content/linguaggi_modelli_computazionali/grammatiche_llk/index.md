@@ -11,7 +11,7 @@ tags: []
 series_order: 12
 ---
 
-{{ mathjax }}
+{{< mathjax >}}
 Le grammatiche $LL(k)$ sono grammatiche che risultano deterministiche al patto di poter *"sbirciare"* $k$ simboli di input, caso eccellente quello in cui $k=1$
 
 ## Starter symbols set

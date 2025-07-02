@@ -7,7 +7,7 @@ description: Grammatiche libere dal contesto
 series_order: 6
 ---
 
-{{ mathjax }}
+{{< mathjax >}}
 Produzioni in cui un metasimbolo può essere sostituito a prescindere dal contesto (*gli altri elementi delle forme di frase non influiscono*)
 
 $$

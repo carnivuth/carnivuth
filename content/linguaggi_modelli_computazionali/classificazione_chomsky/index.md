@@ -10,7 +10,7 @@ tags: []
 series_order: 3
 ---
 
-{{ mathjax }}
+{{< mathjax >}}
 La classificazione delle grammatiche di Chomsky prevede 4 tipologie principali di grammatiche, divise in base alla capacita computazionale richiesta per riconoscerle
 
 | GRAMMATICHE                       | AUTOMI RICONOSCITORI                                          |
