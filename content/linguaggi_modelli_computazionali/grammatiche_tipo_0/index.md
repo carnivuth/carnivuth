@@ -2,18 +2,16 @@
 date: 2024-03-10
 series: ["Linguaggi e modelli computazionali"]
 draft: true
-id: GRAMMATICHE DI TIPO 0
-next: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_1.md"
-previous: "pages/linguaggi_modelli_computazionali/classificazione_chomsky.md"
+title:  Grammatiche di tipo 0
+description:  Grammatiche più potenti ma anche più costose da riconoscere
 aliases: []
 tags: []
 series_order: 4
 ---
-#  GRAMMATICHE DI TIPO 0
 
-sono grammatiche prive di restrizioni sulle produzioni, e ammessa la produzione della stringa vuota (ergo le frasi possono ridursi di lunghezza)
+Sono grammatiche prive di restrizioni sulle produzioni, e ammessa la produzione della stringa vuota (ergo le frasi possono ridursi di lunghezza)
 
-un possibile esempio e il seguente:
+Un possibile esempio e il seguente:
 
 $$
 S \rightarrow aSBC, \space CB \rightarrow BC, \space SB \rightarrow bF, \space FB \rightarrow bF,
@@ -30,6 +28,4 @@ $$
 
 ## Rami di derivazione morti
 
-nelle grammatiche di Tipo 0 è possibile arrivare a una **stringa in cui non è possibile applicare altre produzioni**, in questo caso si parla di ramo di derivazione morto
-
-[<](pages/linguaggi_modelli_computazionali/classificazione_chomsky.md)[>](pages/linguaggi_modelli_computazionali/grammatiche_tipo_1.md)
+Nelle grammatiche di Tipo 0 è possibile arrivare a una **stringa in cui non è possibile applicare altre produzioni**, in questo caso si parla di ramo di derivazione morto
