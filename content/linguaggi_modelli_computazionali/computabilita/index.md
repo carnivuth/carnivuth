@@ -1,11 +1,11 @@
 ---
 date: 2024-09-22
-draft: true
-next: "pages/linguaggi_modelli_computazionali/linguaggi_grammatiche.md"
+draft: false
 series: ["Linguaggi e modelli computazionali"]
 series_order: 1
+title: Teoria della computabilità
+description: Introduzione alla teoria della computabilità
 ---
-# Teoria della computabilità
 
 Partiamo dalla **TESI DI CHURCH-TURING**
 
