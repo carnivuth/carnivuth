@@ -2,15 +2,14 @@
 date: 2024-10-15
 series: ["Linguaggi e modelli computazionali"]
 draft: true
-id: INTERPRETI
-next: "pages/linguaggi_modelli_computazionali/grammatiche_lrk.md"
-previous: "pages/linguaggi_modelli_computazionali/grammatiche_llk.md"
+title: Interpreti
+descrition: Applicare una semantica ai linguaggi riconosciuti
 aliases: []
 tags: []
 series_order: 13
 ---
-# Interpreti
 
+{{< mathjax >}}
 Riconoscere se una frase appartiene o meno a un linguaggio non e sufficiente, e necessario applicare anche una semantica alle frasi riconosciute
 
 ```mermaid
@@ -22,7 +21,7 @@ START2:::hidden --> D --> E & F
 classDef hidden display: none;
 ```
 
-Gli interpreti suggeriscono quindi di usare la struttura generata da uno scanner/lexer per poi applicare un significato alle frasi, in questo caso la sequenza di derivazione delle frasi e fondamentale in quanto da essa dipende la semantica applicata (*[ricordiamo il caso della ricorsione sinistra](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md#perché%20non%20eliminare%20sempre%20la%20ricorsione%20sinistra)*)
+Gli interpreti suggeriscono quindi di usare la struttura generata da uno scanner/lexer per poi applicare un significato alle frasi, in questo caso la sequenza di derivazione delle frasi e fondamentale in quanto da essa dipende la semantica applicata (*[ricordiamo il caso della ricorsione sinistra](/linguaggi_modelli_computazionali/grammatiche_tipo_2#perché-non-eliminare-sempre-la-ricorsione-sinistra)*)
 
 ## Descrivere la semantica
 
@@ -30,13 +29,13 @@ E necessario scrivere un formalismo che ci consenta di esprimere la semantica da
 
 Questo viene fatto per mezzo di una funzione di interpretazione che mappi gli elementi del linguaggio (*DOMINIO*) all'insieme dei possibili significati (*CODOMINIO*)
 
-![](assets/linguaggi_modelli_computazionali/Pasted%20image%2020241015172342.png)
+![](semantics_mapping.png)
 
 Per implementare una tale funzione si sfrutta la struttura data dalla grammatica e si **esprime una funzione per ogni regola sintattica**:
 
 ### Implementazione
 
-Una possibile implementazione puo essere ottenuta seguendo le regole sintattiche e definendo una regola semantica per ognuna di esse:
+Una possibile implementazione può essere ottenuta seguendo le regole sintattiche e definendo una regola semantica per ognuna di esse:
 
 ```java
 // FUNZIONE PER IL PARSING DELLE REGOLE
@@ -69,7 +68,7 @@ public int parseExp(){
 
 Nel caso non si intenda eseguire immediatamente la semantica ma generare un output eseguibile in un secondo momento (*compilatori/linguaggi misti*) e necessario definire una rappresentazione della frase interpretata (*solitamente un albero*)
 
-si potrebbero usare gli [alberi di derivazione](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md#alberi%20di%20derivazione) ma questi risultano ridondanti e inefficienti, si ricorre quindi a una rappresentazione ridotta chiamata **abstract syntax tree**
+si potrebbero usare gli [alberi di derivazione](/linguaggi_modelli_computazionali/grammatiche_tipo_2#alberi-di-derivazione) ma questi risultano ridondanti e inefficienti, si ricorre quindi a una rappresentazione ridotta chiamata **abstract syntax tree**
 
 Alcuni degli elementi che possono essere rimossi dal albero sono:
 
@@ -77,13 +76,13 @@ Alcuni degli elementi che possono essere rimossi dal albero sono:
 - nodi non terminali con un unico figlio (*$EXPR\rightarrow NUM$*)
 - nodi terminali senza significato (parentesi)
 
-![](assets/linguaggi_modelli_computazionali/Pasted%20image%2020241015174357.png)
+![](ast.png)
 
 ## Sintassi astratta
 
-Occorre un formalismo per poter descrivere la struttura [AST](pages/linguaggi_modelli_computazionali/interpreti.md#INTERPRETAZIONE%20DIFFERITA%20(ABSTRACT%20SYNTAX%20TREE)), questo viene fatto per mezzo di una sintassi che descrive l'output del parser questa non deve essere non ambigua in quanto descrive l'output del parser, non lo guida al riconoscimento della frase
+Occorre un formalismo per poter descrivere la struttura [AST](/linguaggi_modelli_computazionali/interpreti#interpretazione-differita-(abstract-syntax-tree)), questo viene fatto per mezzo di una sintassi che descrive l'output del parser questa non deve essere non ambigua in quanto descrive l'output del parser, non lo guida al riconoscimento della frase
 
-Di conseguenza, l'output del parser sara un albero composto da istanze di una data classe in base a cosa viene definito dalla sintassi dell' AST
+Di conseguenza, l'output del parser sarà un albero composto da istanze di una data classe in base a cosa viene definito dalla sintassi dell' AST
 
 ### Implementazione
 
@@ -122,11 +121,11 @@ classDiagram
 }
 ```
 
-In cui ogni classe implementa in metodi per la generazione del singolo sottonodo dell [AST](pages/linguaggi_modelli_computazionali/interpreti.md#INTERPRETAZIONE%20DIFFERITA%20(ABSTRACT%20SYNTAX%20TREE))
+In cui ogni classe implementa in metodi per la generazione del singolo sottonodo dell [AST](/linguaggi_modelli_computazionali/interpreti#interpretazione-differita-(abstract-syntax-tree))
 
 ## Valutare gli alberi
 
-Gli [AST](pages/linguaggi_modelli_computazionali/interpreti.md#interpretazione%20differita%20(abstract%20syntax%20tree)) prodotti da un parser necessitano di essere di conseguenza interpretati tramite opportune operazioni di visita degli alberi, 3 possibili approcci:
+Gli [AST](pages/linguaggi_modelli_computazionali/interpreti.md#interpretazione-differita-(abstract-syntax-tree)) prodotti da un parser necessitano di essere di conseguenza interpretati tramite opportune operazioni di visita degli alberi, 3 possibili approcci:
 
 - **PRE-ORDER**: si visitano prima il nodo radice e poi figlio di destra e sinistra
 - **POST-ORDER**: si visitano prima i figli e poi la radice
@@ -173,7 +172,7 @@ public static int eval(Exp e) {
 
 ### Approccio oop
 
-Ogni specializzazione dell'interfaccia `Expr` definisce i metodi per la generazione del proprio nodo dell [AST](pages/linguaggi_modelli_computazionali/interpreti.md#interpretazione%20differita%20(abstract%20syntax%20tree)), molto più leggibile e modulare ma rende complesso fornire interpretazioni diverse dello stesso [ast](pages/linguaggi_modelli_computazionali/interpreti.md#interpretazione%20differita%20(abstract%20syntax%20tree))
+Ogni specializzazione dell'interfaccia `Expr` definisce i metodi per la generazione del proprio nodo dell [AST](/linguaggi_modelli_computazionali/interpreti#interpretazione-differita-(abstract-syntax-tree)), molto più leggibile e modulare ma rende complesso fornire interpretazioni diverse dello stesso [ast](/linguaggi_modelli_computazionali/interpreti.md#interpretazione-differita-(abstract-syntax-tree))
 
 ```java
 public Interface Expr{
@@ -229,7 +228,7 @@ Quanto detto prima porta a definire la distinzione fra il valore di destra e di 
 - $L$-VALUE per indicare gli identificatori a sinistra dell'operazione di assegnamento
 - $R$-VALUE per indicare gli identificatori a destra dell'operazione di assegnamento
 
-E inoltre opportuno considerare se distinguere i due valori sintatticamente in quanto la grammatica risultante in caso di non distinzione diventa [LL(2)](pages/linguaggi_modelli_computazionali/grammatiche_llk.md#grammatiche%20$ll(k)$)
+E inoltre opportuno considerare se distinguere i due valori sintatticamente in quanto la grammatica risultante in caso di non distinzione diventa [LL(2)](pages/linguaggi_modelli_computazionali/grammatiche_llk#grammatiche-$ll(k)$)
 
 ## Assegnamento distruttivo vs assegnamento non distruttivo
 
@@ -280,7 +279,7 @@ tuttavia cio non e possibile con un assegnamento inteso come istruzione
 
 ### Implementazione
 
-Tutto cio si traduce in un estensione dell [AST](pages/linguaggi_modelli_computazionali/interpreti.md#INTERPRETAZIONE%20DIFFERITA%20(ABSTRACT%20SYNTAX%20TREE)) con le classi per rappresentare gli oggetti sopracitati
+Tutto cio si traduce in un estensione dell [AST](/linguaggi_modelli_computazionali/interpreti#interpretazione-differita-(abstract-syntax-tree)) con le classi per rappresentare gli oggetti sopracitati
 
 ```mermaid
 ---
@@ -315,5 +314,3 @@ interface ExpAssignVisitor extends Visitor {
 ```
 
 L'environment può essere realizzato sfruttando l'implementazione diretta delle mappe di java `Map<String,Integer>`
-
-[<](pages/linguaggi_modelli_computazionali/grammatiche_llk.md)[>](pages/linguaggi_modelli_computazionali/grammatiche_lrk.md)
