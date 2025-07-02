@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/espressioni_regolari.md"
 previous: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md"
 aliases: []
 tags: []
-index: 7
+series_order: 7
 ---
 # Grammatiche regolari (tipo 3)
 

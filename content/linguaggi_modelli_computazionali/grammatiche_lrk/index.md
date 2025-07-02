@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/processi_computazionali.md"
 previous: "pages/linguaggi_modelli_computazionali/interpreti.md"
 aliases: []
 tags: []
-index: 14
+series_order: 14
 ---
 # Analisi $lr(k)$
 

@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/scala.md"
 previous: "pages/linguaggi_modelli_computazionali/lambda_calcolo.md"
 aliases: []
 tags: []
-index: 18
+series_order: 18
 ---
 # Linguaggi blended
 

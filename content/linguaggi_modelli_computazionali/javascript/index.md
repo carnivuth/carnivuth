@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/lambda_calcolo.md"
 previous: "pages/linguaggi_modelli_computazionali/processi_computazionali.md"
 aliases: []
 tags: []
-index: 16
+series_order: 16
 ---
 >eh beh era anche ora di impararlo..... stavolta sul serio
 # Javascript

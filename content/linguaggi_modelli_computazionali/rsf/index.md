@@ -8,7 +8,7 @@ previous: "pages/linguaggi_modelli_computazionali/pumping_lemma.md"
 aliases:
   - RSF
 tags: []
-index: 10
+series_order: 10
 ---
 # Automa a stati finiti
 

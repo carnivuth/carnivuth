@@ -5,7 +5,7 @@ draft: true
 id: processi_computazionali
 aliases: []
 tags: []
-index: 15
+series_order: 15
 next: pages/linguaggi_modelli_computazionali/javascript.md
 previous: pages/linguaggi_modelli_computazionali/grammatiche_lrk.md
 ---

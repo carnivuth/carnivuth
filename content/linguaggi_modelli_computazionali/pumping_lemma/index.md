@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/rsf.md"
 previous: "pages/linguaggi_modelli_computazionali/espressioni_regolari.md"
 aliases: []
 tags: []
-index: 9
+series_order: 9
 ---
 # Pumping lemma
 

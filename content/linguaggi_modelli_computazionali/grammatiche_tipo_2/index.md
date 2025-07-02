@@ -3,7 +3,7 @@ draft: true
 series: ["Linguaggi e modelli computazionali"]
 title: Grammatiche di tipo 2 context free
 description: Grammatiche libere dal contesto
-index: 6
+series_order: 6
 ---
 
 Produzioni in cui un metasimbolo può essere sostituito a prescindere dal contesto (*gli altri elementi delle forme di frase non influiscono*)

@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/linguaggi_blended.md"
 previous: "pages/linguaggi_modelli_computazionali/javascript.md"
 aliases: []
 tags: []
-index: 17
+series_order: 17
 ---
 # Lambda calcolo
 

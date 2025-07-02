@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_0.md"
 previous: "pages/linguaggi_modelli_computazionali/linguaggi_grammatiche.md"
 aliases: []
 tags: []
-index: 3
+series_order: 3
 ---
 # Classificazione di chomsky
 

@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/classificazione_chomsky.md"
 previous: "pages/linguaggi_modelli_computazionali/computabilita.md"
 aliases: []
 tags: []
-index: 2
+series_order: 2
 ---
 # Linguaggi e grammatiche
 

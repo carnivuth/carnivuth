@@ -9,7 +9,7 @@ aliases:
   - analisi_ricorsiva_discendente
   - push_down_automaton
 tags: []
-index: 11
+series_order: 11
 ---
 
 # Push down automaton

@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md"
 previous: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_0.md"
 aliases: []
 tags: []
-index: 5
+series_order: 5
 ---
 # Grammatiche di tipo 1
 

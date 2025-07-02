@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/grammatiche_lrk.md"
 previous: "pages/linguaggi_modelli_computazionali/grammatiche_llk.md"
 aliases: []
 tags: []
-index: 13
+series_order: 13
 ---
 # Interpreti
 

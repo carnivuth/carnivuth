@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_1.md"
 previous: "pages/linguaggi_modelli_computazionali/classificazione_chomsky.md"
 aliases: []
 tags: []
-index: 4
+series_order: 4
 ---
 #  GRAMMATICHE DI TIPO 0
 

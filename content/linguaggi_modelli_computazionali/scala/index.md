@@ -5,7 +5,7 @@ draft: true
 id: scala
 aliases: []
 tags: []
-index: 19
+series_order: 19
 previous: pages/linguaggi_modelli_computazionali/linguaggi_blended.md
 ---
 # Scala

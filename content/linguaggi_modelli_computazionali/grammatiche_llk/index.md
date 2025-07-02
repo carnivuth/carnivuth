@@ -9,7 +9,7 @@ aliases:
   - starter_symbol_set
   - director_symbol_set
 tags: []
-index: 12
+series_order: 12
 ---
 
 # Grammatiche $ll(k)$

@@ -7,7 +7,7 @@ next: "pages/linguaggi_modelli_computazionali/pumping_lemma.md"
 previous: "pages/linguaggi_modelli_computazionali/grammatiche_regolari.md"
 aliases: []
 tags: []
-index: 8
+series_order: 8
 ---
 # Espressioni regolari
 
