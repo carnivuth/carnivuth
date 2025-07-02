@@ -2,16 +2,13 @@
 date: 2024-10-24
 series: ["Linguaggi e modelli computazionali"]
 draft: true
-id: processi_computazionali
+title: Costrutti linguistici e processi computazionali
 aliases: []
 tags: []
 series_order: 15
-next: pages/linguaggi_modelli_computazionali/javascript.md
-previous: pages/linguaggi_modelli_computazionali/grammatiche_lrk.md
 ---
-# Costrutti linguistici e processi computazionali
 
-E importante comprendere la differenza tra ciò che esprime la sintassi con il processo computazionale che la macchina adotta, spesso infatti i due non coincidono.
+È importante comprendere la differenza tra ciò che esprime la sintassi con il processo computazionale che la macchina adotta, spesso infatti i due non coincidono.
 
 ## Processo iterativo vs processo ricorsivo
 
