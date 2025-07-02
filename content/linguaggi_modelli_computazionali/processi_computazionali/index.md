@@ -1,5 +1,6 @@
 ---
 date: 2024-10-24
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: processi_computazionali
 aliases: []

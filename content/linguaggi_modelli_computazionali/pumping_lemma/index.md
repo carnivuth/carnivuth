@@ -1,5 +1,6 @@
 ---
 date: 2024-03-10
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: PUMPING_LEMMA
 next: "pages/linguaggi_modelli_computazionali/rsf.md"

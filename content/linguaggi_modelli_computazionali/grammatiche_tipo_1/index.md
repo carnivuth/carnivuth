@@ -1,5 +1,6 @@
 ---
 date: 2024-09-21
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: GRAMMATICHE DI TIPO 1
 next: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md"

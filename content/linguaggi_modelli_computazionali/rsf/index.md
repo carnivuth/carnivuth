@@ -1,5 +1,6 @@
 ---
 date: 2024-09-21
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: RICONOSCERE_LINGUAGGI_TIPO_3
 next: "pages/linguaggi_modelli_computazionali/pda.md"

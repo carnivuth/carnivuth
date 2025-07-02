@@ -1,5 +1,6 @@
 ---
 date: 2024-09-21
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: GRAMMATICHE REGOLARI
 next: "pages/linguaggi_modelli_computazionali/espressioni_regolari.md"

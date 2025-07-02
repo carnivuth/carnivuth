@@ -1,5 +1,6 @@
 ---
 date: 2024-10-31
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: scala
 aliases: []

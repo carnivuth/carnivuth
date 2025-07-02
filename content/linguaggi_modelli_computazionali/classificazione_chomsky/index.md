@@ -1,5 +1,6 @@
 ---
 date: 2024-03-10
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: CLASSIFICAZIONE DELLE GRAMMATICHE (DI CHOMSKY)
 next: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_0.md"

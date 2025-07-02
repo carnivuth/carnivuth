@@ -1,5 +1,6 @@
 ---
 date: 2024-10-27
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: linguaggi_blended
 next: "pages/linguaggi_modelli_computazionali/scala.md"

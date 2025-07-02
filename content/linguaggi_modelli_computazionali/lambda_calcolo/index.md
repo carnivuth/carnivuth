@@ -1,5 +1,6 @@
 ---
 date: 2024-10-26
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: lambda_calcolo
 next: "pages/linguaggi_modelli_computazionali/linguaggi_blended.md"

@@ -1,5 +1,6 @@
 ---
 date: 2024-09-21
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: ESPRESSIONI_REGOLARI
 next: "pages/linguaggi_modelli_computazionali/pumping_lemma.md"

@@ -1,5 +1,6 @@
 ---
 date: 2024-10-15
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: GRAMMATICHE_LLK
 next: "pages/linguaggi_modelli_computazionali/interpreti.md"

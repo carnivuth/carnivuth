@@ -1,5 +1,6 @@
 ---
 date: 2024-10-24
+series: ["Linguaggi e modelli computazionali"]
 draft: true
 id: javascript
 next: "pages/linguaggi_modelli_computazionali/lambda_calcolo.md"
