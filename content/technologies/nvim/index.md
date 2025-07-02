@@ -138,10 +138,16 @@ bufdo execute "normal! ggvG=l" | update |bw
 
 - replace visually highlighted text without overwrite content inside default register
 
-```vimscript
+```vim
 v
 "  highlight text
 yv
 "  highlight text to overwrite
 P
+```
+
+- To filter content in a file based on a grep expression:
+
+```vim
+:%!grep baas
 ```
