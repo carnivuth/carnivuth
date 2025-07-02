@@ -1,10 +1,9 @@
 ---
 date: 2024-10-15
 series: ["Linguaggi e modelli computazionali"]
-draft: true
-id: PDA
-next: "pages/linguaggi_modelli_computazionali/grammatiche_llk.md"
-previous: "pages/linguaggi_modelli_computazionali/rsf.md"
+draft: false
+title: Push down automaton
+description: Riconoscitore per linguaggi di tipo 2
 aliases:
   - analisi_ricorsiva_discendente
   - push_down_automaton
@@ -12,17 +11,15 @@ tags: []
 series_order: 11
 ---
 
-# Push down automaton
+Per poter riconoscere i linguaggi di [tipo 2](/linguaggi_modelli_computazionali/grammatiche_tipo_2) e necessario poter processare stringhe che presentino forme di [self embedding](/linguaggi_modelli_computazionali/grammatiche_tipo_2#self-embedding), di conseguenza un [automa a stati finiti](/linguaggi_modelli_computazionali/rsf) non sarebbe in grado in quanto dovrebbe avere un numero di stati non noto a priori (*non finiti*)
 
-Per poter riconoscere i linguaggi di [tipo 2](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md) e necessario poter processare stringhe che presentino forme di [self embedding](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md#SELF%20EMBEDDING), di conseguenza un [automa a stati finiti](pages/linguaggi_modelli_computazionali/rsf.md#riconoscere%20[linguaggi%20di%20tipo%203](pages/linguaggi_modelli_computazionali/grammatiche_regolari.md),%20l'automa%20a%20stati%20finiti) non sarebbe in grado in quanto dovrebbe avere un numero di stati non noto a priori (*non finiti*)
-
-Viene quindi introdotto il **push down automaton** (PDA), la differenza rispetto a un [automa a stati finiti](pages/linguaggi_modelli_computazionali/rsf.md#riconoscere%20[linguaggi%20di%20tipo%203](pages/linguaggi_modelli_computazionali/grammatiche_regolari.md),%20l'automa%20a%20stati%20finiti) e la presenza di uno stack quindi la funzione di stato $sfn$  considera anche l'insieme dell alfabeto interno Z come ingresso $sfn:A\times Z \rightarrow S\times Z^*$
+Viene quindi introdotto il **push down automaton** (PDA), la differenza rispetto a un [automa a stati finiti](/linguaggi_modelli_computazionali/rsf) e la presenza di uno stack quindi la funzione di stato $sfn$  considera anche l'insieme dell alfabeto interno Z come ingresso $sfn:A\times Z \rightarrow S\times Z^*$
 
 $$
 <A, S, S_0, sfn, Z, Z_0>
 $$
 
-dove:
+Dove:
 
 - $A$ e un alfabeto
 - $S$ e l'insieme degli stati
@@ -50,7 +47,7 @@ Si può definire l'insieme delle frasi riconosciute da un PDA con due criteri
 
 | <br>CRITERIO DELLO STACK VUOTO                                   | <br>CRITERIO DEGLI STATI FINALI                                                               |
 | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Un PDA riconosce correttamente una frase se essa svuota lo stack | Un PDA riconosce correttamente una frase se raggiunge uno stato finale (*come [RSF](pages/linguaggi_modelli_computazionali/rsf.md)*) |
+| Un PDA riconosce correttamente una frase se essa svuota lo stack | Un PDA riconosce correttamente una frase se raggiunge uno stato finale (*come [RSF](/linguaggi_modelli_computazionali/rsf)*) |
 
 ## Pda non deterministici
 
@@ -68,9 +65,9 @@ $$
 sfn(Qi, x, Z) \space e \space sfn(Qi, \epsilon, Z)
 $$
 
-A differenza degli [RSF](pages/linguaggi_modelli_computazionali/rsf.md) i PDA non sempre possono essere portati in una forma deterministica equivalente, inoltre
+A differenza degli [RSF](/linguaggi_modelli_computazionali/rsf) i PDA non sempre possono essere portati in una forma deterministica equivalente, inoltre
 
-> *la classe di linguaggi di [tipo 2](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md) coincide con quella riconosciuta da un PDA non deterministico*
+> *la classe di linguaggi di [tipo 2](/linguaggi_modelli_computazionali/grammatiche_tipo_2) coincide con quella riconosciuta da un PDA non deterministico*
 
 Inoltre i tempi di riconoscimento di un PDA non deterministico non sono lineari (*pessime prestazioni*), tuttavia
 
@@ -143,6 +140,7 @@ la tabella di parsing risultante:
 | --- | ------------------- | ------------------- | ----------------- |
 | $S$ | $S \rightarrow 0S0$ | $S \rightarrow 1S1$ | $S \rightarrow c$ |
 
+
 ### Limiti dell'analisi ricorsiva discendente
 
 L'analisi ricorsiva discendente e applicabile solo in caso in cui la grammatica sia deterministica, ovvero deve essere possibile dedurre la produzione corretta dalle informazioni disponibili in quel momento(*no guessing*)
@@ -151,6 +149,4 @@ L'analisi ricorsiva discendente e applicabile solo in caso in cui la grammatica 
 - memoria del passato (*stack*)
 - ma anche **parte del input ancora da consumare**
 
-Risulta quindi necessario definire un sottoinsieme di linguaggi di [tipo 2](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md) che siano riconoscibili in maniera deterministica guardando al più $k$ simboli in avanti, e il caso delle [grammatiche llk](pages/linguaggi_modelli_computazionali/grammatiche_llk.md)
-
-[<](pages/linguaggi_modelli_computazionali/rsf.md)[>](pages/linguaggi_modelli_computazionali/grammatiche_llk.md)
+Risulta quindi necessario definire un sottoinsieme di linguaggi di [tipo 2](/linguaggi_modelli_computazionali/grammatiche_tipo_2) che siano riconoscibili in maniera deterministica guardando al più $k$ simboli in avanti, e il caso delle [grammatiche llk](/linguaggi_modelli_computazionali/grammatiche_llk)
