@@ -1,8 +1,9 @@
 ---
 date: 2024-10-15
 series: ["Linguaggi e modelli computazionali"]
-draft: true
+draft: false
 title: Analisi lr(k)
+description: superando i limiti dell'analisi ll(k)
 aliases: []
 tags: []
 series_order: 14
@@ -41,7 +42,7 @@ Un parser $RL$ ricostruisce l'albero di derivazione della frase in analisi al co
 
 La decisione viene presa in base a un **contesto corrente** (*stato*) in cui il riconoscitore si trova a operare
 
-![](assets/linguaggi_modelli_computazionali/Pasted-image-20241020170257.png)
+![](parser_lr.png)
 
 Il componente software imputato di tale compito e il **RICONOSCITORE DI CONTESTI**
 
