@@ -1,16 +1,15 @@
 ---
 date: 2024-10-31
 series: ["Linguaggi e modelli computazionali"]
-draft: true
-id: scala
+draft: false
+title: Scala
+description: Linguaggio blended di natura accademica
 aliases: []
 tags: []
 series_order: 19
-previous: pages/linguaggi_modelli_computazionali/linguaggi_blended.md
 ---
-# Scala
 
-Scala e uno degli esempi più fiorenti di [linguaggio blended](pages/linguaggi_modelli_computazionali/linguaggi_blended.md), riprende molte caratteristiche dei linguaggi funzionali e possiede inoltre un type system forte
+Scala e uno degli esempi più fiorenti di [linguaggio blended](/linguaggi_modelli_computazionali/linguaggi_blended), riprende molte caratteristiche dei linguaggi funzionali e possiede inoltre un type system forte
 
 ## Caratteristiche
 
@@ -53,7 +52,7 @@ scala volutamente **non supporta l’assegnamento multiplo** a tal fine, l'asseg
 
 Scala ha solo cinque strutture di controllo predefinite: `if`, `while`, `for`, `try`, `match`
 
-Questo per evitare il proliferare di costrutti, inoltre scala fornisce all'utente la possibilità di [definire nuovi costrutti](#DEFINIRE%20UN%20COSTRUTTO%20BUILTIN), in modo da arricchire il linguaggio per mezzo di nuovi costrutti anziché librerie, inoltre tutti i **costrutti sono espressioni**  in modo da favorire approcci più funzionali
+Questo per evitare il proliferare di costrutti, inoltre scala fornisce all'utente la possibilità di [definire nuovi costrutti](#definire-un-costrutto-builtin), in modo da arricchire il linguaggio per mezzo di nuovi costrutti anziché librerie, inoltre tutti i **costrutti sono espressioni**  in modo da favorire approcci più funzionali
 
 ### Programma standalone
 
@@ -178,7 +177,7 @@ class Counter(v:Int) {
 
 ### Funzioni e chiusure
 
-Il pieno supporto alle funzioni come [first-class objects](pages/linguaggi_modelli_computazionali/processi_computazionali.md#FUNZIONI%20COME%20FIRST%20CLASS%20ENTITIES) comporta un altrettanto pieno supporto alle [chiusure](pages/linguaggi_modelli_computazionali/processi_computazionali.md#chiusura), per cui viene preferita la chiusura lessicale e le variabili libere **vengono chiuse per mezzo di riferimenti alle variabili esterne**, ciò significa che risentono dei cambiamenti ad esse
+Il pieno supporto alle funzioni come [first-class objects](/linguaggi_modelli_computazionali/processi_computazionali#funzioni-come-first-class-entities) comporta un altrettanto pieno supporto alle [chiusure](/linguaggi_modelli_computazionali/processi_computazionali#chiusura), per cui viene preferita la chiusura lessicale e le variabili libere **vengono chiuse per mezzo di riferimenti alle variabili esterne**, ciò significa che risentono dei cambiamenti ad esse
 
 ### Conversioni implicite
 
@@ -332,9 +331,9 @@ object Point{
 Scala ha tutti gli strumenti per consentire la definizione di costrutti builtin:
 
 - block like syntax
-- [currying](pages/linguaggi_modelli_computazionali/javascript.md#currying)
-- [call by name](pages/linguaggi_modelli_computazionali/processi_computazionali.md#alternativa,%20modello%20call%20by%20name)
-- [chiusura](pages/linguaggi_modelli_computazionali/processi_computazionali.md#chiusura)
+- [currying](/linguaggi_modelli_computazionali/javascript#currying)
+- [call by name](/linguaggi_modelli_computazionali/processi_computazionali#alternativa-modello-call-by-name)
+- [chiusura](/linguaggi_modelli_computazionali/processi_computazionali#chiusura)
 
 quindi per creare il costrutto `repeat`:
 
@@ -445,13 +444,13 @@ def append[U >: T](element: U) {..}
 
 ## Tipo `option`
 
-Scala introduce il tipo `Option` come analogo degli optional di java, questo per evitare argomenti passati come null (*si ricorda che ciò in scala non  e possibile per la [gerarchia di tipi](pages/linguaggi_modelli_computazionali/linguaggi_blended.md#tipi)*)
+Scala introduce il tipo `Option` come analogo degli optional di java, questo per evitare argomenti passati come null (*si ricorda che ciò in scala non  e possibile per la [gerarchia di tipi](/linguaggi_modelli_computazionali/linguaggi_blended#tipi)*)
 
 ## Extractors
 
-Le funzionalità di [pattern matching](#PATTERN%20MATCHING) di scala come definite sopra sono utilizzabili solo per mezzo di [classi dati](pages/linguaggi_modelli_computazionali/linguaggi_blended.md#classi%20dati), per poterle utilizzare anche con oggetti generati da classi normali scala mette a disposizione gli **extractors**,  ovvero oggetti che definiscono un metodo `unapply()` duale di `apply()` che estrae i valori di un oggetto
+Le funzionalità di [pattern matching](#pattern-matching) di scala come definite sopra sono utilizzabili solo per mezzo di [classi dati](/linguaggi_modelli_computazionali/linguaggi_blended#classi-dati), per poterle utilizzare anche con oggetti generati da classi normali scala mette a disposizione gli **extractors**,  ovvero oggetti che definiscono un metodo `unapply()` duale di `apply()` che estrae i valori di un oggetto
 
-Il metodo in questione deve essere definito al difuori della classe interessata (il miglior candidato risulta essere il [companion object](#COMPANION%20OBJECT))
+Il metodo in questione deve essere definito al difuori della classe interessata (il miglior candidato risulta essere il [companion object](#companion-object))
 
 ```scala
 // oggetto companion
@@ -472,8 +471,8 @@ def filtra(x : AnyRef) =
 
 Scala, compilando in bytecode  e eseguendo sulla JVM e direttamente interoperabile con java, infatti alcune delle funzionalita introdotte da scala sono mappate *quasi* in corrispettive astrazioni java
 
-- gli [oggetti singleton](#OGGETTO%20SINGLETON) vengono mappati su classi con metodi statici
-- i [tratti](#EREDITARIETÀ%20ESTESA%20I%20TRATTI) implementati come una interfaccia con una classe accessoria per il corpo dei metodi
+- gli [oggetti singleton](#oggetto-singleton) vengono mappati su classi con metodi statici
+- i [tratti](#ereditarietà-estesa-i-tratti) implementati come una interfaccia con una classe accessoria per il corpo dei metodi
 - i tipi generici si mappano quasi interamente sui tipi generici di java
 
 | SCALA                         | JAVA                                          |
@@ -482,7 +481,7 @@ Scala, compilando in bytecode  e eseguendo sulla JVM e direttamente interoperabi
 | estendere classi java         | usare oggetti scala (*con delle limitazioni*) |
 | usare framework java `javaFX` | usare classi scala con funzioni e chiusure    |
 
-## [INTERPRETI](pages/linguaggi_modelli_computazionali/interpreti.md) IN SCALA: LA LIBRERIA PARSER COMBINATORS
+## [Interpreti](/linguaggi_modelli_computazionali/interpreti) in scala: la libreria parser combinators
 
 La libreria scala [`parser combinators`](https://index.scala-lang.org/scala/scala-parser-combinators) consente la creazione di parser custom per grammatiche anche **non deterministiche** (*a scapito delle performance*).
 
@@ -503,7 +502,7 @@ class MyGrammar extends JavaTokenParsers {
 }
 ```
 
-la semantica può essere aggiunta con l'operatore `^^`
+La semantica può essere aggiunta con l'operatore `^^`
 
 ```scala
 class MyGrammar extends JavaTokenParsers {
@@ -514,6 +513,4 @@ class MyGrammar extends JavaTokenParsers {
 }
 ```
 
-In caso di grammatiche [ll(1)](pages/linguaggi_modelli_computazionali/grammatiche_llk.md#grammatiche%20$ll(k)$) la libreria genera comunque un parser in grado di fare backtracking, per evitare l'inefficienza e utile specificare che non e necessario supportarlo con l'operatore `!`
-
-[<](pages/linguaggi_modelli_computazionali/linguaggi_blended.md)
+In caso di grammatiche [ll(1)](/linguaggi_modelli_computazionali/grammatiche_llk#grammatiche-$ll(k)$) la libreria genera comunque un parser in grado di fare backtracking, per evitare l'inefficienza e utile specificare che non e necessario supportarlo con l'operatore `!`
