@@ -1,24 +1,24 @@
 ---
 date: 2024-09-21
 series: ["Linguaggi e modelli computazionali"]
-draft: true
-id: GRAMMATICHE REGOLARI
-next: "pages/linguaggi_modelli_computazionali/espressioni_regolari.md"
-previous: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md"
+draft: false
+title: Grammatiche regolari (tipo 3)
+description: Grammatiche semplici e meno espressive ma sempre deterministiche
 aliases: []
 tags: []
 series_order: 7
 ---
-# Grammatiche regolari (tipo 3)
 
 Grammatiche le cui  produzioni ammettono un solo simbolo non terminale nel membro di destra.
+
 
 | LINEARI A DESTRA             | LINEARI A SINISTRA          |
 | ---------------------------- | --------------------------- |
 | $$A \rightarrow \sigma  $$   | $$A \rightarrow \sigma  $$  |
 | $$A \rightarrow \sigma B  $$ | $$A \rightarrow B\sigma  $$ |
 
- I linguaggi generati dalle grammatiche regolari coincidono con quelli descritti da [espressioni_regolari](pages/linguaggi_modelli_computazionali/espressioni_regolari.md)
+
+I linguaggi generati dalle grammatiche regolari coincidono con quelli descritti da [espressioni_regolari](/linguaggi_modelli_computazionali/espressioni_regolari)
 
 ```mermaid
 flowchart LR
@@ -28,6 +28,4 @@ A --> B
 B --> A
 ```
 
-a ogni grammatica regolare corrisponde un automa in grado di riconoscerla
-
-[<](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md)[>](pages/linguaggi_modelli_computazionali/espressioni_regolari.md)
+A ogni grammatica regolare corrisponde un automa in grado di riconoscerla
