@@ -9,6 +9,7 @@ tags: []
 series_order: 7
 ---
 
+{{ mathjax }}
 Grammatiche le cui  produzioni ammettono un solo simbolo non terminale nel membro di destra.
 
 

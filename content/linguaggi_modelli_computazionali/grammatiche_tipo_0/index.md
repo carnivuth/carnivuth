@@ -9,6 +9,7 @@ tags: []
 series_order: 4
 ---
 
+{{ mathjax }}
 Sono grammatiche prive di restrizioni sulle produzioni, e ammessa la produzione della stringa vuota (ergo le frasi possono ridursi di lunghezza)
 
 Un possibile esempio e il seguente:

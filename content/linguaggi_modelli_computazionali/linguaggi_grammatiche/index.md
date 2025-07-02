@@ -9,6 +9,7 @@ tags: ["chiusura di un alfabeto","grammatiche formali","linguaggio"]
 series_order: 2
 ---
 
+{{ mathjax }}
 Per poter ottenere una [macchina di Turing universale](https://it.wikipedia.org/wiki/Macchina_di_Turing_universale) e necessario dare definizione formale di linguaggio, per comprendere l'inadeguatezza al riconoscimento di definizioni non formali ne citiamo una come segue
 
 *Un linguaggio è un insieme di parole e di metodi di combinazione delle parole usate e comprese da una comunità di persone*

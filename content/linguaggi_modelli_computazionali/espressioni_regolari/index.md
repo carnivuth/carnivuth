@@ -10,6 +10,7 @@ tags: []
 series_order: 8
 ---
 
+{{ mathjax }}
 Le espressioni regolari sono un formalismo per distinguere una particolare tipologia di grammatiche dove
 
 - la stringa vuota $\epsilon$ e un espressione regolare

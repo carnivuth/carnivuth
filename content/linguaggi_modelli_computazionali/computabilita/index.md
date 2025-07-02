@@ -7,6 +7,7 @@ title: Teoria della computabilità
 description: Introduzione alla teoria della computabilità
 ---
 
+{{ mathjax }}
 Partiamo dalla **TESI DI CHURCH-TURING**
 
 > [!QUOTE]

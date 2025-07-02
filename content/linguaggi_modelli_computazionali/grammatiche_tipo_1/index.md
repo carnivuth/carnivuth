@@ -9,6 +9,7 @@ tags: []
 series_order: 5
 ---
 
+{{ mathjax }}
 Grammatiche in cui le produzioni non ammettono la *accorciatura* della frase (*nessuna produzione ammette mai la stringa vuota*):
 
 $$
