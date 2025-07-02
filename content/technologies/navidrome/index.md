@@ -12,7 +12,7 @@ series_order: 17
 date: 2025-05-28
 ---
 
- [navidrome](https://www.navidrome.org/) is a subsonic compatible musing streaming service that relies on metadata to catalog a music library
+ [navidrome](https://www.navidrome.org/) is a [subsonic](https://www.subsonic.org/pages/index.jsp) compatible musing streaming service that relies on metadata to catalog a music library
 
 ## Manage metadata
 
@@ -109,3 +109,11 @@ An handy alias to avoid memorizing parameters
 ```bash
 alias ripCD='mkdir temp && cd temp && cdda2wav -vall cddb=-1 speed=4 -paranoia paraopts=proof -B -D /dev/sr0'
 ```
+
+## Retrieving lyrics for tracks
+
+In order to retrieve lyrics for tracks a useful resource is [lrclib](https://lrclib.net), which is an online index of lyrics that can be queried using the [LRCGET](https://github.com/tranxuanthang/lrcget)  program.
+
+I wrote a simple script that uses the [lrclib](https://lrclib.net/docs) API to download lyrics for a given directory
+
+{{< codeimporter url="https://raw.githubusercontent.com/carnivuth/scripts/refs/heads/main/bin/collection_manage.sh" type="bash" >}}
