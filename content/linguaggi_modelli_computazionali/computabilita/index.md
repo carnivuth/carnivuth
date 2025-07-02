@@ -9,7 +9,8 @@ description: Introduzione alla teoria della computabilità
 
 Partiamo dalla **TESI DI CHURCH-TURING**
 
-*Se un problema è umanamente calcolabile, allora esisterà una macchina di Turing in grado di risolverlo (cioè di calcolarlo)*
+> [!QUOTE]
+> Se un problema è umanamente calcolabile, allora esisterà una macchina di Turing in grado di risolverlo (cioè di calcolarlo)*
 
 Da questo si deduce che se la MdT non può risolvere un dato problema quel **problema e irresolubile**
 
