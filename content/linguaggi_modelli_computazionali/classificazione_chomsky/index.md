@@ -1,7 +1,7 @@
 ---
 date: 2024-03-10
 series: ["Linguaggi e modelli computazionali"]
-draft: true
+draft: false
 title: Classificazione di chomsky
 description: Tassonomia delle grammatiche
 next: "pages/linguaggi_modelli_computazionali/grammatiche_tipo_0.md"
