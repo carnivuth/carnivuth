@@ -1,7 +1,7 @@
 ---
 date: 2024-03-10
 series: ["Linguaggi e modelli computazionali"]
-draft: true
+draft: false
 title: Pumping lemma
 description: Distinguere grammatiche di tipo 2 e 3
 aliases: []

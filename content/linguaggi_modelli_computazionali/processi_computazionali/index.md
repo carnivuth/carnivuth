@@ -1,13 +1,15 @@
 ---
 date: 2024-10-24
 series: ["Linguaggi e modelli computazionali"]
-draft: true
+draft: false
 title: Costrutti linguistici e processi computazionali
+description: Costrutti linguistici e processi computazionali
 aliases: []
 tags: []
 series_order: 15
 ---
 
+{{< mathjax >}}
 È importante comprendere la differenza tra ciò che esprime la sintassi con il processo computazionale che la macchina adotta, spesso infatti i due non coincidono.
 
 ## Processo iterativo vs processo ricorsivo
@@ -43,7 +45,7 @@ Proprio per questo in molti linguaggi che non offrono costrutti per esprimere pr
 
 Processo attraverso il quale si riduce la memoria allocata da una tail recursion a un solo record di attivazione **sovrascrivendo sempre lo stesso record** in quanto i precedenti risultano ininfluenti
 
-![](assets/linguaggi_modelli_computazionali/Pasted%20image%2020241024171812.png)
+![](tail_recursion.png)
 
 ## Linguaggi funzionali
 
@@ -78,7 +80,7 @@ Nei linguaggi tradizionali le funzioni non sono altro che dei costrutti sintatti
 
 ## Chiusura
 
-Se il linguaggio supporta le [funzioni come first class entities](#FUNZIONI%20COME%20FIRST%20CLASS%20ENTITIES) e le funzioni ammettono l'uso di variabili non definite localmente (*variabili libere*) allora possono essere implementate le **chiusure**
+Se il linguaggio supporta le [funzioni come first class entities](#funzioni-come-first-class-entities) e le funzioni ammettono l'uso di variabili non definite localmente (*variabili libere*) allora possono essere implementate le **chiusure**
 
 Si ha quando una funzione compie l'atto di '*chiudere*' de parametri all'interno di un altra funzione, ciò e possibile solo in linguaggi che permettono le funzioni come first class entities:
 
@@ -102,7 +104,7 @@ si ha quindi che le variabili di una chiusura devono mantenere **il tempo di vit
 
 #### Chiusura lessicale vs chiusura dinamica
 
-Se il linguaggio supporta le chiusure occorre definire quale sia [l'ambiente](pages/linguaggi_modelli_computazionali/interpreti.md#environment) della funzione stessa in cui questo deve operare:
+Se il linguaggio supporta le chiusure occorre definire quale sia [l'ambiente](/linguaggi_modelli_computazionali/interpreti#environment) della funzione stessa in cui questo deve operare:
 
 - si ha una catena di ambienti definita dalla struttura del programma **CATENA LESSICALE**
 - e una catena di ambienti generata a run-time data dalla sequenza di chiamate della funzione **CATENA DINAMICA**
@@ -228,5 +230,3 @@ object CallByName {
 	}
 }
 ```
-
-[<](pages/linguaggi_modelli_computazionali/grammatiche_lrk.md)[>](pages/linguaggi_modelli_computazionali/javascript.md)

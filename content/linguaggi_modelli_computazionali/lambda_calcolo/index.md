@@ -1,7 +1,7 @@
 ---
 date: 2024-10-26
 series: ["Linguaggi e modelli computazionali"]
-draft: true
+draft: false
 description: La teoria base dietro ai linguaggi moderni
 title: Lambda calcolo
 aliases: []
