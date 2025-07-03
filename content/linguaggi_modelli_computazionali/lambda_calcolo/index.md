@@ -2,15 +2,14 @@
 date: 2024-10-26
 series: ["Linguaggi e modelli computazionali"]
 draft: true
-id: lambda_calcolo
-next: "pages/linguaggi_modelli_computazionali/linguaggi_blended.md"
-previous: "pages/linguaggi_modelli_computazionali/javascript.md"
+description: La teoria base dietro ai linguaggi moderni
+title: Lambda calcolo
 aliases: []
 tags: []
 series_order: 17
 ---
-# Lambda calcolo
 
+{{< mathjax >}}
 Nasce contemporaneamente alla macchina di Turing con l'obbiettivo di descrivere ogni algoritmo (*Turing-equivalente*), e **basato sul solo concetto di funzione**
 
 ## Sintassi e semantica
@@ -32,7 +31,7 @@ $$
 
 La semantica risulta essere *sostituisci tutte le occorrenze del parametro $x$ nel corpo della funzione  $x$* con risultato $y$, l'operazione e detta **riduzione**
 
-Notare che la grammatica cosi definita e [**ambigua**](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md#ambiguità%20di%20una%20frase) e derivazioni diverse di una stessa frase portano a semantiche diverse, per esempio la frase
+Notare che la grammatica cosi definita e [**ambigua**](/linguaggi_modelli_computazionali/grammatiche_tipo_2#ambiguità-di-una-frase) e derivazioni diverse di una stessa frase portano a semantiche diverse, per esempio la frase
 
 $$
 \lambda x . xy
@@ -48,7 +47,7 @@ oppure:
 
 ## Lambda calcolo in javascript
 
-[javascript](pages/linguaggi_modelli_computazionali/javascript.md) risulta essere pratico per l'implementazione del lambda calcolo in quanto vi e la possibilità di definire funzioni anonime e [chiusure](pages/linguaggi_modelli_computazionali/javascript.md#chiusure)
+[javascript](/linguaggi_modelli_computazionali/javascript) risulta essere pratico per l'implementazione del lambda calcolo in quanto vi e la possibilità di definire funzioni anonime e [chiusure](/linguaggi_modelli_computazionali/javascript#chiusure)
 
 ```javascript
 //il termine lambda x.<expr> puo infatti essere definito come
@@ -61,7 +60,7 @@ console.log(f(y))
 
 ## Funzioni a più argomenti
 
-Funzioni a piu argomenti possono essere rappresentate come funzioni di funzioni sfruttando il [currying](pages/linguaggi_modelli_computazionali/javascript.md#currying), di conseguenza una funzione a piu argomenti:
+Funzioni a piu argomenti possono essere rappresentate come funzioni di funzioni sfruttando il [currying](/linguaggi_modelli_computazionali/javascript#currying), di conseguenza una funzione a piu argomenti:
 
 $$
 \lambda x.\lambda y.xy
@@ -110,7 +109,7 @@ f(2)
 
 >[!ERROR] esplode lo stack, ovviamente
 
-![](assets/linguaggi_modelli_computazionali/Pasted%20image%2020241031114431.png)
+![](stack_trace.png)
 
 ### Teorema di church-rosser
 
@@ -211,7 +210,7 @@ function Y(f) {
 }
 ```
 
-E necessario simulare la [call by name](pages/linguaggi_modelli_computazionali/processi_computazionali.md#alternativa,%20modello%20call%20by%20name) come già visto
+E necessario simulare la [call by name](/linguaggi_modelli_computazionali/processi_computazionali#alternativa,-modello-call-by-name) come già visto
 
 ### Combinatore di punto fisso rivisitato $z$
 
@@ -264,5 +263,3 @@ console.log(Z(FactGen)(3))
 ## In conclusione
 
 Il lambda calcolo e un formalismo estremamente potente che ha permesso di formalizzare le funzionalità che oggi vantano i linguaggi mainstream ma non e pensato per essere utilizzato direttamente dagli utenti finali
-
-[<](pages/linguaggi_modelli_computazionali/javascript.md)[>](pages/linguaggi_modelli_computazionali/linguaggi_blended.md)

@@ -1,10 +1,9 @@
 ---
 date: 2024-10-24
 series: ["Linguaggi e modelli computazionali"]
-draft: true
-id: javascript
-next: "pages/linguaggi_modelli_computazionali/lambda_calcolo.md"
-previous: "pages/linguaggi_modelli_computazionali/processi_computazionali.md"
+draft: false
+title: Javascript
+description: Object based language con un interessante modello a oggetti
 aliases: []
 tags: []
 series_order: 16
@@ -194,7 +193,7 @@ g(32)
 
 ## Chiusure
 
-javascript implementa le funzioni come [first class entities](pages/linguaggi_modelli_computazionali/processi_computazionali.md#FUNZIONI%20COME%20FIRST%20CLASS%20ENTITIES), e dunque possibile creare [chiusure](pages/linguaggi_modelli_computazionali/processi_computazionali.md#chiusura)
+javascript implementa le funzioni come [first class entities](/linguaggi_modelli_computazionali/processi_computazionali#funzioni-come-first-class-entities), e dunque possibile creare [chiusure](/linguaggi_modelli_computazionali/processi_computazionali#chiusura)
 
 ```javascript
 //qui la funzione a ritorna una funzione che usa come i parametri di a al suo interno (chiusura)
@@ -207,7 +206,7 @@ console.log(z(3))
 
 ### Currying
 
-Particolare caso di chiusura in cui funzioni a $n$ argomenti vengono simulate per mezzo di chiusure di funzioni a un argomento (*utilizzato per il [lambda_calcolo](pages/linguaggi_modelli_computazionali/lambda_calcolo.md)*)
+Particolare caso di chiusura in cui funzioni a $n$ argomenti vengono simulate per mezzo di chiusure di funzioni a un argomento (*utilizzato per il [lambda_calcolo](/linguaggi_modelli_computazionali/lambda_calcolo)*)
 
 ```javascript
 //esempio di implementazione della somma come currying
@@ -346,7 +345,7 @@ console.log(Person.computeAge())
 
 ### Proprietà private
 
-A default le proprietà di un oggetto sono tutte pubbliche, e possibile implementare una proprietà privata per mezzo di una [chiusura](pages/linguaggi_modelli_computazionali/processi_computazionali.md#chiusura)
+A default le proprietà di un oggetto sono tutte pubbliche, e possibile implementare una proprietà privata per mezzo di una [chiusura](/linguaggi_modelli_computazionali/processi_computazionali#chiusura)
 
 ```javascript
 Person= function(name,bd){
@@ -573,5 +572,3 @@ function show(ogg){
 }
 show(e)
 ```
-
-[<](pages/linguaggi_modelli_computazionali/processi_computazionali.md)[>](pages/linguaggi_modelli_computazionali/lambda_calcolo.md)
