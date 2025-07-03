@@ -1,12 +1,12 @@
 ---
 date: 2024-03-10
 series: ["Linguaggi e modelli computazionali"]
-draft: true
+series_order: 4
+draft: false
 title:  Grammatiche di tipo 0
 description:  Grammatiche più potenti ma anche più costose da riconoscere
 aliases: []
 tags: []
-series_order: 4
 ---
 
 {{< mathjax >}}
