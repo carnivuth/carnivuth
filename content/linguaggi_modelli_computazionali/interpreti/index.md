@@ -1,7 +1,7 @@
 ---
 date: 2024-10-15
 series: ["Linguaggi e modelli computazionali"]
-draft: true
+draft: false
 title: Interpreti
 descrition: Applicare una semantica ai linguaggi riconosciuti
 aliases: []
@@ -125,7 +125,7 @@ In cui ogni classe implementa in metodi per la generazione del singolo sottonodo
 
 ## Valutare gli alberi
 
-Gli [AST](pages/linguaggi_modelli_computazionali/interpreti.md#interpretazione-differita-(abstract-syntax-tree)) prodotti da un parser necessitano di essere di conseguenza interpretati tramite opportune operazioni di visita degli alberi, 3 possibili approcci:
+Gli [AST](/linguaggi_modelli_computazionali/interpreti#interpretazione-differita-(abstract-syntax-tree)) prodotti da un parser necessitano di essere di conseguenza interpretati tramite opportune operazioni di visita degli alberi, 3 possibili approcci:
 
 - **PRE-ORDER**: si visitano prima il nodo radice e poi figlio di destra e sinistra
 - **POST-ORDER**: si visitano prima i figli e poi la radice
@@ -172,7 +172,7 @@ public static int eval(Exp e) {
 
 ### Approccio oop
 
-Ogni specializzazione dell'interfaccia `Expr` definisce i metodi per la generazione del proprio nodo dell [AST](/linguaggi_modelli_computazionali/interpreti#interpretazione-differita-(abstract-syntax-tree)), molto più leggibile e modulare ma rende complesso fornire interpretazioni diverse dello stesso [ast](/linguaggi_modelli_computazionali/interpreti.md#interpretazione-differita-(abstract-syntax-tree))
+Ogni specializzazione dell'interfaccia `Expr` definisce i metodi per la generazione del proprio nodo dell [AST](/linguaggi_modelli_computazionali/interpreti#interpretazione-differita-(abstract-syntax-tree)), molto più leggibile e modulare ma rende complesso fornire interpretazioni diverse dello stesso [ast](/linguaggi_modelli_computazionali/interpreti#interpretazione-differita-(abstract-syntax-tree))
 
 ```java
 public Interface Expr{
@@ -228,7 +228,7 @@ Quanto detto prima porta a definire la distinzione fra il valore di destra e di 
 - $L$-VALUE per indicare gli identificatori a sinistra dell'operazione di assegnamento
 - $R$-VALUE per indicare gli identificatori a destra dell'operazione di assegnamento
 
-E inoltre opportuno considerare se distinguere i due valori sintatticamente in quanto la grammatica risultante in caso di non distinzione diventa [LL(2)](pages/linguaggi_modelli_computazionali/grammatiche_llk#grammatiche-$ll(k)$)
+E inoltre opportuno considerare se distinguere i due valori sintatticamente in quanto la grammatica risultante in caso di non distinzione diventa [LL(2)](/linguaggi_modelli_computazionali/grammatiche_llk#grammatiche-$ll(k)$)
 
 ## Assegnamento distruttivo vs assegnamento non distruttivo
 
