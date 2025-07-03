@@ -1,12 +1,14 @@
 ---
 draft: true
-id: ESAME
+title: Esame
+draft: Esempi per l'esame
 aliases: []
 tags: []
+series: ["Linguaggi e modelli computazionali"]
+series_order: 20
 ---
 
-# Esame
-
+{{< mathjax >}}
 > data una grammatica mostrare che e riconoscibile per mezzo di $LL(1)$
 ## Grammatica
 
@@ -19,9 +21,9 @@ tags: []
 
 si dimostra per mezzo della stringa $d^ncc^n$ in cui non e identificabile il pezzo centrale per effettuare la scomposizione nei tre pezzi $xwy$ in quanto il pezzo centrale ripetuto non e in grado di generare le due parti della stringa
 
->[!NOTE] si vedeva subito anche dal fatto che la prima regola di produzione presenta [self embedding](pages/linguaggi_modelli_computazionali/grammatiche_tipo_2.md#self%20embedding) e il corrispondente automa a stati finiti avrebbe avuto infiniti stati
+>[!NOTE] si vedeva subito anche dal fatto che la prima regola di produzione presenta [self embedding](/linguaggi_modelli_computazionali/grammatiche_tipo_2#self-embedding) e il corrispondente automa a stati finiti avrebbe avuto infiniti stati
 
-### Calcolo dei [director symbols set](pages/linguaggi_modelli_computazionali/grammatiche_llk.md#director%20symbols%20set)
+### Calcolo dei [director symbols set](/linguaggi_modelli_computazionali/grammatiche_llk#director-symbols-set)
 
 - $DSS(S -> dSAB)= \{d\}$
 - $DSS(S -> BC)= \{c,b\}$
@@ -34,7 +36,7 @@ si dimostra per mezzo della stringa $d^ncc^n$ in cui non e identificabile il pez
 
 - $C\rightarrow Cd$
 
-si ha un conflitto nei [director symbol set](pages/linguaggi_modelli_computazionali/grammatiche_llk.md#director%20symbols%20set) che riguardano il metasimbolo $c$ dato che si ha $dss(c \rightarrow c)$ non disgiunto con $dss(c\rightarrow cd)$ la grammatica non e $ll(1)$
+si ha un conflitto nei [director symbol set](/linguaggi_modelli_computazionali/grammatiche_llk#director-symbols-set) che riguardano il metasimbolo $c$ dato che si ha $dss(c \rightarrow c)$ non disgiunto con $dss(c\rightarrow cd)$ la grammatica non e $ll(1)$
 
 > mostrare che la ricorsione sinistra si può rimuovere ma si ottiene una grammatica diversa
 
@@ -50,7 +52,7 @@ La ricorsione sinistra e rimovibile ma si ottiene una grammatica diversa, non ot
 
 > tentare l'approccio con analisi $LR(0)$  e $SLR$ per verificare se si può mantenere la ricorsione sinistra senza modificare il linguaggio
 
-### Calcolo dei [contesti sinistri](pages/linguaggi_modelli_computazionali/grammatiche_lrk.md#contesti%20sinistri%20di%20una%20produzione)
+### Calcolo dei [contesti sinistri](/linguaggi_modelli_computazionali/grammatiche_lrk#contesti-sinistri-di-una-produzione)
 
 - $LEFTCTXLR(0)(Z) = \{\epsilon\}$
 - $LEFTCTXLR(0)(S) = LEFTCTXLR(0)(Z),LEFTCTXLR(0)(S)d$
@@ -58,7 +60,7 @@ La ricorsione sinistra e rimovibile ma si ottiene una grammatica diversa, non ot
 - $LEFTCTXLR(0)(B) = LEFTCTXLR(0)(S)dSA,LEFTCTXLR(0)(S),LEFTCTXLR(0)(B)b$
 - $LEFTCTXLR(0)(C) = LEFTCTXLR(0)(A),LEFTCTXLR(0)(C),LEFTCTXLR(0)(S)B$
 
-### Calcolo dei [contesti lr(0)](pages/linguaggi_modelli_computazionali/grammatiche_lrk.md#contesti%20$lr\(0\)$)
+### Calcolo dei [contesti lr(0)](/linguaggi_modelli_computazionali/grammatiche_lrk#contesti$lr\(0\))
 
 - $CTXLR(0)(Z \rightarrow S) = \epsilon$
 - $CTXLR(0)(S \rightarrow dSAB) = d^*dSAB$
@@ -70,7 +72,7 @@ La ricorsione sinistra e rimovibile ma si ottiene una grammatica diversa, non ot
 - $CTXLR(0)(C \rightarrow c) =((d^*S)a^*+d^*B)^*c$
 - $CTXLR(0)(C \rightarrow Cd) = ((d^*S)a^*+d^*B)^*Cd$
 
-La grammatica in questione non risulta essere [lr(0)](pages/linguaggi_modelli_computazionali/grammatiche_lrk.md#analisi%20$lr\(0\)$) in quanto la regola di produzione $B \rightarrow \epsilon$ genera un conflitto shift/reduce nell'automa
+La grammatica in questione non risulta essere [lr(0)](/linguaggi_modelli_computazionali/grammatiche_lrk#analisi-$lr\(0\)$) in quanto la regola di produzione $B \rightarrow \epsilon$ genera un conflitto shift/reduce nell'automa
 
 > [!NOTE] per essere $LR(0)$ non devono esserci ricorsioni destre del tipo $A\rightarrow aA|a$ ne produzioni dello stesso metasimbolo che iniziano con la stessa forma di frase e si differiscono per un terminale $S\rightarrow B|Ba$, neanche le produzioni della forma $B\rightarrow bB|\epsilon$ sono corrette in quanto generano nel automa conflitti shift/reduce per via dell $\epsilon$-mossa
 
@@ -137,7 +139,7 @@ lesect(a,"c")(console.log)
 
 ## Il cacciavite del sistemista (`grep` dei poveri)
 
-con il potentissimo costrutto `lesect`  e la possibilità offerta da javascript di [costruire funzioni dinamicamente](pages/linguaggi_modelli_computazionali/javascript.md#costruire%20funzioni%20dinamicamente) si possono ricreare molti tool unix semplicemente modificando un file,
+con il potentissimo costrutto `lesect`  e la possibilità offerta da javascript di [costruire funzioni dinamicamente](/linguaggi_modelli_computazionali/javascript#costruire-funzioni-dinamicamente) si possono ricreare molti tool unix semplicemente modificando un file,
 
 ```javascript
 const readline = require('readline');
@@ -196,7 +198,7 @@ echo -e "a\nb\nb" | node mktool.js poorsed.txt a c
 
 ## Tratti di scala: le reverse pipes
 
-Mostrare come scala risolve il problema dell'ereditarietà multipla per mezzo dei [tratti](pages/linguaggi_modelli_computazionali/scala.md), e le limitazioni dei tratti parametrici
+Mostrare come scala risolve il problema dell'ereditarietà multipla per mezzo dei [tratti](/linguaggi_modelli_computazionali/scala), e le limitazioni dei tratti parametrici
 
 ```scala
 // GIRA SOLO SU SCALA 3, TESTARE QUI https://scastie.scala-lang.org
