@@ -75,7 +75,8 @@ La ricorsione sinistra e rimovibile ma si ottiene una grammatica diversa, non ot
 
 La grammatica in questione non risulta essere [lr(0)](/linguaggi_modelli_computazionali/grammatiche_lrk#analisi-$lr\(0\)$) in quanto la regola di produzione $B \rightarrow \epsilon$ genera un conflitto shift/reduce nell'automa
 
-> [!NOTE] per essere $LR(0)$ non devono esserci ricorsioni destre del tipo $A\rightarrow aA|a$ ne produzioni dello stesso metasimbolo che iniziano con la stessa forma di frase e si differiscono per un terminale $S\rightarrow B|Ba$, neanche le produzioni della forma $B\rightarrow bB|\epsilon$ sono corrette in quanto generano nel automa conflitti shift/reduce per via dell $\epsilon$-mossa
+> [!NOTE]
+> per essere $LR(0)$ non devono esserci ricorsioni destre del tipo $A\rightarrow aA|a$ ne produzioni dello stesso metasimbolo che iniziano con la stessa forma di frase e si differiscono per un terminale $S\rightarrow B|Ba$, neanche le produzioni della forma $B\rightarrow bB|\epsilon$ sono corrette in quanto generano nel automa conflitti shift/reduce per via dell $\epsilon$-mossa
 
 ### Calcolo degli insiemi $follow_1$
 
