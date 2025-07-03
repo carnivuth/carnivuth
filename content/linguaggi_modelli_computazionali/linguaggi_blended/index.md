@@ -1,23 +1,22 @@
 ---
 date: 2024-10-27
 series: ["Linguaggi e modelli computazionali"]
-draft: true
-id: linguaggi_blended
-next: "pages/linguaggi_modelli_computazionali/scala.md"
-previous: "pages/linguaggi_modelli_computazionali/lambda_calcolo.md"
+draft: false
+title: Linguaggi blended
+description: Linguaggi che riuniscono concetti dei funzionali con concetti dei linugaggi standard
 aliases: []
 tags: []
 series_order: 18
 ---
-# Linguaggi blended
 
+{{< mathjax >}}
 Sono linguaggi frutto di un mix intelligente fra i vecchi paradigmi e gli approcci dei linguaggi funzionali senza forzare la mano verso questi ultimi l'asciando allo sviluppatore la possibilita di scegliere come approcciare il problema, due degli esempi principali sono [scala](https://www.scala-lang.org/) e [kotlin](https://kotlinlang.org/)
 
 ## Caratteristiche
 
 Sia scala che kotlin sono pensati per poter interoperare con java (*compilano in bytecode eseguibile dalla JVM ma non solo*) inoltre alcune delle caratteristiche ereditate dal modello funzionale sono:
 
-- funzioni come [first class entities](pages/linguaggi_modelli_computazionali/processi_computazionali.md#funzioni%20come%20first%20class%20entities)
+- funzioni come [first class entities](/linguaggi_modelli_computazionali/processi_computazionali#funzioni-come-first-class-entities)
 - tutto e un oggetto (*funzioni incluse*)
 - distinzione fra variabile e valore (`var`/`val`)
 - le strutture di controllo sono espressioni
@@ -91,9 +90,9 @@ print(y)
 
 ## Funzioni
 
-Le funzioni sono introdotte da una parola chiave prefissa (*scala:`def`,kotlin:`func`*) possono essere definite anche a top level (*senza classi wrapper*)   Inoltre la specifica di tipo e postfissa a differenza di java per facilitare l'uso del **motore di type inference** (*molto avanzato*) come gia specificato le funzioni sono [first class entities](pages/linguaggi_modelli_computazionali/processi_computazionali.md#funzioni%20come%20first%20class%20entities)
+Le funzioni sono introdotte da una parola chiave prefissa (*scala:`def`,kotlin:`func`*) possono essere definite anche a top level (*senza classi wrapper*)   Inoltre la specifica di tipo e postfissa a differenza di java per facilitare l'uso del **motore di type inference** (*molto avanzato*) come gia specificato le funzioni sono [first class entities](/linguaggi_modelli_computazionali/processi_computazionali#funzioni-come-first-class-entities)
 
-Inoltre entrambi i linguaggi attuano [ottimizzazione della tail recursion](pages/linguaggi_modelli_computazionali/processi_computazionali.md#tail%20recursion%20optimization)
+Inoltre entrambi i linguaggi attuano [ottimizzazione della tail recursion](/linguaggi_modelli_computazionali/processi_computazionali#tail-recursion-optimization)
 
 >[!NOTE] in scala e abilitata di default disattivabile con un opzione mentre in kotlin e disabilitata di default attivabile con la keyword `tailrec`
 
@@ -146,8 +145,6 @@ fun Int.toFraction() = Fraction(this)
 
 Questo rende si le classi ridefinibili dinamicamente ma riduce la leggibilità del software (*metodi definiti chissà dove, debugging più complesso*)
 
-## "ALLEGGERIMENTI" ALLA SINTASSI
+## Alleggerimenti alla sintassi
 
 Sia scala che kotlin consentono di omettere il separatore `;` quando ovvio, inoltre scala supporta il principio d'accesso uniforme e la quiet syntax (*bidonata alla python maniera*)
-
-[<](pages/linguaggi_modelli_computazionali/lambda_calcolo.md)[>](pages/linguaggi_modelli_computazionali/scala.md)
