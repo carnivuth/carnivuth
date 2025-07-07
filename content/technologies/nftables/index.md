@@ -6,7 +6,7 @@ description: "manage firwall rules"
 tags:
   - networking
 series: ["Technologies notes"]
-series_order:
+series_order: 19
 ---
 
 [Nftables](https://wiki.nftables.org) is the framework for the packet filtering inside the linux kernel.
