@@ -1,7 +1,7 @@
 ---
 title: Nftables
 date: '2025-07-07'
-draft: true
+draft: false
 description: "manage firwall rules"
 tags:
   - networking
