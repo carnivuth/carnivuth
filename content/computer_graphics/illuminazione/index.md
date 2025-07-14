@@ -7,7 +7,7 @@ next: "pages/computer_graphics/texture_mapping.md"
 previous: "pages/computer_graphics/clipping.md"
 aliases: []
 tags:
-  - modello di phong
+  - modello di Phong
   - componente ambientale
   - componente diffusa
   - componente speculare
@@ -27,7 +27,8 @@ I modelli di illuminazione usati in computer graphics sono approssimazioni della
 | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | modelli che tengono conto della **luce emessa dalle fonti e dalle proprieta del materiale** | modelli che tengono conto anche della luce riflessa dalle **altre superfici presenti nella scena** |
 
-## Modello di illuminazione di phong
+
+## Modello di illuminazione di Phong
 
 E' un modello di illuminazione locale definito come segue:
 
@@ -35,7 +36,7 @@ $$
 luce = illuminazione \space ambiente + componente \space riflessiva
 $$
 
-la componente riflessiva puo essere **diffusa** o **speculare**
+La componente riflessiva può essere **diffusa** o **speculare**
 
 ### Componente d'ambiente
 
@@ -104,7 +105,7 @@ Qui un esempio di [Implementazione in webGL](pages/computer_graphics/webgl.md#Im
 
 ### Phong shading
 
-Variante del [gouraud shading](#Gouraud%20shading) che effettua l'interpolazione delle normali dei vertici prima di applicare il modello di illuminazione
+Variante del [Gouraud shading](#Gouraud%20shading) che effettua l'interpolazione delle normali dei vertici prima di applicare il modello di illuminazione
 
 ```mermaid
 flowchart TD
@@ -114,4 +115,3 @@ C[si rinormalizza]
 D[si applica il modello di illuminazione alla nuova normale]
 A --> B --> C --> D
 ```
-
