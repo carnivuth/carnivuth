@@ -1,5 +1,6 @@
 ---
 title: Illuminazione
+date: 2024-12-17
 id: ILLUMINAZIONE
 draft: false
 series: ["Fondamenti di computer graphics"]

@@ -1,5 +1,6 @@
 ---
 title: Xwindow system
+date: 2024-12-07
 id: XWINDOW_SYSTEM
 draft: false
 series: ["Fondamenti di computer graphics"]

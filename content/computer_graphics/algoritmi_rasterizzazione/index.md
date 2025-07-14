@@ -1,5 +1,6 @@
 ---
 title: Algoritmi di rasterizzazione
+date: 2024-12-14
 id: ALGORITMI_RASTERIZZAZIONE
 draft: false
 series: ["Fondamenti di computer graphics"]

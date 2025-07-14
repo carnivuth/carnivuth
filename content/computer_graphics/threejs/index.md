@@ -1,5 +1,6 @@
 ---
 title: Threejs
+date: 2025-02-11
 id: THREEJS
 draft: false
 series: ["Fondamenti di computer graphics"]

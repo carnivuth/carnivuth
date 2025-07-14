@@ -1,5 +1,6 @@
 ---
 title: Html5 funzioni grafiche
+date: 2025-02-11
 id: HTML5
 draft: false
 series: ["Fondamenti di computer graphics"]

@@ -1,5 +1,6 @@
 ---
 title: Trasformazioni di vista
+date: 2024-03-05
 id: trasformazioni_vista
 draft: false
 series: ["Fondamenti di computer graphics"]

@@ -1,5 +1,6 @@
 ---
 title: Rendering avanzato con webgl
+date: 2025-01-03
 id: RENDERING_AVANZATO_WEBGL
 draft: false
 series: ["Fondamenti di computer graphics"]

@@ -1,5 +1,6 @@
 ---
 title: Webgl
+date: 2025-01-02
 id: WEBGL
 draft: false
 series: ["Fondamenti di computer graphics"]

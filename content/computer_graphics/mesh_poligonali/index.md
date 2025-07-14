@@ -1,5 +1,6 @@
 ---
 title: Mesh 3d poligonali
+date: 2025-01-02
 draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/html5.md"

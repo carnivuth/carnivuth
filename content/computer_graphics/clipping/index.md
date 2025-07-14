@@ -1,5 +1,6 @@
 ---
 title: Clipping di linee
+date: 2024-12-17
 id: CLIPPING
 draft: false
 series: ["Fondamenti di computer graphics"]

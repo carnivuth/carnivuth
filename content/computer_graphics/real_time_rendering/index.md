@@ -1,5 +1,6 @@
 ---
 title: Algoritmi di real time rendering
+date: 2024-12-11
 id: REAL_TIME_RENDERING
 draft: false
 series: ["Fondamenti di computer graphics"]

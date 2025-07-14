@@ -1,5 +1,6 @@
 ---
 title: Shadowing
+date: 2025-01-02
 id: SHADOWING
 draft: false
 series: ["Fondamenti di computer graphics"]

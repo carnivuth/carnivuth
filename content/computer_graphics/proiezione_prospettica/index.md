@@ -1,5 +1,6 @@
 ---
 title: Proiezione prospettica
+date: 2024-12-17
 id: PROIEZIONE_PROSPETTICA
 draft: false
 series: ["Fondamenti di computer graphics"]
