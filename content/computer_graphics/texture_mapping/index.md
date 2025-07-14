@@ -2,7 +2,7 @@
 title: Texture mapping
 date: 2025-01-02
 id: TEXTURE_MAPPING
-draft: false
+draft: true
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/shadowing.md"
 previous: "pages/computer_graphics/illuminazione.md"

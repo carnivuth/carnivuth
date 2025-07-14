@@ -1,7 +1,7 @@
 ---
 title: Mesh 3d poligonali
 date: 2025-01-02
-draft: false
+draft: true
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/html5.md"
 previous: "pages/computer_graphics/shadowing.md"

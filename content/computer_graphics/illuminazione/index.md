@@ -2,7 +2,7 @@
 title: Illuminazione
 date: 2024-12-17
 id: ILLUMINAZIONE
-draft: false
+draft: true
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/texture_mapping.md"
 previous: "pages/computer_graphics/clipping.md"

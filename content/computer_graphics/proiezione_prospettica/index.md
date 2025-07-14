@@ -2,7 +2,7 @@
 title: Proiezione prospettica
 date: 2024-12-17
 id: PROIEZIONE_PROSPETTICA
-draft: false
+draft: true
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/clipping.md"
 previous: "pages/computer_graphics/algoritmi_rasterizzazione.md"

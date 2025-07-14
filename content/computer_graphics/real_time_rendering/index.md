@@ -2,7 +2,7 @@
 title: Algoritmi di real time rendering
 date: 2024-12-11
 id: REAL_TIME_RENDERING
-draft: false
+draft: true
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/algoritmi_rasterizzazione.md"
 previous: "pages/computer_graphics/trasformazioni_vista.md"
