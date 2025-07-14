@@ -10,6 +10,7 @@ tags: []
 series_order: 8
 ---
 
+{{< mathjax >}}
 E il processo che consente di applicare immagini bidimensionali sulla superficie dei poligoni in modo da fornire modelli più realistici, viene realizzata definendo una trasformazione tra lo spazio texture e lo spazio 3D dei poligoni chiamata **parametrizzazione**
 
 ```mermaid

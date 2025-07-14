@@ -10,6 +10,7 @@ aliases:
 series_order: 11
 ---
 
+{{< mathjax >}}
 
 HTML5 estende e migliora le versioni HTML precedenti e introduce delle API (Application Programming Interface) per applicazioni
 WEB complesse.

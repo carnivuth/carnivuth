@@ -11,6 +11,7 @@ tags:
 series_order: 2
 ---
 
+{{< mathjax >}}
 Per poter renderizzare un oggetto 3D in uno schermo esprimerlo per mezzo delle sue coordinate non e sufficiente, e necessario poter trasformare le coordinate dell'oggetto in coordinate del piano immagine
 
 Questo processo si chiama **trasformazione di vista**

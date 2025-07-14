@@ -14,6 +14,7 @@ tags:
 series_order: 7
 ---
 
+{{< mathjax >}}
 
 la fase di [rasterizzazione](pages/computer_graphics/algoritmi_rasterizzazione.md) non e sufficiente per determinare il colore di un oggetto dato che esso nel mondo reale e determinato dalla quantità e dalle componenti di luce che l'oggetto stesso riflette e che viene catturata da'occhio umano
 

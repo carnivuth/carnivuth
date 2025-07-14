@@ -10,6 +10,7 @@ tags: []
 series_order: 6
 ---
 
+{{< mathjax >}}
 
 Il clipping e la pratica di **rimuovere** dalla pipeline di rendering **gli oggetti che non fanno parte della viewing window** in modo da ridurre il processo ai soli elementi necessari e migliorare le performance della computazione
 

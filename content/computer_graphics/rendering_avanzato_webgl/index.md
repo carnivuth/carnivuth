@@ -10,6 +10,7 @@ aliases:
 series_order: 14
 ---
 
+{{< mathjax >}}
 La pipeline grafica di [WebGL](pages/computer_graphics/webgl.md) consente di applicare tecniche avanzate di rendering modificandone i componenti
 
 ```mermaid

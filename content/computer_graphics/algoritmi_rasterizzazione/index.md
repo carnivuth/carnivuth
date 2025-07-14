@@ -12,6 +12,7 @@ tags:
 series_order: 4
 ---
 
+{{< mathjax >}}
 
 La rasterizzazione e un processo che dato un **poligono in coordinate schermo colora i pixel di quel dato poligono con un colore**, esistono due processi principali:
 

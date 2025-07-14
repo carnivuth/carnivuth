@@ -10,6 +10,7 @@ tags: []
 series_order: 3
 ---
 
+{{< mathjax >}}
 Uno dei problemi più interessanti in computer graphics e quello del rendering real time, con il quale si intende il **processo di resa di un immagine a partire da una descrizione geometrica della scena tridimensionale in questione**.
 
 ## Rimuovere le linee nascoste

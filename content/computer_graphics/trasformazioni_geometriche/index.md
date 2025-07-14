@@ -9,6 +9,7 @@ tags: ["trasformazioni geometriche di base","rotazione","traslazione","scala","t
 aliases:
 ---
 
+{{< mathjax >}}
 Le trasformazioni geometriche sono operazioni che prendono in input un oggetto e ne modificano **posizione orientazione e dimensione** (*ovvero la geometria dello stesso*)
 
 >[!NOTE] Ma cos'e' un oggetto 3D?

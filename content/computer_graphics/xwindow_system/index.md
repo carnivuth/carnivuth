@@ -10,6 +10,7 @@ tags: []
 series_order: 12
 ---
 
+{{< mathjax >}}
 Le applicazioni grafiche interagiscono con il display per mezzo di uno stack software che risolve la complessità di amministrare i frame buffer per il display
 
 ![](assets/computer_graphics/Pasted%20image%2020241207151204.png)
@@ -36,4 +37,3 @@ Il protocollo x prevede 3 tipi di messaggi:
 - **richieste** (*client -> server*) effettuate per accedere alle risorse, asincrone (*dispatch*)
 - **risposte** (*server -> client*) ottenute dal server in seguito a una richiesta
 - **eventi** (*server -> client*) il server notifica i client in maniera asincrona e proattiva
-

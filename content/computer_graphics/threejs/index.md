@@ -9,6 +9,7 @@ aliases:
 series_order: 15
 ---
 
+{{< mathjax >}}
 [ThreeJS](https://threejs.org/) e un wrapper di [webgl](pages/computer_graphics/webgl.md) per l'implementazione di applicazioni grafiche 3D che sfruttano lo stack web, si basa sul concetto di grafo di rendering
 
 ```mermaid

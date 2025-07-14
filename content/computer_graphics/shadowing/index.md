@@ -10,6 +10,7 @@ tags: []
 series_order: 9
 ---
 
+{{< mathjax >}}
 Lo shadowing e la pratica di computare le ombre dato un oggetto, una fonte luminosa e un osservatore, un punto e in ombra se la fonte luminosa non lo raggiunge ed e visibile dall'osservatore
 
 ![](assets/computer_graphics/Pasted%20image%2020250102164748.png)
