@@ -1,7 +1,7 @@
 ---
 title: Webgl
 id: WEBGL
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/rendering_avanzato_webgl.md"
 previous: "pages/computer_graphics/xwindow_system.md"

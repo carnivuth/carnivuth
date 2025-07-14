@@ -1,7 +1,7 @@
 ---
 title: Trasformazioni geometriche
 series_order: 1
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/trasformazioni_vista.md"
 id: trasformazioni_geometriche

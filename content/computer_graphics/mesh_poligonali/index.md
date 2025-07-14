@@ -1,6 +1,6 @@
 ---
 title: Mesh 3d poligonali
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/html5.md"
 previous: "pages/computer_graphics/shadowing.md"

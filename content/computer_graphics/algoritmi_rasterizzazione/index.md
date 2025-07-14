@@ -1,7 +1,7 @@
 ---
 title: Algoritmi di rasterizzazione
 id: ALGORITMI_RASTERIZZAZIONE
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/proiezione_prospettica.md"
 previous: "pages/computer_graphics/real_time_rendering.md"

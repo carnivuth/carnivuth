@@ -1,7 +1,7 @@
 ---
 title: Illuminazione
 id: ILLUMINAZIONE
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/texture_mapping.md"
 previous: "pages/computer_graphics/clipping.md"

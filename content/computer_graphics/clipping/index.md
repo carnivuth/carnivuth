@@ -1,7 +1,7 @@
 ---
 title: Clipping di linee
 id: CLIPPING
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/illuminazione.md"
 previous: "pages/computer_graphics/proiezione_prospettica.md"

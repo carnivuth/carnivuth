@@ -1,7 +1,7 @@
 ---
 title: Xwindow system
 id: XWINDOW_SYSTEM
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/webgl.md"
 previous: "pages/computer_graphics/html5.md"

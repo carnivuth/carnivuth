@@ -1,7 +1,7 @@
 ---
 title: Proiezione prospettica
 id: PROIEZIONE_PROSPETTICA
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/clipping.md"
 previous: "pages/computer_graphics/algoritmi_rasterizzazione.md"

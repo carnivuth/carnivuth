@@ -1,7 +1,7 @@
 ---
 title: Html5 funzioni grafiche
 id: HTML5
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/xwindow_system.md"
 previous: "pages/computer_graphics/mesh_poligonali.md"

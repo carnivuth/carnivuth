@@ -1,7 +1,7 @@
 ---
 title: Algoritmi di real time rendering
 id: REAL_TIME_RENDERING
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/algoritmi_rasterizzazione.md"
 previous: "pages/computer_graphics/trasformazioni_vista.md"
