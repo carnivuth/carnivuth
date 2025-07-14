@@ -1,4 +1,5 @@
 ---
+title: Html5 funzioni grafiche
 id: HTML5
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -9,7 +10,6 @@ aliases:
 series_order: 11
 ---
 
-# Html5 funzioni grafiche
 
 HTML5 estende e migliora le versioni HTML precedenti e introduce delle API (Application Programming Interface) per applicazioni
 WEB complesse.
@@ -96,4 +96,3 @@ La dimensione dell'elemento canvas non e la stessa della dimensione dell'area di
 
 >[!ERROR] Se invece il canvas è più grande della superficie di disegno, il disegno di un punto potrebbe essere reso come più pixel.
 
-[<](pages/computer_graphics/mesh_poligonali.md)[>](pages/computer_graphics/xwindow_system.md)

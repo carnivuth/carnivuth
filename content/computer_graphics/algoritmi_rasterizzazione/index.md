@@ -1,4 +1,5 @@
 ---
+title: Algoritmi di rasterizzazione
 id: ALGORITMI_RASTERIZZAZIONE
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -11,7 +12,6 @@ tags:
 series_order: 4
 ---
 
-# Algoritmi di rasterizzazione
 
 La rasterizzazione e un processo che dato un **poligono in coordinate schermo colora i pixel di quel dato poligono con un colore**, esistono due processi principali:
 
@@ -130,4 +130,3 @@ Metodologia che prende in considerazione i $16$ pixel più vicini al punto in qu
 
 >[!NOTE] e il compromesso più ragionevole tra calcolo e qualità nonché quello più utilizzato in molti software di grafica
 
-[<](pages/computer_graphics/real_time_rendering.md)[>](pages/computer_graphics/proiezione_prospettica.md)

@@ -1,4 +1,5 @@
 ---
+title: Clipping di linee
 id: CLIPPING
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -9,7 +10,6 @@ tags: []
 series_order: 6
 ---
 
-# Clipping di linee
 
 Il clipping e la pratica di **rimuovere** dalla pipeline di rendering **gli oggetti che non fanno parte della viewing window** in modo da ridurre il processo ai soli elementi necessari e migliorare le performance della computazione
 
@@ -94,4 +94,3 @@ Successivamente si effettua la [proiezione prospettica](pages/computer_graphics/
 
 ![](assets/computer_graphics/Pasted%20image%2020241217164353.png)
 
-[<](pages/computer_graphics/proiezione_prospettica.md)[>](pages/computer_graphics/illuminazione.md)

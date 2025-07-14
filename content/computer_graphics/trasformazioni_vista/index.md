@@ -1,4 +1,5 @@
 ---
+title: Trasformazioni di vista
 id: trasformazioni_vista
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -9,7 +10,6 @@ tags:
   - proiezioni geometriche
 series_order: 2
 ---
-# Trasformazioni di vista
 
 Per poter renderizzare un oggetto 3D in uno schermo esprimerlo per mezzo delle sue coordinate non e sufficiente, e necessario poter trasformare le coordinate dell'oggetto in coordinate del piano immagine
 
@@ -134,5 +134,3 @@ C[passaggio al sdr della window]
 D[trasformazione window viewport]
 A --> B --> C --> D
 ```
-
-[<](pages/computer_graphics/trasformazioni_geometriche.md)[>](pages/computer_graphics/real_time_rendering.md)

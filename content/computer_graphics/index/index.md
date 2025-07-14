@@ -1,7 +1,9 @@
-# Computer graphics
-
+---
+title: Computer graphics
 draft: true
 series: ["Fondamenti di computer graphics"]
+---
+
 Appunti personali sul corso di fondamenti di computer graphics del professor Casciola Giulio
 
 ## La matematica dietro al rendering grafico
@@ -22,5 +24,4 @@ Appunti personali sul corso di fondamenti di computer graphics del professor Cas
 - [il protocollo grafico unix: xwindow](pages/computer_graphics/xwindow_system.md)
 - [implementazione con tecnologie web: WebGL](pages/computer_graphics/webgl.md)
 - [tecniche di rendering avanzate con WebGL](pages/computer_graphics/rendering_avanzato_webgl.md)
-
 

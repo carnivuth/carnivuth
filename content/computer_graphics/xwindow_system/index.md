@@ -1,4 +1,5 @@
 ---
+title: Xwindow system
 id: XWINDOW_SYSTEM
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -8,8 +9,6 @@ aliases: []
 tags: []
 series_order: 12
 ---
-
-# Xwindow system
 
 Le applicazioni grafiche interagiscono con il display per mezzo di uno stack software che risolve la complessità di amministrare i frame buffer per il display
 
@@ -38,4 +37,3 @@ Il protocollo x prevede 3 tipi di messaggi:
 - **risposte** (*server -> client*) ottenute dal server in seguito a una richiesta
 - **eventi** (*server -> client*) il server notifica i client in maniera asincrona e proattiva
 
-[<](pages/computer_graphics/html5.md)[>](pages/computer_graphics/webgl.md)

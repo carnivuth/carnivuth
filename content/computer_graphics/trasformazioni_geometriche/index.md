@@ -1,4 +1,5 @@
 ---
+title: Trasformazioni geometriche
 series_order: 1
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -7,8 +8,6 @@ id: trasformazioni_geometriche
 tags: ["trasformazioni geometriche di base","rotazione","traslazione","scala","trasformazione affine","spazio affine"]
 aliases:
 ---
-
-# Trasformazioni geometriche
 
 Le trasformazioni geometriche sono operazioni che prendono in input un oggetto e ne modificano **posizione orientazione e dimensione** (*ovvero la geometria dello stesso*)
 
@@ -175,5 +174,3 @@ p_z \\
 $$
 
 I vantaggi di poter utilizzare trasformazioni lineari sono molteplici, si può ottimizzare la computazione sfruttando le proprietà di linearità, inoltre le trasformazioni possono essere combinate in un unica matrice che può essere applicata in più punti
-
-[>](pages/computer_graphics/trasformazioni_vista.md)

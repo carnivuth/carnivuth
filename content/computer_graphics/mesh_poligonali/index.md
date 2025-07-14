@@ -1,5 +1,5 @@
 ---
-id: MESH_3D_POLIGONALI
+title: Mesh 3d poligonali
 draft: true
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/html5.md"
@@ -8,8 +8,6 @@ aliases: []
 tags: []
 series_order: 10
 ---
-
-# Mesh 3d poligonali
 
 In computer graphics gli oggetti 3D vengono approssimati da una rappresentazione della loro superficie detta **B-Rep** (*Boundary representation*)
 La superficie si assume sia una **[varietà](https://it.wikipedia.org/wiki/Variet%C3%A0_(geometria)) due-dimensionale(two-manifold)** (*l’intorno di ogni punto della superficie è omeomorfo ad un disco piano*)

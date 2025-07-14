@@ -1,4 +1,5 @@
 ---
+title: Algoritmi di real time rendering
 id: REAL_TIME_RENDERING
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -8,8 +9,6 @@ aliases: []
 tags: []
 series_order: 3
 ---
-
-# Algoritmi di real time rendering
 
 Uno dei problemi più interessanti in computer graphics e quello del rendering real time, con il quale si intende il **processo di resa di un immagine a partire da una descrizione geometrica della scena tridimensionale in questione**.
 
@@ -106,4 +105,3 @@ void zbuffer() {
 | Non prevede alcun ordinamento, infatti il colore di un pixel e' determinato dal punto 3D (di Ze minore) di cui lui e' immagine | Richiede spazio di memoria aggiuntivo        |
 | Semplice da implementare                                                                                                       | ancora una sorta di ridisegno anche se solo in memoria (copia del frame buffer) |
 
-[<](pages/computer_graphics/trasformazioni_vista.md)[>](pages/computer_graphics/algoritmi_rasterizzazione.md)

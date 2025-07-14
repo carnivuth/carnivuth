@@ -1,4 +1,5 @@
 ---
+title: Webgl
 id: WEBGL
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -8,8 +9,6 @@ aliases: []
 tags: []
 series_order: 13
 ---
-
-# Webgl
 
 [WebGL](https://it.wikipedia.org/wiki/WebGL) e una libreria grafica basata su [openGL](https://www.opengl.org/) per l'implementazione della grafica 3D in un browser, la pipeline di rendering offerta da WebGL può essere riassunta come segue:
 
@@ -27,7 +26,7 @@ B[GPU based graphics pipeline]
 A -- prepare compile and executes -->B
 ```
 
-## Programmi per gpu: shader
+## Programmi per GPU: shader
 
 L'elaborazione accelerata viene realizzata per mezzo di programmi, detti **shader** definiti nel linguaggio [GLSL](https://it.wikipedia.org/wiki/GLSL) (*graphic library shader language*), questi si caratterizzano in due tipologie in base ai dati in acquisiti in input
 
@@ -217,5 +216,3 @@ void main( ) {.
 	gl_FragColor = color;
 }
 ```
-
-[<](pages/computer_graphics/xwindow_system.md)[>](pages/computer_graphics/rendering_avanzato_webgl.md)

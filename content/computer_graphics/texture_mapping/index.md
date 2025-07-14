@@ -1,4 +1,5 @@
 ---
+title: Texture mapping
 id: TEXTURE_MAPPING
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -8,8 +9,6 @@ aliases: []
 tags: []
 series_order: 8
 ---
-
-# Texture mapping
 
 E il processo che consente di applicare immagini bidimensionali sulla superficie dei poligoni in modo da fornire modelli più realistici, viene realizzata definendo una trasformazione tra lo spazio texture e lo spazio 3D dei poligoni chiamata **parametrizzazione**
 
@@ -86,5 +85,3 @@ Questa pratica consente di simulare meglio  i materiali, tuttavia e molto esosa 
 Il [solid texturing](#SOLID%20TEXTURING) trova il suo miglior impiego nella generazione di texture procedurali
 
 ![](assets/computer_graphics/Pasted%20image%2020250102155433.png)
-
-[<](pages/computer_graphics/illuminazione.md)[>](pages/computer_graphics/shadowing.md)

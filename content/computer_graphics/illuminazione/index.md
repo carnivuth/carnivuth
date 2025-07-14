@@ -1,4 +1,5 @@
 ---
+title: Illuminazione
 id: ILLUMINAZIONE
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -13,7 +14,6 @@ tags:
 series_order: 7
 ---
 
-# Illuminazione
 
 la fase di [rasterizzazione](pages/computer_graphics/algoritmi_rasterizzazione.md) non e sufficiente per determinare il colore di un oggetto dato che esso nel mondo reale e determinato dalla quantità e dalle componenti di luce che l'oggetto stesso riflette e che viene catturata da'occhio umano
 
@@ -114,4 +114,3 @@ D[si applica il modello di illuminazione alla nuova normale]
 A --> B --> C --> D
 ```
 
-[<](pages/computer_graphics/clipping.md)[>](pages/computer_graphics/texture_mapping.md)

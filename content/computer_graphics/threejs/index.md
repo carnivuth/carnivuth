@@ -1,4 +1,5 @@
 ---
+title: Threejs
 id: THREEJS
 draft: true
 series: ["Fondamenti di computer graphics"]
@@ -7,8 +8,6 @@ tags: []
 aliases:
 series_order: 15
 ---
-
-# Threejs
 
 [ThreeJS](https://threejs.org/) e un wrapper di [webgl](pages/computer_graphics/webgl.md) per l'implementazione di applicazioni grafiche 3D che sfruttano lo stack web, si basa sul concetto di grafo di rendering
 
@@ -68,5 +67,3 @@ const camera = new THREE.PerspectiveCamera(
 	1000  // far
 );
 ```
-
-[<](pages/computer_graphics/rendering_avanzato_webgl.md)
