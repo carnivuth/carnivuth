@@ -1,5 +1,7 @@
 ---
 id: PROIEZIONE_PROSPETTICA
+draft: true
+series:["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/clipping.md"
 previous: "pages/computer_graphics/algoritmi_rasterizzazione.md"
 aliases: []

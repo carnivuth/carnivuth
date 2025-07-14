@@ -1,5 +1,7 @@
 ---
 id: CLIPPING
+draft: true
+series:["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/illuminazione.md"
 previous: "pages/computer_graphics/proiezione_prospettica.md"
 aliases: []

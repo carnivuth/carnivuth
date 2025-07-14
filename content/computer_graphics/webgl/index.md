@@ -1,5 +1,7 @@
 ---
 id: WEBGL
+draft: true
+series:["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/rendering_avanzato_webgl.md"
 previous: "pages/computer_graphics/xwindow_system.md"
 aliases: []

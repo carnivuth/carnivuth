@@ -1,5 +1,7 @@
 ---
 id: MESH_3D_POLIGONALI
+draft: true
+series:["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/html5.md"
 previous: "pages/computer_graphics/shadowing.md"
 aliases: []

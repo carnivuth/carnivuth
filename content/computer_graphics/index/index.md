@@ -1,5 +1,7 @@
 # Computer graphics
 
+draft: true
+series:["Fondamenti di computer graphics"]
 Appunti personali sul corso di fondamenti di computer graphics del professor Casciola Giulio
 
 ## La matematica dietro al rendering grafico

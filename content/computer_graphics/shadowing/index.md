@@ -1,5 +1,7 @@
 ---
 id: SHADOWING
+draft: true
+series:["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/mesh_poligonali.md"
 previous: "pages/computer_graphics/texture_mapping.md"
 aliases: []
