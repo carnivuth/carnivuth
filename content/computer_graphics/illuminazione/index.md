@@ -104,11 +104,11 @@ B -- per ogni poligiono --> A
 > [!NOTE]
 > in questo caso la normale e definita a livello di vertice come somma delle normali delle superfici adiacenti
 
-Qui un esempio di [Implementazione in webGL](/computer_graphics/webgl#Implementazione%20dell'%20[illuminazione](/computer_graphics/illuminazione))
+Qui un esempio di [Implementazione in webGL](/computer_graphics/webgl#Implementazione-dell-illuminazione)
 
 ### Phong shading
 
-Variante del [Gouraud shading](#Gouraud%20shading) che effettua l'interpolazione delle normali dei vertici prima di applicare il modello di illuminazione
+Variante del [Gouraud shading](#Gouraud-shading) che effettua l'interpolazione delle normali dei vertici prima di applicare il modello di illuminazione
 
 ```mermaid
 flowchart TD

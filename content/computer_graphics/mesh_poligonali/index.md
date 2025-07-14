@@ -108,5 +108,3 @@ In fase di editing la rappresentazione per mezzo di facce e vertici non e ottima
 | $a$  | $X$   | $Y$ | 1    | 2     | $b$  | $d$  | $e$  | $c$  |
 
 ![](Pasted%20image%2020250102194324.png)
-
-[<](/computer_graphics/shadowing)[>](/computer_graphics/html5)

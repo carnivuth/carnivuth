@@ -37,7 +37,7 @@ $$
 O' = p_1,u = p_2 - p_1,v = p_3 - p_1
 $$
 
-in questo sistema di riferimento tutti i punti vengono rappresentati da [combinazioni affini](/computer_graphics/trasformazioni_geometriche#combinazione%20affine) dei 3 vertici del poligono
+in questo sistema di riferimento tutti i punti vengono rappresentati da [combinazioni affini](/computer_graphics/trasformazioni_geometriche#combinazione-affine) dei 3 vertici del poligono
 
 $$
 p = \alpha p_1 +\beta p_2 +\gamma p_3, \space con
@@ -79,7 +79,7 @@ Il processo di texture mapping si occupa di applicare a un dato poligono un imma
 
 ![](Pasted%20image%2020241214154455.png)
 
-Di conseguenza il problema si riduce ad **assegnare a ogni pixel il corretto punto della texture in questione**, questo può essere fatto per mezzo delle [coordinate baricentriche](#Sistema%20di%20riferimento%20baricentrico), costruendo un mapping fra le coordinate del poligono e le coordinate in spazio texture
+Di conseguenza il problema si riduce ad **assegnare a ogni pixel il corretto punto della texture in questione**, questo può essere fatto per mezzo delle [coordinate baricentriche](#Sistema-di-riferimento-baricentrico), costruendo un mapping fra le coordinate del poligono e le coordinate in spazio texture
 
 Tuttavia non e detta che dato un punto del poligono **ci sia una corrispondenza con un pixel esatta della texture**
 

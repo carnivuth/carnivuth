@@ -54,7 +54,7 @@ $$
 
 ## Trasformazione affine
 
-Una trasformazione affine e una [trasformazione lineare](#trasformazione%20lineare) seguita da una traslazione
+Una trasformazione affine e una [trasformazione lineare](#trasformazione-lineare) seguita da una traslazione
 
 $$
 \begin{bmatrix}
@@ -91,7 +91,7 @@ Per permettere la rappresentazione in uno spazio vettoriale dei punti si introdu
 
 # Combinazione affine
 
-[combinazione lineare](#Trasformazione%20lineare) che prende in input dei punti e restituisce in output dei punti in cui **i coefficienti hanno somma $1$**
+[combinazione lineare](#Trasformazione-lineare) che prende in input dei punti e restituisce in output dei punti in cui **i coefficienti hanno somma $1$**
 
 $$
 p = a_1p_1 +a_2p_2 +a_3p_3 + \space ... \space a_np_n \space con\\

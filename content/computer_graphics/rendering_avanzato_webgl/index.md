@@ -30,7 +30,7 @@ B --> C --> D & E
 
 ## Per fragment operations
 
-Fase della pipeline che consente di eseguire operazioni custom sui fragment per mezzo di **buffer** un esempio e il [test di profondità](/computer_graphics/real_time_rendering#algoritmo%20z-buffer)
+Fase della pipeline che consente di eseguire operazioni custom sui fragment per mezzo di **buffer** un esempio e il [test di profondità](/computer_graphics/real_time_rendering#algoritmo-z-buffer)
 
 Le operazioni svolte in questa fase prendono il nome di test, ognuna di esse e associata a un buffer di memoria che viene utilizzato per eseguire le operazioni sui fragment
 
@@ -56,14 +56,14 @@ gl.enable(gl.SCISSOR_TEST);
 
 ### Depth test
 
-Implementa l'algoritmo [algoritmo z-buffer](/computer_graphics/real_time_rendering#algoritmo%20z-buffer)
+Implementa l'algoritmo [algoritmo z-buffer](/computer_graphics/real_time_rendering#algoritmo-z-buffer)
 
 ```javascript
 gl.enable( gl.DEPTH_TEST );
 gl.clearDepth(1.0)
 ```
 
-e possibile cambiare il confronto effettuato nel depth buffer tramite la funzione `gl.depthFunc( func );` dove `func` puo avere uno dei seguenti valori
+È possibile cambiare il confronto effettuato nel depth buffer tramite la funzione `gl.depthFunc( func );` dove `func` può avere uno dei seguenti valori
 
 ```javascript
 gl.NEVER

@@ -111,7 +111,7 @@ gl.vertexAttribPointer(coord, 3, gl.FLOAT, false, 0, 0);
 
 ## Rendering 3d
 
-Per poter renderizzare un oggetto 3D e necessario implementare la [pipeline di vista](/computer_graphics/trasformazioni_vista) con scaling e [proiezione prospettica](/computer_graphics/proiezione_prospettica), che si traduce nel definire le matrici $VM$ $S$ e applicare la [trasformazione magica](/computer_graphics/proiezione_prospettica#trasformazione%20magica)
+Per poter renderizzare un oggetto 3D e necessario implementare la [pipeline di vista](/computer_graphics/trasformazioni_vista) con scaling e [proiezione prospettica](/computer_graphics/proiezione_prospettica), che si traduce nel definire le matrici $VM$ $S$ e applicare la [trasformazione magica](/computer_graphics/proiezione_prospettica#trasformazione-magica)
 
 ```javascript
 // computazione della matrice di proiezione in prospettiva
@@ -154,7 +154,7 @@ view_matrix[14]=view_matrix[14]-5;//zoom
 
 ## Implementazione dell' [illuminazione](/computer_graphics/illuminazione)
 
-L'illuminazione deve essere implementata con opportuni shader/vertex program (*l'esempio che segue implementa il [gouraud shading](/computer_graphics/illuminazione#gouraud%20shading)*):
+L'illuminazione deve essere implementata con opportuni shader/vertex program (*l'esempio che segue implementa il [gouraud shading](/computer_graphics/illuminazione#gouraud-shading)*):
 
 ```glsl
 //vertex-shader

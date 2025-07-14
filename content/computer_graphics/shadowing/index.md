@@ -53,9 +53,9 @@ Nel caso in cui il piano non sia cartesiano e necessario proiettare i vertici de
 
 ## Ombre nello z-buffer: shadow-buffer
 
-Per implementare le ombre nello [z-buffer](/computer_graphics/real_time_rendering#algoritmo%20z-buffer) si ricorre a un algoritmo detto **shadow-buffer**
+Per implementare le ombre nello [z-buffer](/computer_graphics/real_time_rendering#algoritmo-z-buffer) si ricorre a un algoritmo detto **shadow-buffer**
 
-Lo shadow buffer e un buffer in memoria che computa l'algoritmo [z-buffer](/computer_graphics/real_time_rendering#algoritmo%20z-buffer) ma dal punto di vista della sorgente luminosa
+Lo shadow buffer e un buffer in memoria che computa l'algoritmo [z-buffer](/computer_graphics/real_time_rendering#algoritmo-z-buffer) ma dal punto di vista della sorgente luminosa
 
 ```mermaid
 flowchart TD
@@ -75,10 +75,10 @@ B --no --> D
 
 ## Gestire l'aliasing
 
-Quando si computano le ombre si hanno sempre problemi di aliasing dovuti al fatto che l'algoritmo [shadow buffer](#ombre%20nello%20z-buffer%20shadow-buffer) compie una decisione netta sul mettere in ombra o meno un pixel, in questo caso si applicano tecniche simili a quanto visto per le [textures](/computer_graphics/texture_mapping#gestire%20l'aliasing)
+Quando si computano le ombre si hanno sempre problemi di aliasing dovuti al fatto che l'algoritmo [shadow buffer](#ombre-nello-z-buffer-shadow-buffer) compie una decisione netta sul mettere in ombra o meno un pixel, in questo caso si applicano tecniche simili a quanto visto per le [textures](/computer_graphics/texture_mapping#gestire-l'aliasing)
 
 ## Luci non puntiformi
 
-Nella realtà le luci non sono mai puntiformi, questo porta a ombre morbide come visto in [precedenza](#ombra%20vs%20penombra) in questo caso si adottano tecniche di blur delle ombre per simulare l'effetto di una luce non puntiforme
+Nella realtà le luci non sono mai puntiformi, questo porta a ombre morbide come visto in [precedenza](#ombra-vs-penombra) in questo caso si adottano tecniche di blur delle ombre per simulare l'effetto di una luce non puntiforme
 
 ![](Pasted%20image%2020250102180827.png)
