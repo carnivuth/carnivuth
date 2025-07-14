@@ -2,7 +2,7 @@
 title: Threejs
 date: 2025-02-11
 id: THREEJS
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 previous: "pages/computer_graphics/rendering_avanzato_webgl.md"
 tags: []

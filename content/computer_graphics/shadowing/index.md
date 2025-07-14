@@ -2,7 +2,7 @@
 title: Shadowing
 date: 2025-01-02
 id: SHADOWING
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/mesh_poligonali.md"
 previous: "pages/computer_graphics/texture_mapping.md"

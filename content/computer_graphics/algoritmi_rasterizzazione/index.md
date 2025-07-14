@@ -2,7 +2,7 @@
 title: Algoritmi di rasterizzazione
 date: 2024-12-14
 id: ALGORITMI_RASTERIZZAZIONE
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/proiezione_prospettica.md"
 previous: "pages/computer_graphics/real_time_rendering.md"

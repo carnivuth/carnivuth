@@ -2,7 +2,7 @@
 title: Rendering avanzato con webgl
 date: 2025-01-03
 id: RENDERING_AVANZATO_WEBGL
-draft: true
+draft: false
 series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/threejs.md"
 previous: "pages/computer_graphics/webgl.md"
