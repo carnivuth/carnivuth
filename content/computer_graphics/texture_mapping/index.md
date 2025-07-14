@@ -1,7 +1,7 @@
 ---
 id: TEXTURE_MAPPING
 draft: true
-series:["Fondamenti di computer graphics"]
+series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/shadowing.md"
 previous: "pages/computer_graphics/illuminazione.md"
 aliases: []

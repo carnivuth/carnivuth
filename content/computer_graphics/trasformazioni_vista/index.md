@@ -1,7 +1,7 @@
 ---
 id: trasformazioni_vista
 draft: true
-series:["Fondamenti di computer graphics"]
+series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/real_time_rendering.md"
 previous: "pages/computer_graphics/trasformazioni_geometriche.md"
 aliases: []

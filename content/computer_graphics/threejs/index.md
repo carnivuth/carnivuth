@@ -1,7 +1,7 @@
 ---
 id: THREEJS
 draft: true
-series:["Fondamenti di computer graphics"]
+series: ["Fondamenti di computer graphics"]
 previous: "pages/computer_graphics/rendering_avanzato_webgl.md"
 tags: []
 aliases:

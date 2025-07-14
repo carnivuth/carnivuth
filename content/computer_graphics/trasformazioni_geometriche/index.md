@@ -1,7 +1,7 @@
 ---
 series_order: 1
 draft: true
-series:["Fondamenti di computer graphics"]
+series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/trasformazioni_vista.md"
 id: trasformazioni_geometriche
 tags: ["trasformazioni geometriche di base","rotazione","traslazione","scala","trasformazione affine","spazio affine"]

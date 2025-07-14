@@ -1,7 +1,7 @@
 ---
 id: REAL_TIME_RENDERING
 draft: true
-series:["Fondamenti di computer graphics"]
+series: ["Fondamenti di computer graphics"]
 next: "pages/computer_graphics/algoritmi_rasterizzazione.md"
 previous: "pages/computer_graphics/trasformazioni_vista.md"
 aliases: []
