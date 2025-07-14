@@ -12,7 +12,8 @@ aliases:
 {{< mathjax >}}
 Le trasformazioni geometriche sono operazioni che prendono in input un oggetto e ne modificano **posizione orientazione e dimensione** (*ovvero la geometria dello stesso*)
 
->[!NOTE] Ma cos'e' un oggetto 3D?
+> [!NOTE]
+> Ma cos'e' un oggetto 3D?
 
 ## Oggetto 3d
 
@@ -98,7 +99,8 @@ $$
 a_1 + a_2 +a_3 + \space ... \space a_n = 1
 $$
 
->[!NOTE] nel caso in cui $a_i \in [0-1) \forall \space i$ allora si parla di **combinazione convessa**
+> [!NOTE]
+> nel caso in cui $a_i \in [0-1) \forall \space i$ allora si parla di **combinazione convessa**
 
 ### Sistema di riferimento in uno spazio affine (frame)
 
@@ -127,7 +129,8 @@ u_z \\
 \end{bmatrix}
 $$
 
->[!NOTE] in questa rappresentazione i vettori non mostrano nella 4 riga il valore $0$ in modo da annullare il punto originario
+> [!NOTE]
+> in questa rappresentazione i vettori non mostrano nella 4 riga il valore $0$ in modo da annullare il punto originario
 
 ## Trasformazioni affini in spazi affini
 

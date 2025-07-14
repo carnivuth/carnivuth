@@ -58,7 +58,8 @@ $$
 I_{dr}= k_dI_l\cos({\theta}) = k_dI_l(L\bullet N)
 $$
 
->[!NOTE] si ricorda che $L$ e $N$ sono vettori normali
+> [!NOTE]
+> si ricorda che $L$ e $N$ sono vettori normali
 
 ### Componente di riflessione speculare
 
@@ -99,7 +100,8 @@ A --> B
 B -- per ogni poligiono --> A
 ```
 
->[!NOTE] in questo caso la normale e definita a livello di vertice come somma delle normali delle superfici adiacenti
+> [!NOTE]
+> in questo caso la normale e definita a livello di vertice come somma delle normali delle superfici adiacenti
 
 Qui un esempio di [Implementazione in webGL](pages/computer_graphics/webgl.md#Implementazione%20dell'%20[illuminazione](pages/computer_graphics/illuminazione.md))
 

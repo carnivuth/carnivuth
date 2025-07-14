@@ -33,7 +33,8 @@ $$
 
 ![](assets/computer_graphics/Pasted%20image%2020250102190013.png)
 
->[!WARNING] la normale e uscente dal front della faccia, occhio al verso
+> [!WARNING]
+> la normale e uscente dal front della faccia, occhio al verso
 
 ## Mesh orientabile
 
@@ -41,7 +42,8 @@ Se la normale di tutti i poligoni di una mesh e rivolta verso la stessa direzion
 
 ![](assets/computer_graphics/Pasted%20image%2020250102190226.png)
 
->[!WARNING] Le facce di una mesh devono essere descritte in maniera coerente
+> [!WARNING]
+> Le facce di una mesh devono essere descritte in maniera coerente
 
 ## Coerenza delle facce
 
@@ -61,7 +63,8 @@ Una mesh poligonale e' caratterizzata da una **geometria e da una topologia**:
 | --------------------------------------------- | -------------------------------------------- |
 | come sono disposti i vertici nello spazio<br> | come i vertici sono connessi da lati e facce |
 
->[!WARNING] due mesh possono condividere la stessa geometria ma descrivere due modelli diversi per mezzo della loro topologia!
+> [!WARNING]
+> due mesh possono condividere la stessa geometria ma descrivere due modelli diversi per mezzo della loro topologia!
 
 ## Mesh storing
 
@@ -81,7 +84,8 @@ B --> C & F & G
 D --> E & G
 ```
 
->[!NOTE] per il salvataggio delle mesh 3D uno dei formati possibili e il formato [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file) commercializzato dalla Alias-Wavefront
+> [!NOTE]
+> per il salvataggio delle mesh 3D uno dei formati possibili e il formato [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file) commercializzato dalla Alias-Wavefront
 
 ## Editing di mesh 3d
 

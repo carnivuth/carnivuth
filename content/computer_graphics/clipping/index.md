@@ -22,7 +22,8 @@ la viewport viene estesa per includere anche le zone esterne alla viewport, alle
 
 ![](assets/computer_graphics/Pasted%20image%2020241217160837.png)
 
->[!NOTE] i bit a $1$ specificano a quanti e a quali lati della viewport il vertice che si trova li e esterno
+> [!NOTE]
+> i bit a $1$ specificano a quanti e a quali lati della viewport il vertice che si trova li e esterno
 
 di conseguenza codificati i vertici $p_1,p_2$ in $c_1,c_2$ si ha che
 
@@ -66,7 +67,8 @@ Il clipping dei singoli poligoni e più complicato che nel caso delle [singole l
 ![](assets/computer_graphics/Pasted%20image%2020241217162658.png)
 
 ![](assets/computer_graphics/Pasted%20image%2020241217162717.png)
->[!ERROR] in questo caso ci sono 2 poligoni risultanti :(
+> [!ERROR]
+> in questo caso ci sono 2 poligoni risultanti :(
 
 ## Stutherland-hodgman clipping
 

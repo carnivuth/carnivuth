@@ -121,7 +121,8 @@ $$
 f_F= f_D(1-x)+ f_Cx
 $$
 
->[!NOTE] nel caso in cui il punto si trovi al centro dei 4 pixel piu vicini l'interpolazione bilineare si riduce a una media dei 4 pixel $f_P = \frac{f_A +f_B +f_C +f_D}{4}$
+> [!NOTE]
+> nel caso in cui il punto si trovi al centro dei 4 pixel piu vicini l'interpolazione bilineare si riduce a una media dei 4 pixel $f_P = \frac{f_A +f_B +f_C +f_D}{4}$
 
 ### Bi-cubic interpolation
 
@@ -129,5 +130,6 @@ Metodologia che prende in considerazione i $16$ pixel più vicini al punto in qu
 
 ![](assets/computer_graphics/Pasted%20image%2020241214160835.png)
 
->[!NOTE] e il compromesso più ragionevole tra calcolo e qualità nonché quello più utilizzato in molti software di grafica
+> [!NOTE]
+> e il compromesso più ragionevole tra calcolo e qualità nonché quello più utilizzato in molti software di grafica
 

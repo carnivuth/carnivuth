@@ -41,7 +41,8 @@ $$
 
 Data la rappresentazione del vettore $Vu$ in coordinate polari $Vu=[D,\theta,\phi]$ si possono esprimere i vettori del sistema di riferimento dell'osservatore come segue
 
->[!NOTE] il vettore $Vu$ e parallelo all'asse Z del sistema di riferimento del mondo ed e' **definito nel sistema di riferimento del mondo**
+> [!NOTE]
+> il vettore $Vu$ e parallelo all'asse Z del sistema di riferimento del mondo ed e' **definito nel sistema di riferimento del mondo**
 
 $$
 Ze = Vd/\Vert Vd \Vert = -(Vp -O)/\Vert Vp -O \Vert \\
@@ -123,7 +124,8 @@ Inoltre il piano di vista dell'osservatore viene limitato per mezzo di un front-
 
 ![](assets/computer_graphics/Pasted%20image%2020241210151712.png)
 
->[!TIP] ne consegue che per definire una matrice di proiezione sul piano di visione e necessario conoscere il formato della finestra,la posizione della camera l'angolo di visione e i piani di troncatura della camera
+> [!TIP]
+> ne consegue che per definire una matrice di proiezione sul piano di visione e necessario conoscere il formato della finestra,la posizione della camera l'angolo di visione e i piani di troncatura della camera
 
 ## Struttura finale della pipeline di rendering
 

@@ -23,9 +23,11 @@ L'ombra e quella che una fonte luminosa proietta nei punti non direttamente ragg
 
 ![](assets/computer_graphics/Pasted%20image%2020250102165219.png)
 
->[!WARNING] Per poter avere condizioni di penombra la fonte luminosa **non deve essere puntiforme**!
+> [!WARNING]
+> Per poter avere condizioni di penombra la fonte luminosa **non deve essere puntiforme**!
 
->[!IMPORTANT] se la posizione relativa della fonte luminosa e dell'osservatore varia e necessario computare di nuovo tutte le ombre (*molto costoso*)
+> [!IMPORTANT]
+> se la posizione relativa della fonte luminosa e dell'osservatore varia e necessario computare di nuovo tutte le ombre (*molto costoso*)
 
 ## Ombre su piani
 
@@ -67,7 +69,8 @@ B --no --> D
 
 ![](assets/computer_graphics/Pasted%20image%2020250102175751.png)
 
->[!WARNING] Lo shadow buffer risulta **fattibile solo per scene con singole fonti di luce** in quanto per poter computare multiple fonti si necessita di una fonte di luce per ognuna di esse
+> [!WARNING]
+> Lo shadow buffer risulta **fattibile solo per scene con singole fonti di luce** in quanto per poter computare multiple fonti si necessita di una fonte di luce per ognuna di esse
 
 ## Gestire l'aliasing
 

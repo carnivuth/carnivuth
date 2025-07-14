@@ -17,13 +17,15 @@ Dati due punti $p_1,p_2$ di un segmento e le corrispettive proiezioni del piano 
 
 ![](assets/computer_graphics/Pasted%20image%2020241214181040.png)
 
->[!NOTE] e la cosa più intuitiva da fare
+> [!NOTE]
+> e la cosa più intuitiva da fare
 
 Tuttavia questo sistema funziona solo se **la proiezione effettuata e parallela e non prospettica**
 
 ![](assets/computer_graphics/Pasted%20image%2020241214181235.png)
 
->[!ERROR] il cono di visione nel caso della proiezione prospettica non mantiene i rapporti fra le distanze
+> [!ERROR]
+> il cono di visione nel caso della proiezione prospettica non mantiene i rapporti fra le distanze
 
 ## Trasformare il piano dell'osservatore
 
@@ -59,7 +61,8 @@ $$
 \end{cases}
 $$
 
->[!NOTE] ci si arriva impostando il sistema in maniera tale che i punti $A,B$ trasformati valgano $-1,1$
+> [!NOTE]
+> ci si arriva impostando il sistema in maniera tale che i punti $A,B$ trasformati valgano $-1,1$
 
 Si ottiene il seguente spazio
 

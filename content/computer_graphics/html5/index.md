@@ -65,7 +65,8 @@ Il vertice alto a sinistra del canvas è l’origine $(0,0)$, l’asse $x$ punta
 // asse y
 ```
 
->[!WARNING] Anche alla pagina del browser viene associato un sistema di coordinate cartesiane con origine in alto a sinistra.
+> [!WARNING]
+> Anche alla pagina del browser viene associato un sistema di coordinate cartesiane con origine in alto a sinistra.
 
 ### `<canvas>` vs superficie di disegno
 
@@ -93,7 +94,9 @@ La dimensione dell'elemento canvas non e la stessa della dimensione dell'area di
 </html>
 ```
 
->[!ERROR] Se il canvas è più piccolo della superficie di disegno, punti a coordinate differenti potrebbero essere visualizzati come lo stesso pixel;
+> [!ERROR]
+> Se il canvas è più piccolo della superficie di disegno, punti a coordinate differenti potrebbero essere visualizzati come lo stesso pixel;
 
->[!ERROR] Se invece il canvas è più grande della superficie di disegno, il disegno di un punto potrebbe essere reso come più pixel.
+> [!ERROR]
+> Se invece il canvas è più grande della superficie di disegno, il disegno di un punto potrebbe essere reso come più pixel.
 

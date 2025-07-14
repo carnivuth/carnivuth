@@ -148,7 +148,8 @@ view_matrix[14]=view_matrix[14]-5;//zoom
 // associazione attributi oggetti
 ```
 
->[!NOTE] l'asse $z$ nello spazio di proiezione di webGL e invertito
+> [!NOTE]
+> l'asse $z$ nello spazio di proiezione di webGL e invertito
 
 ## Implementazione dell' [illuminazione](pages/computer_graphics/illuminazione.md)
 
