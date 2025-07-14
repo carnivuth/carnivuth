@@ -14,13 +14,13 @@ series_order: 6
 
 Il clipping e la pratica di **rimuovere** dalla pipeline di rendering **gli oggetti che non fanno parte della viewing window** in modo da ridurre il processo ai soli elementi necessari e migliorare le performance della computazione
 
-![](assets/computer_graphics/Pasted%20image%2020241217130907.png)
+![](Pasted%20image%2020241217130907.png)
 
 ## Algoritmo di cohen-sutherland
 
 la viewport viene estesa per includere anche le zone esterne alla viewport, alle zone viene applicata un etichetta codificata per mezzo di un valore binario
 
-![](assets/computer_graphics/Pasted%20image%2020241217160837.png)
+![](Pasted%20image%2020241217160837.png)
 
 > [!NOTE]
 > i bit a $1$ specificano a quanti e a quali lati della viewport il vertice che si trova li e esterno
@@ -40,7 +40,7 @@ In caso di linee che intersecano più piani si sfrutta la forma parametrica per 
 
 Data una linea come segue
 
-![](assets/computer_graphics/Pasted%20image%2020241217161734.png)
+![](Pasted%20image%2020241217161734.png)
 
 si identifica il valore del parametro $t$ che fa eccedere la linea rispetto a una data coordinata (*in questo caso la coordinata $y$*)
 
@@ -64,9 +64,9 @@ si procede cosi per tutti e $3$ gli assi
 
 Il clipping dei singoli poligoni e più complicato che nel caso delle [singole linee](pages/computer_graphics/clipping.md) in quanto **non e detto che dal clipping di un poligono risulti un solo poligono o un poligono con lo stesso numero di vertici**
 
-![](assets/computer_graphics/Pasted%20image%2020241217162658.png)
+![](Pasted%20image%2020241217162658.png)
 
-![](assets/computer_graphics/Pasted%20image%2020241217162717.png)
+![](Pasted%20image%2020241217162717.png)
 > [!ERROR]
 > in questo caso ci sono 2 poligoni risultanti :(
 
@@ -91,9 +91,9 @@ L'algoritmo cosi definito può essere parallelizzato in quanto per computare un 
 
 L'algoritmo puo essere generalizzato al 3D, dato il parallelepipedo di vista (*frustum*) viene prima escluse le parti del poligono considerando il front e back plane,
 
-![](assets/computer_graphics/Pasted%20image%2020241217164259.png)
+![](Pasted%20image%2020241217164259.png)
 
 Successivamente si effettua la [proiezione prospettica](pages/computer_graphics/proiezione_prospettica.md) e si procede al clipping rispetto alle altre facce
 
-![](assets/computer_graphics/Pasted%20image%2020241217164353.png)
+![](Pasted%20image%2020241217164353.png)
 

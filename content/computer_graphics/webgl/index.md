@@ -13,7 +13,7 @@ series_order: 13
 {{< mathjax >}}
 [WebGL](https://it.wikipedia.org/wiki/WebGL) e una libreria grafica basata su [openGL](https://www.opengl.org/) per l'implementazione della grafica 3D in un browser, la pipeline di rendering offerta da WebGL può essere riassunta come segue:
 
-![](assets/computer_graphics/Pasted%20image%2020250101145433.png)
+![](Pasted%20image%2020250101145433.png)
 
 Le API WebGL si dividono in due componenti
 

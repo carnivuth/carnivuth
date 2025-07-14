@@ -28,7 +28,7 @@ Gli algoritmi in questione sono stati classificati in base allo spazio operativo
 
 Si applica a oggetti 3D convessi e consiste nella computazione della normale di un lato dell'oggetto, se questa e positiva allora la faccia non va disegnata
 
-![](assets/computer_graphics/Pasted%20image%2020241210171450.png)
+![](Pasted%20image%2020241210171450.png)
 
 | VANTAGGI                                                                                                  | SVANTAGGI                                                       |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
@@ -39,7 +39,7 @@ Si applica a oggetti 3D convessi e consiste nella computazione della normale di 
 
 si ordinano i triangoli dal più lontano al più vicino secondo la distanza $Z$ dall'osservatore e si rasterizzano in quest'ordine
 
-![](assets/computer_graphics/Pasted%20image%2020241210171934.png)
+![](Pasted%20image%2020241210171934.png)
 
 | VANTAGGI                                                   | SVANTAGGI                                        |
 | ---------------------------------------------------------- | ------------------------------------------------ |
@@ -51,7 +51,7 @@ si ordinano i triangoli dal più lontano al più vicino secondo la distanza $Z$ 
 
 Si basa sul concetto di zona di visibilità, dopo aver riordinato i poligoni questi vengono disegnati e si tiene traccia della zona già ricoperta da altri poligoni
 
-![](assets/computer_graphics/Pasted%20image%2020241210172244.png)
+![](Pasted%20image%2020241210172244.png)
 
 | VANTAGGI                                                    | SVANTAGGI                                                      |
 | ----------------------------------------------------------- | -------------------------------------------------------------- |

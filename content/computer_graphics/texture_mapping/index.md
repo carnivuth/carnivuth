@@ -33,7 +33,7 @@ v=y
 \end{cases}
 $$
 
-![](assets/computer_graphics/Pasted%20image%2020250102151554.png)
+![](Pasted%20image%2020250102151554.png)
 
 ### Implementazione in contesto [z-buffer](pages/computer_graphics/real_time_rendering.md#algoritmo%20z-buffer)
 
@@ -58,26 +58,26 @@ le tecniche più comuni per la gestione dell'aliasing sono:
 
 Una tecnica per risolvere il problema di aliasing in fase di texture mapping e quello di sfruttare multiple versioni di una data texture a differenti frazioni della risoluzione
 
-![](assets/computer_graphics/Pasted%20image%2020250102152917.png)
+![](Pasted%20image%2020250102152917.png)
 
 Data un immagine di dimensione $2^n\times 2^n$ texel le versioni a bassa risoluzione si ottengono facendo la media dei 4 pixel vicini al livello precedente e si procede per $n-1$ livelli
 
 In fase di applicazione della texture si trova il livello a cui il rapporto tra pixel e texel e $1:1$ (*approssimativamente*) e si applica il texture mapping
 
-![](assets/computer_graphics/Pasted%20image%2020250102153322.png)
+![](Pasted%20image%2020250102153322.png)
 
 ## Texture mapping con two part mapping
 
 Questo procedimento si basa su portare l'immagine in uno spazio 3D intermedio prima di attuare il mapping sul modello
 
 Per esempio oortando la texture su un cilindro:
-![](assets/computer_graphics/Pasted%20image%2020250102154853.png)
+![](Pasted%20image%2020250102154853.png)
 
 ## Solid texturing
 
 Pratica che coinvolge una texture 3D dove il modello viene immerso e il colore di ogni pixel viene definito dalle sue coordinate nello spazio texture
 
-![](assets/computer_graphics/Pasted%20image%2020250102155114.png)
+![](Pasted%20image%2020250102155114.png)
 
 Questa pratica consente di simulare meglio  i materiali, tuttavia e molto esosa in termini di spazio in memoria e l'overhead computazionale non ne consente l'utilizzo in applicazioni realtime
 
@@ -85,4 +85,4 @@ Questa pratica consente di simulare meglio  i materiali, tuttavia e molto esosa 
 
 Il [solid texturing](#SOLID%20TEXTURING) trova il suo miglior impiego nella generazione di texture procedurali
 
-![](assets/computer_graphics/Pasted%20image%2020250102155433.png)
+![](Pasted%20image%2020250102155433.png)

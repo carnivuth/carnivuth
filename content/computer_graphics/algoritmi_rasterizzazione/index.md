@@ -61,7 +61,7 @@ Inoltre questo approccio può essere implementato in parallelo per mezzo di arch
 
 Inoltre le coordinate baricentriche possono essere utilizzate per recuperare anche l'informazione del colore di un dato punto, date le coordinate baricentriche $\alpha,\beta,\gamma$ l'informazione colore può essere recuperata dallo spazio RGB dei colori
 
-![](assets/computer_graphics/Pasted%20image%2020241214104134.png)
+![](Pasted%20image%2020241214104134.png)
 
 ## Scan conversion
 
@@ -76,13 +76,13 @@ Per identificare il prossimo pixel sulla linea si utilizza l'algoritmo di [linea
 
 Il processo di texture mapping si occupa di applicare a un dato poligono un immagine sulla sua superficie, sfruttando un mapping tra i vertici di un poligono 3D e un immagine
 
-![](assets/computer_graphics/Pasted%20image%2020241214154455.png)
+![](Pasted%20image%2020241214154455.png)
 
 Di conseguenza il problema si riduce ad **assegnare a ogni pixel il corretto punto della texture in questione**, questo può essere fatto per mezzo delle [coordinate baricentriche](#Sistema%20di%20riferimento%20baricentrico), costruendo un mapping fra le coordinate del poligono e le coordinate in spazio texture
 
 Tuttavia non e detta che dato un punto del poligono **ci sia una corrispondenza con un pixel esatta della texture**
 
-![](assets/computer_graphics/Pasted%20image%2020241214155219.png)
+![](Pasted%20image%2020241214155219.png)
 
 E necessario quindi determinare il colore da assegnare a un dato punto del triangolo,ci sono diverse strategie disponibili:
 
@@ -96,7 +96,7 @@ Vengono considerati i 4 punti più vicini al punto $p$ Le cui componenti colore 
 
 data la seguente interpolazione lineare in una dimensione come segue
 
-![](assets/computer_graphics/Pasted%20image%2020241214160025.png)
+![](Pasted%20image%2020241214160025.png)
 
 $$
 P(x) = f_0(1-x) + f_1x
@@ -104,7 +104,7 @@ $$
 
 la interpolazione bilineare e di conseguenza realizzata come un interpolazione lineare di due interpolazioni lineari
 
-![](assets/computer_graphics/Pasted%20image%2020241214160210.png)
+![](Pasted%20image%2020241214160210.png)
 
 di conseguenza si ha che:
 
@@ -128,7 +128,7 @@ $$
 
 Metodologia che prende in considerazione i $16$ pixel più vicini al punto in questione, le cui componenti vengono pesate per mezzo dell'interpolazione colore
 
-![](assets/computer_graphics/Pasted%20image%2020241214160835.png)
+![](Pasted%20image%2020241214160835.png)
 
 > [!NOTE]
 > e il compromesso più ragionevole tra calcolo e qualità nonché quello più utilizzato in molti software di grafica

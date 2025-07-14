@@ -13,7 +13,7 @@ series_order: 12
 {{< mathjax >}}
 Le applicazioni grafiche interagiscono con il display per mezzo di uno stack software che risolve la complessità di amministrare i frame buffer per il display
 
-![](assets/computer_graphics/Pasted%20image%2020241207151204.png)
+![](Pasted%20image%2020241207151204.png)
 
 Uno di questi strati intermedi e il sistema xwindow, architettura client server per il rendering video via rete, che fornisce una implementazione standard delle api opengl
 

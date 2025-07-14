@@ -19,9 +19,9 @@ Data questa rappresentazione di un oggetto 3D una Mesh 3D e una **approssimazion
 
 Per far si che anche la mesh che approssima la superficie sia two-manifold un lato non può essere condiviso da 3 o più facce, e $n$ facce che condividono un vertice devono formare un ventaglio
 
-![](assets/computer_graphics/Pasted%20image%2020250102185820.png)
+![](Pasted%20image%2020250102185820.png)
 
-![](assets/computer_graphics/Pasted%20image%2020250102185829.png)
+![](Pasted%20image%2020250102185829.png)
 
 ### Normale ad una faccia
 
@@ -31,7 +31,7 @@ $$
 n= (V_3 - V_2)\times(V_2 - V_1)
 $$
 
-![](assets/computer_graphics/Pasted%20image%2020250102190013.png)
+![](Pasted%20image%2020250102190013.png)
 
 > [!WARNING]
 > la normale e uscente dal front della faccia, occhio al verso
@@ -40,7 +40,7 @@ $$
 
 Se la normale di tutti i poligoni di una mesh e rivolta verso la stessa direzione (*esterno/interno di una mesh*) allora si dice che la **mesh e orientabile**
 
-![](assets/computer_graphics/Pasted%20image%2020250102190226.png)
+![](Pasted%20image%2020250102190226.png)
 
 > [!WARNING]
 > Le facce di una mesh devono essere descritte in maniera coerente
@@ -53,7 +53,7 @@ L’orientazione di due facce adiacenti è coerente **se i due vertici del loro 
 
 Una mesh aperta si contraddistingue da una mesh chiusa perché **presenta lati vertici e facce di bordo**
 
-![](assets/computer_graphics/Pasted%20image%2020250102191003.png)
+![](Pasted%20image%2020250102191003.png)
 
 ## Topologia e geometria di una mesh
 
@@ -106,6 +106,6 @@ In fase di editing la rappresentazione per mezzo di facce e vertici non e ottima
 | ---- | ----- | --- | ---- | ----- | ---- | ---- | ---- | ---- |
 | $a$  | $X$   | $Y$ | 1    | 2     | $b$  | $d$  | $e$  | $c$  |
 
-![](assets/computer_graphics/Pasted%20image%2020250102194324.png)
+![](Pasted%20image%2020250102194324.png)
 
 [<](pages/computer_graphics/shadowing.md)[>](pages/computer_graphics/html5.md)
