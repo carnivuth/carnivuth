@@ -12,7 +12,7 @@ series_order: 14
 ---
 
 {{< mathjax >}}
-La pipeline grafica di [WebGL](pages/computer_graphics/webgl.md) consente di applicare tecniche avanzate di rendering modificandone i componenti
+La pipeline grafica di [WebGL](/computer_graphics/webgl) consente di applicare tecniche avanzate di rendering modificandone i componenti
 
 ```mermaid
 flowchart LR
@@ -30,7 +30,7 @@ B --> C --> D & E
 
 ## Per fragment operations
 
-Fase della pipeline che consente di eseguire operazioni custom sui fragment per mezzo di **buffer** un esempio e il [test di profondità](pages/computer_graphics/real_time_rendering.md#algoritmo%20z-buffer)
+Fase della pipeline che consente di eseguire operazioni custom sui fragment per mezzo di **buffer** un esempio e il [test di profondità](/computer_graphics/real_time_rendering#algoritmo%20z-buffer)
 
 Le operazioni svolte in questa fase prendono il nome di test, ognuna di esse e associata a un buffer di memoria che viene utilizzato per eseguire le operazioni sui fragment
 
@@ -56,7 +56,7 @@ gl.enable(gl.SCISSOR_TEST);
 
 ### Depth test
 
-Implementa l'algoritmo [algoritmo z-buffer](pages/computer_graphics/real_time_rendering.md#algoritmo%20z-buffer)
+Implementa l'algoritmo [algoritmo z-buffer](/computer_graphics/real_time_rendering#algoritmo%20z-buffer)
 
 ```javascript
 gl.enable( gl.DEPTH_TEST );

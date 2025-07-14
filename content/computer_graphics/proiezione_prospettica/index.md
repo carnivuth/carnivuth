@@ -12,7 +12,7 @@ series_order: 5
 ---
 
 {{< mathjax >}}
-Per poter applicare l'algoritmo [z-buffer](pages/computer_graphics/real_time_rendering.md#algoritmo%20z-buffer) e necessario conoscere la **profondità di un pixel** all'interno del piano immagine una prima soluzione può essere:
+Per poter applicare l'algoritmo [z-buffer](/computer_graphics/real_time_rendering#algoritmo%20z-buffer) e necessario conoscere la **profondità di un pixel** all'interno del piano immagine una prima soluzione può essere:
 
 Dati due punti $p_1,p_2$ di un segmento e le corrispettive proiezioni del piano immagine $p_{s1},p_{s2}$ si assegna come coordinata $z$ a un punto $p_s$ del segmento compreso tra $p_{s1},p_{s2}$ la coordinata $z$ del punto $p$ corrispondente al punto $p_s$
 

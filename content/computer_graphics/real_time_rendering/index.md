@@ -64,7 +64,7 @@ Si basa sul concetto di zona di visibilità, dopo aver riordinato i poligoni que
 
 E' l'algoritmo implementato dalle GPU moderne, lavora in image space e si basa su un estensione del frame buffer chiamata z-buffer
 
-A seguito della [trasformazione di vista](pages/computer_graphics/trasformazioni_vista.md) si rasterizza la faccia e per ogni pixel viene presa in considerazione la distanza Z, se questa e minore di quanto presente nello z buffer si disegna il pixel e si aggiorna lo z-buffer di conseguenza
+A seguito della [trasformazione di vista](/computer_graphics/trasformazioni_vista) si rasterizza la faccia e per ogni pixel viene presa in considerazione la distanza Z, se questa e minore di quanto presente nello z buffer si disegna il pixel e si aggiorna lo z-buffer di conseguenza
 
 ```mermaid
 sequenceDiagram

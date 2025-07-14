@@ -17,7 +17,7 @@ series_order: 7
 
 {{< mathjax >}}
 
-La fase di [rasterizzazione](pages/computer_graphics/algoritmi_rasterizzazione.md) non e sufficiente per determinare il colore di un oggetto dato che esso nel mondo reale e determinato dalla quantità e dalle componenti di luce che l'oggetto stesso riflette e che viene catturata dall'occhio umano
+La fase di [rasterizzazione](/computer_graphics/algoritmi_rasterizzazione) non e sufficiente per determinare il colore di un oggetto dato che esso nel mondo reale e determinato dalla quantità e dalle componenti di luce che l'oggetto stesso riflette e che viene catturata dall'occhio umano
 
 Il fenomeno fisico in questione viene catturato dalla [rendering equation](https://en.wikipedia.org/wiki/Rendering_equation) oggetto matematico fin troppo complesso per essere risolto analiticamente
 
@@ -104,7 +104,7 @@ B -- per ogni poligiono --> A
 > [!NOTE]
 > in questo caso la normale e definita a livello di vertice come somma delle normali delle superfici adiacenti
 
-Qui un esempio di [Implementazione in webGL](pages/computer_graphics/webgl.md#Implementazione%20dell'%20[illuminazione](pages/computer_graphics/illuminazione.md))
+Qui un esempio di [Implementazione in webGL](/computer_graphics/webgl#Implementazione%20dell'%20[illuminazione](/computer_graphics/illuminazione))
 
 ### Phong shading
 

@@ -11,7 +11,7 @@ series_order: 15
 ---
 
 {{< mathjax >}}
-[ThreeJS](https://threejs.org/) e un wrapper di [webgl](pages/computer_graphics/webgl.md) per l'implementazione di applicazioni grafiche 3D che sfruttano lo stack web, si basa sul concetto di grafo di rendering
+[ThreeJS](https://threejs.org/) e un wrapper di [webgl](/computer_graphics/webgl) per l'implementazione di applicazioni grafiche 3D che sfruttano lo stack web, si basa sul concetto di grafo di rendering
 
 ```mermaid
 ---
@@ -36,7 +36,7 @@ G & H --> F --> E
 
 L'oggetto fondamentale e la `scene`, che contiene tutti gli elementi renderizzati dalla pipeline, nonché le **informazioni di illuminazione e posizione della camera** negli oggetti `light` e `camera`
 
-L'oggetto `mesh` rappresenta la singola [mesh 3D poligonale](pages/computer_graphics/mesh_poligonali.md), di cui viene definita la geometria e le informazioni di colore e texture, nella scena possono essere presenti $n$ mesh 3D
+L'oggetto `mesh` rappresenta la singola [mesh 3D poligonale](/computer_graphics/mesh_poligonali), di cui viene definita la geometria e le informazioni di colore e texture, nella scena possono essere presenti $n$ mesh 3D
 
 ## Animation loop
 
