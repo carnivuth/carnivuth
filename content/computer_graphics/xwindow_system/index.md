@@ -4,7 +4,7 @@ next: "pages/computer_graphics/webgl.md"
 previous: "pages/computer_graphics/html5.md"
 aliases: []
 tags: []
-index: 12
+series_order: 12
 ---
 
 # Xwindow system

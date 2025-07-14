@@ -5,7 +5,7 @@ previous: "pages/computer_graphics/trasformazioni_geometriche.md"
 aliases: []
 tags:
   - proiezioni geometriche
-index: 2
+series_order: 2
 ---
 # Trasformazioni di vista
 

@@ -4,7 +4,7 @@ next: "pages/computer_graphics/algoritmi_rasterizzazione.md"
 previous: "pages/computer_graphics/trasformazioni_vista.md"
 aliases: []
 tags: []
-index: 3
+series_order: 3
 ---
 
 # Algoritmi di real time rendering

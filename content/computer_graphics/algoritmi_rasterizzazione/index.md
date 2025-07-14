@@ -6,7 +6,7 @@ aliases: []
 tags:
   - texture mapping
   - algoritmo di linea incrementale
-index: 4
+series_order: 4
 ---
 
 # Algoritmi di rasterizzazione

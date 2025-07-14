@@ -4,7 +4,7 @@ next: "pages/computer_graphics/illuminazione.md"
 previous: "pages/computer_graphics/proiezione_prospettica.md"
 aliases: []
 tags: []
-index: 6
+series_order: 6
 ---
 
 # Clipping di linee

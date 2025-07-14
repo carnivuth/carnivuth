@@ -4,7 +4,7 @@ next: "pages/computer_graphics/shadowing.md"
 previous: "pages/computer_graphics/illuminazione.md"
 aliases: []
 tags: []
-index: 8
+series_order: 8
 ---
 
 # Texture mapping

@@ -4,7 +4,7 @@ next: "pages/computer_graphics/mesh_poligonali.md"
 previous: "pages/computer_graphics/texture_mapping.md"
 aliases: []
 tags: []
-index: 9
+series_order: 9
 ---
 
 # Shadowing

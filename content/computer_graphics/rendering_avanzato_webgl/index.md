@@ -4,7 +4,7 @@ next: "pages/computer_graphics/threejs.md"
 previous: "pages/computer_graphics/webgl.md"
 tags: []
 aliases:
-index: 14
+series_order: 14
 ---
 
 # Rendering avanzato con webgl

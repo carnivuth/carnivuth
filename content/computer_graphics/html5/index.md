@@ -4,7 +4,7 @@ next: "pages/computer_graphics/xwindow_system.md"
 previous: "pages/computer_graphics/mesh_poligonali.md"
 tags: ["canvas","webgl context"]
 aliases:
-index: 11
+series_order: 11
 ---
 
 # Html5 funzioni grafiche

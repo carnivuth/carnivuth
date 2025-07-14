@@ -4,7 +4,7 @@ next: "pages/computer_graphics/clipping.md"
 previous: "pages/computer_graphics/algoritmi_rasterizzazione.md"
 aliases: []
 tags: []
-index: 5
+series_order: 5
 ---
 
 # Proiezione prospettica

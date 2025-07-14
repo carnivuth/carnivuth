@@ -3,7 +3,7 @@ id: THREEJS
 previous: "pages/computer_graphics/rendering_avanzato_webgl.md"
 tags: []
 aliases:
-index: 15
+series_order: 15
 ---
 
 # Threejs

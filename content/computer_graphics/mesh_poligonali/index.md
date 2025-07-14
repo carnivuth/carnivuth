@@ -4,7 +4,7 @@ next: "pages/computer_graphics/html5.md"
 previous: "pages/computer_graphics/shadowing.md"
 aliases: []
 tags: []
-index: 10
+series_order: 10
 ---
 
 # Mesh 3d poligonali

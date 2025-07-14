@@ -4,7 +4,7 @@ next: "pages/computer_graphics/rendering_avanzato_webgl.md"
 previous: "pages/computer_graphics/xwindow_system.md"
 aliases: []
 tags: []
-index: 13
+series_order: 13
 ---
 
 # Webgl

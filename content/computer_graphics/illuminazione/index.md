@@ -8,7 +8,7 @@ tags:
   - componente ambientale
   - componente diffusa
   - componente speculare
-index: 7
+series_order: 7
 ---
 
 # Illuminazione

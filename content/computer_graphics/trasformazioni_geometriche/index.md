@@ -1,5 +1,5 @@
 ---
-index: 1
+series_order: 1
 next: "pages/computer_graphics/trasformazioni_vista.md"
 id: trasformazioni_geometriche
 tags: ["trasformazioni geometriche di base","rotazione","traslazione","scala","trasformazione affine","spazio affine"]
