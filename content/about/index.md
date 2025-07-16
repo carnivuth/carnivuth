@@ -2,7 +2,7 @@
 title: "Curriculum Vitae"
 alias: ["CV"]
 date: 2025-07-16T15:21:29+02:00
-draft: true
+draft: false
 showTableOfContents: false
 showAuthorBottom: false
 menu: main
