@@ -37,4 +37,4 @@ description: "Curriculum Vitae"
 - **Internship at A.D.V. Media Lab**: Development of a dataset for marketing purposes using excel
 - **Internship at comune Mercatello sul Metauro**: Development of a web application to display information about public events using [wordpress](https://wordpress.com) and [php](https://www.php.net/) technologies
 - **Internship at Ciollo Service s.r.l. & Web developer at Ciollo Service s.r.l.**: Development of an integration to send PEC email from the main product of the company
-- **Devops engineer and system/network administrator at Laboratori Guglielmo Marconi s.p.a.**: Management of the software life-cycle of the monitoring software solution [SANET](https://sanet.labs.it/homepage/)
+- **Devops engineer and system/network administrator at Laboratori Guglielmo Marconi s.p.a.**: Management of the software life-cycle of the monitoring software solution [SANET](https://sanet.labs.it/homepage/) using technologies for system automation and containerization like [ansible](https://docs.ansible.com/) and [LXC](https://linuxcontainers.org/)
