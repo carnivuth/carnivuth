@@ -11,9 +11,9 @@ description: "Curriculum Vitae"
 
 ##  Achievements 🏆
 
-  - Master Degree in Computer Engineering At [Alma Mater Studiorum Università di Bologna](https://www.unibo.it/it)
-  - Bachelor's Degree in Computer Engineering At [Alma Mater Studiorum Università di Bologna](https://www.unibo.it/it)
-  - high school diploma At [I.T.I.S. Enrico Mattei Urbino](https://www.itisurbino.edu.it/)
+  - Master Degree in Computer Engineering At [Alma Mater Studiorum Università di Bologna](https://www.unibo.it/it) mar/2025
+  - Bachelor's Degree in Computer Engineering At [Alma Mater Studiorum Università di Bologna](https://www.unibo.it/it) dec/2022
+  - high school diploma At [I.T.I.S. Enrico Mattei Urbino](https://www.itisurbino.edu.it/) jun/2019
 
 ## Theses
 
@@ -34,7 +34,7 @@ description: "Curriculum Vitae"
 
 ##  Work experiences 💻
 
-- **Internship at A.D.V. Media Lab**: Development of a dataset for marketing purposes using excel
-- **Internship at comune Mercatello sul Metauro**: Development of a web application to display information about public events using [wordpress](https://wordpress.com) and [php](https://www.php.net/) technologies
-- **Internship at Ciollo Service s.r.l. & Web developer at Ciollo Service s.r.l.**: Development of an integration to send PEC email from the main product of the company
-- **Devops engineer and system/network administrator at Laboratori Guglielmo Marconi s.p.a.**: Management of the software life-cycle of the monitoring software solution [SANET](https://sanet.labs.it/homepage/) using technologies for system automation and containerization like [ansible](https://docs.ansible.com/) and [LXC](https://linuxcontainers.org/)
+- **Devops engineer and system/network administrator at Laboratori Guglielmo Marconi s.p.a.**: set/23-today Management of the software life-cycle of the monitoring software solution [SANET](https://sanet.labs.it/homepage/) using technologies for system automation and containerization like [ansible](https://docs.ansible.com/) and [LXC](https://linuxcontainers.org/)
+- **Internship at Ciollo Service s.r.l. & Web developer at Ciollo Service s.r.l.**: jul/22-mar/23 Development of an integration to send PEC email from the main product of the company
+- **Internship at comune Mercatello sul Metauro**: Jun/2018-Jul/2018 Development of a web application to display information about public events using [wordpress](https://wordpress.com) and [php](https://www.php.net/) technologies
+- **Internship at A.D.V. Media Lab**: mar/17-apr/17 Development of a dataset for marketing purposes using excel
