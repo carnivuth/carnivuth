@@ -1,5 +1,6 @@
 ---
 id: MANETS_ROUTING
+draft: true
 next: "pages/mobile_systems/manets/dinamic_source_routing.md"
 previous: "pages/mobile_systems/manets/wifi_direct.md"
 aliases: []

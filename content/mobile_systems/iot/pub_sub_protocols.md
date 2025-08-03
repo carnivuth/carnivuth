@@ -1,5 +1,6 @@
 ---
 id: PUB_SUB_PROTOCOLS
+draft: true
 next: "pages/mobile_systems/iot/request_response.md"
 previous: "pages/mobile_systems/iot/pub_sub_model.md"
 aliases: []

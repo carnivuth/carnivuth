@@ -1,5 +1,6 @@
 ---
 id: PATTERNS
+draft: true
 aliases: []
 tags: []
 index: 34

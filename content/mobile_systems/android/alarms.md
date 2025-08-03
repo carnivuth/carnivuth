@@ -1,5 +1,6 @@
 ---
 id: ALARMS
+draft: true
 aliases: []
 tags: []
 index: 43

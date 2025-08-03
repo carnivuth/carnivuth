@@ -1,5 +1,6 @@
 ---
 id: ZIGBEE
+draft: true
 aliases: []
 tags: []
 index: 8

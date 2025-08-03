@@ -1,5 +1,6 @@
 ---
 id: NO_INFRASTRUCTURE_POSITIONING_SYSTEMS
+draft: true
 aliases: []
 tags: []
 index: 21

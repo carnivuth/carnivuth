@@ -1,5 +1,6 @@
 ---
 id: MANET_POSITIONING_SYSTEMS
+draft: true
 next: "pages/mobile_systems/positioning_systems/global_positioning_system.md"
 previous: "pages/mobile_systems/positioning_systems/taxonomy.md"
 aliases: []

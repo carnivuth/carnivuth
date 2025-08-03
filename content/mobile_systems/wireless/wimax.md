@@ -1,5 +1,6 @@
 ---
 id: WIMAX
+draft: true
 next: "pages/mobile_systems/wireless/cellular_networking.md"
 previous: "pages/mobile_systems/wireless/wifi.md"
 aliases: []

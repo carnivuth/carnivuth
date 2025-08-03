@@ -1,5 +1,6 @@
 ---
 id: GLOBAL_POSITIONING_SYSTEM
+draft: true
 aliases: []
 tags: []
 index: 20

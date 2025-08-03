@@ -1,5 +1,6 @@
 ---
 id: MOBILITY_IP_NETWORKS
+draft: true
 next: "pages/mobile_systems/mobility/host_identity_protocol.md"
 previous: "pages/mobile_systems/positioning_systems/multiple_positioning_systems_solutions.md"
 aliases: []

@@ -1,5 +1,6 @@
 ---
 id: MESSAGING
+draft: true
 next: "pages/mobile_systems/discovery_messages_events/java_message_service.md"
 previous: "pages/mobile_systems/discovery_messages_events/service_discovery.md"
 aliases: []

@@ -1,5 +1,6 @@
 ---
 id: REST
+draft: true
 next: "pages/mobile_systems/iot/coap.md"
 previous: "pages/mobile_systems/iot/request_response.md"
 aliases: []

@@ -1,5 +1,6 @@
 ---
 id: SOCKETS
+draft: true
 next: "pages/mobile_systems/iot/iot.md"
 previous: "pages/mobile_systems/android/alarms.md"
 aliases: []

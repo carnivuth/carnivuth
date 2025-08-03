@@ -1,27 +1,28 @@
 ---
-id: EVENTS
+title: Events
+draft: true
 aliases: []
 tags: []
 index: 64
 previous: pages/mobile_systems/discovery_messages_events/extensible_messaging_and_presence_protocol.md
 ---
 
-# Events
-
+{{< mathjax >}}
 Events can be defined as temporary constrained massages that needs to be processed as quickly as possible
 
-## Events vs [messages](pages/mobile_systems/discovery_messages_events/messaging.md)
+## Events vs [messages](/mobile_systems/messaging)
 
 In a mobile environment events and messages show the same characteristics and can be handled by similar systems
 
 Follow this idea events can be seen as messages with some content in a [pub/sub](pages/mobile_systems/iot/pub_sub_model.md) model where publisher are the nodes where the event is generated and subscribers are the nodes that are interested to the specific event
 
-All consideration for [messages](pages/mobile_systems/discovery_messages_events/messaging.md) are valid also for events, some specific events question can be:
+All consideration for [messages](/mobile_systems/messaging) are valid also for events, some specific events question can be:
 
 - **Anonymous communication**
 - **Possibility to use filters** (on headers or entire messages)
 - **Different topologies for routing** and different semantics associated to event sending/notification
 -  **non-blocking operations** (polling, callback)
+
 ## General architecture of a event system
 
 An event system is based on a central [pub/sub service](pages/mobile_systems/iot/pub_sub_model.md) to achieve decoupling of the publisher and subscribers
@@ -140,4 +141,3 @@ SEQ: event key
 </e:propertyset>
 ```
 
-[<](pages/mobile_systems/discovery_messages_events/extensible_messaging_and_presence_protocol.md)

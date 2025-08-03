@@ -1,5 +1,6 @@
 ---
 id: PROXY_HIERARCHICAL_MOBILE_IPV6
+draft: true
 next: "pages/mobile_systems/mobility/i_tcp.md"
 previous: "pages/mobile_systems/mobility/hierarchical_mobile_ipv6.md"
 aliases: []

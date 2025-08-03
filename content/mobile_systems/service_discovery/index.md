@@ -1,5 +1,6 @@
 ---
 id: SERVICE_DISCOVERY
+draft: true
 next: "pages/mobile_systems/discovery_messages_events/messaging.md"
 previous: "pages/mobile_systems/iot/coap.md"
 aliases: []

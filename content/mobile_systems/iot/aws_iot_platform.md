@@ -1,5 +1,6 @@
 ---
 id: AWS_IOT_PLATFORM
+draft: true
 next: "pages/mobile_systems/iot/azure_iot_platform.md"
 previous: "pages/mobile_systems/iot/iot_platforms.md"
 aliases: []

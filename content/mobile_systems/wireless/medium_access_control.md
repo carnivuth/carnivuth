@@ -1,5 +1,6 @@
 ---
 id: MEDIUM_ACCESS_CONTROL
+draft: true
 next: "pages/mobile_systems/wireless/csma.md"
 previous: "pages/mobile_systems/wireless/wireless_communication.md"
 aliases: []
