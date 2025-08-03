@@ -6,7 +6,7 @@ next: "pages/mobile_systems/discovery_messages_events/messaging.md"
 previous: "pages/mobile_systems/iot/coap.md"
 aliases: []
 tags: []
-index: 59
+series_order: 59
 ---
 
 Service discovery is the procedure that allow an application to search for available services in the locality of the application node, a service discovery solution must meet the following requirements

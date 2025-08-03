@@ -6,7 +6,7 @@ next: "pages/mobile_systems/wireless/wimax.md"
 previous: "pages/mobile_systems/wireless/csma.md"
 aliases: []
 tags: []
-index: 4
+series_order: 4
 ---
 
 # Wifi

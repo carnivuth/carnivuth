@@ -6,7 +6,7 @@ next: "pages/mobile_systems/wireless/cellular_networking.md"
 previous: "pages/mobile_systems/wireless/wifi.md"
 aliases: []
 tags: []
-index: 5
+series_order: 5
 ---
 
 # Wimax

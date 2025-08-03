@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 21
+series_order: 21
 next: pages/mobile_systems/positioning_systems/active_bat.md
 previous: pages/mobile_systems/positioning_systems/global_positioning_system.md
 ---

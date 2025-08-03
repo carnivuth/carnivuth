@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/aws_iot_platform.md"
 previous: "pages/mobile_systems/iot/scada.md"
 aliases: []
 tags: []
-index: 47
+series_order: 47
 ---
 
 # Iot platforms

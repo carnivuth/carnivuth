@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobile_middleware/patterns.md"
 previous: "pages/mobile_systems/mobile_middleware/mobile_middleware.md"
 aliases: []
 tags: []
-index: 33
+series_order: 33
 ---
 
 # Mobile middleware principles

@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/coap.md"
 previous: "pages/mobile_systems/iot/request_response.md"
 aliases: []
 tags: []
-index: 57
+series_order: 57
 ---
 
 # Representational state transfer (rest)

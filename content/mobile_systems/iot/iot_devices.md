@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/iot_protocols.md"
 previous: "pages/mobile_systems/iot/edgex_iot_platform.md"
 aliases: []
 tags: []
-index: 52
+series_order: 52
 ---
 
 # Iot devices

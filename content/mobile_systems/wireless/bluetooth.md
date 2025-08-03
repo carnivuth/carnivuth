@@ -6,7 +6,7 @@ next: "pages/mobile_systems/wireless/zigbee.md"
 previous: "pages/mobile_systems/wireless/cellular_networking.md"
 aliases: []
 tags: []
-index: 7
+series_order: 7
 ---
 
 # Bluetooth (ieee 802.15.1)

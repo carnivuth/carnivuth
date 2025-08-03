@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobility/hierarchical_mobile_ipv6.md"
 previous: "pages/mobile_systems/mobility/host_identity_protocol.md"
 aliases: []
 tags: []
-index: 28
+series_order: 28
 ---
 
 # Mobile ip

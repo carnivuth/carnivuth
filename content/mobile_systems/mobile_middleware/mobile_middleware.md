@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobile_middleware/mobile_middleware_principles.md"
 previous: "pages/mobile_systems/mobility/i_tcp.md"
 aliases: []
 tags: []
-index: 32
+series_order: 32
 ---
 
 # Mobile middleware

@@ -6,7 +6,7 @@ next: "pages/mobile_systems/discovery_messages_events/service_discovery.md"
 previous: "pages/mobile_systems/iot/rest.md"
 aliases: []
 tags: []
-index: 58
+series_order: 58
 ---
 
 # Constrained application protocol (coap)

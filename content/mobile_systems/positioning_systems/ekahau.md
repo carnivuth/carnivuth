@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 24
+series_order: 24
 next: pages/mobile_systems/positioning_systems/multiple_positioning_systems_solutions.md
 previous: pages/mobile_systems/positioning_systems/radar.md
 ---

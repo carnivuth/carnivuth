@@ -6,7 +6,7 @@ next: "pages/mobile_systems/wireless/wifi.md"
 previous: "pages/mobile_systems/wireless/medium_access_control.md"
 aliases: []
 tags: []
-index: 3
+series_order: 3
 ---
 
 # Csma/cd

@@ -5,7 +5,7 @@ draft: true
 next: "pages/mobile_systems/wireless/medium_access_control.md"
 aliases: []
 tags: []
-index: 1
+series_order: 1
 ---
 
 # Wireless communications

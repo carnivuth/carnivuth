@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobility/proxy_hierarchical_mobile_ipv6.md"
 previous: "pages/mobile_systems/mobility/mobile_ip.md"
 aliases: []
 tags: []
-index: 29
+series_order: 29
 ---
 
 # Hierarchical mobile ipv6 (hmip)

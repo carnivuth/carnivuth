@@ -4,8 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 64
-previous: pages/mobile_systems/discovery_messages_events/extensible_messaging_and_presence_protocol.md
+series_order: 61
 ---
 
 {{< mathjax >}}

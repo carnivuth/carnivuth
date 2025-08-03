@@ -6,7 +6,7 @@ next: "pages/mobile_systems/wireless/bluetooth.md"
 previous: "pages/mobile_systems/wireless/wimax.md"
 aliases: []
 tags: []
-index: 6
+series_order: 6
 ---
 
 # Cellular networking

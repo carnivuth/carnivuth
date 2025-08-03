@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 13
+series_order: 13
 next: pages/mobile_systems/manets/greedy_perimeter_stateless_routing.md
 previous: pages/mobile_systems/manets/dinamic_source_routing.md
 ---

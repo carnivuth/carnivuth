@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/edgex_iot_platform.md"
 previous: "pages/mobile_systems/iot/azure_iot_platform.md"
 aliases: []
 tags: []
-index: 50
+series_order: 50
 ---
 
 # Siemens mindsphere platform

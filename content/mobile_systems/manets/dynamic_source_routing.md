@@ -6,7 +6,7 @@ next: "pages/mobile_systems/manets/adhoc_on_demand_distance_vector.md"
 previous: "pages/mobile_systems/manets/manets_routing.md"
 aliases: []
 tags: []
-index: 12
+series_order: 12
 ---
 
 # Dinamic source routing

@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 23
+series_order: 23
 next: pages/mobile_systems/positioning_systems/ekahau.md
 previous: pages/mobile_systems/positioning_systems/active_bat.md
 ---

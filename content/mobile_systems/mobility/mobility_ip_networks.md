@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobility/host_identity_protocol.md"
 previous: "pages/mobile_systems/positioning_systems/multiple_positioning_systems_solutions.md"
 aliases: []
 tags: []
-index: 26
+series_order: 26
 ---
 
 # Mobility in ip networks

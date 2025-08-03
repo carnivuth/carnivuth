@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 42
+series_order: 42
 next: pages/mobile_systems/android/alarms.md
 previous: pages/mobile_systems/android/asynchronous_techniques.md
 ---

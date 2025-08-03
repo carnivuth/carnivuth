@@ -6,7 +6,7 @@ next: "pages/mobile_systems/discovery_messages_events/java_message_service.md"
 previous: "pages/mobile_systems/discovery_messages_events/service_discovery.md"
 aliases: []
 tags: []
-index: 60
+series_order: 60
 ---
 
 One of the main principles of messages solution in mobile environment is decoupling resources involved in communication, this can be achieved by the use of standard and open formats

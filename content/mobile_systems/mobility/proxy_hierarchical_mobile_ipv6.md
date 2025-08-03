@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobility/i_tcp.md"
 previous: "pages/mobile_systems/mobility/hierarchical_mobile_ipv6.md"
 aliases: []
 tags: []
-index: 30
+series_order: 30
 ---
 
 # Proxy hierarchical mobile ipv6

@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 8
+series_order: 8
 next: pages/mobile_systems/manets/manets.md
 previous: pages/mobile_systems/wireless/bluetooth.md
 ---

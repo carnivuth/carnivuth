@@ -6,7 +6,7 @@ next: "pages/mobile_systems/positioning_systems/global_positioning_system.md"
 previous: "pages/mobile_systems/positioning_systems/taxonomy.md"
 aliases: []
 tags: []
-index: 19
+series_order: 19
 ---
 
 # Manet positioning systems

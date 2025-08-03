@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 38
+series_order: 38
 next: pages/mobile_systems/android/activity.md
 previous: pages/mobile_systems/mobile_middleware/communication_patterns.md
 ---

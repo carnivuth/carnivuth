@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/iot_platforms.md"
 previous: "pages/mobile_systems/iot/iot.md"
 aliases: []
 tags: []
-index: 46
+series_order: 46
 ---
 
 # Supervisory control and data acquisition (scada)

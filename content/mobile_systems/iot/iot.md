@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/scada.md"
 previous: "pages/mobile_systems/android/sockets.md"
 aliases: []
 tags: []
-index: 45
+series_order: 45
 ---
 
 # Internet of things

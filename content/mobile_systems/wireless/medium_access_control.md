@@ -6,7 +6,7 @@ next: "pages/mobile_systems/wireless/csma.md"
 previous: "pages/mobile_systems/wireless/wireless_communication.md"
 aliases: []
 tags: []
-index: 2
+series_order: 2
 ---
 
 # Medium access control

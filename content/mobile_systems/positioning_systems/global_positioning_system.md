@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 20
+series_order: 20
 next: pages/mobile_systems/positioning_systems/no_infrastructure_positioning_systems.md
 previous: pages/mobile_systems/positioning_systems/manet_positioning_systems.md
 ---

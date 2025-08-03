@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/iot.md"
 previous: "pages/mobile_systems/android/alarms.md"
 aliases: []
 tags: []
-index: 44
+series_order: 44
 ---
 
 # Sockets and networking in android

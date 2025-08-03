@@ -6,7 +6,7 @@ next: "pages/mobile_systems/manets/manets_routing.md"
 previous: "pages/mobile_systems/manets/manets.md"
 aliases: []
 tags: []
-index: 10
+series_order: 10
 ---
 
 # Wifi direct

@@ -6,7 +6,7 @@ next: "pages/mobile_systems/positioning_systems/taxonomy.md"
 previous: "pages/mobile_systems/manets/clustering.md"
 aliases: []
 tags: []
-index: 17
+series_order: 17
 ---
 
 # Base techniques

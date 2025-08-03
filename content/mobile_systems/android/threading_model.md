@@ -6,7 +6,7 @@ next: "pages/mobile_systems/android/asynchronous_techniques.md"
 previous: "pages/mobile_systems/android/activity.md"
 aliases: []
 tags: []
-index: 40
+series_order: 40
 ---
 
 # Android threading model

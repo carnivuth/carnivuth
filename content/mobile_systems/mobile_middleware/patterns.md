@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 34
+series_order: 34
 next: pages/mobile_systems/mobile_middleware/distribution_patterns.md
 previous: pages/mobile_systems/mobile_middleware/mobile_middleware_principles.md
 ---

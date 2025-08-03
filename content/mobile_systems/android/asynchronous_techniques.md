@@ -6,7 +6,7 @@ next: "pages/mobile_systems/android/job_scheduler.md"
 previous: "pages/mobile_systems/android/threading_model.md"
 aliases: []
 tags: []
-index: 41
+series_order: 41
 ---
 
 # Android asynchronous techniques

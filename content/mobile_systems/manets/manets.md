@@ -6,7 +6,7 @@ next: "pages/mobile_systems/manets/wifi_direct.md"
 previous: "pages/mobile_systems/wireless/zigbee.md"
 aliases: []
 tags: []
-index: 9
+series_order: 9
 ---
 
 # Manet (mobile ad hoc network)

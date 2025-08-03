@@ -6,7 +6,7 @@ next: "pages/mobile_systems/android/threading_model.md"
 previous: "pages/mobile_systems/android/android_platform.md"
 aliases: []
 tags: []
-index: 39
+series_order: 39
 ---
 
 # Activity

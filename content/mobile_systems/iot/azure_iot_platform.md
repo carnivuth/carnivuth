@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/siemens_mindsphere.md"
 previous: "pages/mobile_systems/iot/aws_iot_platform.md"
 aliases: []
 tags: []
-index: 49
+series_order: 49
 ---
 
 # Azure iot platform

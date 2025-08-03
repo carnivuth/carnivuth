@@ -6,7 +6,7 @@ next: "pages/mobile_systems/positioning_systems/base_techniques.md"
 previous: "pages/mobile_systems/manets/temporary_ordered_routing_algorithm.md"
 aliases: []
 tags: []
-index: 16
+series_order: 16
 ---
 
 # Clustering

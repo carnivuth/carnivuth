@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 15
+series_order: 15
 next: pages/mobile_systems/manets/clustering.md
 previous: pages/mobile_systems/manets/greedy_perimeter_stateless_routing.md
 ---

@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/request_response.md"
 previous: "pages/mobile_systems/iot/pub_sub_model.md"
 aliases: []
 tags: []
-index: 55
+series_order: 55
 ---
 
 # Pub/sub protocols

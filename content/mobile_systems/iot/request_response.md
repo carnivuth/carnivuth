@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/rest.md"
 previous: "pages/mobile_systems/iot/pub_sub_protocols.md"
 aliases: []
 tags: []
-index: 56
+series_order: 56
 ---
 
 # Request response

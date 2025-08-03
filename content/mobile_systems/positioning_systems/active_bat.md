@@ -6,7 +6,7 @@ next: "pages/mobile_systems/positioning_systems/radar.md"
 previous: "pages/mobile_systems/positioning_systems/no_infrastructure_positioning_systems.md"
 aliases: []
 tags: []
-index: 22
+series_order: 22
 ---
 
 # Active bat

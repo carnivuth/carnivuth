@@ -6,7 +6,7 @@ next: "pages/mobile_systems/android/android_platform.md"
 previous: "pages/mobile_systems/mobile_middleware/resource_management_patterns.md"
 aliases: []
 tags: []
-index: 37
+series_order: 37
 ---
 
 # Communication patterns

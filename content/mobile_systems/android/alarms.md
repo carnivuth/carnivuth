@@ -4,7 +4,7 @@ series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-index: 43
+series_order: 43
 next: pages/mobile_systems/android/sockets.md
 previous: pages/mobile_systems/android/job_scheduler.md
 ---

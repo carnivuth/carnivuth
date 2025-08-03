@@ -6,7 +6,7 @@ next: "pages/mobile_systems/iot/pub_sub_protocols.md"
 previous: "pages/mobile_systems/iot/iot_protocols.md"
 aliases: []
 tags: []
-index: 54
+series_order: 54
 ---
 
 # Pub/sub model

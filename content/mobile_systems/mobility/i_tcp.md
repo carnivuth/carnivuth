@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobile_middleware/mobile_middleware.md"
 previous: "pages/mobile_systems/mobility/proxy_hierarchical_mobile_ipv6.md"
 aliases: []
 tags: []
-index: 31
+series_order: 31
 ---
 
 #  I-TCP

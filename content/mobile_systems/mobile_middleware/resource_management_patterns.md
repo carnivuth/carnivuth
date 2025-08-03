@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobile_middleware/communication_patterns.md"
 previous: "pages/mobile_systems/mobile_middleware/distribution_patterns.md"
 aliases: []
 tags: []
-index: 36
+series_order: 36
 ---
 
 # Resource management patterns

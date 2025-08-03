@@ -6,7 +6,7 @@ next: "pages/mobile_systems/mobility/mobility_ip_networks.md"
 previous: "pages/mobile_systems/positioning_systems/ekahau.md"
 aliases: []
 tags: []
-index: 25
+series_order: 25
 ---
 
 # Multi positioning system solution
