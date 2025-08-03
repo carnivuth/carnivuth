@@ -1,5 +1,6 @@
 ---
 title: BASE_TECHNIQUES
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/positioning_systems/taxonomy.md"
 previous: "pages/mobile_systems/manets/clustering.md"

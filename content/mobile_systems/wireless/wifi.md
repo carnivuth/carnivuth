@@ -1,5 +1,6 @@
 ---
 title: WIFI
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/wireless/wimax.md"
 previous: "pages/mobile_systems/wireless/csma.md"

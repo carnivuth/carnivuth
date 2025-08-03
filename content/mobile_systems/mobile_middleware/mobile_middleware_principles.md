@@ -1,5 +1,6 @@
 ---
 title: MOBILE_MIDDLEWARE_PRINCIPLES
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobile_middleware/patterns.md"
 previous: "pages/mobile_systems/mobile_middleware/mobile_middleware.md"

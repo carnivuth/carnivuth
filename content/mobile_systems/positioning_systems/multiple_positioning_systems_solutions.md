@@ -1,5 +1,6 @@
 ---
 title: MULTIPLE_POSITIONING_SYSTEMS_SOLUTIONS
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobility/mobility_ip_networks.md"
 previous: "pages/mobile_systems/positioning_systems/ekahau.md"

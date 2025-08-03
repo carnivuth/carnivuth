@@ -1,5 +1,6 @@
 ---
 title: TAXONOMY
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/positioning_systems/manet_positioning_systems.md"
 previous: "pages/mobile_systems/positioning_systems/base_techniques.md"

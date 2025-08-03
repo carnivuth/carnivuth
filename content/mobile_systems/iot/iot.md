@@ -1,5 +1,6 @@
 ---
 title: IOT
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/scada.md"
 previous: "pages/mobile_systems/android/sockets.md"

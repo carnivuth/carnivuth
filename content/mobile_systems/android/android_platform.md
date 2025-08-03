@@ -1,5 +1,6 @@
 ---
 title: ANDROID_PLATFORM
+series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []

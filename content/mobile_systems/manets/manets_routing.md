@@ -1,5 +1,6 @@
 ---
 title: MANETS_ROUTING
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/manets/dinamic_source_routing.md"
 previous: "pages/mobile_systems/manets/wifi_direct.md"

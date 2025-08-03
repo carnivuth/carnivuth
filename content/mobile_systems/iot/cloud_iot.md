@@ -1,5 +1,6 @@
 ---
 title: CLOUD_IOT
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/wireless/wireless_communication.md"
 aliases: []

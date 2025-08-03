@@ -1,5 +1,6 @@
 ---
 title: ADHOC_ON_DEMAND_DISTANCE_VECTOR
+series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []

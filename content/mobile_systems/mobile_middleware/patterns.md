@@ -1,5 +1,6 @@
 ---
 title: PATTERNS
+series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []

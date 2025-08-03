@@ -1,5 +1,6 @@
 ---
 title: ALARMS
+series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []

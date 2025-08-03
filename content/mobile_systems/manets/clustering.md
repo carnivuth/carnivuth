@@ -1,5 +1,6 @@
 ---
 title: CLUSTERING
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/positioning_systems/base_techniques.md"
 previous: "pages/mobile_systems/manets/temporary_ordered_routing_algorithm.md"

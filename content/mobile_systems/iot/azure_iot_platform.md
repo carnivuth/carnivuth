@@ -1,5 +1,6 @@
 ---
 title: AZURE_IOT_PLATFORM
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/siemens_mindsphere.md"
 previous: "pages/mobile_systems/iot/aws_iot_platform.md"

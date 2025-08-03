@@ -1,5 +1,6 @@
 ---
 title: JOB_SCHEDULER
+series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []

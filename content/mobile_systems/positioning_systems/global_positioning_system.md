@@ -1,5 +1,6 @@
 ---
 title: GLOBAL_POSITIONING_SYSTEM
+series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []

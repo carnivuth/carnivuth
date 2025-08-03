@@ -1,5 +1,6 @@
 ---
 title: DINAMIC_SOURCE_ROUTING
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/manets/adhoc_on_demand_distance_vector.md"
 previous: "pages/mobile_systems/manets/manets_routing.md"

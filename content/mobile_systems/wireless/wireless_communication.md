@@ -1,5 +1,6 @@
 ---
 title: WIRELESS_COMMUNICATION
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/wireless/medium_access_control.md"
 aliases: []

@@ -1,5 +1,6 @@
 ---
 title: SIEMENS_MINDSPHERE
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/edgex_iot_platform.md"
 previous: "pages/mobile_systems/iot/azure_iot_platform.md"

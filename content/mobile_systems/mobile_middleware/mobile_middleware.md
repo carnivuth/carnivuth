@@ -1,5 +1,6 @@
 ---
 title: MOBILE_MIDDLEWARE
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobile_middleware/mobile_middleware_principles.md"
 previous: "pages/mobile_systems/mobility/i_tcp.md"

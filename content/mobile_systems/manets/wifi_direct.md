@@ -1,5 +1,6 @@
 ---
 title: WIFI_DIRECT
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/manets/manets_routing.md"
 previous: "pages/mobile_systems/manets/manets.md"

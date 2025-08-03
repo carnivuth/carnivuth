@@ -1,5 +1,6 @@
 ---
 title: EKAHAU
+series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []

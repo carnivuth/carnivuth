@@ -1,5 +1,6 @@
 ---
 title: NO_INFRASTRUCTURE_POSITIONING_SYSTEMS
+series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []

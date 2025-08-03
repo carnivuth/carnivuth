@@ -1,5 +1,6 @@
 ---
 title: DISTRIBUTION_PATTERNS
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobile_middleware/resource_management_patterns.md"
 previous: "pages/mobile_systems/mobile_middleware/patterns.md"

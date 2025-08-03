@@ -1,5 +1,6 @@
 ---
 title: Service discovery
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/discovery_messages_events/messaging.md"
 previous: "pages/mobile_systems/iot/coap.md"

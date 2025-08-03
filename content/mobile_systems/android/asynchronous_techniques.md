@@ -1,5 +1,6 @@
 ---
 title: ASYNCHRONOUS_TECHNIQUES
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/android/job_scheduler.md"
 previous: "pages/mobile_systems/android/threading_model.md"

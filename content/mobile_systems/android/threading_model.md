@@ -1,5 +1,6 @@
 ---
 title: THREADING_MODEL
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/android/asynchronous_techniques.md"
 previous: "pages/mobile_systems/android/activity.md"

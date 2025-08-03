@@ -1,5 +1,6 @@
 ---
 title: REQUEST_RESPONSE
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/rest.md"
 previous: "pages/mobile_systems/iot/pub_sub_protocols.md"

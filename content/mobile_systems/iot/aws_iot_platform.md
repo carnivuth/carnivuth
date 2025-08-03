@@ -1,5 +1,6 @@
 ---
 title: AWS_IOT_PLATFORM
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/azure_iot_platform.md"
 previous: "pages/mobile_systems/iot/iot_platforms.md"

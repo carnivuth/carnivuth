@@ -1,5 +1,6 @@
 ---
 title: Message management in mobile environments
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/discovery_messages_events/java_message_service.md"
 previous: "pages/mobile_systems/discovery_messages_events/service_discovery.md"

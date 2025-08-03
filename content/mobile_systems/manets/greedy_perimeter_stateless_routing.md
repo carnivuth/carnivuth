@@ -1,5 +1,6 @@
 ---
 title: GREEDY_PERIMETER_STATELESS_ROUTING
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/manets/temporary_ordered_routing_algorithm.md"
 previous: "pages/mobile_systems/manets/adhoc_on_demand_distance_vector.md"

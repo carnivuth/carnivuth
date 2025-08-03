@@ -1,5 +1,6 @@
 ---
 title: IOT_DEVICES
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/iot_protocols.md"
 previous: "pages/mobile_systems/iot/edgex_iot_platform.md"

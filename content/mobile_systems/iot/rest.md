@@ -1,5 +1,6 @@
 ---
 title: REST
+series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/coap.md"
 previous: "pages/mobile_systems/iot/request_response.md"
