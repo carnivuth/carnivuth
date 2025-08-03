@@ -1,5 +1,5 @@
 ---
-id: CELLULAR_NETWORKING
+title: CELLULAR_NETWORKING
 draft: true
 next: "pages/mobile_systems/wireless/bluetooth.md"
 previous: "pages/mobile_systems/wireless/wimax.md"

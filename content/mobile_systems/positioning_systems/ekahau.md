@@ -1,5 +1,5 @@
 ---
-id: EKAHAU
+title: EKAHAU
 draft: true
 aliases: []
 tags: []

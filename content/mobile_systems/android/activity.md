@@ -1,5 +1,5 @@
 ---
-id: ACTIVITY
+title: ACTIVITY
 draft: true
 next: "pages/mobile_systems/android/threading_model.md"
 previous: "pages/mobile_systems/android/android_platform.md"

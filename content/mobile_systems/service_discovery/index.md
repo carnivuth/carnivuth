@@ -1,5 +1,5 @@
 ---
-id: SERVICE_DISCOVERY
+title: Service discovery
 draft: true
 next: "pages/mobile_systems/discovery_messages_events/messaging.md"
 previous: "pages/mobile_systems/iot/coap.md"
@@ -8,7 +8,6 @@ tags: []
 index: 59
 ---
 
-# Service discovery
 Service discovery is the procedure that allow an application to search for available services in the locality of the application node, a service discovery solution must meet the following requirements
 
 - **AUTO CONFIGURATION** devices must configure themselves to participate to the the offering requesting communications

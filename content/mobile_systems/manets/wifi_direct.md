@@ -1,5 +1,5 @@
 ---
-id: WIFI_DIRECT
+title: WIFI_DIRECT
 draft: true
 next: "pages/mobile_systems/manets/manets_routing.md"
 previous: "pages/mobile_systems/manets/manets.md"

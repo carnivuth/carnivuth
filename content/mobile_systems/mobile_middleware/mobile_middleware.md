@@ -1,5 +1,5 @@
 ---
-id: MOBILE_MIDDLEWARE
+title: MOBILE_MIDDLEWARE
 draft: true
 next: "pages/mobile_systems/mobile_middleware/mobile_middleware_principles.md"
 previous: "pages/mobile_systems/mobility/i_tcp.md"

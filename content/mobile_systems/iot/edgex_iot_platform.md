@@ -1,5 +1,5 @@
 ---
-id: EDGEX_IOT_PLATFORM
+title: EDGEX_IOT_PLATFORM
 draft: true
 next: "pages/mobile_systems/iot/iot_devices.md"
 previous: "pages/mobile_systems/iot/siemens_mindsphere.md"

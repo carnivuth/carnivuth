@@ -1,5 +1,5 @@
 ---
-id: PATTERNS
+title: PATTERNS
 draft: true
 aliases: []
 tags: []

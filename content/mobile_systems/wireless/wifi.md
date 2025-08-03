@@ -1,5 +1,5 @@
 ---
-id: WIFI
+title: WIFI
 draft: true
 next: "pages/mobile_systems/wireless/wimax.md"
 previous: "pages/mobile_systems/wireless/csma.md"

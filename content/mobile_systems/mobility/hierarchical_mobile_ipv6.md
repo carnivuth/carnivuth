@@ -1,5 +1,5 @@
 ---
-id: HIERARCHICAL_MOBILE_IPV6
+title: HIERARCHICAL_MOBILE_IPV6
 draft: true
 next: "pages/mobile_systems/mobility/proxy_hierarchical_mobile_ipv6.md"
 previous: "pages/mobile_systems/mobility/mobile_ip.md"

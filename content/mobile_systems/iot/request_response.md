@@ -1,5 +1,5 @@
 ---
-id: REQUEST_RESPONSE
+title: REQUEST_RESPONSE
 draft: true
 next: "pages/mobile_systems/iot/rest.md"
 previous: "pages/mobile_systems/iot/pub_sub_protocols.md"

@@ -1,5 +1,5 @@
 ---
-id: ANDROID_PLATFORM
+title: ANDROID_PLATFORM
 draft: true
 aliases: []
 tags: []

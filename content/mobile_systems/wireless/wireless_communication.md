@@ -1,5 +1,5 @@
 ---
-id: WIRELESS_COMMUNICATION
+title: WIRELESS_COMMUNICATION
 draft: true
 next: "pages/mobile_systems/wireless/medium_access_control.md"
 aliases: []

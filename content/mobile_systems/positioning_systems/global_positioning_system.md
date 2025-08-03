@@ -1,5 +1,5 @@
 ---
-id: GLOBAL_POSITIONING_SYSTEM
+title: GLOBAL_POSITIONING_SYSTEM
 draft: true
 aliases: []
 tags: []

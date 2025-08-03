@@ -1,5 +1,5 @@
 ---
-id: IOT_PROTOCOLS
+title: IOT_PROTOCOLS
 draft: true
 next: "pages/mobile_systems/iot/pub_sub_model.md"
 previous: "pages/mobile_systems/iot/iot_devices.md"

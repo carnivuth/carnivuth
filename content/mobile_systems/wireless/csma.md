@@ -1,5 +1,5 @@
 ---
-id: CSMA
+title: CSMA
 draft: true
 next: "pages/mobile_systems/wireless/wifi.md"
 previous: "pages/mobile_systems/wireless/medium_access_control.md"

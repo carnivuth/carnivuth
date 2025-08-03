@@ -1,5 +1,5 @@
 ---
-id: IOT_PLATFORMS
+title: IOT_PLATFORMS
 draft: true
 next: "pages/mobile_systems/iot/aws_iot_platform.md"
 previous: "pages/mobile_systems/iot/scada.md"

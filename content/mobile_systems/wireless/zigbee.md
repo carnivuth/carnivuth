@@ -1,5 +1,5 @@
 ---
-id: ZIGBEE
+title: ZIGBEE
 draft: true
 aliases: []
 tags: []

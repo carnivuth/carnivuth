@@ -1,5 +1,5 @@
 ---
-id: ASYNCHRONOUS_TECHNIQUES
+title: ASYNCHRONOUS_TECHNIQUES
 draft: true
 next: "pages/mobile_systems/android/job_scheduler.md"
 previous: "pages/mobile_systems/android/threading_model.md"

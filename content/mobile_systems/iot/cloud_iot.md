@@ -1,5 +1,5 @@
 ---
-id: CLOUD_IOT
+title: CLOUD_IOT
 draft: true
 next: "pages/mobile_systems/wireless/wireless_communication.md"
 aliases: []

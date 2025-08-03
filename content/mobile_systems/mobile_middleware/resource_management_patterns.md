@@ -1,5 +1,5 @@
 ---
-id: RESOURCE_MANAGEMENT_PATTERNS
+title: RESOURCE_MANAGEMENT_PATTERNS
 draft: true
 next: "pages/mobile_systems/mobile_middleware/communication_patterns.md"
 previous: "pages/mobile_systems/mobile_middleware/distribution_patterns.md"

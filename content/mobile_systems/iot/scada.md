@@ -1,5 +1,5 @@
 ---
-id: SCADA
+title: SCADA
 draft: true
 next: "pages/mobile_systems/iot/iot_platforms.md"
 previous: "pages/mobile_systems/iot/iot.md"

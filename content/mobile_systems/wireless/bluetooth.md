@@ -1,5 +1,5 @@
 ---
-id: BLUETOOTH
+title: BLUETOOTH
 draft: true
 next: "pages/mobile_systems/wireless/zigbee.md"
 previous: "pages/mobile_systems/wireless/cellular_networking.md"

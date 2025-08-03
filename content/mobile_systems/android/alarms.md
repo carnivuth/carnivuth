@@ -1,5 +1,5 @@
 ---
-id: ALARMS
+title: ALARMS
 draft: true
 aliases: []
 tags: []

@@ -1,5 +1,5 @@
 ---
-id: HOST_IDENTITY_PROTOCOL
+title: HOST_IDENTITY_PROTOCOL
 draft: true
 next: "pages/mobile_systems/mobility/mobile_ip.md"
 previous: "pages/mobile_systems/mobility/mobility_ip_networks.md"

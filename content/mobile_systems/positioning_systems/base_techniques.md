@@ -1,5 +1,5 @@
 ---
-id: BASE_TECHNIQUES
+title: BASE_TECHNIQUES
 draft: true
 next: "pages/mobile_systems/positioning_systems/taxonomy.md"
 previous: "pages/mobile_systems/manets/clustering.md"
