@@ -1,9 +1,8 @@
 ---
 title: Service discovery
+date: 2024-06-15
 series: ["Mobile systems"]
 draft: true
-next: "pages/mobile_systems/discovery_messages_events/messaging.md"
-previous: "pages/mobile_systems/iot/coap.md"
 aliases: []
 tags: []
 series_order: 59
@@ -17,7 +16,7 @@ Service discovery is the procedure that allow an application to search for avail
 
 ## Apache river (jini)
 
-Java solution for service discovery, based on a central node playing the role of service broker where nodes register and discover services (*similar to the [pub/sub model](pages/mobile_systems/iot/pub_sub_model.md)*)
+Java solution for service discovery, based on a central node playing the role of service broker where nodes register and discover services (*similar to the [pub/sub model](/mobile_systems/pub_sub_model)*)
 
 ```mermaid
 flowchart TD
@@ -51,9 +50,9 @@ The protocol supports scalability by allowing the service providers to subscribe
 
 JINI overcomes stub and skeleton limitations, cause client can get the proxy objects at runtime from the broker
 
-## Service location protocol (slp)
+## Service location protocol (SLP)
 
-service agents makes periodic broadcast of the available services and user agent listen for the request for the application, optionally a directory agent can be deployed for caching purposes
+Service agents makes periodic broadcast of the available services and user agent listen for the request for the application, optionally a directory agent can be deployed for caching purposes
 
 ```mermaid
 flowchart TD
@@ -72,9 +71,9 @@ D --> C
 end
 ```
 
-## Universal plug and play (upnp)
+## Universal plug and play (UPnP)
 
-De-facto standard of service discovery, microsoft developed solution to connect tv remote to the network, the UPnP supports:
+De-facto standard of service discovery, Microsoft developed solution to connect tv remote to the network, the UPnP supports:
 
 - **Automated IP configuration**
 - **Discovery** of resources and services
@@ -83,9 +82,9 @@ De-facto standard of service discovery, microsoft developed solution to connect 
 - **Event management** (via Generic Eventing and Notification Architecture - GENA)
 - **Presentation** in HTML/XML
 
-### Automatic ip configuration
+### Automatic IP configuration
 
-A UPnP node tries to connect to a network by asking a DHCP server an address, if no DHCP server is available it selects a random ip (*169.254.0.0/16 for IPv4*) in a range and exploits ARP requests to verify if other machines have the same address
+A UPnP node tries to connect to a network by asking a DHCP server an address, if no DHCP server is available it selects a random IP (*169.254.0.0/16 for IPv4*) in a range and exploits ARP requests to verify if other machines have the same address
 
 ### Discovery
 
@@ -93,7 +92,7 @@ DIscovery in UPnP is achieved with the **simple service discovery protocol** (SS
 
 Nodes that offer services perform periodic broadcast communications on the network, a node that ask for services perform a discover communication and a service can respond with a unicast communication with the url and xml descriptor of the resource
 
-![](assets/mobile_systems/Pasted%20image%2020240616115828.png)
+![](upnp_discovery.png)
 
 ### Service representation
 
@@ -142,5 +141,3 @@ sequenceDiagram
     Device->>ControlPoint: HTTP over SOAP response
     Device->>ControlPoint: Notification with GENA in unicast
 ```
-
-[<](pages/mobile_systems/iot/coap.md)[>](pages/mobile_systems/discovery_messages_events/messaging.md)
