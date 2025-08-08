@@ -17,6 +17,21 @@ tags:
   - migration
 ---
 
+In my personal journey of self hosting my one day to day services there was one thing that i keep procrastinating about, **passwords**.
+
+To manage my personal IT infrastructure and my day to day life i used [nordpass](https://nordpass.com) services, it was quick, easy and convenient, but one of the major drawbacks for me was the linux client, it's not scriptable and i cannot integrate it with my personal menu utility which sucks.
+
+So i started my journey to find something that will fit my needs that are:
+
+- **simplicity**: i do not want to lose time managing complex docker services.
+- **integration with browsers** in the form of extensions
+- **distributed architecture**, I need to access passwords from different machines
+- **independent clients**, I need to access passwords even if i can't reach the server
+
+So after some time i decided to try the [standard unix password manager](https://www.passwordstore.org/) which is an elegant and simple solution to store passwords and all kinds of secrets that applies the unix philosophy *do one thing and do it perfectly*
+
+Pass is basically a tool to manage a folder structure with `pgp` encrypted files that can also leverage git to synchronize between different client
+
 ```bash
 #!/bin/bash
 rm -r converted
@@ -61,3 +76,32 @@ gpg --output "converted/$filename.gpg" --recipient matti200042@gmail.com --encry
 rm "converted/$filename"
 done
 ```
+
+## Android setup
+
+Sadly, the android client for pass was discontinued 🥲 and i found this not so convenient but working solution using [termux](https://termux.dev/):
+
+- Install from the store [termux](https://f-droid.org/packages/com.termux/) and [termux-api](https://f-droid.org/packages/com.termux.api/) applications
+
+- inside termux install this packages
+
+```bash
+pkg update && \
+pkg upgrade && \
+pkg install bash-completion git gnupg openssh pass termux-api tree
+```
+
+Then clone the repository using git
+
+```bash
+git clone server:/passwordstore
+```
+
+Import `pgp` keys
+
+```bash
+gpg --import backupkeys.pgp
+```
+
+This way you can use passwords from termux application by coping in the android clipboard 👍
+
