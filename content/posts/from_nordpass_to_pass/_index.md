@@ -5,7 +5,7 @@ aliases:
   - /posts/from_nordpass_to_pass
 permalink: /posts/from_nordpass_to_pass/
 date: '2025-06-03'
-draft: true
+draft: false
 description: "My personal journey from nordpass service to password store based system for managing passwords"
 tags:
   - homelab
@@ -19,7 +19,7 @@ tags:
 
 In my personal journey of self hosting my one day to day services there was one thing that i keep procrastinating about, **passwords**.
 
-To manage my personal IT infrastructure and my day to day life i used [nordpass](https://nordpass.com) services, it was quick, easy and convenient, but one of the major drawbacks for me was the linux client, it's not scriptable and i cannot integrate it with my personal menu utility which sucks.
+To manage secrets for my personal IT infrastructure and my day to day life i used [nordpass](https://nordpass.com) services, it was quick, easy and convenient, but one of the major drawbacks for me was the linux client, it's not scriptable and i cannot integrate it with my personal menu utility which sucks.
 
 So i started my journey to find something that will fit my needs that are:
 
@@ -28,15 +28,45 @@ So i started my journey to find something that will fit my needs that are:
 - **distributed architecture**, I need to access passwords from different machines
 - **independent clients**, I need to access passwords even if i can't reach the server
 
-So after some time i decided to try the [standard unix password manager](https://www.passwordstore.org/) which is an elegant and simple solution to store passwords and all kinds of secrets that applies the unix philosophy *do one thing and do it perfectly*
+So after some time i decided to try the [standard unix password manager](https://www.passwordstore.org/) which is an elegant and simple solution to store passwords and all kinds of secrets that applies the unix philosophy *do one thing and do it well*
 
-Pass is basically a tool to manage a folder structure with `pgp` encrypted files that can also leverage git to synchronize between different client
+Pass is basically a tool to manage a folder structure with `pgp` encrypted files that can also leverage git to synchronize between different client, the encrypted files are basically text file that can be have a lot of formats, i opted for the following structure which take advantage of the nordpass format:
+
+```text
+[PASSWORD]
+url: [URL TO THE WEBSITE]
+username:
+additional_urls:
+note:
+cardholdername:
+cardnumber:
+cvc:
+pin:
+expirydate:
+zipcode:
+folder:
+full_name:
+phone_number:
+email:
+address1:
+address2:
+city:
+country:
+state:
+type:
+custom_fields:
+```
+
+This way my i can also integrate my password store with the [ffpass](https://github.com/passff/passff) firefox integration for auto fill password fields in websites
+
+## Migrating the password manager
+
+After downloading a dump from nordpass i wrote a simple script to convert the `csv` file into a folder structure named after the website address
 
 ```bash
 #!/bin/bash
-rm -r converted
-mkdir -p converted
-cat "$1" |  while IFS=, read name url additional_urls username password note cardholdername cardnumber cvc pin expirydate zipcode folder full_name phone_number email address1 address2 city country state type custom_fields; do
+cat "$1" |  while IFS=, read name url additional_urls username password note cardholdrrname cardnumber cvc pin expirydate zipcode folder full_name phone_number email address1 address2 city country state type custom_fields; do
+
 if [[ -n $url ]]; then
   folder="$(echo "$url" | awk -F[/:] '{print $4}')"
   if dig "$folder" > /dev/null 2>&1; then
@@ -105,3 +135,6 @@ gpg --import backupkeys.pgp
 
 This way you can use passwords from termux application by coping in the android clipboard 👍
 
+## Final considerations
+
+Pass is still a good solution for storing encrypted files and shows the power of the unix philosophy: *do one thing and do it well*
