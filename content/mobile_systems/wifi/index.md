@@ -1,19 +1,14 @@
 ---
-title: WIFI
+title: Wifi
+date: 2024-06-04
 series: ["Mobile systems"]
-draft: true
-next: "pages/mobile_systems/wireless/wimax.md"
-previous: "pages/mobile_systems/wireless/csma.md"
+draft: false
 aliases: []
 tags: []
-series_order: 4
+series_order: 2
 ---
 
-# Wifi
-
-The IEEE 802.11 standard is the most widespread solution for wireless communications, it provides 2 primary configurations
-
-- **BASE STATION MODE** where the nodes are connected to a base station and communication can only append trough the base station itself
+The IEEE 802.11 standard is the most widespread solution for wireless communications, it implements both the [base station mode](/mobile_systems/wireless_communication#base-station-mode) architecture and the [ad hoc mode](/mobile_systems/wireless_communication#ad-hoc-mode) architecture
 
 ```mermaid
 flowchart LR
@@ -30,8 +25,6 @@ D --> B
 E((internet))
 A & B -->  E
 ```
-
-- **AD HOC MODE** all nodes are potentially mobile and communicate directly, en example of ad hoc network are [manets](pages/mobile_systems/manets/manets.md)
 
 ```mermaid
 flowchart LR
@@ -53,6 +46,4 @@ end
 
 The objective is to cover with wireless connectivity technology wide areas like cities with a mesh network
 
-![](assets/mobile_systems/Pasted%20image%2020240604192831.png)
-
-[<](pages/mobile_systems/wireless/csma.md)[>](pages/mobile_systems/wireless/wimax.md)
+![](mesh_network.png)
