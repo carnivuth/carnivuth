@@ -1,18 +1,13 @@
 ---
-title: WIMAX
+title: Wimax
+date: 2024-06-06
 series: ["Mobile systems"]
-draft: true
-next: "pages/mobile_systems/wireless/cellular_networking.md"
-previous: "pages/mobile_systems/wireless/wifi.md"
+draft: false
 aliases: []
 tags: []
-series_order: 5
+series_order: 3
 ---
 
-# Wimax
+Technology solution for metropolitan area networks (*MAN*), the idea is to connect multiple antennas (*subscriber station*) to a central base station, in order to connect areas where fiber cable would be economically impossible
 
-Technology solution for metropolitan area networks man, the idea is to connect multiple antennas (*subscriber station*) to a central base station, in order to connect areas where fiber cable would be economically impossible
-
-![](assets/mobile_systems/Pasted%20image%2020240604192519.png)
-
-[<](pages/mobile_systems/wireless/wifi.md)[>](pages/mobile_systems/wireless/cellular_networking.md)
+![](wimax.png)
