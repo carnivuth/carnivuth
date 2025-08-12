@@ -1,22 +1,20 @@
 ---
-title: CELLULAR_NETWORKING
+title: Cellular networking
+date: 2024-03-10
 series: ["Mobile systems"]
-draft: true
-next: "pages/mobile_systems/wireless/bluetooth.md"
-previous: "pages/mobile_systems/wireless/wimax.md"
+draft: false
 aliases: []
 tags: []
-series_order: 6
+series_order: 4
 ---
 
-# Cellular networking
 
-Originated from the evolution of telecom solution of communication of mobile devices, based on a grid of low powered antenna for scalability reason, frequencies can be reused in non adjacent cells The architecture is the following:
+Originated from the evolution of Telecom solution of communication of mobile devices, based on a grid of low powered antenna for scalability reason, frequencies can be reused in non adjacent cells The architecture is the following:
 
 ```mermaid
 flowchart LR
-A{mobile\n switching\n center}
-B{mobile\n switching\n center}
+A{mobile <br>switching<br>center}
+B{mobile<br>switching<br> center}
 G[(internet)]
 subgraph cells
 direction TB
@@ -42,9 +40,10 @@ The range of a single cell depends on many factors such as:
 
 In common deployment scenarios cells coverage area overlaps, this enables QoS practices
 
-## Technology evolutions
+## Technology evolution
 
 With time cellular networking technology converged in the internet communication technologies
+
 
 | GENERATION | FEATURES                                 |
 | ---------- | ---------------------------------------- |
@@ -53,9 +52,10 @@ With time cellular networking technology converged in the internet communication
 | 3(UMTS)    |                                          |
 | 4(LTE)     |                                          |
 
+
 ## Gsm architecture
 
-![](assets/mobile_systems/Pasted%20image%2020240307143626.png)
+![](gsm_architecture.png)
 
 Where:
 
@@ -75,7 +75,7 @@ A big problem of cellular networking is to handle mobility of the phones during 
 
 ```mermaid
 flowchart TD
-I[The old BSS triggers an handoff\n by signaling to the msc a list of new possible bss]
+I[The old BSS triggers an handoff<br> by signaling to the msc a list of new possible bss]
 A[The MSC set the new path for the new BSS]
 B[The new BSS allocates the channel for the device]
 C[The new BSS notify the old BSS and MSC that it's ready]
@@ -100,9 +100,10 @@ The principle goal of this procedure it's service continuity so in this context 
 
 In this particular case the call is still routed trough the MSC where it has began ANCHOR MSC, other MSC are appended to the chain as the node is moving
 
-![](assets/mobile_systems/Pasted%20image%2020240606103443.png)
+![](handoff_msc.png)
 
 ### Handoff taxonomy
+
 
 | TAXONOMY          | MEANING                                                                                                        |
 | ----------------- | -------------------------------------------------------------------------------------------------------------- |
@@ -115,4 +116,3 @@ In this particular case the call is still routed trough the MSC where it has beg
 | HARD              | The handoff procedure does not allow the mobile node to be connected to multiple BSS in the same time interval |
 | SOFT              | The handoff procedure allow the mobile node to be connected to multiple BSS in the same time interval          |
 
-[<](pages/mobile_systems/wireless/wimax.md)[>](pages/mobile_systems/wireless/bluetooth.md)
