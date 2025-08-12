@@ -3,7 +3,7 @@ title: Bluetooth
 description: "ieee 802.15.1 protocol for personal area networks"
 date: 2024-03-12
 series: ["Mobile systems"]
-draft: true
+draft: false
 aliases: []
 tags: []
 series_order: 5
