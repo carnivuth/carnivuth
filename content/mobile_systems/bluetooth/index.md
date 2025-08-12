@@ -1,15 +1,13 @@
 ---
-title: BLUETOOTH
+title: Bluetooth
+description: "ieee 802.15.1 protocol for personal area networks"
+date: 2024-03-12
 series: ["Mobile systems"]
 draft: true
-next: "pages/mobile_systems/wireless/zigbee.md"
-previous: "pages/mobile_systems/wireless/cellular_networking.md"
 aliases: []
 tags: []
-series_order: 7
+series_order: 5
 ---
-
-# Bluetooth (ieee 802.15.1)
 
 Protocol for PAN communication, based on 2.4 frequencies band,it aims to the following goals:
 
@@ -23,7 +21,7 @@ This comes with the cost of lower bandwidth so lower data transfer rate
 
 Bluetooth is a complex stack of protocols at different layer and devices can implement only a subset of functionality and not all
 
-![](assets/mobile_systems/Pasted%20image%2020240312123425.png)
+![](protocol_stack.png)
 
 ## Architecture
 
@@ -78,22 +76,15 @@ Time is divided by time slots in which only 2 nodes can communicate This is done
 
 The master decide which node can communicate, the master can communicate in all the odd slots
 
-![](assets/mobile_systems/Pasted%20image%2020240312130107.png)
+![](master_communication.png)
 
 ### Sco channels
 
-SCO packets are sent in pre-allocated time slots, in order to guarantee a fixed bandwidth (must have for audio streaming applications)
+SCO packets are sent in pre-allocated time slots, in order to guarantee a fixed bandwidth (must have for audio streaming applications). In order to avoid the consumption of all time slots the master can establish 3 SCO channels at the same time, in this mode re transmissions are not allowed
 
-In order to avoid the consumption of all time slots the master can establish 3 SCO channels at the same time
-
-In this mode re transmissions are not allowed
 ### Acl channels
 
-ACL packets are best effort communication with no guaranteed bandwidth this allow for higher bandwidth, it also support asymmetric bandwidth allocation for the  2 directions
-
-In this connection types the slave can transmit only if in the previous time slot has received a packet from the master
-
-In this mode retransmissions are allowed
+ACL packets are best effort communication with no guaranteed bandwidth this allow for higher bandwidth, it also support asymmetric bandwidth allocation for the  2 directions. In this connection types the slave can transmit only if in the previous time slot has received a packet from the master, in this mode retransmissions are allowed
 
 ## Multi hop communication (scatter net)
 
@@ -130,7 +121,8 @@ The main difference is in the protocol of discovery and advertisement on the ava
 
 All **BLE** devices implements the generic attribute (GATT) profile
 
-## Bluetooth vs [wifi](pages/mobile_systems/wireless/wifi.md)
+## Bluetooth vs [wifi](/mobile_systems/wifi)
+
 
 | WIFI                                        | BLUETOOTH                                                   |
 | ------------------------------------------- | ----------------------------------------------------------- |
@@ -138,4 +130,3 @@ All **BLE** devices implements the generic attribute (GATT) profile
 | no discovery needed                         | need of discovery phase in order to communicate with a node |
 | communication can be done in broadcast mode | no efficient broadcast support                              |
 
-[<](pages/mobile_systems/wireless/cellular_networking.md)[>](pages/mobile_systems/wireless/zigbee.md)
