@@ -1,16 +1,11 @@
 ---
 date: 2025-02-16
-aliases:
-  - /tecnologie_basi_dati/indici_multidimensionali/index.md
-  - /tecnologie_basi_dati/indici_multidimensionali
 permalink: /tecnologie_basi_dati/indici_multidimensionali/index.md
 series: ["Tecnologie progettazione basi di dati"]
 draft: false
 id: indici_multidimensionali
 description: Indici per la risoluzione di query spaziali
 title: Indici multidimensionali
-aliases:
-  - /tecnologie_basi_dati/indici_multidimensionali/index.md []
 tags:
   - excell
   - grid

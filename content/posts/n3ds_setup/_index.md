@@ -5,8 +5,6 @@ aliases:
   - /posts/n3ds_setup
 permalink: /posts/n3ds_setup/_index.md
 date: 2024-11-26
-aliases:
-  - /posts/n3ds_setup/_index.md []
 tags: []
 draft: false
 ---

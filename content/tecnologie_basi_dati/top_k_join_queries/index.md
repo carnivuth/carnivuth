@@ -10,8 +10,6 @@ date: 2025-02-20
 id: top_k_join_queries
 title: Top-k join queries
 description: Query Top-k che coinvolgono piu relazioni
-aliases:
-  - /tecnologie_basi_dati/top_k_join_queries/index.md []
 tags: []
 ---
 

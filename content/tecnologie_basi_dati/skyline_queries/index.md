@@ -10,8 +10,6 @@ date: 2025-02-22
 id: skyline_queries
 title: "Oltre le top-k: skyline queries"
 description: Restituire di elementi non dominanti in una query
-aliases:
-  - /tecnologie_basi_dati/skyline_queries/index.md []
 tags: []
 ---
 

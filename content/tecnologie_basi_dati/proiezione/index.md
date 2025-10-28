@@ -9,8 +9,6 @@ date: 2023-04-19
 id: proiezione
 title: Proiezione
 description: Rimuovere campi dall'output di una query
-aliases:
-  - /tecnologie_basi_dati/proiezione/index.md []
 tags:
   - proiezione con sorting
   - proiezione con hashing

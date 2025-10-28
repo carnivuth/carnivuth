@@ -9,8 +9,6 @@ date: 2025-02-16
 id: progetto_fisico_tuning
 title: Progetto fisico e tuning del DB
 description: Strategie e best practices per la gestione del progetto fisico e i parametri di ottimizzazione di un DB
-aliases:
-  - /tecnologie_basi_dati/progetto_fisico_tuning/index.md []
 tags:
   - data clustering
   - data partitioning

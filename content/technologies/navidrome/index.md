@@ -9,7 +9,6 @@ date: 2025-05-28
 series: ["Technologies notes"]
 draft: false
 series_order: 17
-date: 2025-05-28
 ---
 
  [navidrome](https://www.navidrome.org/) is a [subsonic](https://www.subsonic.org/pages/index.jsp) compatible musing streaming service that relies on metadata to catalog a music library

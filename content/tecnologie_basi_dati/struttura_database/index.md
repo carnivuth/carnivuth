@@ -9,8 +9,6 @@ date: 2025-01-30
 title: "Come e fatto un database?"
 description: "Struttura architetturale dei database e considerazioni sulle motivazioni"
 tags: ["struttura fisica","struttura logica","ottimizzazione di accesso"]
-aliases:
-  - /tecnologie_basi_dati/struttura_database/index.md []
 draft: false
 series_order: 1
 ---

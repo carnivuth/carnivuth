@@ -9,8 +9,6 @@ draft: false
 id: group_by
 title: Group_by
 description: Computare funzioni aggregate
-aliases:
-  - /tecnologie_basi_dati/group_by/index.md []
 tags:
   - funzioni aggregate
   - group by ordinando

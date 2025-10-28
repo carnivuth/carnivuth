@@ -8,8 +8,6 @@ date: 2025-02-08
 id: transazioni
 title: Transazioni
 description: gestione della concorrenza nell'accesso ai dati
-aliases:
-  - /tecnologie_basi_dati/transazioni/index.md []
 tags:
   - transazioni
   - lock

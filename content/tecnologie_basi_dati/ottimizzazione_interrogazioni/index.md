@@ -9,8 +9,6 @@ date: 2025-02-15
 id: ottimizzazione_interrogazioni
 title: Ottimizzazione delle interrogazioni
 description: Come il dbms riscrive le query prima di operare la risoluzione
-aliases:
-  - /tecnologie_basi_dati/ottimizzazione_interrogazioni/index.md []
 tags:
   - ottimizzazione delle interrogazioni
   - interfaccia a iteratore

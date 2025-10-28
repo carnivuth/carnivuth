@@ -9,7 +9,6 @@ date: 2025-05-30
 series: ["Technologies notes"]
 draft: false
 series_order: 18
-date: 2025-05-30
 ---
 
 Traefik is an open source application proxy to route traffic inside containers, it's based on 4 based principles

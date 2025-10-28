@@ -6,8 +6,6 @@ aliases:
 permalink: /posts/linux_dotfiles/_index.md
 description: "My personal linux experience with dotfiles, system administration, and distro hopping"
 date: 2024-11-16
-aliases:
-  - /posts/linux_dotfiles/_index.md []
 tags:
     - shell
     - window managers

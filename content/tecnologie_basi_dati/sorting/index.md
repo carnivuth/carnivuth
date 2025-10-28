@@ -9,8 +9,6 @@ date: 2025-02-09
 id: sorting
 title: "Ordinare i dati: sort"
 description: Come ordinare le tuple
-aliases:
-  - /tecnologie_basi_dati/sorting/index.md []
 tags:
   - sort merge
   - sort merge a z vie

@@ -10,8 +10,6 @@ date: 2025-02-20
 id: rankSQL
 Title: Introdurre il concetto di rank nei dbms
 description: Database e ranking delle tuple
-aliases:
-  - /tecnologie_basi_dati/rankSQL/index.md []
 tags: []
 ---
 

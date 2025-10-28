@@ -2,7 +2,7 @@
 date: 2024-11-01
 draft: false
 title: Esame
-draft: Esempi per l'esame
+description: Esempi per l'esame
 aliases: []
 tags: []
 series: ["Linguaggi e modelli computazionali"]

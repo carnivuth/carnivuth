@@ -9,8 +9,6 @@ title: Ricerca del piano di accesso
 description: Metodologie per la ricerca del piano di accesso ai dati meno costoso
 date: 2025-02-16
 id: ricerca_piano_accesso
-aliases:
-  - /tecnologie_basi_dati/ricerca_piano_accesso/index.md []
 tags:
   - programmazione dinamica
   - database profile

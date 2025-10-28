@@ -10,8 +10,6 @@ date: 2025-02-18
 id: top_k_queries
 title: Top-k queries
 Description: Restituire i migliori N risultati
-aliases:
-  - /tecnologie_basi_dati/top_k_queries/index.md []
 tags:
   - knnoptimal
 ---

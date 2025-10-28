@@ -8,8 +8,6 @@ draft: false
 id: durability_control
 title: Garantire la persistenza nei dbms
 descrizione: strategie per la gestione della persistenza delle transazioni
-aliases:
-  - /tecnologie_basi_dati/durability_control/index.md []
 tags:
   - transazioni
   - WAL

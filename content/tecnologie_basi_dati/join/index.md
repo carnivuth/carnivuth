@@ -9,8 +9,6 @@ date: 2025-02-13
 id: join
 title: Join
 description: Eseguire il join relazionale
-aliases:
-  - /tecnologie_basi_dati/join/index.md []
 tags:
   - indexed nested loop join
   - paged nested loop join

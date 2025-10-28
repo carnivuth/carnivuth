@@ -10,8 +10,6 @@ date: 2025-02-09
 id: selezione
 title: Selezione
 description: Filtrare per valori
-aliases:
-  - /tecnologie_basi_dati/selezione/index.md []
 tags:
   - selezione
   - stima risultati

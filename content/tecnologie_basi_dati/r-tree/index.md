@@ -10,8 +10,6 @@ date: 2025-02-18
 id: r-tree
 title: R-tree
 description: Indici ad albero per la risoluzione di query spaziali
-aliases:
-  - /tecnologie_basi_dati/r-tree/index.md []
 tags:
   - r-tree vs b+tree
   - minimum bounding box

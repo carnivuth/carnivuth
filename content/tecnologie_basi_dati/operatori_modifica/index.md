@@ -9,8 +9,6 @@ date: 2025-02-13
 id: operatori_modifica
 title: Operatori di modifica
 description: Eseguire,insert update e delete
-aliases:
-  - /tecnologie_basi_dati/operatori_modifica/index.md []
 tags: []
 series_order: 16
 ---

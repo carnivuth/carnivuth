@@ -7,8 +7,6 @@ permalink: /tecnologie_basi_dati/indici/index.md
 date: 2025-01-30
 description: "Strutture ausiliarie per l'accesso ai dati"
 draft: false
-aliases:
-  - /tecnologie_basi_dati/indici/index.md []
 tags:
   - data access
 series: ["Tecnologie progettazione basi di dati"]

@@ -8,8 +8,6 @@ series: ["Tecnologie progettazione basi di dati"]
 date: 2025-01-30
 description: "Gestione del supporto fisico da parte dei dbms"
 draft: false
-aliases:
-  - /tecnologie_basi_dati/gestione_disco/index.md []
 tags:
   - livello fisico
   - struttura

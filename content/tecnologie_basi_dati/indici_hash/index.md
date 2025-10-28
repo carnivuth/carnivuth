@@ -8,9 +8,6 @@ date: 2025-02-04
 id: Indici hash
 title: Indici hash
 description: Indici che fanno uso di funzioni hash
-aliases:
-  - /tecnologie_basi_dati/indici_hash/index.md
-  - indici hash
 tags:
   - indici
 series: ["Tecnologie progettazione basi di dati"]

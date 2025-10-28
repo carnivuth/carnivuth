@@ -10,8 +10,6 @@ date: 2025-02-28
 title: Big data architectures
 description: Process big data flows
 id: big_data
-aliases:
-  - /tecnologie_basi_dati/big_data/index.md []
 tags: []
 ---
 
