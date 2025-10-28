@@ -1,5 +1,6 @@
 ---
 title: "git"
+layout: simple
 aliases:
   - /technologies/git/index.md
   - /technologies/git

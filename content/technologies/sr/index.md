@@ -1,5 +1,6 @@
 ---
 title: 'SR Routing'
+layout: simple
 date: '2025-10-28'
 draft: true
 description: sr routing protocols nodes

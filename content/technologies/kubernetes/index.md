@@ -1,5 +1,6 @@
 ---
 title: "kubernetes"
+layout: simple
 aliases:
   - /technologies/kubernetes/index.md
   - /technologies/kubernetes

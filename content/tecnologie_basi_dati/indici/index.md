@@ -1,5 +1,6 @@
 ---
 title: Indici
+layout: simple
 aliases:
   - /tecnologie_basi_dati/indici/index.md
   - /tecnologie_basi_dati/indici

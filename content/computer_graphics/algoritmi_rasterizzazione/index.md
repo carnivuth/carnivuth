@@ -1,5 +1,6 @@
 ---
 title: Algoritmi di rasterizzazione
+layout: simple
 date: 2024-12-14
 id: ALGORITMI_RASTERIZZAZIONE
 draft: false

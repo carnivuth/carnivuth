@@ -1,5 +1,6 @@
 ---
 title: "Mathjax"
+layout: simple
 aliases:
   - /technologies/mathjax/index.md
   - /technologies/mathjax

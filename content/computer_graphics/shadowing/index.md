@@ -1,5 +1,6 @@
 ---
 title: Shadowing
+layout: simple
 date: 2025-01-02
 id: SHADOWING
 draft: false

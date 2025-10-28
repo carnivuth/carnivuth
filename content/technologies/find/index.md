@@ -1,5 +1,6 @@
 ---
 title: "find"
+layout: simple
 aliases:
   - /technologies/find/index.md
   - /technologies/find

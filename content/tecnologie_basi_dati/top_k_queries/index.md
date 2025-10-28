@@ -1,5 +1,6 @@
 ---
 draft: false
+layout: simple
 aliases:
   - /tecnologie_basi_dati/top_k_queries/index.md
   - /tecnologie_basi_dati/top_k_queries

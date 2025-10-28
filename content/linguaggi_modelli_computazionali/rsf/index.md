@@ -1,5 +1,6 @@
 ---
 date: 2024-09-21
+layout: simple
 series: ["Linguaggi e modelli computazionali"]
 draft: false
 description: riconoscitore per i linguaggi di tipo 3

@@ -1,5 +1,6 @@
 ---
 title: "traefik"
+layout: simple
 aliases:
   - /technologies/traefik/index.md
   - /technologies/traefik

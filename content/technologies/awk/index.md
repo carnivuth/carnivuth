@@ -1,5 +1,6 @@
 ---
 title: "awk"
+layout: simple
 aliases:
   - /technologies/awk/index.md
   - /technologies/awk

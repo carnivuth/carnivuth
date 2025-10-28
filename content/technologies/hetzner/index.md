@@ -1,5 +1,6 @@
 ---
 title: "hetzner"
+layout: simple
 aliases:
   - /technologies/hetzner/index.md
   - /technologies/hetzner

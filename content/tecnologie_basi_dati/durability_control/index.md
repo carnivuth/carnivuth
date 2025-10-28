@@ -1,5 +1,6 @@
 ---
 date: 2025-02-08
+layout: simple
 aliases:
   - /tecnologie_basi_dati/durability_control/index.md
   - /tecnologie_basi_dati/durability_control

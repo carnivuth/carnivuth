@@ -1,5 +1,6 @@
 ---
 title: "ansible"
+layout: simple
 aliases:
   - /technologies/ansible/index.md
   - /technologies/ansible

@@ -1,5 +1,6 @@
 ---
 date: 2025-02-09
+layout: simple
 aliases:
   - /tecnologie_basi_dati/operatori_relazionali/index.md
   - /tecnologie_basi_dati/operatori_relazionali

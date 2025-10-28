@@ -1,5 +1,6 @@
 ---
 date: 2024-10-15
+layout: simple
 series: ["Linguaggi e modelli computazionali"]
 draft: false
 title: Grammatiche ll(k)

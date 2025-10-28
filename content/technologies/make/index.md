@@ -1,5 +1,6 @@
 ---
 title: "make"
+layout: simple
 aliases:
   - /technologies/make/index.md
   - /technologies/make

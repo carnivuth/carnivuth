@@ -1,5 +1,6 @@
 ---
 title: Webgl
+layout: simple
 date: 2025-01-02
 id: WEBGL
 draft: false

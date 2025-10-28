@@ -1,5 +1,6 @@
 ---
 title: Xwindow system
+layout: simple
 date: 2024-12-07
 id: XWINDOW_SYSTEM
 draft: false

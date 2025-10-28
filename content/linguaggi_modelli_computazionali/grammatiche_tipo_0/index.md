@@ -1,5 +1,6 @@
 ---
 date: 2024-03-10
+layout: simple
 series: ["Linguaggi e modelli computazionali"]
 series_order: 4
 draft: false

@@ -1,5 +1,6 @@
 ---
 draft: false
+layout: simple
 aliases:
   - /tecnologie_basi_dati/progetto_fisico_tuning/index.md
   - /tecnologie_basi_dati/progetto_fisico_tuning

@@ -1,5 +1,6 @@
 ---
 title: Clipping di linee
+layout: simple
 date: 2024-12-17
 id: CLIPPING
 draft: false

@@ -1,5 +1,6 @@
 ---
 date: 2025-02-16
+layout: simple
 permalink: /tecnologie_basi_dati/indici_multidimensionali/index.md
 series: ["Tecnologie progettazione basi di dati"]
 draft: false

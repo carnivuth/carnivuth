@@ -1,5 +1,6 @@
 ---
 title: "Proxmox"
+layout: simple
 aliases:
   - /technologies/proxmox/index.md
   - /technologies/proxmox

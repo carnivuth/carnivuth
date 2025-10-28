@@ -1,5 +1,6 @@
 ---
 title: "Navidrome"
+layout: simple
 aliases:
   - /technologies/navidrome/index.md
   - /technologies/navidrome

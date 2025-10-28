@@ -1,5 +1,6 @@
 ---
 title: Threejs
+layout: simple
 date: 2025-02-11
 id: THREEJS
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: Trasformazioni di vista
+layout: simple
 date: 2024-03-05
 id: trasformazioni_vista
 draft: false

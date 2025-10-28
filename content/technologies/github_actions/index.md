@@ -1,5 +1,6 @@
 ---
 title: "github actions"
+layout: simple
 aliases:
   - /technologies/github_actions/index.md
   - /technologies/github_actions

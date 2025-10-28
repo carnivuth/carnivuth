@@ -1,5 +1,6 @@
 ---
 title: "jq"
+layout: simple
 aliases:
   - /technologies/jq/index.md
   - /technologies/jq

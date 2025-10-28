@@ -1,5 +1,6 @@
 ---
 id: struttura database
+layout: simple
 aliases:
   - /tecnologie_basi_dati/struttura_database/index.md
   - /tecnologie_basi_dati/struttura_database

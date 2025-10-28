@@ -1,5 +1,6 @@
 ---
 title: Html5 funzioni grafiche
+layout: simple
 date: 2025-02-11
 id: HTML5
 draft: false

@@ -1,5 +1,6 @@
 ---
 draft: false
+layout: simple
 aliases:
   - /tecnologie_basi_dati/b+tree/index.md
   - /tecnologie_basi_dati/b+tree

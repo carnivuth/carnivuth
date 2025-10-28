@@ -1,5 +1,6 @@
 ---
 title: Proiezione prospettica
+layout: simple
 date: 2024-12-17
 id: PROIEZIONE_PROSPETTICA
 draft: false

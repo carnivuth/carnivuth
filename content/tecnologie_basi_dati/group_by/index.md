@@ -1,5 +1,6 @@
 ---
 date: 2025-02-13
+layout: simple
 aliases:
   - /tecnologie_basi_dati/group_by/index.md
   - /tecnologie_basi_dati/group_by

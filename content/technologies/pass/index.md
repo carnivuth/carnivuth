@@ -1,5 +1,6 @@
 ---
 title: "Password store"
+layout: simple
 aliases:
   - /technologies/pass/index.md
   - /technologies/pass

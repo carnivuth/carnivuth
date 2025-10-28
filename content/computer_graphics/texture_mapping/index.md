@@ -1,5 +1,6 @@
 ---
 title: Texture mapping
+layout: simple
 date: 2025-01-02
 id: TEXTURE_MAPPING
 draft: false

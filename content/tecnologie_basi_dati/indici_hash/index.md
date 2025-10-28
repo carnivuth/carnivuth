@@ -1,5 +1,6 @@
 ---
 draft: false
+layout: simple
 aliases:
   - /tecnologie_basi_dati/indici_hash/index.md
   - /tecnologie_basi_dati/indici_hash

@@ -1,5 +1,6 @@
 ---
 title: "Neovim"
+layout: simple
 aliases:
   - /technologies/nvim/index.md
   - /technologies/nvim

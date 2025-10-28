@@ -1,5 +1,6 @@
 ---
 draft: false
+layout: simple
 date: 2024-09-21
 series: ["Linguaggi e modelli computazionali"]
 title: Grammatiche di tipo 2 context free

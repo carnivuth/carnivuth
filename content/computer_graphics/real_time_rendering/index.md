@@ -1,5 +1,6 @@
 ---
 title: Algoritmi di real time rendering
+layout: simple
 date: 2024-12-11
 id: REAL_TIME_RENDERING
 draft: false

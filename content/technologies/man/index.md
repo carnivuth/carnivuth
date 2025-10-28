@@ -1,5 +1,6 @@
 ---
 title: "Man"
+layout: simple
 aliases:
   - /technologies/man/index.md
   - /technologies/man

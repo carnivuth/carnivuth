@@ -1,5 +1,6 @@
 ---
 title: "Rust"
+layout: simple
 aliases:
   - content/tecnologies/rust.md
   - content/tecnologies

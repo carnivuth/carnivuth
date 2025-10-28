@@ -1,5 +1,6 @@
 ---
 title: Trasformazioni geometriche
+layout: simple
 date: 2024-12-07
 series_order: 1
 draft: false

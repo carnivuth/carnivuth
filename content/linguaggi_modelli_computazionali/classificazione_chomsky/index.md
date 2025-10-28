@@ -1,5 +1,6 @@
 ---
 date: 2024-03-10
+layout: simple
 series: ["Linguaggi e modelli computazionali"]
 draft: false
 title: Classificazione di chomsky

@@ -1,5 +1,6 @@
 ---
 title: "jenkins"
+layout: simple
 aliases:
   - /technologies/jenkins/index.md
   - /technologies/jenkins

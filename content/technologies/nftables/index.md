@@ -1,5 +1,6 @@
 ---
 title: Nftables
+layout: simple
 date: '2025-07-07'
 draft: false
 description: "manage firwall rules"

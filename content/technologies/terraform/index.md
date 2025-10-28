@@ -1,5 +1,6 @@
 ---
 title: "terraform"
+layout: simple
 aliases:
   - /technologies/terraform/index.md
   - /technologies/terraform

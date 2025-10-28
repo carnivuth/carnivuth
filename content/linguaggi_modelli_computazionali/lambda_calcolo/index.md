@@ -1,5 +1,6 @@
 ---
 date: 2024-10-26
+layout: simple
 series: ["Linguaggi e modelli computazionali"]
 draft: false
 description: La teoria base dietro ai linguaggi moderni

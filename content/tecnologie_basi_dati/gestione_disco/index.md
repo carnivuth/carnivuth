@@ -1,5 +1,6 @@
 ---
 title: Dbms e disco
+layout: simple
 aliases:
   - /tecnologie_basi_dati/gestione_disco/index.md
   - /tecnologie_basi_dati/gestione_disco

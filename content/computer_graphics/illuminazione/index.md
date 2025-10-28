@@ -1,5 +1,6 @@
 ---
 title: Illuminazione
+layout: simple
 date: 2024-12-17
 id: ILLUMINAZIONE
 draft: false

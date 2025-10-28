@@ -1,5 +1,6 @@
 ---
 draft: false
+layout: simple
 aliases:
   - /tecnologie_basi_dati/proiezione/index.md
   - /tecnologie_basi_dati/proiezione

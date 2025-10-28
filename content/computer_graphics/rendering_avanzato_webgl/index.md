@@ -1,5 +1,6 @@
 ---
 title: Rendering avanzato con webgl
+layout: simple
 date: 2025-01-03
 id: RENDERING_AVANZATO_WEBGL
 draft: false

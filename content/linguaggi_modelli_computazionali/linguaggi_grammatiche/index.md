@@ -1,5 +1,6 @@
 ---
 date: 2024-09-21
+layout: simple
 series: ["Linguaggi e modelli computazionali"]
 draft: false
 title: Linguaggi e grammatiche
