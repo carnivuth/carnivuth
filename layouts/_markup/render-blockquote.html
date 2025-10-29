@@ -1,15 +1,14 @@
 {{ $emojis := dict
-  "caution" ":exclamation:"
-  "important" ":information_source:"
-  "note" ":information_source:"
-  "quote" ":information_source:"
-  "tip" ":bulb:"
-  "warning" ":exclamation:"
+  "error" ":red_circle:"
+  "warning" ":warning:"
+  "note" ":large_blue_diamond:"
+  "quote" ":large_blue_diamond:"
+  "tip" ":heavy_check_mark:"
 }}
 
 {{ if eq .Type "alert" }}
   <blockquote class="alert alert-{{ .AlertType }}">
-    <p class="alert-heading">
+  <p class="alert-heading alert-heading-{{ .AlertType }}">
       {{ transform.Emojify (index $emojis .AlertType) }}
       {{ with .AlertTitle }}
         {{ . }}
@@ -24,3 +23,50 @@
     {{ .Text }}
   </blockquote>
 {{ end }}
+<style>
+
+.alert-error{
+border-color: #CC0000 ;
+background-color: #CC000011 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-error{
+color: #CC0000 ;
+}
+
+.alert-warning{
+border-color: #E7C000 ;
+background-color: #E7C00011 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-warning{
+color: #E7C000 ;
+}
+
+.alert-note{
+border-color: #2698BA ;
+background-color: #2698BA11 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-note{
+color: #2698BA ;
+}
+
+.alert-tip{
+border-color: #42B983 ;
+background-color: #42B98311 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-tip{
+color: #42B983 ;
+}
+
+</style>
