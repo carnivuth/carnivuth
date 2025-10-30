@@ -1,0 +1,16 @@
+{
+  "promptDelete": false,
+  "trashOption": "none",
+  "alwaysUpdateLinks": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "content",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./",
+  "showInlineTitle": false,
+  "vimMode": true,
+  "showLineNumber": true,
+  "propertiesInDocument": "source",
+  "readableLineLength": false,
+  "newLinkFormat": "absolute"
+}
