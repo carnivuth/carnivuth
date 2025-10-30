@@ -45,6 +45,12 @@ A --> B & C
 > [!WARNING]
 > `RSVP-TE` requires that for each node in the network mash, a tunnel to each of the other nodes must be configured, so that the number of tunnels scale up exponentially with the number of nodes (*at least in Huawei implementation*) $$N_{tunnels}(network)=N*(N-1) \space with \space N \space as \space number \space of \space Nodes$$
 
+> [!TIP]
+> `RSVP-TE` requires that for each node in the network mash, a tunnel to each of the other nodes must be configured, so that the number of tunnels scale up exponentially with the number of nodes (*at least in Huawei implementation*) $$N_{tunnels}(network)=N*(N-1) \space with \space N \space as \space number \space of \space Nodes$$
+
+> [!ERROR]
+> `RSVP-TE` requires that for each node in the network mash, a tunnel to each of the other nodes must be configured, so that the number of tunnels scale up exponentially with the number of nodes (*at least in Huawei implementation*) $$N_{tunnels}(network)=N*(N-1) \space with \space N \space as \space number \space of \space Nodes$$
+
 ## SID types
 
 - **node SID**: identify a specific node
