@@ -25,8 +25,7 @@ The kubernetes cluster architecture presents itself as follows:
 
 ```mermaid
 flowchart TD
-subgraph control_plane
-A[api-server]
+subgraph control_planthat runs action until a given job is concluded. Controllers does not run actions by themselves but relies on the api A[api-server]
 B[scheduler]
 C[control manager]
 D[etcd]
@@ -60,9 +59,41 @@ control_plane --> worker_1 & worker_2 & worker_3
 
 Where the **control plane** node manages the worker nodes that run pods, pods are managed trough a container runtime (*for example `containerd`*) that runs the containers, the control plane is  also responsible for managing deployments
 
+## Controllers and control loops
+
+Controllers are entities that move that runs action until a given job is concluded, moving the cluster to the desired state
+
+### Control patterns
+
+Controllers can make changes to the cluster in 2 modes, through the api server or directly interacting with external resources
+
+```mermaid
+---
+title: control patterns
+---
+flowchart LR
+subgraph api-server-control
+A@{shape: circle, label: "controller" }
+B@{shape: circle, label: "api-server" }
+C@{shape: rect, label: "cluster" }
+A -- make requests to --> B -- changes state --> C
+end
+subgraph direct-control
+D@{shape: circle, label: "controller" }
+E@{shape: rect, label: "external resource" }
+F@{shape: rect, label: "cluster" }
+D -- make requests to --> E -- changes state --> F
+end
+api-server-control ~~~ direct-control
+```
+
+Controllers typically monitors a set of kubernetes objects and delegate action to other elements and monitor the final state of the created objects
+
+
 ## Networking in a kubernetes cluster
 
 Containers and pods share a private network stack  that allow them to communicate inside the cluster, and a name service
+
 ## Deployment in a kubernetes cluster
 
 Deployment on a kubernetes cluster is done trough the use of the api server using a descriptor that specifies:
