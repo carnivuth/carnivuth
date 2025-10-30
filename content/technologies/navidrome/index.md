@@ -43,7 +43,8 @@ collection/
 ```
 
 In order to divide tracks in album folder run the following oneliners
->[!TIP] [picard](https://picard.musicbrainz.org/) can move files based on metadata values inside folders so this 2 snippets aren't needed
+> [!TIP]
+> [picard](https://picard.musicbrainz.org/) can move files based on metadata values inside folders so this 2 snippets aren't needed
 
 > this will create folder based on ALBUM metadata
 ```bash
