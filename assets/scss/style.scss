@@ -1,0 +1,243 @@
+///mocha
+$mocha-base: #1e1e2e;
+$mocha-text: #cdd6f4;
+$mocha-pink: #f5c2e7;
+$mocha-mauve: #cba6f7;
+$mocha-red: #f38ba8;
+$mocha-maroon: #eba0ac;
+$mocha-peach: #fab387;
+$mocha-yellow: #f9e2af;
+$mocha-green: #a6e3a1;
+$mocha-teal: #94e2d5;
+$mocha-sky: #89dceb;
+$mocha-sapphire: #74c7ec;
+$mocha-blue: #89b4fa;
+$mocha-lavender: #b4befe;
+$mocha-subtext1: #bac2de;
+$mocha-subtext0: #a6adc8;
+$mocha-overlay2: #9399b2;
+$mocha-overlay1: #7f849c;
+$mocha-overlay0: #6c7086;
+$mocha-surface2: #585b70;
+$mocha-surface1: #45475a;
+$mocha-surface0: #313244;
+$mocha-mantle: #181825;
+$mocha-crust: #11111b;
+
+// element colors
+$background: $mocha-base;
+$text: $mocha-text;
+$text-h: $mocha-peach;
+$buttons: $mocha-blue;
+$header: $mocha-overlay0;
+$transitions: $mocha-teal;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  background-color:$background;
+  color: $text;
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 3.8rem 0 .6rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $text-h;
+}
+
+p, ul, ol {
+  font-size: 1.8rem;
+  margin: 0 0 .8em;
+  color: $text;
+}
+
+article {
+  padding: 2rem 1rem;
+  max-width: calc(44em + 2rem);
+  margin: 0 auto;
+  color: $text;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px) translateX(-5px);
+  box-shadow: 0 6px 15px rgba(76,29,149,255); /* Blue shadow on hover */
+}
+
+/* Image inside the card */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Content inside the card */
+.card-content {
+  padding: 15px;
+  text-wrap: wrap;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0px 10px 0;
+  padding: 15px;
+  text-wrap: wrap;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.card-description {
+  font-size: 1em;
+  color: $mocha-text;
+  margin-bottom: 15px;
+}
+
+/* Footer with the action button */
+.card-footer {
+  margin: 10px;
+  justify-content: center;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.card-footer-img{
+  margin: 3px;
+}
+
+.card-button {
+  padding: 10px 20px;
+  background-color: $mocha-teal;
+  color: $mocha-text;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: $mocha-pink;
+}
+
+/* === Base Navbar Styling === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $header;
+  color: $text;
+  padding: 0.75rem 2rem;
+  border: 0;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* === Logo === */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* === Navigation Links === */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: $text;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline effect */
+.navbar-links a::after {
+  content: "";
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: $transitions;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: $transitions;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px){
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: $header;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    border-top: 1px solid #333;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  .card {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 10px;
+  }
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+
