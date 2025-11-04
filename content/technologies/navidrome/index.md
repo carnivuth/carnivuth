@@ -117,4 +117,3 @@ In order to retrieve lyrics for tracks a useful resource is [lrclib](https://lrc
 
 I wrote a simple script that uses the [lrclib](https://lrclib.net/docs) API to download lyrics for a given directory
 
-{{< codeimporter url="https://raw.githubusercontent.com/carnivuth/scripts/refs/heads/main/bin/collection_manage.sh" type="bash" >}}
