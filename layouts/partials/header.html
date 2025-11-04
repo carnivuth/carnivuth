@@ -1,0 +1,7 @@
+<header class="navbar">
+<nav class="navbar-links" >
+  {{ range site.Sections }}
+    <a class="navbar-links" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+</nav>
+</header>
