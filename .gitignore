@@ -1,2 +1,5 @@
 # obsidian files
 .obsidian/workspace.json
+public
+resources
+.hugo_build.lock
