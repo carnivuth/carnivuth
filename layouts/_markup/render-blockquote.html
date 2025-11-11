@@ -1,0 +1,84 @@
+{{ $emojis := dict
+  "error" ":red_circle:"
+  "warning" ":warning:"
+  "note" ":large_blue_diamond:"
+  "quote" ":large_blue_diamond:"
+  "tip" ":heavy_check_mark:"
+}}
+
+{{ if eq .Type "alert" }}
+  <blockquote class="alert alert-{{ .AlertType }}">
+  <p class="alert-heading alert-heading-{{ .AlertType }}">
+      {{ transform.Emojify (index $emojis .AlertType) }}
+      {{ with .AlertTitle }}
+        {{ . }}
+      {{ else }}
+        {{ or (i18n .AlertType) (title .AlertType) }}
+      {{ end }}
+    </p>
+    {{ .Text }}
+  </blockquote>
+{{ else }}
+  <blockquote>
+    {{ .Text }}
+  </blockquote>
+{{ end }}
+<style>
+
+.alert-error{
+border-color: #CC0000 ;
+background-color: #CC000030 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-error{
+color: #CC0000 ;
+}
+
+.alert-warning{
+border-color: #E7C000 ;
+background-color: #E7C00030 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-warning{
+color: #E7C000 ;
+}
+
+.alert-note{
+border-color: #2698BA ;
+background-color: #2698BA30 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-note{
+color: #2698BA ;
+}
+
+.alert-cite{
+font-style: italic;
+border-color: #E1D0B3 ;
+background-color: #E1D0B330 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-cite{
+color: #E1D0B3 ;
+}
+
+.alert-tip{
+border-color: #42B983 ;
+background-color: #42B98330 ;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.alert-heading-tip{
+color: #42B983 ;
+}
+
+</style>
