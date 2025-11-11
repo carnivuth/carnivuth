@@ -1,7 +1,22 @@
-<header class="navbar">
-<nav class="navbar-links" >
-  {{ range site.Sections }}
-    <a class="navbar-links" href="{{ .RelPermalink }}">{{ .Title }}</a>
-    {{ end }}
-</nav>
+{{ $header := resources.Get "scss/header.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $header.RelPermalink }}">
+<header class="site-header">
+  <nav class="header-nav">
+    <div class="nav-container">
+      <!-- Logo/Home Link -->
+      <a href="{{ .Site.BaseURL }}" class="site-logo">
+        {{ .Site.Title }}
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        <li><a href="{{ .Site.BaseURL }}tags/">Tags</a></li>
+        <li><a href="{{ .Site.BaseURL }}categories/">Categories</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
+
+<style>
+</style>

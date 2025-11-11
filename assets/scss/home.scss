@@ -1,0 +1,107 @@
+@import "catppucin-mocha.scss";
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: $mocha-lavender;
+  border-style: solid;
+}
+.home-text {
+  text-align: center;
+  max-width: 40%;
+  color: #333;
+  font-size: 3.2rem;
+}
+.home-img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+  .homepage-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .homepage-content {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .author-image {
+    margin-bottom: 2rem;
+  }
+
+  .author-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .site-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: $mocha-blue;
+  }
+
+  .author-name {
+    font-size: 1.25rem;
+    color: #718096;
+    margin-bottom: 2rem;
+  }
+
+  .search-container {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .search-button {
+    padding: 1rem 1.5rem;
+    background-color: #4299e1;
+    border: none;
+    cursor: not-allowed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .search-button:hover {
+    background-color: #3182ce;
+  }
+
+  @media (max-width: 640px) {
+    .site-title {
+      font-size: 2rem;
+    }
+
+    .author-image img {
+      width: 120px;
+      height: 120px;
+    }
+  }
