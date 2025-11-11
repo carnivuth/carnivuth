@@ -27,6 +27,10 @@
     <title>{{ or .Title .Site.Title }}{{ if ne .Kind "home" }} | {{ .CurrentSection.Title }}{{ end }}</title>
     {{ $style := resources.Get "scss/style.scss" | toCSS | minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ $calloutBlocks := resources.Get "scss/callout-blocks.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $calloutBlocks.RelPermalink }}">
+    {{ $card := resources.Get "scss/card.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $card.RelPermalink }}">
   </head>
   <body>
     {{ partial "header" }}
