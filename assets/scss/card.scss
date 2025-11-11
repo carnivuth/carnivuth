@@ -17,7 +17,7 @@
 
 .card:hover {
   transform: translateY(-5px) translateX(-5px);
-  box-shadow: 0 6px 15px rgba(76,29,149,255); /* Blue shadow on hover */
+  box-shadow: 0 6px 15px $mocha-teal; /* Blue shadow on hover */
 }
 
 /* Image inside the card */

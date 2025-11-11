@@ -1,15 +1,10 @@
 {{ define "page" }}
-{{ with .GetTerms "tags" }}
-  <p>Tags</p>
-  <ul>
-    {{ range . }}
-      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-    {{ end }}
-  </ul>
-{{ end }}
 <article class="container">
   <a href="{{ .CurrentSection.RelPermalink }}">Back to {{ .CurrentSection.Title }}</a>
   <h1>{{ .Title }}</h1>
+  {{ with .GetTerms "tags" }}
+  {{ partial "tags" .}}
+  {{ end }}
   {{ .Content }}
 </article>
 {{ end }}

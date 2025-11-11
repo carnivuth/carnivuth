@@ -1,0 +1,21 @@
+@import "catppucin-mocha.scss";
+
+.tag-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.tag{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  border-color: $mocha-teal;
+  border-width: 1px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tag:hover{
+  box-shadow: 0 6px 15px $mocha-teal; /* Blue shadow on hover */
+}
+
