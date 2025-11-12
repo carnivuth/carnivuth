@@ -1,107 +1,72 @@
 @import "catppucin-mocha.scss";
 
-.home-container {
+.homepage-container {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  border-width: 10px;
-  border-color: $mocha-lavender;
-  border-style: solid;
 }
-.home-text {
+
+.homepage-content {
   text-align: center;
-  max-width: 40%;
-  color: #333;
-  font-size: 3.2rem;
-}
-.home-img {
-  max-width: 80%;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
 }
 
-  .homepage-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
+.author-image {
+  margin-bottom: 2rem;
+}
 
-  .homepage-content {
-    text-align: center;
-    max-width: 600px;
-    width: 100%;
-  }
+.author-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .author-image {
-    margin-bottom: 2rem;
+.site-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: $mocha-blue;
+}
+
+.author-name {
+  font-size: 1.25rem;
+  color: $mocha-peach;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  max-width: 800px;
+  padding: 1rem 1.5rem;
+  border-color: $mocha-blue;
+  background-color: rgba($mocha-blue, 0.25);;
+  color: $mocha-blue;
+  border: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "JetBrains Mono", monospace;
+  outline: solid;
+}
+
+@media (max-width: 640px) {
+  .site-title {
+    font-size: 2rem;
   }
 
   .author-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    height: 120px;
   }
-
-  .site-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: $mocha-blue;
-  }
-
-  .author-name {
-    font-size: 1.25rem;
-    color: #718096;
-    margin-bottom: 2rem;
-  }
-
-  .search-container {
-    display: flex;
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    overflow: hidden;
-  }
-
-  .search-input {
-    flex: 1;
-    padding: 1rem 1.5rem;
-    border: none;
-    font-size: 1rem;
-    outline: none;
-  }
-
-  .search-button {
-    padding: 1rem 1.5rem;
-    background-color: #4299e1;
-    border: none;
-    cursor: not-allowed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-
-  .search-button:hover {
-    background-color: #3182ce;
-  }
-
-  @media (max-width: 640px) {
-    .site-title {
-      font-size: 2rem;
-    }
-
-    .author-image img {
-      width: 120px;
-      height: 120px;
-    }
-  }
+}
