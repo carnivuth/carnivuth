@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="{{ $search.RelPermalink }}">
 
 <!-- hidden overlay for global search -->
-<div id="searchOverlay" class="search-overlay" onclick="if(event.target === this) this.style.display='none'">
+<div id="searchOverlay" class="search-overlay" onclick="if(event.target === this){ closeOverlay()}">
   <div class="search-overlay-content">
       <input oninput="executeSearch(this.value)"  placeholder="Looks for knowledge" id="search-query" class="search-input">
 
@@ -29,7 +29,7 @@
 </div>
 
 <!-- actual button rendered in the partial to call for the overlay -->
-<button class="search-trigger" onclick="document.getElementById('searchOverlay').style.display='flex'">
+<button class="search-trigger" onclick="openOverlay()">
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="11" cy="11" r="8"></circle>
     <path d="m21 21-4.35-4.35"></path>

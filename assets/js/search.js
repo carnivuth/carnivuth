@@ -114,13 +114,21 @@ function controlSearchOverlay(e){
   searchOverlay=document.getElementById('searchOverlay');
   searchQuery=document.getElementById("search-query");
   if (e.code === 'Slash' ) {
-      searchOverlay.style.display='flex';
-      searchQuery.focus();
+    openOverlay();
   }
 
   if (e.code === 'Escape') {
-    searchOverlay.style.display='none';
+    closeOverlay();
   }
+}
+function openOverlay(){
+  searchOverlay=document.getElementById('searchOverlay');
+  searchQuery=document.getElementById("search-query");
+  searchOverlay.style.display='flex';
+  searchQuery.focus();
+}
+function closeOverlay(){
+  searchOverlay.style.display='none';
 }
 document.addEventListener('keyup', controlSearchOverlay, false);
 
