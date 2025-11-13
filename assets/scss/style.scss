@@ -35,6 +35,14 @@ h1 {
   font-size: 3.2rem;
 }
 
+code {
+ border-radius: 3px;
+ margin: 2.5rem;
+ border-style: solid;
+ border-color: $mocha-overlay0;
+ background-color: rgba($mocha-overlay0,0.8);
+}
+
 h2 {
   font-size: 2.5rem;
 }
@@ -49,6 +57,9 @@ a:hover {
   color: $link-hover;
 }
 
+li{
+  margin: 0.2em;
+}
 p, ul, ol {
   font-size: 1.8rem;
   margin: 0 0 .8em;
