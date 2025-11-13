@@ -5,12 +5,14 @@
   <h1>{{ .Title }}</h1>
   {{ partial "tags" (.GetTerms "tags" ) }}
   <div class="page-container">
-  <div class="page-content">
-  {{ .Content }}
-  </div>
-  <div class="page-toc">
-      {{ partial "toc" . }}
-  </div>
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+    <!--
+<div class="page-toc">
+{{ partial "toc" . }}
+</div>
+-->
   </div>
 
 </article>
