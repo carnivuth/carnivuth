@@ -6,10 +6,13 @@
     <div class="card-title">
       {{ .Page.Title }} ({{ .Count }})
   </div>
+    {{ with .Page.Params.Image }}
+    <div class="card-image"><img href="{{ . }}"></div>
+    {{ end }}
     <div calss="card-description">
       {{ .Page.Description }}
 
-          </div>
+    </div>
 </a>
   {{ end }}
 </div>
