@@ -16,15 +16,16 @@
   background-color: rgba($mocha-blue,0.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   overflow: hidden;
+  color: $mocha-blue;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin: 10px;
 }
 
 .card:hover {
   transform: translateY(-5px) translateX(-5px);
-  box-shadow: 0 6px 15px $mocha-teal; /* Blue shadow on hover */
-  background-color: rgba($mocha-teal,0.2);
-  color: $mocha-teal;
+  box-shadow: 0 6px 15px $mocha-peach; /* Blue shadow on hover */
+  background-color: rgba($mocha-peach,0.2);
+  color: $mocha-peach;
 }
 
 /* Image inside the card */

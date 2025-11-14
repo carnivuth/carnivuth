@@ -46,6 +46,29 @@ code {
  text-wrap: wrap;
 }
 
+table {
+  border-color: $mocha-maroon;
+  border-radius: 10px;
+  border-style: dashed;
+  background-color: rgba($mocha-maroon,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 10px;
+  th{
+  color: $mocha-maroon;
+  }
+}
+table:hover {
+  transform: translateY(-5px) translateX(-5px);
+  box-shadow: 0 6px 15px $mocha-peach; /* Blue shadow on hover */
+  background-color: rgba($mocha-peach,0.2);
+  border-color: $mocha-peach;
+  th{
+  color: $mocha-peach;
+  }
+}
 
 
 h2 {
@@ -54,12 +77,6 @@ h2 {
 
 h1,h2,h3,h4,h5,h6 {
   color: $text-h;
-}
-a {
-  color: $link;
-}
-a:hover {
-  color: $link-hover;
 }
 
 li{
