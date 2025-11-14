@@ -1,5 +1,7 @@
 ---
 title: MANET_POSITIONING_SYSTEMS
+layout: simple
+date: 2024-06-08
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/positioning_systems/global_positioning_system.md"

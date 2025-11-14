@@ -1,5 +1,7 @@
 ---
 title: TEMPORARY_ORDERED_ROUTING_ALGORITHM
+layout: simple
+date: 2024-06-07
 series: ["Mobile systems"]
 draft: true
 aliases: []

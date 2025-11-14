@@ -1,5 +1,7 @@
 ---
 title: REQUEST_RESPONSE
+layout: simple
+date: 2024-06-15
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/rest.md"

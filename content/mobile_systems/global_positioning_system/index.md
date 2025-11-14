@@ -1,5 +1,7 @@
 ---
 title: GLOBAL_POSITIONING_SYSTEM
+layout: simple
+date: 2024-06-08
 series: ["Mobile systems"]
 draft: true
 aliases: []

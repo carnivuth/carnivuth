@@ -1,5 +1,7 @@
 ---
 title: MANETS
+layout: simple
+date: 2024-06-07
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/manets/wifi_direct.md"

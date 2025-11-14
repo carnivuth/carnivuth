@@ -1,5 +1,7 @@
 ---
 title: NO_INFRASTRUCTURE_POSITIONING_SYSTEMS
+layout: simple
+date: 2024-06-09
 series: ["Mobile systems"]
 draft: true
 aliases: []

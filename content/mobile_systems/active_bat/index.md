@@ -1,5 +1,7 @@
 ---
 title: ACTIVE_BAT
+layout: simple
+date: 2024-06-09
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/positioning_systems/radar.md"

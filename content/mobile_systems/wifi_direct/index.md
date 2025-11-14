@@ -1,5 +1,7 @@
 ---
-title: WIFI_DIRECT
+title: Wifi direct
+layout: simple
+date: 2024-06-07
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/manets/manets_routing.md"
@@ -8,8 +10,6 @@ aliases: []
 tags: []
 series_order: 10
 ---
-
-# Wifi direct
 
 WiFi direct is the WiFi solution for ad hoc networks, It provides a node that plays the role of the Group owner GO and serve the other WiFi capable nodes like an AP in infrastructured mode:
 
@@ -32,12 +32,12 @@ end
 There are some limitations:
 
 - the group owner cannot be changed in a session
-- cross connectivity must pass trough the GO and need to be handled at the network layer (e.g. thorugh NAT)
+- cross connectivity must pass trough the GO and need to be handled at the network layer (e.g. Through NAT)
 - if the GO leaves the group the network is destroyed and need a new creation process
 
 ## Go determination
 
-there are 2 phases for the formation of a WiFi network group:
+There are 2 phases for the formation of a WiFi network group:
 
 - determination of the GO
 - provisioning of the GO
@@ -51,7 +51,7 @@ Determination of the group owner can be done by 2 modes:
 
 There are three ways to perform group formation:
 
-- **standard** p2p devices discovers each other and then [determines the group owner](#GO%20DETERMINATION)
+- **standard** P2P devices discovers each other and then [determines the group owner](#GO%20DETERMINATION)
 
 - **autonomous** a device create a group and becomes the group owner waiting for
 
@@ -70,4 +70,3 @@ Two ways to implement power saving capabilities
 
 WiFi direct uses WPS to implement a simple layer of security that has minimum user interaction requirements (*ask pin or ask for confirmation*)
 
-[<](pages/mobile_systems/manets/manets.md)[>](pages/mobile_systems/manets/manets_routing.md)

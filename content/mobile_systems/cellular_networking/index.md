@@ -1,5 +1,6 @@
 ---
 title: Cellular networking
+layout: simple
 date: 2024-03-10
 series: ["Mobile systems"]
 draft: false

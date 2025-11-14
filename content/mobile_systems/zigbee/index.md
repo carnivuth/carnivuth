@@ -1,17 +1,17 @@
 ---
-title: ZIGBEE
+title: Zigbee
+layout: simple
+description: ieee 802.15.4 for large IoT networks
+date: 2024-03-21
 series: ["Mobile systems"]
 draft: true
 aliases: []
 tags: []
-series_order: 8
+series_order: 6
 next: pages/mobile_systems/manets/manets.md
-previous: pages/mobile_systems/wireless/bluetooth.md
 ---
 
-# Zigbee (ieee 802.15.4)
-
-Protocol optimized for some vertical domains IOT oriented where [bluetooth](pages/mobile_systems/wireless/bluetooth.md) fails like
+Protocol optimized for some vertical domains IOT oriented where [bluetooth](/mobile_systems/bluetooth) fails like
 
 - industrial application
 - home automation and home appliances controls

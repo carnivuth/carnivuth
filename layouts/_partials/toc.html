@@ -1,0 +1,13 @@
+<details class="notices tip">
+  <summary class="label">Table of Contents</summary>
+  <ul>
+    {{ $headings := findRE "<h2.*?>(.|\n])+?</h2>" .Content }}
+    {{ if (le (len $headings) 1) }}
+      {{ $headings = findRE "<h3.*?>(.|\n])+?</h3>" .Content }}
+    {{ end }}
+    {{ range $headings }}
+      {{ $id := findRE "id=\".*\"" . }}
+      <li><a href="#{{ $id }}">{{ . | htmlUnescape | plainify }}</a></li>
+    {{ end }}
+  </ul>
+</details>

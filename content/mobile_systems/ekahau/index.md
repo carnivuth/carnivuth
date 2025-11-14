@@ -1,5 +1,7 @@
 ---
 title: EKAHAU
+layout: simple
+date: 2024-06-09
 series: ["Mobile systems"]
 draft: true
 aliases: []

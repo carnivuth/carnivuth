@@ -1,5 +1,7 @@
 ---
 title: GREEDY_PERIMETER_STATELESS_ROUTING
+layout: simple
+date: 2024-06-07
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/manets/temporary_ordered_routing_algorithm.md"

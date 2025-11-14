@@ -1,5 +1,6 @@
 ---
 title: MEDIUM_ACCESS_CONTROL
+layout: simple
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/wireless/csma.md"

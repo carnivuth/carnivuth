@@ -1,5 +1,7 @@
 ---
 title: I_TCP
+layout: simple
+date: 2024-06-08
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobile_middleware/mobile_middleware.md"

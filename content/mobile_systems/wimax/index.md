@@ -1,5 +1,6 @@
 ---
 title: Wimax
+layout: simple
 date: 2024-06-06
 series: ["Mobile systems"]
 draft: false

@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <div class="card-container">
+  {{ range .Data.Terms.ByCount }}
+  <div class="card">
+    <div class="card-title">
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})
+    </div>
+  </div>
+  {{ end }}
+{{ end }}

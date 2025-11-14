@@ -1,5 +1,7 @@
 ---
 title: MANETS_ROUTING
+layout: simple
+date: 2024-03-21
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/manets/dinamic_source_routing.md"

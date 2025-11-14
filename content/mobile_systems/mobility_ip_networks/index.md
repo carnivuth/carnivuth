@@ -1,5 +1,7 @@
 ---
 title: MOBILITY_IP_NETWORKS
+layout: simple
+date: 2024-06-08
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobility/host_identity_protocol.md"

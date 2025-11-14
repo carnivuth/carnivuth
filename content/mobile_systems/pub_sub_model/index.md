@@ -1,5 +1,7 @@
 ---
 title: PUB_SUB_MODEL
+layout: simple
+date: 2024-06-15
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/pub_sub_protocols.md"

@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ $home := resources.Get "scss/home.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $home.RelPermalink }}">
+<div class="homepage-container">
+  <div class="homepage-content">
+    <!-- Author Image -->
+    <div class="author-image">
+      <img src="/avatar.jpg" alt="{{ .Site.Author.name }}">
+    </div>
+
+    <!-- Title -->
+    <h1 class="site-title">{{ .Site.Title }}</h1>
+
+    <!-- Author Name (optional) -->
+    <p class="author-name">{{ .Site.Params.Author.name }}</p>
+
+    <!-- Search Bar Placeholder -->
+
+      {{ partial "search" }}
+  </div>
+</div>
+
+<style>
+</style>
+{{ end }}

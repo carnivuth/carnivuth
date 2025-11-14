@@ -1,5 +1,7 @@
 ---
 title: MULTIPLE_POSITIONING_SYSTEMS_SOLUTIONS
+layout: simple
+date: 2024-06-09
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobility/mobility_ip_networks.md"

@@ -1,5 +1,7 @@
 ---
 title: MOBILE_IP
+layout: simple
+date: 2024-06-08
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobility/hierarchical_mobile_ipv6.md"

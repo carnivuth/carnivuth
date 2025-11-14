@@ -1,5 +1,7 @@
 ---
 title: DISTRIBUTION_PATTERNS
+layout: simple
+date: 2024-06-11
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobile_middleware/resource_management_patterns.md"

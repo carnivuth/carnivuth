@@ -1,0 +1,4 @@
+{{ with ( resources.Get .Destination) }}
+        <img src="{{ .RelPermalink | safeURL }}" alt="{{ .Text }}" />
+{{ end }}
+

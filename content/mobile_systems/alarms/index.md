@@ -1,5 +1,7 @@
 ---
 title: ALARMS
+layout: simple
+date: 2024-06-18
 series: ["Mobile systems"]
 draft: true
 aliases: []

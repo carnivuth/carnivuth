@@ -1,5 +1,7 @@
 ---
 title: ASYNCHRONOUS_TECHNIQUES
+layout: simple
+date: 2024-06-18
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/android/job_scheduler.md"

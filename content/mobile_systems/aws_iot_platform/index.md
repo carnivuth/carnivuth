@@ -1,5 +1,7 @@
 ---
 title: AWS_IOT_PLATFORM
+layout: simple
+date: 2024-06-15
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/azure_iot_platform.md"

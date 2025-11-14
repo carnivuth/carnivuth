@@ -6,11 +6,12 @@
   "newFileFolderPath": "content",
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "static",
   "showInlineTitle": false,
   "vimMode": true,
   "showLineNumber": true,
   "propertiesInDocument": "source",
   "readableLineLength": false,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "useTab": false
 }

@@ -1,5 +1,7 @@
 ---
 title: PATTERNS
+layout: simple
+date: 2024-06-11
 series: ["Mobile systems"]
 draft: true
 aliases: []

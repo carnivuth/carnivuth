@@ -1,5 +1,7 @@
 ---
 title: PROXY_HIERARCHICAL_MOBILE_IPV6
+layout: simple
+date: 2024-06-08
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/mobility/i_tcp.md"

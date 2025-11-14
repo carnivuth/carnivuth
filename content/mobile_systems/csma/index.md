@@ -1,5 +1,6 @@
 ---
 title: CSMA
+layout: simple
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/wireless/wifi.md"

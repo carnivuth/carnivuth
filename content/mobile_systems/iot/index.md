@@ -1,5 +1,7 @@
 ---
 title: IOT
+layout: simple
+date: 2024-05-16
 series: ["Mobile systems"]
 draft: true
 next: "pages/mobile_systems/iot/scada.md"

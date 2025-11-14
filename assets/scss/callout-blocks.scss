@@ -1,0 +1,68 @@
+@import "catppucin-mocha.scss";
+$alert-note-background: $mocha-blue;
+$alert-note-heading: $mocha-teal;
+$alert-note-text: $mocha-teal;
+//$alert-cite-background:;
+//$alert-cite-heading:;
+//$alert-cite-text:;
+//$alert-warning-background:;
+//$alert-warning-heading:;
+//$alert-warning-text:;
+//$alert-error-background:;
+//$alert-error-heading:;
+//$alert-error-text:;
+.alert-error, .alert-tip, .alert-note, .alert-cite, .alert-warning{
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+.alert-error{
+  border-color: #CC0000 ;
+  background-color: #CC000030 ;
+}
+
+.alert-heading-error{
+  color: #CC0000 ;
+}
+
+.alert-warning{
+  border-color: #E7C000 ;
+  background-color: #E7C00030 ;
+}
+
+.alert-heading-warning{
+  color: #E7C000 ;
+}
+
+.alert-note{
+  border-color: $alert-note-text ;
+  background-color: $alert-note-background;
+  color: $alert-note-text;
+}
+
+.alert-heading-note{
+  color: $alert-note-heading ;
+}
+
+.alert-cite{
+  font-style: italic;
+  border-color: #E1D0B3 ;
+  background-color: #E1D0B330 ;
+}
+
+.alert-heading-cite{
+  color: #E1D0B3 ;
+}
+
+.alert-tip{
+  border-color: #42B983 ;
+  background-color: #42B98330 ;
+}
+
+.alert-heading-tip{
+  color: #42B983 ;
+}

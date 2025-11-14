@@ -1,5 +1,7 @@
 ---
 title: Events
+layout: simple
+date: 2024-06-16
 series: ["Mobile systems"]
 draft: true
 aliases: []

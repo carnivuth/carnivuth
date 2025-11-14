@@ -1,5 +1,6 @@
 ---
 title: Wireless communications for mobile devices
+layout: simple
 description: wireless problems to manage in mobile environments
 date: 2024-06-04
 series: ["Mobile systems"]
