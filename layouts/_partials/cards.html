@@ -4,8 +4,12 @@
   {{ range . }}
 <a class="card" href="{{ .Page.RelPermalink }}">
     <div class="card-title">
-      {{ .Page.LinkTitle }} ({{ .Count }})
+      {{ .Page.Title }} ({{ .Count }})
   </div>
+    <div calss="card-description">
+      {{ .Page.Description }}
+
+          </div>
 </a>
   {{ end }}
 </div>

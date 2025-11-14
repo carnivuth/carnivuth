@@ -26,6 +26,13 @@
   box-shadow: 0 6px 15px $mocha-peach; /* Blue shadow on hover */
   background-color: rgba($mocha-peach,0.2);
   color: $mocha-peach;
+  .card-title a{
+  color: $mocha-peach;
+  }
+  .card-title {
+  color: $mocha-peach;
+  }
+
 }
 
 /* Image inside the card */
@@ -53,11 +60,15 @@
   text-align: center;
   font-size: 1.5rem;
   line-height: 2rem;
+  color: $mocha-blue;
+  a {
+  color: $mocha-blue;
+  }
 }
 
 .card-description {
   font-size: 1em;
-  color: $mocha-text;
+  color: $mocha-teal;
   margin-bottom: 15px;
 }
 

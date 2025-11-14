@@ -17,8 +17,12 @@
     <!-- Search Bar Placeholder -->
 
       {{ partial "search" }}
-    <h2>Contents</h2>
+    <h2>Categories</h2>
   {{ partial "cards" .Site.Taxonomies.categories.ByCount }}
+    <h2>Posts</h2>
+    {{  $posts := where .Site.RegularPages "Params.categories" "intersect" "posts" }}
+  {{ partial "cards" $posts }}
+  </div>
   </div>
 </div>
 

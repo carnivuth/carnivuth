@@ -12,6 +12,7 @@
   border-radius: 3px;
   border-style: solid;
   border-color: $mocha-blue;
+  color: $mocha-blue;
   border-width: 1px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -20,6 +21,6 @@
 
   color: $mocha-teal;
   border-color: $mocha-teal;
-  box-shadow: 0 6px 15px $mocha-teal; /* Blue shadow on hover */
+  box-shadow: 0 6px 15px $mocha-teal; /* blue shadow on hover */
 }
 

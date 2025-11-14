@@ -1,22 +1,11 @@
 @import "catppucin-mocha.scss";
-$alert-note-background: $mocha-blue;
-$alert-note-heading: $mocha-teal;
-$alert-note-text: $mocha-teal;
-//$alert-cite-background:;
-//$alert-cite-heading:;
-//$alert-cite-text:;
-//$alert-warning-background:;
-//$alert-warning-heading:;
-//$alert-warning-text:;
-//$alert-error-background:;
-//$alert-error-heading:;
-//$alert-error-text:;
 .alert-error, .alert-tip, .alert-note, .alert-cite, .alert-warning{
   padding: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-style: dashed;
 }
 
 
@@ -39,14 +28,16 @@ $alert-note-text: $mocha-teal;
 }
 
 .alert-note{
-  border-color: $alert-note-text ;
-  background-color: $alert-note-background;
-  color: $alert-note-text;
+  border-color: $mocha-teal ;
+  background-color: rgba($mocha-blue,0.2);
+  border-color: $mocha-blue;
+  color: $mocha-teal;
+
+  .alert-heading-note{
+    color: $mocha-blue ;
+  }
 }
 
-.alert-heading-note{
-  color: $alert-note-heading ;
-}
 
 .alert-cite{
   font-style: italic;

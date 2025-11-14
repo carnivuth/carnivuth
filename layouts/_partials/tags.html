@@ -2,6 +2,6 @@
   <link rel="stylesheet" href="{{ $tags.RelPermalink }}">
   <div class="tag-container">
     {{ range . }}
-    <div class="tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+    <a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
     {{ end }}
   </div>
