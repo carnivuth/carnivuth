@@ -1,11 +1,21 @@
 @import "catppucin-mocha.scss";
-  .page-content {
-    width: 80%;
+.page-content {
+  width: 80%;
   padding-right: 2rem;
-  }
-  .page-container {
-    display: flex;
-  }
-  .page-toc {
-    width: 20%;
-  }
+}
+.page-container {
+  display: flex;
+}
+.page-toc {
+  width: 20%;
+}
+a {
+  color: $mocha-blue;
+}
+a:hover {
+  color: $mocha-peach;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

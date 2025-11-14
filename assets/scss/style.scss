@@ -36,14 +36,14 @@ h1 {
 }
 
 code {
- border-radius: 4px;
- margin-top: .5rem;
- margin-bottom: .5rem;
- border-style: solid;
- padding: 0.2rem;
- border-color: $mocha-overlay0;
- background-color: rgba($mocha-overlay0,0.2);
- text-wrap: wrap;
+  border-radius: 4px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border-style: solid;
+  padding: 0.2rem;
+  border-color: $mocha-overlay0;
+  background-color: rgba($mocha-overlay0,0.2);
+  text-wrap: wrap;
 }
 
 table {
@@ -57,7 +57,7 @@ table {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin: 10px;
   th{
-  color: $mocha-maroon;
+    color: $mocha-maroon;
   }
 }
 table:hover {
@@ -66,7 +66,7 @@ table:hover {
   background-color: rgba($mocha-peach,0.2);
   border-color: $mocha-peach;
   th{
-  color: $mocha-peach;
+    color: $mocha-peach;
   }
 }
 
