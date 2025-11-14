@@ -2,17 +2,14 @@
 <link rel="stylesheet" href="{{ $card.RelPermalink }}">
 <div class="card-container">
   {{ range . }}
-<a class="card" href="{{ .Page.RelPermalink }}">
+  <a class="card" href="{{ .Page.RelPermalink }}" >
     <div class="card-title">
-      {{ .Page.Title }} ({{ .Count }})
+      {{ .Page.Title }}
   </div>
+    <div class="card-description"> {{ .Page.Description }}</div>
     {{ with .Page.Params.Image }}
-    <div class="card-image"><img href="{{ . }}"></div>
+    <img class="card-image" src="{{ . }}">
     {{ end }}
-    <div calss="card-description">
-      {{ .Page.Description }}
-
-    </div>
 </a>
   {{ end }}
 </div>

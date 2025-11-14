@@ -16,14 +16,16 @@
 
     <!-- Search Bar Placeholder -->
 
-      {{ partial "search" }}
-    <h2>Categories</h2>
-  {{ partial "cards" .Site.Taxonomies.categories.ByCount }}
+    {{ partial "search" }}
     <h2>Posts</h2>
-    {{  $posts := where .Site.RegularPages "Params.categories" "intersect" "posts" }}
-  {{ partial "cards" $posts }}
+    {{ $categories := slice "posts" }}
+    {{ $pages := .Site.RegularPages }}
+    {{  $posts := where $pages "Params.categories" $categories }}
+    {{ partial "cards" $posts }}
+    <h2>Categories</h2>
+    {{ partial "cards" .Site.Taxonomies.categories.ByCount }}
   </div>
-  </div>
+</div>
 </div>
 
 <style>
