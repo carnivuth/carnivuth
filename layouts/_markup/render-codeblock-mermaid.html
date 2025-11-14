@@ -1,3 +1,5 @@
+{{ $mermaid := resources.Get "scss/mermaid.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $mermaid.RelPermalink }}">
 <div class="mermaid" align="center">
   {{ .Inner |  safeHTML }}
 </div>
