@@ -17,6 +17,8 @@
     <!-- Search Bar Placeholder -->
 
       {{ partial "search" }}
+    <h2>Contents</h2>
+  {{ partial "cards" .Site.Taxonomies.categories.ByCount }}
   </div>
 </div>
 

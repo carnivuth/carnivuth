@@ -1,0 +1,11 @@
+{{ $card := resources.Get "scss/card.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $card.RelPermalink }}">
+<div class="card-container">
+  {{ range . }}
+<a class="card" href="{{ .Page.RelPermalink }}">
+    <div class="card-title">
+      {{ .Page.LinkTitle }} ({{ .Count }})
+  </div>
+</a>
+  {{ end }}
+</div>
