@@ -12,6 +12,8 @@
 .card {
   width: 30%;
   border-radius: 10px;
+  border-style: dashed;
+  background-color: rgba($mocha-blue,0.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -21,6 +23,8 @@
 .card:hover {
   transform: translateY(-5px) translateX(-5px);
   box-shadow: 0 6px 15px $mocha-teal; /* Blue shadow on hover */
+  background-color: rgba($mocha-teal,0.2);
+  color: $mocha-teal;
 }
 
 /* Image inside the card */
