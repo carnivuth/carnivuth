@@ -67,3 +67,42 @@ enableEmoji = true
       type = 'fragments'
       weight = 10
 
+[markup]
+[goldmark]
+[renderer]
+unsafe = true
+[extensions]
+[passthrough]
+enable = true
+[delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['$', '$'],['\(', '\)']]
+
+[highlight]
+  noClasses = false
+
+[tableOfContents]
+  startLevel = 2
+  endLevel = 4
+
+[params]
+math = true
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+
+ [params.author]
+   name = "Matteo Longhi"
+   email = "matti200042@gmail.com"
+   image = "avatar.jpg"
+   imageQuality = 96
+   headline = "homelab addicted guy with a passion for Music and dogs"
+   bio = " I'm a software engineer with a passion for Music, food, dogs, videogames and open source software, i'm currently working as a devops engineer"
+   links = [
+     { email = "mailto:matti200042@gmail.com" },
+     { link = "https://www.carnivuth.org/" },
+     { github = "https://github.com/carnivuth" },
+     { instagram = "https://instagram.com/longhi.matteo" },
+     { linkedin = "https://linkedin.com/in/matteo-longhi-b3a433247" },
+   ]
