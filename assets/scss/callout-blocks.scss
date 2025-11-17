@@ -8,7 +8,6 @@
   border-style: dashed;
 }
 
-
 .alert-error{
   border-color: $mocha-red ;
   background-color: rgba($mocha-red,0.2) ;
@@ -16,7 +15,6 @@
     color: $mocha-red ;
   }
 }
-
 
 .alert-warning{
   border-color: $mocha-yellow ;
@@ -26,16 +24,13 @@
   }
 }
 
-
 .alert-note{
   border-color: $mocha-blue ;
   background-color: rgba($mocha-blue,0.2);
-
   .alert-heading-note{
     color: $mocha-blue ;
   }
 }
-
 
 .alert-cite{
   font-style: italic;
@@ -46,7 +41,6 @@
   }
 }
 
-
 .alert-tip{
   border-color: $mocha-green ;
   background-color: rgba($mocha-green,0.2);
@@ -54,4 +48,3 @@
     color: $mocha-green ;
   }
 }
-
