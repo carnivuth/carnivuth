@@ -1,3 +1,1 @@
-- fix table visualization
-- resize image to fit article size
 - fix toc that renders wrong links

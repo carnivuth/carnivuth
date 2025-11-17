@@ -3,21 +3,19 @@
 <link rel="stylesheet" href="{{ $page.RelPermalink }}">
 <article class="container">
   <h1>{{ .Title }}</h1>
-  {{ with (.GetTerms "tags" ) }}
-    {{ partial "tags" .  }}
-  {{ end }}
   <div class="page-container">
     <div class="page-content">
+      {{ with (.GetTerms "tags" ) }}
+        {{ partial "tags" .  }}
+      {{ end }}
       {{ .Content }}
       {{ with .Params.references }}
         {{ partial "references" . }}
       {{ end }}
     </div>
-    <!--
 <div class="page-toc">
 {{ partial "toc" . }}
 </div>
--->
   </div>
 
 </article>
