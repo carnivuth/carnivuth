@@ -1,9 +1,8 @@
 {{ define "main" }}
 {{ $page := resources.Get "scss/page.scss" | toCSS | minify }}
 <link rel="stylesheet" href="{{ $page.RelPermalink }}">
-<article class="container">
+<article class="page-container">
   <h1>{{ .Title }}</h1>
-  <div class="page-container">
     <div class="page-content">
       {{ with (.GetTerms "tags" ) }}
         {{ partial "tags" .  }}
@@ -18,6 +17,5 @@
 {{ partial "toc" . }}
 </div>
 -->
-  </div>
 </article>
 {{ end }}

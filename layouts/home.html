@@ -11,17 +11,11 @@
     <!-- Title -->
     <h1 class="site-title">{{ .Site.Title }}</h1>
 
-    <!-- Author Name (optional) -->
+    <p class="author-description">{{ .Site.Params.Author.headline }}</p>
     <p class="author-name">{{ .Site.Params.Author.name }}</p>
 
-    <!-- Search Bar Placeholder -->
 
     {{ partial "search" }}
-    <h2>Posts</h2>
-    {{ $categories := slice "posts" }}
-    {{ $pages := .Site.RegularPages }}
-    {{  $posts := where $pages "Params.categories" $categories }}
-    {{ partial "cards" $posts }}
     <h2>Categories</h2>
     {{ partial "cards" .Site.Taxonomies.categories.ByCount }}
   </div>
