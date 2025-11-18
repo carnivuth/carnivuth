@@ -1,1 +1,2 @@
 - fix toc that renders wrong links
+- add mindmap
