@@ -22,6 +22,10 @@ function list_broken_links(){
 done
 }
 
+function list_missing_description(){
+  grep -l -e '^description:$' $CONTENT_DIR/*
+  grep -L -e '^description: .*' $CONTENT_DIR/*
+}
 
 case "$1" in
   count_drafts)
@@ -32,5 +36,8 @@ case "$1" in
     ;;
   list_broken_links)
     list_broken_links
+    ;;
+  list_missing_description)
+    list_missing_description
     ;;
 esac
