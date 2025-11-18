@@ -1,10 +1,9 @@
 @import "catppucin-mocha.scss";
-.page-content {
-  width: 80%;
-  padding-right: 2rem;
-}
 .page-container {
+  width: 100%;
   display: flex;
+  padding-right: 2rem;
+  flex-direction: column;
 }
 .page-toc {
   width: 20%;
