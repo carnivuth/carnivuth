@@ -26,6 +26,11 @@ function list_missing_description(){
   grep -l -e '^description:$' $CONTENT_DIR/*
   grep -L -e '^description: .*' $CONTENT_DIR/*
 }
+function list_broken_slug(){
+  find $CONTENT_DIR -type f -name '*.md' | while read file; do
+    grep -q "slug: $(basename $file)" "$file" || echo "$file"
+  done
+}
 
 case "$1" in
   count_drafts)
@@ -39,5 +44,8 @@ case "$1" in
     ;;
   list_missing_description)
     list_missing_description
+    ;;
+  list_broken_slug)
+    list_broken_slug
     ;;
 esac
