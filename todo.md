@@ -1,2 +1,4 @@
 - fix toc that renders wrong links
 - add mindmap
+- add nvim command to add image from clipboard to the doc
+- add nvim command to add link to a given file inside repo using uuids
