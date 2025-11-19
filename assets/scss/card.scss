@@ -10,7 +10,7 @@
 
 
 .card {
-  width: 30%;
+  width: 20rem;
   border-radius: 10px;
   border-style: dashed;
   background-color: rgba($mocha-blue,0.2);
@@ -37,10 +37,9 @@
 
 /* Image inside the card */
 .card-image {
-  width: 90%;
+  width: 18rem;
   height: auto;
   margin: 1rem;
-  margin-right: 1rem;
   border-radius: 8px;
 }
 
@@ -110,6 +109,10 @@
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
   }
 
   .card-container{
