@@ -27,6 +27,7 @@ imaging:
 taxonomies:
   tag: tags
   category: categories
+  book: book
 
 sitemap:
   changefreq: 'daily'

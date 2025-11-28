@@ -2,5 +2,3 @@
 # add mindmap
 # add nvim command to add link to a given file inside repo using uuids
 # add cv page
-# add link to next previous note
-
