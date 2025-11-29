@@ -1,5 +1,7 @@
 # Hi i'm Carnivuth 🖐️
 
+![](./static/avatar.jpg)
+
 I'm a software engineer with a passion for food, dogs, videogames and open source software
 
 My knowledge revolves around architectures, deployment, administration and development of distributed systems with a focus on application and hardware monitoring, i'm also interested in the computer vision and computer graphics fields.
