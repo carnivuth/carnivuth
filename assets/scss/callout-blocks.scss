@@ -1,0 +1,50 @@
+@import "catppucin-mocha.scss";
+.alert-error, .alert-tip, .alert-note, .alert-cite, .alert-warning{
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-style: dashed;
+}
+
+.alert-error{
+  border-color: $mocha-red ;
+  background-color: rgba($mocha-red,0.2) ;
+  .alert-heading-error{
+    color: $mocha-red ;
+  }
+}
+
+.alert-warning{
+  border-color: $mocha-yellow ;
+  background-color: rgba($mocha-yellow,0.2) ;
+  .alert-heading-warning{
+    color: $mocha-yellow ;
+  }
+}
+
+.alert-note{
+  border-color: $mocha-blue ;
+  background-color: rgba($mocha-blue,0.2);
+  .alert-heading-note{
+    color: $mocha-blue ;
+  }
+}
+
+.alert-cite{
+  font-style: italic;
+  border-color: $mocha-maroon ;
+  background-color: rgba($mocha-maroon,0.2);
+  .alert-heading-cite{
+    color: $mocha-maroon ;
+  }
+}
+
+.alert-tip{
+  border-color: $mocha-green ;
+  background-color: rgba($mocha-green,0.2);
+  .alert-heading-tip{
+    color: $mocha-green ;
+  }
+}

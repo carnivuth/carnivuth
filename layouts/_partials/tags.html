@@ -1,0 +1,7 @@
+    {{ $tags := resources.Get "scss/tags.scss" | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $tags.RelPermalink }}">
+  <div class="tag-container">
+    {{ range . }}
+    <a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
+  </div>

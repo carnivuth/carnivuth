@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $page := resources.Get "scss/page.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $page.RelPermalink }}">
+<article class="page-container">
+  <h1>{{ .Title }}</h1>
+    <div class="page-content">
+      {{ with (.GetTerms "tags" ) }}
+        {{ partial "tags" .  }}
+      {{ end }}
+      {{ .Content }}
+      {{ with .Params.references }}
+        {{ partial "references" . }}
+      {{ end }}
+      {{ if ne .Params.book nil }}
+    {{ if ne .Params.book_order nil }}
+    {{ $previous :=  sub .Params.book_order 1 }}
+    {{ $next :=  add .Params.book_order 1 }}
+    {{- $book_pages := where .Site.RegularPages "Params.book" .Params.book }}
+    {{ range where $book_pages "Params.book_order" $previous }}
+    <a href="{{ .RelPermalink }}"> previous </a>
+    {{ end }}
+    {{ range where $book_pages "Params.book_order" $next }}
+    <a href="{{ .RelPermalink }}"> next </a>
+    {{ end }}
+      {{ end }}
+      {{ end }}
+    </div>
+<!--
+<div class="page-toc">
+{{ partial "toc" . }}
+</div>
+-->
+</article>
+{{ end }}

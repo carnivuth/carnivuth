@@ -1,0 +1,4 @@
+{{ $codeblock := resources.Get "scss/codeblock.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $codeblock.RelPermalink }}">
+{{ $result := transform.HighlightCodeBlock . }}
+{{ $result.Wrapped }}

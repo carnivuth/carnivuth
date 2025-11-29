@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $home := resources.Get "scss/home.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $home.RelPermalink }}">
+<div class="homepage-container">
+  <div class="homepage-content">
+
+    {{ partial "author" }}
+    {{ partial "search" }}
+    <h2>Categories</h2>
+    {{ partial "cards" .Site.Taxonomies.categories.ByCount }}
+  </div>
+</div>
+</div>
+
+<style>
+</style>
+{{ end }}

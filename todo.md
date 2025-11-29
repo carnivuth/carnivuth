@@ -1,0 +1,4 @@
+# fix toc that renders wrong links
+# add mindmap
+# add nvim command to add link to a given file inside repo using uuids
+# add cv page

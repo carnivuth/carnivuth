@@ -1,4 +1,6 @@
-public
-resources/_gen
-.hugo_build.lock
+# obsidian files
 .obsidian/workspace.json
+# hugo builds
+public
+resources
+.hugo_build.lock

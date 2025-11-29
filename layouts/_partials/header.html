@@ -1,0 +1,23 @@
+{{ $header := resources.Get "scss/header.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $header.RelPermalink }}">
+<header class="site-header">
+  <nav class="header-nav">
+    <div class="nav-container">
+      <!-- Logo/Home Link -->
+      <a href="{{ .Site.BaseURL }}" class="site-logo">
+        {{ .Site.Title }}
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li>{{ partial "search" }}</li>
+        <li><a class="nav-link" href="{{ absURL "" }}">Home</a></li>
+        <li><a class="nav-link" href="{{ absURL "" }}tags/">Tags</a></li>
+        <li><a class="nav-link" href="{{ absURL "" }}categories/">Categories</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<style>
+</style>

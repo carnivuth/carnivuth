@@ -1,0 +1,138 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/getting-started/
+
+title: "Carnivuth's blog"
+description: "Personal place where to post reflections,ideas,projects and dumb stuff"
+copyright: "Longhi Matteo"
+baseURL: "https://www.carnivuth.org/"
+defaultContentLanguage: "en"
+enableRobotsTXT: true
+summaryLength: 0
+buildDrafts: false
+buildFuture: false
+languageCode: "en"
+enableEmoji: true
+
+hugoVersion:
+  extended: true
+  min: "0.147.0"
+
+pagination:
+  pagerSize: 15
+
+imaging:
+  anchor: 'Center'
+
+taxonomies:
+  tag: tags
+  category: categories
+  book: book
+
+sitemap:
+  changefreq: 'daily'
+  filename: 'sitemap.xml'
+  priority: 0.5
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  extensions:
+    passthrough:
+      enable: true
+  delimiters:
+    block: [['\[', '\]'], ['$$', '$$']]
+    inline: [['$', '$'],['\(', '\)']]
+
+highlight:
+  noClasses: false
+
+tableOfContents:
+  startLevel: 2
+  endLevel: 4
+
+params:
+  math: true
+  displayName: "EN"
+  isoCode: "en"
+  rtl: false
+  dateFormat: "2 January 2006"
+
+  author:
+    name: "Matteo Longhi"
+    nickname: "Carnivuth"
+    email: "matti200042@gmail.com"
+    image: "avatar.jpg"
+    headline: "homelab addicted guy with a passion for Music and dogs"
+    bio: " I'm a software engineer with a passion for Music, food, dogs, videogames and open source software, i'm currently working as a devops engineer"
+    links:
+      - { email: "mailto:matti200042@gmail.com" }
+      - { link: "https://www.carnivuth.org/" }
+      - { github: "https://github.com/carnivuth" }
+      - { linkedin: "https://linkedin.com/in/matteo-longhi-b3a433247" }
+
+    projects:
+      - Page:
+          "Description": "homelab provisioning and maintenance operations"
+          "Title": "labcraft"
+          "RelPermalink": "https://github.com/carnivuth/labcraft"
+      - Page:
+          "Description": "system automation scripts, dotfiles, personal tools for everyday use, playground :)"
+          "Title": "scripts"
+          "RelPermalink": "https://github.com/carnivuth/scripts"
+      - Page:
+          "Description": "personal toolbox"
+          "Title": "toolbox"
+          "RelPermalink": "https://github.com/carnivuth/toolbox"
+      - Page:
+          "Description": "telegram bot for curiel home administration"
+          "Title": "curiel_bot"
+          "RelPermalink": "https://github.com/carnivuth/curiel_bot"
+      - Page:
+          "Description": "edgex environment simulation with snmp capable control nodes"
+          "Title": "edgex_iot_simulation"
+          "RelPermalink": "https://github.com/carnivuth/edgex_iot_simulation"
+      - Page:
+          "Description": "just a simple project to transfer file over network"
+          "Title": "lesgofile"
+          "RelPermalink": "https://github.com/carnivuth/lesgofile"
+      - Page:
+          "Description": "webGL project for my computer graphics exam"
+          "Title": "tatodrone"
+          "RelPermalink": "https://github.com/carnivuth/tatodrone"
+      - Page:
+          "Description": "project on obstacles detection and depth sensing based on stereo matching techniques for unibo computer vision course"
+          "Title": "stereo_robot_navigation"
+          "RelPermalink": "https://github.com/carnivuth/stereo_robot_navigation"
+
+    achievements:
+      - Master Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
+      - Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
+      - high school diploma At [I.T.I.S.-E.Mattei-Urbino](https://www.itisurbino.edu.it/)
+    work_experiences:
+      - Page:
+          Title: Internship at A.D.V. Media Lab
+          Description: market research for potential clients
+      - Page:
+          Title: Internship at comune Mercatello sul Metauro
+          Description: frontend web development and design
+      - Page:
+          Title: Internship at Ciollo Service s.r.l.
+          Description: frontend and backend Web development and system integration
+      - Page:
+          Title: Web developer at Ciollo Service s.r.l.
+          Description: frontend and backend Web development and system integration
+      - Page:
+          Title: system and network administrator at Laboratori Guglielmo Marconi s.p.a.
+          Description: DevOps lyfecicle management for the SANET system
+
+
+
+
