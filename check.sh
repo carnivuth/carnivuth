@@ -57,6 +57,12 @@ case "$1" in
   list_broken_slug)
     list_broken_slug
     ;;
+  lint)
+    list_missing_title
+    list_missing_description
+    list_broken_slug
+    list_broken_links
+    ;;
   all)
     echo broken slugs:
     list_broken_slug
