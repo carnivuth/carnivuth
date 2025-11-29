@@ -3,17 +3,8 @@
 <link rel="stylesheet" href="{{ $home.RelPermalink }}">
 <div class="homepage-container">
   <div class="homepage-content">
-    <!-- Author Image -->
-    <div class="author-image">
-      <img src="/avatar.jpg" alt="{{ .Site.Author.name }}">
-    </div>
 
-    <!-- Title -->
-    <h1 class="site-title">{{ .Site.Title }}</h1>
-
-    <p class="author-description">{{ .Site.Params.Author.headline }}</p>
-
-
+    {{ partial "author" }}
     {{ partial "search" }}
     <h2>Categories</h2>
     {{ partial "cards" .Site.Taxonomies.categories.ByCount }}

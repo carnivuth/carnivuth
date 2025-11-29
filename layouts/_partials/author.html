@@ -1,0 +1,9 @@
+{{ $author := resources.Get "scss/author.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $author.RelPermalink }}">
+<div class="author-image">
+  <img src="/avatar.jpg" alt="{{ .Site.Author.name }}">
+</div>
+
+<h1 class="site-title">{{ site.Params.Author.nickname }}</h1>
+
+<p class="author-description">{{ site.Params.Author.headline }}</p>

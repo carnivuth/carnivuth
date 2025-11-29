@@ -1,0 +1,27 @@
+@import "catppucin-mocha.scss";
+
+.author-image {
+  margin-bottom: 2rem;
+}
+
+.author-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.author-name {
+  font-size: 1.25rem;
+  color: $mocha-peach;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+
+  .author-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
