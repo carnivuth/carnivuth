@@ -8,6 +8,7 @@ on:
       - ".gitignore"
       - ".obsidian"
       - "readme.md"
+      - "to_import"
 
 jobs:
   lint:
