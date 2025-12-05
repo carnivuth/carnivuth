@@ -19,6 +19,7 @@ a:hover {
 img {
   height: auto;
   width: auto;
+  max-width: 80%;
 }
 
 @media only screen and (max-width: 480px){
@@ -30,7 +31,6 @@ img {
   .page-toc {
     display: none;
   }
-
 
   .page-container {
     margin: 0.1rem;
