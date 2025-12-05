@@ -93,11 +93,11 @@ params:
           "RelPermalink": "https://github.com/carnivuth/toolbox"
       - Page:
           "Description": "telegram bot for curiel home administration"
-          "Title": "curiel_bot"
+          "Title": "curiel bot"
           "RelPermalink": "https://github.com/carnivuth/curiel_bot"
       - Page:
           "Description": "edgex environment simulation with snmp capable control nodes"
-          "Title": "edgex_iot_simulation"
+          "Title": "iot architecture simulation using edgex and snmp"
           "RelPermalink": "https://github.com/carnivuth/edgex_iot_simulation"
       - Page:
           "Description": "just a simple project to transfer file over network"
@@ -109,7 +109,7 @@ params:
           "RelPermalink": "https://github.com/carnivuth/tatodrone"
       - Page:
           "Description": "project on obstacles detection and depth sensing based on stereo matching techniques for unibo computer vision course"
-          "Title": "stereo_robot_navigation"
+          "Title": "robot navigation using stereo camera"
           "RelPermalink": "https://github.com/carnivuth/stereo_robot_navigation"
 
     achievements:
