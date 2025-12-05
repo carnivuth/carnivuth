@@ -2,7 +2,9 @@
 {{ $page := resources.Get "scss/page.scss" | toCSS | minify }}
 <link rel="stylesheet" href="{{ $page.RelPermalink }}">
 <article class="page-container">
+  {{ if .Params.show_title }}
   <h1>{{ .Title }}</h1>
+  {{ end }}
     <div class="page-content">
       {{ with (.GetTerms "tags" ) }}
         {{ partial "tags" .  }}
