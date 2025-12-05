@@ -1,21 +1,39 @@
 @import "catppucin-mocha.scss";
 
-.author-image {
-  margin-bottom: 2rem;
+.author-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
-.author-image img {
-  width: 150px;
-  height: 150px;
+.author-image {
+  margin: 2rem;
+  width: 20rem;
+  height: auto;
+  max-width: 20rem;
+  max-height: 20rem;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba($mocha-peach, 0.1);
 }
 
 .author-name {
-  font-size: 1.25rem;
   color: $mocha-peach;
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+.author-headline {
+  font-size: 1.25rem;
+  color: $mocha-teal;
+  text-align: center;
+}
+
+.author-bio {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 640px) {

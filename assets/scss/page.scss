@@ -1,12 +1,14 @@
 @import "catppucin-mocha.scss";
 .page-container {
-  width: 100%;
+  margin: 1rem;
   display: flex;
-  padding-right: 2rem;
   flex-direction: column;
 }
-.page-toc {
-  width: 20%;
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 a {
   color: $mocha-blue;
@@ -15,6 +17,24 @@ a:hover {
   color: $mocha-peach;
 }
 img {
-  max-width: 100%;
   height: auto;
+  width: auto;
+}
+
+@media only screen and (max-width: 480px){
+  img {
+    height: auto;
+    width: auto;
+    max-width: 30rem;
+  }
+.page-toc {
+  display: none;
+}
+
+
+.page-container {
+  margin: 0.1rem;
+  display: flex;
+  flex-direction: column;
+}
 }
