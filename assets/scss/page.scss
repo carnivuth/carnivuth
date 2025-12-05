@@ -2,20 +2,31 @@
 .page-container {
   margin: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
+
 .page-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 80%;
 }
+
 a {
   color: $mocha-blue;
 }
+
 a:hover {
   color: $mocha-peach;
 }
+
+.page-right-column {
+  max-width: 20%;
+  width: 20%;
+
+}
+
 img {
   height: auto;
   width: auto;
@@ -30,6 +41,7 @@ img {
   }
   .page-toc {
     display: none;
+
   }
 
   .page-container {

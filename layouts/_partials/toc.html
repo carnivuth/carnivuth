@@ -6,8 +6,10 @@
       {{ $headings = findRE "<h3.*?>(.|\n])+?</h3>" .Content }}
     {{ end }}
     {{ range $headings }}
-      {{ $id := findRE "id=\".*\"" . }}
-      <li><a href="#{{ $id }}">{{ . | htmlUnescape | plainify }}</a></li>
+      {{ $id := findRE "id=\"(.*)\"" . }}
+      {{ $result := replaceRE `id=\"(.*)\"` "$1" ( index $id 0 )}}
+
+      <li><a href="#{{ $result }}">{{ . | htmlUnescape | plainify }}</a></li>
     {{ end }}
   </ul>
 </details>

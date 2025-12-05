@@ -2,10 +2,10 @@
 {{ $page := resources.Get "scss/page.scss" | toCSS | minify }}
 <link rel="stylesheet" href="{{ $page.RelPermalink }}">
 <article class="page-container">
+    <div class="page-content">
   {{ if .Params.show_title }}
   <h1>{{ .Title }}</h1>
   {{ end }}
-    <div class="page-content">
       {{ with (.GetTerms "tags" ) }}
         {{ partial "tags" .  }}
       {{ end }}
@@ -27,10 +27,10 @@
       {{ end }}
       {{ end }}
     </div>
-<!--
+  <div class="page-right-column">
 <div class="page-toc">
 {{ partial "toc" . }}
 </div>
--->
+  </div>
 </article>
 {{ end }}
