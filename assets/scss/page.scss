@@ -27,14 +27,14 @@ img {
     width: auto;
     max-width: 30rem;
   }
-.page-toc {
-  display: none;
-}
+  .page-toc {
+    display: none;
+  }
 
 
-.page-container {
-  margin: 0.1rem;
-  display: flex;
-  flex-direction: column;
-}
+  .page-container {
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
