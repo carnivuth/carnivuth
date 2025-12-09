@@ -28,7 +28,9 @@
       {{ end }}
     </div>
   <div class="page-right-column">
+    {{ if .Params.show_toc }}
 <div class="page-toc">
+      {{ end }}
 {{ partial "toc" . }}
 </div>
   </div>
