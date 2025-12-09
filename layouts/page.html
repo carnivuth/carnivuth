@@ -27,12 +27,12 @@
       {{ end }}
       {{ end }}
     </div>
+    {{ if .Params.show_right_column }}
   <div class="page-right-column">
-    {{ if .Params.show_toc }}
-<div class="page-toc">
-      {{ end }}
-{{ partial "toc" . }}
-</div>
+      <div class="page-toc">
+      {{ partial "toc" . }}
+      </div>
   </div>
+    {{ end }}
 </article>
 {{ end }}
