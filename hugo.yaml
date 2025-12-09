@@ -71,68 +71,147 @@ params:
     email: "matti200042@gmail.com"
     image: "avatar.jpg"
     headline: "homelab addicted guy with a passion for Music and dogs"
-    bio: " I'm a software engineer with a passion for Music, food, dogs, videogames and open source software, i'm currently working as a devops engineer"
-    links:
-      - { email: "mailto:matti200042@gmail.com" }
-      - { link: "https://www.carnivuth.org/" }
-      - { github: "https://github.com/carnivuth" }
-      - { linkedin: "https://linkedin.com/in/matteo-longhi-b3a433247" }
+    bio: "Hi, i'm Matteo, i am a software engeneer specialized in DevOps, cloud,system administration and software architecture management, my knowledge also involves full stack web development datamining techniques and 3D web rendering."
+    contacts:
+      - { icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/gmail.svg", link: "mailto:matti200042@gmail.com" }
+      - { icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/linkedin.svg", link: "https://linkedin.com/in/matteo-longhi-b3a433247" }
 
+    tech_stack:
+      - "https://angular.io/assets/images/logos/angular/angular.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg"
+      - "https://cdn.worldvectorlogo.com/logos/arduino-1.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/shell-light.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/bootstrap.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/docker-compose.png"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/docker.svg"
+      - "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
+      - "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+      - "https://api.iconify.design/logos-hugo.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+      - "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/laravel.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/ansible-light.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/mariadb.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+      - "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+      - "https://cdn.worldvectorlogo.com/logos/pug.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/rust-dark.svg"
+      - "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+      - "https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
+      - "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
+      - "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+      - "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+      - "https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github-light.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/proxmox-light.svg"
+      - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/kubernetes.svg"
     projects:
       - Page:
-          "Description": "homelab provisioning and maintenance operations"
-          "Title": "labcraft"
-          "RelPermalink": "https://github.com/carnivuth/labcraft"
+          Title: "labcraft"
+          Description: "homelab provisioning and maintenance operations"
+          RelPermalink: "https://github.com/carnivuth/labcraft"
       - Page:
-          "Description": "system automation scripts, dotfiles, personal tools for everyday use, playground :)"
-          "Title": "scripts"
-          "RelPermalink": "https://github.com/carnivuth/scripts"
+          Title: "scripts"
+          Description: "system automation scripts, dotfiles, personal tools for everyday use, playground :)"
+          RelPermalink: "https://github.com/carnivuth/scripts"
       - Page:
-          "Description": "personal toolbox"
-          "Title": "toolbox"
-          "RelPermalink": "https://github.com/carnivuth/toolbox"
+          Title: "toolbox"
+          Description: "personal toolbox"
+          RelPermalink: "https://github.com/carnivuth/toolbox"
+          Params:
+            Image: https://github.com/carnivuth/toolbox/raw/main/demo.gif
       - Page:
-          "Description": "telegram bot for curiel home administration"
-          "Title": "curiel bot"
-          "RelPermalink": "https://github.com/carnivuth/curiel_bot"
+          Title: "curiel bot"
+          Description: "telegram bot for curiel home administration"
+          RelPermalink: "https://github.com/carnivuth/curiel_bot"
+          Params:
+            Image: https://github.com/carnivuth/curiel_bot/raw/main/demo.gif
       - Page:
-          "Description": "edgex environment simulation with snmp capable control nodes"
-          "Title": "iot architecture simulation using edgex and snmp"
-          "RelPermalink": "https://github.com/carnivuth/edgex_iot_simulation"
+          Title: "iot architecture simulation using edgex and snmp"
+          Description: "edgex environment simulation with snmp capable control nodes"
+          RelPermalink: "https://github.com/carnivuth/edgex_iot_simulation"
+          Params:
+            Image: https://github.com/carnivuth/edgex_iot_simulation/raw/main/img/result.jpg
       - Page:
-          "Description": "just a simple project to transfer file over network"
-          "Title": "lesgofile"
-          "RelPermalink": "https://github.com/carnivuth/lesgofile"
+          Title: "lesgofile"
+          Description: "just a simple project to transfer file over network"
+          RelPermalink: "https://github.com/carnivuth/lesgofile"
+          Params:
+            Image: "https://github.com/carnivuth/lesgofile/raw/main/demo.gif"
       - Page:
-          "Description": "webGL project for my computer graphics exam"
-          "Title": "tatodrone"
-          "RelPermalink": "https://github.com/carnivuth/tatodrone"
+          Title: "tatodrone"
+          Description: "webGL project for my computer graphics exam"
+          RelPermalink: "https://github.com/carnivuth/tatodrone"
+          Params:
+            Image: "https://github.com/carnivuth/tatodrone/raw/main/demo/demo.gif"
       - Page:
-          "Description": "project on obstacles detection and depth sensing based on stereo matching techniques for unibo computer vision course"
-          "Title": "robot navigation using stereo camera"
-          "RelPermalink": "https://github.com/carnivuth/stereo_robot_navigation"
+          Title: "robot navigation using stereo camera"
+          Description: "project on obstacles detection and depth sensing based on stereo matching techniques for unibo computer vision course"
+          RelPermalink: "https://github.com/carnivuth/stereo_robot_navigation"
+          Params:
+            Image: https://github.com/carnivuth/stereo_robot_navigation/raw/main/final_statistics.png
 
-    achievements:
-      - Master Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
-      - Bachelor's Degree in Computer Engineering At [UNIBO](https://www.unibo.it/it)
-      - high school diploma At [I.T.I.S.-E.Mattei-Urbino](https://www.itisurbino.edu.it/)
+    formation:
+      - Page:
+          Title: "high school diploma"
+          Description: "high school diploma at ITIS E.Mattei"
+          RelPermalink: "https://www.itisurbino.edu.it/"
+      - Page:
+          Title: "Bachelor's Degree in Computer Engineering"
+          Description: "Bachelor's Degree in UNIBO computer Engineering course"
+          RelPermalink: "https://www.unibo.it/it"
+      - Page:
+          Title: "Master Degree in Computer Engineering"
+          Description: "master degree in UNIBO Computer Engineering course"
+          RelPermalink: "https://www.unibo.it/it"
+
     work_experiences:
       - Page:
           Title: Internship at A.D.V. Media Lab
           Description: market research for potential clients
+          RelPermalink: "https://www.advmedialab.com/"
+          Params:
+            date_start:
+            date_end:
       - Page:
           Title: Internship at comune Mercatello sul Metauro
           Description: frontend web development and design
+          RelPermalink: "https://comune.mercatellosulmetauro.pu.it/"
+          Params:
+            date_start: 2018-06-01
+            date_end: 2018-08-01
       - Page:
           Title: Internship at Ciollo Service s.r.l.
           Description: frontend and backend Web development and system integration
+          RelPermalink: "https://ciolloservice.it/"
+          Params:
+            date_start: 2022-07-01
+            date_end: 2022-08-01
       - Page:
           Title: Web developer at Ciollo Service s.r.l.
           Description: frontend and backend Web development and system integration
+          RelPermalink: "https://ciolloservice.it/"
+          Params:
+            date_start: 2022-09-01
+            date_end: 2023-03-01
       - Page:
           Title: system and network administrator at Laboratori Guglielmo Marconi s.p.a.
           Description: DevOps lyfecicle management for the SANET system
-
-
-
-
+          RelPermalink: "https://labs.it/it/"
+          Params:
+            date_start: 2023-09-01
+            date_end: 2025-11-01

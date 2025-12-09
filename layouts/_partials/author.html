@@ -2,9 +2,12 @@
 <link rel="stylesheet" href="{{ $author.RelPermalink }}">
 <div class="author-container">
   <img class="author-image" src="/avatar.jpg" alt="{{ .Site.Author.name }}">
-
   <h1 class="author-name">{{ site.Params.Author.name }}</h1>
 
-  <p class="author-headline">{{ site.Params.Author.headline }}</p>
+<div class="author-contact-container">
+  {{ range site.Params.Author.contacts }}
+  <a href="{{ .link }}"><img class="author-contact-image" src="{{ .icon }}"></a>
+  {{ end }}
+  </div>
   <p class="author-bio">{{ site.Params.Author.bio }}</p>
 </div>

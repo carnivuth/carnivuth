@@ -1,0 +1,8 @@
+<h2 style="text-align: center;">Tech Stack</h2>
+{{ $techstack := resources.Get "scss/techstack.scss" | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $techstack.RelPermalink }}">
+<div class="tech-stack-container">
+  {{ range .Site.Params.Author.tech_stack }}
+  <img class="tech-stack-image" src="{{ . }}">
+  {{ end }}
+</div>

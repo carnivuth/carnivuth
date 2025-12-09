@@ -10,6 +10,12 @@
     {{ with .Page.Params.Image }}
     <img class="card-image" src="{{ . }}">
     {{ end }}
+    {{ with .Page.Params.date_start }}
+    <div class="card-date-start">from {{ . }}</div>
+    {{ end }}
+    {{ with .Page.Params.date_end }}
+    <div class="card-date-end">to {{ . }}</div>
+    {{ end }}
 </a>
   {{ end }}
 </div>

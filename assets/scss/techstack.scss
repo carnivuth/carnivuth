@@ -1,0 +1,35 @@
+@import "catppucin-mocha.scss";
+
+.tech-stack-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+  border-radius: 10px;
+  border-style: dashed;
+  background-color: rgba($mocha-blue,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  color: $mocha-blue;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tech-stack-image{
+
+  font-size: 1.2rem;
+  margin: 5px;
+  max-width: 10rem;
+  width: 5rem;
+  max-height: 10rem;
+  height: 5rem;
+  padding: 0.2rem;
+  border-radius: 3px;
+  border-style: none;
+  border-color: $mocha-blue;
+  color: $mocha-blue;
+  border-width: 1px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
