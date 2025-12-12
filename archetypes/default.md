@@ -1,6 +1,7 @@
 ---
 title:
 show_title: true
+show_right_column: true
 show_toc: true
 description:
 slug: {{ .File.ContentBaseName  }}.md
