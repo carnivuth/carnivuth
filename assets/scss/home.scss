@@ -9,7 +9,7 @@
 
 .homepage-content {
   text-align: center;
-  max-width: 600px;
+  max-width: 80%;
   width: 100%;
 }
 
@@ -46,5 +46,10 @@
   .site-title {
     font-size: 2rem;
   }
+  .homepage-content{
+  max-width: 600px;
+  }
+
+
 
 }
