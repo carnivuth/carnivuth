@@ -1,12 +1,14 @@
-<details class="notices tip">
-  <summary class="label">Table of Contents</summary>
-  <ul>
+{{ $toc := resources.Get "scss/toc.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $toc.RelPermalink }}">
+<details class="toc-details" open >
+  <summary class="toc-title">Table of Contents</summary>
+  <ul class="toc-list">
     {{ $headings := findRE "<h[2-6].*?>(.|\n])+?</h2>" .Content }}
     {{ range $headings }}
       {{ $id := findRE "id=\"(.*)\"" . }}
       {{ $result := replaceRE `id=\"(.*)\"` "$1" ( index $id 0 )}}
 
-      <li><a href="#{{ $result }}">{{ . | htmlUnescape | plainify }}</a></li>
+      <li><a class="toc-element" href="#{{ $result }}">{{ . | htmlUnescape | plainify }}</a></li>
     {{ end }}
   </ul>
 </details>

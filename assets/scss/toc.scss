@@ -1,0 +1,17 @@
+@import "catppucin-mocha.scss";
+
+.toc-title{
+  color: $mocha-peach;
+  font-size: 2rem;
+  font-weight: bold;
+text-align: center;
+}
+
+.toc-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
