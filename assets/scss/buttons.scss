@@ -1,0 +1,34 @@
+@import "catppucin-mocha.scss";
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  justify-content: space-between
+}
+
+.button-links {
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.button-next {
+  background-color: rgba($mocha-green,0.2);
+  color: $mocha-green;
+}
+
+.button-next:hover {
+  color: $mocha-green;
+  font-weight: bold;
+}
+
+.button-previous {
+  background-color: rgba($mocha-yellow,0.2);
+  color: $mocha-yellow;
+}
+
+.button-previous:hover {
+  color: $mocha-yellow;
+  font-weight: bold;
+}

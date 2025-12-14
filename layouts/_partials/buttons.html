@@ -1,0 +1,17 @@
+{{ $buttons := resources.Get "scss/buttons.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $buttons.RelPermalink }}">
+{{ if ne .Params.book nil }}
+{{ if ne .Params.book_order nil }}
+{{ $previous :=  sub .Params.book_order 1 }}
+{{ $next :=  add .Params.book_order 1 }}
+{{- $book_pages := where .Site.RegularPages "Params.book" .Params.book }}
+<div class="button-container">
+  {{ range where $book_pages "Params.book_order" $previous }}
+  <a class="button-links button-previous" href="{{ .RelPermalink }}"> previous </a>
+  {{ end }}
+  {{ range where $book_pages "Params.book_order" $next }}
+  <a class="button-links button-next" href="{{ .RelPermalink }}"> next </a>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

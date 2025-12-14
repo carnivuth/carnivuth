@@ -13,19 +13,8 @@
       {{ with .Params.references }}
         {{ partial "references" . }}
       {{ end }}
-      {{ if ne .Params.book nil }}
-    {{ if ne .Params.book_order nil }}
-    {{ $previous :=  sub .Params.book_order 1 }}
-    {{ $next :=  add .Params.book_order 1 }}
-    {{- $book_pages := where .Site.RegularPages "Params.book" .Params.book }}
-    {{ range where $book_pages "Params.book_order" $previous }}
-    <a href="{{ .RelPermalink }}"> previous </a>
-    {{ end }}
-    {{ range where $book_pages "Params.book_order" $next }}
-    <a href="{{ .RelPermalink }}"> next </a>
-    {{ end }}
-      {{ end }}
-      {{ end }}
+
+    {{ partial "buttons" . }}
     </div>
     {{ if .Params.show_right_column }}
   <div class="page-right-column">
