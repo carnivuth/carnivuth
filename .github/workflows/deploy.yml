@@ -18,8 +18,11 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
 
-      - name: Run linting script
+      - name: Check for pages without title
         run: test "$(./check.sh list_missing_title )" == ""
+
+      - name: Check for pages without description
+        run: test "$(./check.sh list_missing_description )" == ""
 
   build:
     needs: lint
