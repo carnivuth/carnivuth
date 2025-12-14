@@ -5,10 +5,22 @@
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  min-width: 30%;
 }
 
 .toc-list{
-  list-style: none;
+  list-style: circle;
   display: flex;
   flex-direction: column;
+  min-width: 30%;
+}
+.toc-link{
+  text-decoration: none;
+  font-size: 1.5rem;
+  flex-direction: column;
+  color: $mocha-sky;
+}
+.toc-link:hover{
+  font-weight: bold;
+  color: $mocha-sky;
 }

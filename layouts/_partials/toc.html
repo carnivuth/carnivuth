@@ -8,7 +8,7 @@
       {{ $id := findRE "id=\"(.*)\"" . }}
       {{ $result := replaceRE `id=\"(.*)\"` "$1" ( index $id 0 )}}
 
-      <li><a class="toc-element" href="#{{ $result }}">{{ . | htmlUnescape | plainify }}</a></li>
+      <li><a class="toc-link" href="#{{ $result }}">{{ . | htmlUnescape | plainify }}</a></li>
     {{ end }}
   </ul>
 </details>
