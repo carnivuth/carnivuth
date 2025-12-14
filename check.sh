@@ -12,12 +12,12 @@ function count_drafts(){
 }
 
 function list_broken_links(){
-  grep -or -E '\[[^]]+\]\([^)]*\)' $CONTENT_DIR | awk -F':' '{print $1,$2 ":" $3}' |  while read file link; do
+  grep -or -E '\[[^]]*\]\([^)]*\)' $CONTENT_DIR | awk -F':' '{print $1,$2 ":" $3}' |  while read file link; do
   dest="$(echo "$link" |  awk -F '(' '{print $2}' | awk -F ')' '{print $1}' | awk -F'#' '{print $1}' )"
-  if [[ "$dest" == https://* ]];then
-    curl -Ls $dest > /dev/null 2>&1 || "$file:$dest"
-  elif [[ ! -z $dest ]]; then
-    test -f "$CONTENT_DIR/$dest" || test -f "$IMAGE_DIR/$dest" || echo "$file:$dest";
+  if [[ ! -z $dest ]]; then
+    if ! test -f "$CONTENT_DIR/$dest" &&  ! test -f "$IMAGE_DIR/$dest"; then
+      curl -ILs $dest > /dev/null 2>&1 || echo "$file:$dest";
+    fi
   fi
 done
 }
