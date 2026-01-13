@@ -71,7 +71,7 @@ params:
     email: "matti200042@gmail.com"
     image: "avatar.jpg"
     headline: "homelab addicted guy with a passion for Music and dogs"
-    bio: "Hi, i'm Matteo, i am a software engeneer specialized in DevOps, cloud,system administration and software architecture management, my knowledge also involves full stack web development datamining techniques and 3D web rendering."
+    bio: "Hi, i'm Matteo, i am a software engineer specialized in DevOps, cloud,system administration and software architecture management, my knowledge also involves full stack web development datamining techniques and 3D web rendering."
     contacts:
       - { icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/gmail.svg", link: "mailto:matti200042@gmail.com" }
       - { icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/linkedin.svg", link: "https://linkedin.com/in/matteo-longhi-b3a433247" }
