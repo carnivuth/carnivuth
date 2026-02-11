@@ -164,7 +164,12 @@ params:
           RelPermalink: "https://github.com/carnivuth/stereo_robot_navigation"
           Params:
             Image: https://github.com/carnivuth/stereo_robot_navigation/raw/main/final_statistics.png
-
+      - Page:
+          Title: "3DS Automated backups"
+          Description: "Docker container to make backups of Nintendo 3DS consoles using FTPD"
+          RelPermalink: "https://github.com/carnivuth/backup_3ds"
+          Params:
+            Image: https://github.com/carnivuth/backup_3ds/raw/main/demo/demo.gif
     formation:
       - Page:
           Title: "high school diploma"
