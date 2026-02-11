@@ -121,6 +121,12 @@ params:
       - "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/kubernetes.svg"
     projects:
       - Page:
+          Title: "krawl"
+          Description: "web deception server and anti-crawler that creates fake web applications with low-hanging vulnerabilities and realistic, randomly generated decoy data"
+          RelPermalink: "https://github.com/BlessedRebuS/Krawl"
+          Params:
+            Image: https://github.com/BlessedRebuS/Krawl/raw/main/img/geoip_dashboard.png
+      - Page:
           Title: "labcraft"
           Description: "homelab provisioning and maintenance operations"
           RelPermalink: "https://github.com/carnivuth/labcraft"
