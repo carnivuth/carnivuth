@@ -11,8 +11,6 @@ tags: []
 series_order: 31
 ---
 
-#  I-TCP
-
 [MIP](pages/mobile_systems/mobility/mobile_ip.md) [HMIPV6](pages/mobile_systems/mobility/hierarchical_mobile_ipv6.md) [PHMIPV6](pages/mobile_systems/mobility/proxy_hierarchical_mobile_ipv6.md)  does not take in to account the problems that occurs at the transport layer as for the **TCP protocol every disconnection and reconnection is treated as a high congestion situation**, so TCP slows traffic to resolve the congestion
 
 The idea in I-TCP is to split the connection exploiting a middle node

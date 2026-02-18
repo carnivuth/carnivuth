@@ -9,7 +9,6 @@ tags: []
 series_order: 4
 ---
 
-
 Originated from the evolution of Telecom solution of communication of mobile devices, based on a grid of low powered antenna for scalability reason, frequencies can be reused in non adjacent cells The architecture is the following:
 
 ```mermaid

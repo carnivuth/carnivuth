@@ -8,7 +8,6 @@ draft: true
 aliases: []
 tags: []
 series_order: 6
-next: pages/mobile_systems/manets/manets.md
 ---
 
 Protocol optimized for some vertical domains IOT oriented where [bluetooth](/mobile_systems/bluetooth) fails like
