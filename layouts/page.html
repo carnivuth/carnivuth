@@ -9,6 +9,12 @@
       {{ with (.GetTerms "tags" ) }}
         {{ partial "tags" .  }}
       {{ end }}
+
+      {{ if .Params.show_image }}
+        {{ with .Params.Image }}
+          <img src="{{ . }}">
+        {{ end }}
+      {{ end }}
       {{ .Content }}
       {{ with .Params.references }}
         {{ partial "references" . }}
