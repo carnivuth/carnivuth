@@ -32,6 +32,10 @@ function list_missing_title(){
   grep -L -e '^title: .*' $CONTENT_DIR/*
 }
 
+function list_escaped_title(){
+  grep -l -e '^title: ".*"' $CONTENT_DIR/*
+}
+
 function list_broken_slug(){
   find $CONTENT_DIR -type f -name '*.md' | while read file; do
   grep -q "slug: $(basename $file)" "$file" || echo "$file"
@@ -50,6 +54,9 @@ case "$1" in
     ;;
   list_missing_description)
     list_missing_description
+    ;;
+  list_escaped_title)
+    list_escaped_title
     ;;
   list_missing_title)
     list_missing_title
