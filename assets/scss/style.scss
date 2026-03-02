@@ -27,6 +27,18 @@ body {
   padding: 0;
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba($mocha-teal,0.025) 2px, transparent 1px),
+    linear-gradient(90deg, rgba($mocha-teal,0.025) 2px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
 h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
