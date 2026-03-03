@@ -1,7 +1,7 @@
 {{ $toc := resources.Get "scss/toc.scss" | toCSS | minify }}
 <link rel="stylesheet" href="{{ $toc.RelPermalink }}">
 <details class="toc-details" open >
-  <summary class="toc-title">Table of Contents</summary>
+  <summary class="toc-title">ToC</summary>
   <ul class="toc-list">
     {{ $headings := findRE "<h[2-6].*?>(.|\n])+?</h2>" .Content }}
     {{ range $headings }}

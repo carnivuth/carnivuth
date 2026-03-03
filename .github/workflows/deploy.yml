@@ -11,7 +11,7 @@ on:
       - "to_import"
 
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-22.04
     steps:
 
@@ -25,7 +25,7 @@ jobs:
         run: test "$(./check.sh list_missing_description )" == ""
 
   build:
-    needs: lint
+    needs: check
     runs-on: ubuntu-22.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
