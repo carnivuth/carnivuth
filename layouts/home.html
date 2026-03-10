@@ -7,6 +7,22 @@
     {{ partial "author" }}
     <h2>Categories</h2>
     {{ partial "cards" .Site.Taxonomies.categories.ByCount }}
+
+    <!-- posts section -->
+    {{ $posts := site.RegularPages }}
+    {{ $posts = where $posts "Params.categories" "intersect" (slice "posts") }}
+    {{ with $posts }}
+    <h2>Posts and random things</h2>
+    {{ partial "cards" . true }}
+    {{ end }}
+
+    <!-- games section -->
+    {{ $games := site.RegularPages }}
+    {{ $games = where $games "Params.categories" "intersect" (slice "games") }}
+    {{ with $games }}
+    <h2>Game notes </h2>
+    {{ partial "cards" . true }}
+    {{ end }}
   </div>
 </div>
 </div>
