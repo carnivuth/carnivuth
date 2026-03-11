@@ -1,5 +1,11 @@
 ---
 title: kerberos
+show_title: true
+show_right_column: true
+show_toc: true
+show_image: false
+draft: true
+description:
 book: "information security"
 next: "pages/sicurezza_informazione/pgp.md"
 previous: "pages/sicurezza_informazione/ssl.md"
