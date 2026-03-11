@@ -1,5 +1,6 @@
 ---
 id: random_number_generator
+book: "information security"
 aliases: []
 tags: []
 next: pages/sicurezza_informazione/trasformazioni.md

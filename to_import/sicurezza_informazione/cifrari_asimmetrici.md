@@ -1,5 +1,6 @@
 ---
 id: cifrari_asimmetrici
+book: "information security"
 aliases: []
 tags: []
 book_order: 7

@@ -1,5 +1,6 @@
 # Sicurezza dell'informazione
 
+book: "information security"
 Appunti personali sul corso di sicurezza dell'informazione della professoressa Montanari Rebecca.
 
 ## Fondamenti crittografici

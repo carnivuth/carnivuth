@@ -1,5 +1,6 @@
 ---
 id: key_management
+book: "information security"
 aliases: []
 tags: []
 book_order: 9

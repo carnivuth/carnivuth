@@ -1,5 +1,6 @@
 ---
 id: funzioni_hash
+book: "information security"
 aliases: []
 tags: []
 book_order: 2

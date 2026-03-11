@@ -1,5 +1,6 @@
 ---
 id: cifrari_simmetrici
+book: "information security"
 aliases: []
 tags: []
 book_order: 4

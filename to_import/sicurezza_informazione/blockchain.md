@@ -1,5 +1,6 @@
 ---
 title: blockchain
+book: "information security"
 previous: "pages/sicurezza_informazione/pgp.md"
 aliases: []
 tags: []

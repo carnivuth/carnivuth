@@ -1,5 +1,6 @@
 ---
 id: pgp
+book: "information security"
 aliases: []
 tags: []
 book_order: 14

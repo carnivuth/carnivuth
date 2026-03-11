@@ -1,5 +1,6 @@
 ---
 id: complessita_computazionale
+book: "information security"
 aliases: []
 tags: []
 next: pages/sicurezza_informazione/trasformazioni.md

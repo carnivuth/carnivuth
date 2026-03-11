@@ -1,5 +1,6 @@
 ---
 id: MAC
+book: "information security"
 next: "pages/sicurezza_informazione/trasformazioni.md"
 aliases: []
 tags: []

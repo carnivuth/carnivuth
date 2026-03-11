@@ -1,5 +1,6 @@
 ---
 id: modalita_cifratura
+book: "information security"
 aliases: []
 tags: []
 book_order: 3
