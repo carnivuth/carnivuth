@@ -2,7 +2,7 @@
 id: cifrari_asimmetrici
 aliases: []
 tags: []
-index: 7
+book_order: 7
 next: pages/sicurezza_informazione/rsa.md
 previous: pages/sicurezza_informazione/chiavi.md
 ---

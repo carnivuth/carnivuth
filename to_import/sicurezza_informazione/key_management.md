@@ -2,7 +2,7 @@
 id: key_management
 aliases: []
 tags: []
-index: 9
+book_order: 9
 next: pages/sicurezza_informazione/diffie_hellman.md
 previous: pages/sicurezza_informazione/rsa.md
 ---

@@ -2,7 +2,7 @@
 id: rsa
 aliases: []
 tags: []
-index: 8
+book_order: 8
 next: pages/sicurezza_informazione/key_management.md
 previous: pages/sicurezza_informazione/cifrari_asimmetrici.md
 ---

@@ -2,7 +2,7 @@
 id: diffie_hellman
 aliases: []
 tags: []
-index: 10
+book_order: 10
 next: pages/sicurezza_informazione/ipsec.md
 previous: pages/sicurezza_informazione/key_management.md
 ---

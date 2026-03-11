@@ -2,7 +2,7 @@
 id: modalita_cifratura
 aliases: []
 tags: []
-index: 3
+book_order: 3
 next: pages/sicurezza_informazione/cifrari_simmetrici.md
 previous: pages/sicurezza_informazione/funzioni_hash.md
 ---

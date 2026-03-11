@@ -2,7 +2,7 @@
 id: pgp
 aliases: []
 tags: []
-index: 14
+book_order: 14
 next: pages/sicurezza_informazione/blockchain.md
 previous: pages/sicurezza_informazione/kerberos.md
 ---

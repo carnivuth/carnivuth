@@ -1,9 +1,9 @@
 ---
-id: blockchain
+title: blockchain
 previous: "pages/sicurezza_informazione/pgp.md"
 aliases: []
 tags: []
-index: 15
+book_order: 15
 ---
 
 # Blockchain

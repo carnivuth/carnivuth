@@ -2,7 +2,7 @@
 id: cifrari_simmetrici
 aliases: []
 tags: []
-index: 4
+book_order: 4
 next: pages/sicurezza_informazione/protocollo_wep.md
 previous: pages/sicurezza_informazione/modalita_cifratura.md
 ---

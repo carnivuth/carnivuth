@@ -2,7 +2,7 @@
 id: funzioni_hash
 aliases: []
 tags: []
-index: 2
+book_order: 2
 next: pages/sicurezza_informazione/modalita_cifratura.md
 previous: pages/sicurezza_informazione/trasformazioni.md
 ---

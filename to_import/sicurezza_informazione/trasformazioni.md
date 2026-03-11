@@ -2,7 +2,7 @@
 id: trasformazioni
 aliases: []
 tags: []
-index: 1
+book_order: 1
 next: pages/sicurezza_informazione/funzioni_hash.md
 ---
 
