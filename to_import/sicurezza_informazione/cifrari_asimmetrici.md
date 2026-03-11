@@ -1,5 +1,5 @@
 ---
-id: cifrari_asimmetrici
+title: cifrari_asimmetrici
 book: "information security"
 aliases: []
 tags: []

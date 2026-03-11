@@ -1,5 +1,5 @@
 ---
-id: cifrari_simmetrici
+title: cifrari_simmetrici
 book: "information security"
 aliases: []
 tags: []

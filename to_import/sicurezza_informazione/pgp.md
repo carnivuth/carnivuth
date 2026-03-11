@@ -1,5 +1,5 @@
 ---
-id: pgp
+title: pgp
 book: "information security"
 aliases: []
 tags: []

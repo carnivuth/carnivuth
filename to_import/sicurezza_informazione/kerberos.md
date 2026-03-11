@@ -1,5 +1,5 @@
 ---
-id: kerberos
+title: kerberos
 book: "information security"
 next: "pages/sicurezza_informazione/pgp.md"
 previous: "pages/sicurezza_informazione/ssl.md"

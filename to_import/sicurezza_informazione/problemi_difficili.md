@@ -1,5 +1,5 @@
 ---
-id: problemi_difficili
+title: problemi_difficili
 book: "information security"
 next: "pages/sicurezza_informazione/trasformazioni.md"
 aliases: []

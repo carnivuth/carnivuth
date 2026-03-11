@@ -1,5 +1,5 @@
 ---
-id: MAC
+title: MAC
 book: "information security"
 next: "pages/sicurezza_informazione/trasformazioni.md"
 aliases: []

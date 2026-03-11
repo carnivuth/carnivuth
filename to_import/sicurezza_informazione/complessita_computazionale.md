@@ -1,5 +1,5 @@
 ---
-id: complessita_computazionale
+title: complessita_computazionale
 book: "information security"
 aliases: []
 tags: []

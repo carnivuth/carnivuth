@@ -1,5 +1,5 @@
 ---
-id: SSL
+title: SSL
 book: "information security"
 aliases: []
 tags: []

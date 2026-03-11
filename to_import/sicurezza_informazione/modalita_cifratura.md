@@ -1,5 +1,5 @@
 ---
-id: modalita_cifratura
+title: modalita_cifratura
 book: "information security"
 aliases: []
 tags: []

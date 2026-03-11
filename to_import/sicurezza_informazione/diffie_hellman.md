@@ -1,5 +1,5 @@
 ---
-id: diffie_hellman
+title: diffie_hellman
 book: "information security"
 aliases: []
 tags: []

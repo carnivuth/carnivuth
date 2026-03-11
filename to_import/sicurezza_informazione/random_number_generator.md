@@ -1,5 +1,5 @@
 ---
-id: random_number_generator
+title: random_number_generator
 book: "information security"
 aliases: []
 tags: []
