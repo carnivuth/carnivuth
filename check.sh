@@ -3,6 +3,10 @@
 CONTENT_DIR=content
 IMAGE_DIR=static
 
+function get_fm_param(){
+  sed -n '/^---/,/^---/p' $CONTENT_DIR/* | yq "$1" -r | grep -v null
+}
+
 function list_drafts(){
   grep -l -e '^draft: true$' $CONTENT_DIR/*
 }
@@ -69,6 +73,9 @@ case "$1" in
     list_missing_description
     list_broken_slug
     list_broken_links
+    ;;
+  list_tags)
+    get_fm_param '.tags[]' | sort -u
     ;;
   all)
     echo broken slugs:
