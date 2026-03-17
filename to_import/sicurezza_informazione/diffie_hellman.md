@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 10
-next: pages/sicurezza_informazione/ipsec.md
-previous: pages/sicurezza_informazione/key_management.md
 ---
 
 # Algoritmo diffie-hellman (versione anonima)

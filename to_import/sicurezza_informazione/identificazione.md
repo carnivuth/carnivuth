@@ -7,7 +7,6 @@ show_image: false
 draft: true
 description:
 book: "information security"
-next: "pages/sicurezza_informazione/trasformazioni.md"
 aliases: []
 tags: []
 ---

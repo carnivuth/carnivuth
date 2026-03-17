@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 9
-next: pages/sicurezza_informazione/diffie_hellman.md
-previous: pages/sicurezza_informazione/rsa.md
 ---
 
 # Meccanismo di distribuzione delle chiavi

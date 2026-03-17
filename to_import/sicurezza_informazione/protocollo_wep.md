@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 5
-next: pages/sicurezza_informazione/chiavi.md
-previous: pages/sicurezza_informazione/cifrari_simmetrici.md
 ---
 
 # Protocollo wep

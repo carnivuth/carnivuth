@@ -7,7 +7,6 @@ show_image: false
 draft: true
 description:
 book: "information security"
-previous: "pages/sicurezza_informazione/pgp.md"
 aliases: []
 tags: []
 book_order: 15

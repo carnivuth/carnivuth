@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 8
-next: pages/sicurezza_informazione/key_management.md
-previous: pages/sicurezza_informazione/cifrari_asimmetrici.md
 ---
 
 # Rivest–shamir–adleman (rsa)

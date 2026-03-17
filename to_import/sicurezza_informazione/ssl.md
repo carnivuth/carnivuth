@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 12
-next: pages/sicurezza_informazione/kerberos.md
-previous: pages/sicurezza_informazione/ipsec.md
 ---
 
 # Secure socket layer (ssl)

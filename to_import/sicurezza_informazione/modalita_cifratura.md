@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 3
-next: pages/sicurezza_informazione/cifrari_simmetrici.md
-previous: pages/sicurezza_informazione/funzioni_hash.md
 ---
 
 # Modalità di cifratura

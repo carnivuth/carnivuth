@@ -7,8 +7,6 @@ show_image: false
 draft: true
 description:
 book: "information security"
-next: "pages/sicurezza_informazione/ssl.md"
-previous: "pages/sicurezza_informazione/diffie_hellman.md"
 aliases: []
 tags: []
 book_order: 11

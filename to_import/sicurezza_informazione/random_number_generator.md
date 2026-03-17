@@ -9,7 +9,6 @@ description:
 book: "information security"
 aliases: []
 tags: []
-next: pages/sicurezza_informazione/trasformazioni.md
 ---
 
 # Random number generator (rng)

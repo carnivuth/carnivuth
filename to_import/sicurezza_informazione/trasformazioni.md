@@ -10,7 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 1
-next: pages/sicurezza_informazione/funzioni_hash.md
 ---
 
 # Trasformazioni per la sicurezza

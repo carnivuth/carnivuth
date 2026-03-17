@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 2
-next: pages/sicurezza_informazione/modalita_cifratura.md
-previous: pages/sicurezza_informazione/trasformazioni.md
 ---
 
 # Funzioni hash

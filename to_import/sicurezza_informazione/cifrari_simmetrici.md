@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 4
-next: pages/sicurezza_informazione/protocollo_wep.md
-previous: pages/sicurezza_informazione/modalita_cifratura.md
 ---
 
 # Cifrari simmetrici

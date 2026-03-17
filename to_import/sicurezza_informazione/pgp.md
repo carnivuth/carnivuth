@@ -10,8 +10,6 @@ book: "information security"
 aliases: []
 tags: []
 book_order: 14
-next: pages/sicurezza_informazione/blockchain.md
-previous: pages/sicurezza_informazione/kerberos.md
 ---
 
 # Pretty good privacy (pgp)
