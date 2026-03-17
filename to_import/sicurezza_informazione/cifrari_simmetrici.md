@@ -1,5 +1,6 @@
 ---
 title: cifrari_simmetrici
+date: 2024-06-29
 show_title: true
 show_right_column: true
 show_toc: true

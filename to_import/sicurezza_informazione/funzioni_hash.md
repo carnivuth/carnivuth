@@ -1,5 +1,6 @@
 ---
 title: funzioni_hash
+date: 2024-06-27
 show_title: true
 show_right_column: true
 show_toc: true

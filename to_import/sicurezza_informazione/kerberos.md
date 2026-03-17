@@ -1,5 +1,6 @@
 ---
 title: kerberos
+date: 2024-07-07
 show_title: true
 show_right_column: true
 show_toc: true
