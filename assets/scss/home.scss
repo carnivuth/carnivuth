@@ -7,6 +7,14 @@
   justify-content: center;
 }
 
+a {
+  color: $mocha-teal;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
 .homepage-content {
   text-align: center;
   max-width: 80%;
