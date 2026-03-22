@@ -1,0 +1,180 @@
+
+{{ $mindmap := resources.Get "scss/mindmap.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $mindmap.RelPermalink }}">
+{{ $currentTitle := .Title | default .File.TranslationBaseName }}
+{{ $currentURL   := .RelPermalink }}
+
+{{/* ── 1. Extract [text](url) markdown links ────────────────────────── */}}
+{{ $mdLinks := findRE `\[([^\]]+)\]\(([^)]+)\)` .RawContent }}
+
+{{/* ── 2. Extract bare href="..." from shortcode-generated HTML ─────── */}}
+{{ $hrefLinks := findRE `href="([^"]+)"` .RawContent }}
+
+{{/* ── 3. Build a deduplicated node+edge list ─────────────────────────
+         We emit JSON directly into the <script> block so Hugo resolves
+         everything at build time with zero runtime templating cost.      */}}
+{{ $seen   := dict }}
+{{ $nodes  := slice (dict "id" $currentURL "label" $currentTitle "isCurrent" true) }}
+{{ $edges  := slice }}
+
+{{/* Process markdown-style links */}}
+{{ range $mdLinks }}
+  {{ $parts := findRE `\[([^\]]+)\]\(([^)]+)\)` . }}
+  {{ range $parts }}
+    {{ $label := replaceRE `\[([^\]]+)\]\(.+\)` "$1" . }}
+    {{ $href  := replaceRE `\[[^\]]+\]\(([^)]+)\)` "$1" . }}
+    {{ $href   = trim $href " " }}
+    {{ if and $href (not (hasPrefix $href "#")) (not (hasPrefix $href "mailto:")) }}
+      {{ if not (index $seen $href) }}
+        {{ $seen  = merge $seen (dict $href true) }}
+        {{ $isInt := or (hasPrefix $href "/") (hasPrefix $href $currentURL) }}
+        {{ $nodes  = $nodes | append (dict "id" $href "label" $label "isInternal" $isInt) }}
+        {{ $edges  = $edges | append (dict "source" $currentURL "target" $href) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Process bare hrefs (shortcodes, raw HTML in content) */}}
+{{ range $hrefLinks }}
+  {{ $href := replaceRE `href="([^"]+)"` "$1" . }}
+  {{ $href  = trim $href " " }}
+  {{ if and $href (not (hasPrefix $href "#")) (not (hasPrefix $href "mailto:")) (not (index $seen $href)) }}
+    {{ $seen   = merge $seen (dict $href true) }}
+    {{ $isInt  := or (hasPrefix $href "/") (hasPrefix $href $currentURL) }}
+    {{ $nodes   = $nodes | append (dict "id" $href "label" $href "isInternal" $isInt) }}
+    {{ $edges   = $edges | append (dict "source" $currentURL "target" $href) }}
+  {{ end }}
+{{ end }}
+
+{{/* ── 4. Render only when there are actual links ──────────────────── */}}
+{{ if gt (len $edges) 0 }}
+<div class="mindmap-section">
+  <h2 class="mindmap-title">Link map</h2>
+    <svg class="mindmap-svg" id="mindmap-svg" aria-hidden="true"></svg>
+</div>
+
+<script>
+  (function () {
+  /* Hugo bakes these as JSON literals at build time.
+     We deep-copy immediately so D3's force simulation can freely mutate
+     the objects (adding x, y, vx, vy, fx, fy) without hitting any
+     frozen-property or strict-mode restrictions.                        */
+  const RAW_NODES = JSON.parse("{{ $nodes | jsonify }}");
+  const RAW_EDGES = JSON.parse("{{ $edges | jsonify }}");
+
+  function init () {
+    const svgEl = document.getElementById('mindmap-svg');
+    if (!svgEl || typeof d3 === 'undefined') return;
+
+    /* Fresh mutable copies every time init() runs */
+    const nodes = RAW_NODES.map(n => Object.assign({}, n));
+    /* Edges must reference the *string* IDs — forceLink resolves them
+       to node objects itself via the .id() accessor.                   */
+    const edges = RAW_EDGES.map(e => ({ source: e.source, target: e.target }));
+
+    const W = svgEl.clientWidth  || svgEl.parentElement.clientWidth  || 700;
+    const H = svgEl.clientHeight || 420;
+
+    const root = d3.select(svgEl);
+    root.selectAll('*').remove();
+
+    /* Zoomable container */
+    const g = root.append('g').attr('class', 'mm-canvas');
+    root.call(
+      d3.zoom()
+        .scaleExtent([.25, 3])
+        .on('zoom', e => g.attr('transform', e.transform))
+    );
+
+    /* Arrow marker */
+    root.append('defs').append('marker')
+      .attr('id', 'mm-arrow')
+      .attr('viewBox', '0 0 10 10')
+      .attr('refX', 18).attr('refY', 5)
+      .attr('markerWidth', 6).attr('markerHeight', 6)
+      .attr('orient', 'auto-start-reverse')
+      .append('path')
+        .attr('d', 'M2 1L8 5L2 9')
+        .attr('fill', 'none')
+        .attr('stroke', 'var(--color-border-tertiary, #ccc)')
+        .attr('stroke-width', 1.5)
+        .attr('stroke-linecap', 'round')
+        .attr('stroke-linejoin', 'round');
+
+    /* ── Force simulation ─────────────────────────────────────────────
+       Pass `nodes` and `edges` to the simulation FIRST.
+       forceLink mutates each edge's .source/.target from a string ID
+       into a direct reference to the matching node object — this is
+       what was failing before (trying to set .vx on a plain string).  */
+    const linkForce = d3.forceLink(edges).id(d => d.id).distance(120).strength(.6);
+
+    const simulation = d3.forceSimulation(nodes)
+      .force('link',    linkForce)
+      .force('charge',  d3.forceManyBody().strength(-280))
+      .force('center',  d3.forceCenter(W / 2, H / 2))
+      .force('collide', d3.forceCollide(30));
+
+    /* Edges — bind AFTER forceLink has resolved source/target refs */
+    const edge = g.append('g')
+      .selectAll('path')
+      .data(edges)          /* ← use the local `edges`, not RAW_EDGES */
+      .join('path')
+        .attr('class', 'mm-edge')
+        .attr('marker-end', 'url(#mm-arrow)');
+
+    /* Nodes */
+    const node = g.append('g')
+      .selectAll('g')
+      .data(nodes)          /* ← use the local `nodes` */
+      .join('g')
+        .attr('class', d =>
+          'mm-node ' +
+          (d.isCurrent  ? 'is-current'  :
+           d.isInternal ? 'is-internal' : 'is-external'))
+        .style('cursor', d => d.isCurrent ? 'default' : 'pointer')
+        .on('click', (_, d) => { if (!d.isCurrent) window.location.href = d.id; })
+        .call(drag(simulation));
+
+    node.append('circle')
+      .attr('r', d => d.isCurrent ? 14 : 10);
+
+    node.append('text')
+      .attr('class', 'mm-label')
+      .attr('x', d => d.isCurrent ? 18 : 14)
+      .text(d => d.label.length > 22 ? d.label.slice(0, 21) + '…' : d.label);
+
+    node.append('title').text(d => d.label + '\n' + d.id);
+
+    simulation.on('tick', () => {
+      edge.attr('d', d => {
+        const sx = d.source.x, sy = d.source.y;
+        const tx = d.target.x, ty = d.target.y;
+        const mx = (sx + tx) / 2, my = (sy + ty) / 2;
+        return `M${sx},${sy} Q${mx},${my - 30} ${tx},${ty}`;
+      });
+      node.attr('transform', d => `translate(${d.x},${d.y})`);
+    });
+
+    function drag(sim) {
+      return d3.drag()
+        .on('start', (e, d) => {
+          if (!e.active) sim.alphaTarget(.3).restart();
+          d.fx = d.x; d.fy = d.y;
+        })
+        .on('drag',  (e, d) => { d.fx = e.x; d.fy = e.y; })
+        .on('end',   (e, d) => {
+          if (!e.active) sim.alphaTarget(0);
+          d.fx = null; d.fy = null;
+        });
+    }
+  } /* end init() */
+
+  if (typeof d3 !== 'undefined') {
+    init();
+  } else {
+    document.addEventListener('d3-ready', init, { once: true });
+  }
+})();
+</script>
+{{ end }}

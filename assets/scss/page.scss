@@ -27,6 +27,9 @@ a:hover {
   width: min-content;
   min-width: 20%;
   flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -44,7 +47,10 @@ img {
   }
   .page-toc {
     display: none;
+  }
 
+  .page-mindmap {
+    display: none;
   }
 
   .page-content{
