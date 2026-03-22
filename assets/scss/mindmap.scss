@@ -1,0 +1,69 @@
+@import "catppucin-mocha.scss";
+
+.mindmap-section {
+  width: 100%;
+  border-style: solid;
+  border: 1px;
+  border-color: $mocha-mauve;
+  border-radius: 12px;
+}
+
+.mindmap-title{
+  color: $mocha-peach;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  min-width: 30%;
+}
+
+.mindmap-svg {
+  display: block;
+  width: 100%;
+  height: 420px;
+  background: $mocha-base;
+  color: $mocha-text;
+  cursor: grab;
+}
+
+.mindmap-svg:active { cursor: grabbing; }
+
+/* Nodes */
+.mm-node circle {
+  stroke-width: 2px;
+  transition: r .15s, filter .15s;
+}
+
+.mm-node:hover circle { filter: brightness(.85); }
+
+.mm-node.is-current circle {
+  fill: $mocha-blue;
+  stroke: $mocha-teal;
+}
+
+.mm-node.is-internal circle {
+  fill: var(--color-background-info, #E6F1FB);
+  stroke: #378ADD;
+}
+
+.mm-node.is-external circle {
+  fill: $mocha-lavender;
+  stroke: $mocha-blue;
+}
+
+/* Labels */
+.mm-label {
+  font-family: var(--font-sans, sans-serif);
+  font-size: 11px;
+  fill: $mocha-text;
+  pointer-events: none;
+  dominant-baseline: central;
+}
+
+.mm-node.is-current .mm-label { font-weight: 600; }
+
+/* Edges */
+.mm-edge {
+  stroke: $mocha-text;
+  stroke-width: 1px;
+  fill: none;
+}
