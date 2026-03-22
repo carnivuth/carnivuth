@@ -29,7 +29,7 @@
 
 /* Nodes */
 .mm-node circle {
-  stroke-width: 2px;
+  stroke: none;
   transition: r .15s, filter .15s;
 }
 
@@ -37,17 +37,14 @@
 
 .mm-node.is-current circle {
   fill: $mocha-blue;
-  stroke: $mocha-teal;
 }
 
 .mm-node.is-internal circle {
-  fill: var(--color-background-info, #E6F1FB);
-  stroke: #378ADD;
+  fill: $mocha-teal;
 }
 
 .mm-node.is-external circle {
-  fill: $mocha-lavender;
-  stroke: $mocha-blue;
+  fill: $mocha-peach;
 }
 
 /* Labels */
