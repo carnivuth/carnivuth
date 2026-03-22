@@ -1,18 +1,32 @@
 #!/bin/bash
 
-CONTENT_DIR=content
-IMAGE_DIR=static
+test -z $CONTENT_DIR && CONTENT_DIR=content
+test -z $IMAGE_DIR && IMAGE_DIR=static
+
 
 function get_fm_param(){
-  sed -n '/^---/,/^---/p' $CONTENT_DIR/* | yq "$1" -r | grep -v null
+  find $CONTENT_DIR -type f -name '*.md' -exec yq --front-matter=extract "$1" -r {} \; | grep -v null
+}
+
+function set_aliases(){
+  find $CONTENT_DIR -type f -name '*.md' | while read file; do
+    slug="$(basename $file .md)"
+    title=$(yq --front-matter=extract '.title' "$file" -r | tr ' ' '-')
+    category=$(yq --front-matter=extract '.categories[0]' "$file" -r | tr ' ' '-')
+    test ! -z $DEBUG && echo "setting $slug $category $title for $file"
+    yq --front-matter=process '.aliases = ["/'"$title"'","/'"$slug"'","/'"$category"'/'"$slug"'","/'"$category"'/'"$title"'"]' -i "$file"
+  done
 }
 
 function list_drafts(){
-  grep -l -e '^draft: true$' $CONTENT_DIR/*
+  grep -l -e '^draft: true$' $(find "$CONTENT_DIR" -type f -name '*.md')
 }
 
 function count_drafts(){
   echo there are $( list_drafts | wc -l) notes in draft
+}
+function lint_fm(){
+  find $CONTENT_DIR -type f -name '*.md' -exec yq --front-matter=process -i 'sort_keys(.)' {} \;
 }
 
 function list_broken_links(){
@@ -68,23 +82,19 @@ case "$1" in
   list_broken_slug)
     list_broken_slug
     ;;
-  lint)
-    list_missing_title
-    list_missing_description
-    list_broken_slug
-    list_broken_links
-    ;;
   list_tags)
     get_fm_param '.tags[]' | sort -u
     ;;
-  all)
-    echo broken slugs:
+  set_aliases)
+    set_aliases
+    ;;
+  lint_fm)
+    lint_fm
+    ;;
+  list_broken)
     list_broken_slug
-    echo drafts:
     list_drafts
-    echo broken links:
     list_broken_links
-    echo missing description:
     list_missing_description
     ;;
 esac
