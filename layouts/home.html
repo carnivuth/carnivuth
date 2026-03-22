@@ -24,6 +24,15 @@
     {{ partial "cards" . }}
     {{ end }}
 
+    <!-- notes section -->
+    {{ $notes := site.RegularPages.ByDate }}
+    {{ $notes = where $notes "Params.categories" "intersect" (slice "notes") }}
+    {{ $notes = last 4 $notes }}
+    {{ with $notes }}
+    <h2>Some of my recent <a href="/categories/notes" >Notes</a> </h2>
+    {{ partial "cards" . }}
+    {{ end }}
+
   </div>
 </div>
 </div>
