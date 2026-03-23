@@ -1,9 +1,13 @@
 ---
-id: PERSPECTIVE_PROJECTION_MATRIX
+title: PERSPECTIVE_PROJECTION_MATRIX
 aliases: []
 tags: []
 book_order: 9
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Perspective projection matrix ($ppm$)

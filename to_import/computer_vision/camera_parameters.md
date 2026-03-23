@@ -1,9 +1,13 @@
 ---
-id: CAMERA_PARAMETERS
+title: CAMERA_PARAMETERS
 aliases: []
 tags: []
 book_order: 2
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Camera parameters

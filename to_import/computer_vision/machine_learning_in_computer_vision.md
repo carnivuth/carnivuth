@@ -1,9 +1,13 @@
 ---
-id: MACHINE_LEARNING_IN_COMPUTER_VISION
+title: MACHINE_LEARNING_IN_COMPUTER_VISION
 aliases: []
 tags: []
 book_order: 46
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Machine learning in computer vision

@@ -1,9 +1,13 @@
 ---
-id: STEREO_IMAGE_ACQUISITION
+title: STEREO_IMAGE_ACQUISITION
 aliases: []
 tags: []
 book_order: 7
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Stereo image acquisition

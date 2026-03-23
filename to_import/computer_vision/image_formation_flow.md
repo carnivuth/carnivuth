@@ -1,8 +1,12 @@
 ---
-id: IMAGE_FORMATION_FLOW
+title: IMAGE_FORMATION_FLOW
 aliases: []
 tags: []
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Image formation flow

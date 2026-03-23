@@ -1,5 +1,5 @@
 ---
-id: GENERALIZED_HUGH_TRANSFORM
+title: GENERALIZED_HUGH_TRANSFORM
 aliases: []
 tags:
   - ght process
@@ -7,6 +7,10 @@ tags:
   - object detection
 book_order: 44
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Generalized hough transform

@@ -1,9 +1,13 @@
 ---
-id: FINDING_CORRESPONDENCES
+title: FINDING_CORRESPONDENCES
 aliases: []
 tags: []
 book_order: 27
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Finding correspondences

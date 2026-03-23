@@ -1,10 +1,14 @@
 ---
-id: PERSPECTIVE_SPACE
+title: PERSPECTIVE_SPACE
 aliases:
   - point-to-infinity
 tags:
 book_order: 8
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Perspective space

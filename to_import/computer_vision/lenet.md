@@ -1,9 +1,13 @@
 ---
-id: LENET
+title: LENET
 aliases: []
 tags: []
 book_order: 50
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Lenet-5

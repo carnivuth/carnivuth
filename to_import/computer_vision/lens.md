@@ -1,9 +1,13 @@
 ---
-id: LENS
+title: LENS
 aliases: []
 tags: []
 book_order: 5
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Lenses

@@ -1,9 +1,13 @@
 ---
-id: TEMPLATE_PATTERN_MATCHING
+title: TEMPLATE_PATTERN_MATCHING
 aliases: []
 tags: []
 book_order: 41
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Template pattern matching

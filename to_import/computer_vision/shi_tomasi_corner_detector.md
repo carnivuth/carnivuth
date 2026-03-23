@@ -1,9 +1,13 @@
 ---
-id: SHI_TOMASI_CORNER_DETECTOR
+title: SHI_TOMASI_CORNER_DETECTOR
 aliases: []
 tags: []
 book_order: 33
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Shi tomasi corner detector

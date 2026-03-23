@@ -1,9 +1,13 @@
 ---
-id: SCALE_NORMALIZED_LOG
+title: SCALE_NORMALIZED_LOG
 aliases: []
 tags: []
 book_order: 35
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Scale normalized log

@@ -1,9 +1,13 @@
 ---
-id: IMAGE_FILTERS
+title: IMAGE_FILTERS
 aliases: []
 tags: []
 book_order: 15
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 # Image filters
 

@@ -1,9 +1,13 @@
 ---
-id: CONVOLUTIONAL_NEURAL_NETWORKS
+title: CONVOLUTIONAL_NEURAL_NETWORKS
 aliases: []
 tags: []
 book_order: 49
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Convolutional neural networks (cnn)

@@ -1,9 +1,13 @@
 ---
-id: SHAPE_BASED_MATCHING
+title: SHAPE_BASED_MATCHING
 aliases: []
 tags: []
 book_order: 42
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Shape based matching

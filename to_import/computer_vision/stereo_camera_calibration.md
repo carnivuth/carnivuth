@@ -1,11 +1,15 @@
 ---
-id: STEREO_CAMERA_CALIBRATION
+title: STEREO_CAMERA_CALIBRATION
 aliases: []
 tags:
   - rectification
   - retrieve_3D_coordinates
 book_order: 13
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Stereo camera calibration

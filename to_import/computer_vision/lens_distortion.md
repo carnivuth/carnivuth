@@ -1,9 +1,13 @@
 ---
-id: LENS_DISTORTION
+title: LENS_DISTORTION
 aliases: []
 tags: []
 book_order: 6
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Lens distortion

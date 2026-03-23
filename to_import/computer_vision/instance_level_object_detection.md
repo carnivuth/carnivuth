@@ -1,9 +1,13 @@
 ---
-id: INSTANCE_LEVEL_OBJECT_DETECTION
+title: INSTANCE_LEVEL_OBJECT_DETECTION
 aliases: []
 tags: []
 book_order: 40
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Instance level object detection

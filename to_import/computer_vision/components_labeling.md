@@ -1,9 +1,13 @@
 ---
-id: COMPONENTS_LABELING
+title: COMPONENTS_LABELING
 aliases: []
 tags: []
 book_order: 25
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Components labeling

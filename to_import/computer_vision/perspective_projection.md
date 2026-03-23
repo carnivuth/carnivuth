@@ -1,9 +1,13 @@
 ---
-id: PERSPECTIVE_PROJECTION
+title: PERSPECTIVE_PROJECTION
 aliases: []
 tags: []
 book_order: 1
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Perspective projection

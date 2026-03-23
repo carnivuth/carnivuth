@@ -1,9 +1,13 @@
 ---
-id: MEDIAN_FILTER
+title: MEDIAN_FILTER
 aliases: []
 tags: []
 book_order: 18
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Median filter

@@ -1,9 +1,13 @@
 ---
-id: MEAN_FILTER
+title: MEAN_FILTER
 aliases: []
 tags: []
 book_order: 16
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Mean filter

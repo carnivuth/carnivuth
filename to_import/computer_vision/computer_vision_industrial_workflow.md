@@ -1,9 +1,13 @@
 ---
-id: COMPUTER_VISION_INDUSTRIAL_WORKFLOW
+title: COMPUTER_VISION_INDUSTRIAL_WORKFLOW
 aliases: []
 tags: []
 book_order: 21
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 # Computer vision industrial workflow
 

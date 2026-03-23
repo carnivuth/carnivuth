@@ -1,9 +1,13 @@
 ---
-id: ZHANG_METHOD
+title: ZHANG_METHOD
 aliases: []
 tags: []
 book_order: 12
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Zhang's method

@@ -1,9 +1,13 @@
 ---
-id: CREATING_A_CLASSIFIER
+title: CREATING_A_CLASSIFIER
 aliases: []
 tags: []
 book_order: 47
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Creating a classifier

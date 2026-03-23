@@ -1,9 +1,13 @@
 ---
-id: COLOR_BASED_SEGMENTATION
+title: COLOR_BASED_SEGMENTATION
 aliases: []
 tags: []
 book_order: 23
 draft: true
+show_toc: true
+show_title: true
+show_right_column: true
+show_image: true
 ---
 
 # Color based segmentation
