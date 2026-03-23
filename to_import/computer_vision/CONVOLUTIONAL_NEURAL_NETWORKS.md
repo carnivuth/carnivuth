@@ -150,7 +150,7 @@ An example of this can be found in [RESNET](RESNET.md)
 
 In order to reduce the number of parameter at the begin of the [FC layers](DEEP_LEARNING_AND_NEURAL_NETWORKS.md#FULLY%20CONNECTED%20LAYERS) the output can be processed by average pooling
 
-![](Pasted%20image%2020241001145533.png)
+![](Pasted-image-20241001145533.png)
 
 ### GROUPED CONVOLUTIONS
 

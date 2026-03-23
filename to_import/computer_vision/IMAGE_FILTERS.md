@@ -17,7 +17,7 @@ date: "2024-02-29"
 
 Image filters are operators that given a 2D input image calculate the new intensity of a pixel based on considerations on the neighborhood, an important class of filters are the [linear and translation equivariant](LTE_OPERATORS.md) filters. 
 
-![](Pasted%20image%2020241011100211.png)
+![](Pasted-image-20241011100211.png)
 
  [LTE filters](LTE_OPERATORS.md) are olso used in [CNN](CONVOLUTIONAL_NEURAL_NETWORKS.md) as feature extractors
  

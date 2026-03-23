@@ -18,7 +18,7 @@ date: "2024-10-01"
 
 [CNN](CONVOLUTIONAL_NEURAL_NETWORKS.md) to recongnize handwritten digits.
 
-![](Pasted%20image%2020241001101124.png)
+![](Pasted-image-20241001101124.png)
 
 Principal features are:
 
