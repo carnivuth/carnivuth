@@ -1,0 +1,33 @@
+---
+title: COMPUTER_VISION_INDUSTRIAL_WORKFLOW
+aliases: []
+tags: []
+book_order: 21
+draft: true
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
+categories:
+  - computer vision
+book: computer vision
+---
+# COMPUTER VISION INDUSTRIAL WORKFLOW
+
+Computer vision processes in industrial environment follow this schema
+
+```mermaid
+flowchart TD
+A[Grab image]
+B[ROI]
+subgraph segmentation
+C[Binarization]
+D[Labeling]
+end
+E[Blob analysis]
+A --> B
+B --> C
+C --> D
+D --> E
+```
+

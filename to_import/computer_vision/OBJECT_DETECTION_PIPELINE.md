@@ -1,0 +1,35 @@
+---
+title: OBJECT_DETECTION_PIPELINE
+aliases:
+tags:
+book_order: 45
+draft: true
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
+categories:
+  - computer vision
+book: computer vision
+---
+
+# OBJECT DETECTION PIPELINE
+
+```mermaid
+flowchart LR
+
+subgraph online phase
+direction LR
+B[DETECTION\n DESCRIPTION\n AND MATCHING]
+C[GHT]
+D[LS POSE\n ESTIMATION]
+B --> C --> D
+end
+
+subgraph offline phase
+direction RL
+A[MODEL GALLERY]
+A --> B & C
+end
+```
+
