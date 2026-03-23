@@ -11,6 +11,7 @@ show_toc: true
 categories:
   - computer vision
 book: computer vision
+date: "2024-04-30"
 ---
 
 # MACHINE LEARNING IN COMPUTER VISION

@@ -11,6 +11,7 @@ show_toc: true
 categories:
   - computer vision
 book: computer vision
+date: "2024-03-09"
 ---
 
 # ZERO CROSSING EDGE DETECTION

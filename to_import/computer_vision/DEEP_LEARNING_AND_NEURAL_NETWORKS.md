@@ -11,6 +11,7 @@ show_toc: true
 categories:
   - computer vision
 book: computer vision
+date: "2024-05-04"
 ---
 
 ## MACHINE LEARNING VS DEEP LEARNING

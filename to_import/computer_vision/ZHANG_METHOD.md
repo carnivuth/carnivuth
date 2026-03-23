@@ -11,6 +11,7 @@ show_toc: true
 categories:
   - computer vision
 book: computer vision
+date: "2023-10-31"
 ---
 
 # ZHANG'S METHOD

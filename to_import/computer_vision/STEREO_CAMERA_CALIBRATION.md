@@ -13,6 +13,7 @@ show_toc: true
 categories:
   - computer vision
 book: computer vision
+date: "2024-02-27"
 ---
 
 # STEREO CAMERA CALIBRATION
