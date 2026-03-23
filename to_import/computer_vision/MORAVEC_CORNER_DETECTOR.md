@@ -26,5 +26,5 @@ Where $N$ is the neighborhood around the point and its neighbors
 
 The output is the lowest difference computed between the neighborhood of $p$ and the neighborhoods of the neighbor points $q$
 
-![](Pasted_image_20240310153802.png)
+![](/Pasted_image_20240310153802.png)
 

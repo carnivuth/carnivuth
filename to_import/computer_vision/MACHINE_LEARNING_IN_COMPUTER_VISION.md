@@ -18,7 +18,7 @@ date: "2024-04-30"
 
 There are problems in computer vision scenarios that can not be dealt with classical computer vision approach for example **image classification**:
 
-![](Pasted_image_20240428160259.png)
+![](/Pasted_image_20240428160259.png)
 
 In order to address this situation machine learning techniques are deployed.
 
@@ -76,7 +76,7 @@ $$
 
 When varying model complexity training and test error follow this curve
 
-![](Pasted_image_20240430111200.png)
+![](/Pasted_image_20240430111200.png)
 
 So with complex models the training error increases, this is called overfitting
 
@@ -84,7 +84,7 @@ So with complex models the training error increases, this is called overfitting
 
 Regularization aims to reduce the test error without modifying the training error
 
-![](Pasted_image_20240430111545.png)
+![](/Pasted_image_20240430111545.png)
 
 The basic idea under this concept is that models with lower parameter tend to overfit less.
 

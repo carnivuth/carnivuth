@@ -22,7 +22,7 @@ $$
 G(x,y) = G(x)G(y) = \frac{1}{2\pi\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}}
 $$
 
-![](Pasted_image_20240229123834.png)
+![](/Pasted_image_20240229123834.png)
 
 The effect of increasing $\sigma$ can be seen as reducing the importance of the closest points and increasing the importance of farther points smoothing the image
 

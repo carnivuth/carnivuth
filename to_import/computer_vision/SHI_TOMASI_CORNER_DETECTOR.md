@@ -22,5 +22,5 @@ $$
 C = \min(\lambda_1,\lambda_2)
 $$
 
-![](Pasted_image_20240310172549.png)
+![](/Pasted_image_20240310172549.png)
 

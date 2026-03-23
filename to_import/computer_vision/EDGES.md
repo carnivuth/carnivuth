@@ -22,7 +22,7 @@ Edges are local features that capture important information of the semantic cont
 
 In this situation an edge can be seen as a peak of the first derivative of the intensity pixel function
 
-![](Pasted_image_20240307121139.png)
+![](/Pasted_image_20240307121139.png)
 
 So in order to detect edge in this situation is  sufficient to threshold the first derivative
 
@@ -47,7 +47,7 @@ $$
 
 ### FIRST DETECTION PIPELINE
 
-![](Pasted_image_20240307122923.png)
+![](/Pasted_image_20240307122923.png)
 
 ### GRADIENT APPROXIMATION
 
@@ -94,7 +94,7 @@ $$
 
 Due to the nature of the derivative operation of amplifying noise the input signal needs to be smoothed out to allow a correct edge detection
 
-![](Pasted_image_20240307124642.png)
+![](/Pasted_image_20240307124642.png)
 
 the smoothing process and the derivative can be carried out by a single operation using the mean of point in the derivative approximation step
 
@@ -104,7 +104,7 @@ $$
 $$
 \mu_y = \frac{1}{3}(I(i-1,j),I(i,j),I(i+1,j)) \\
 $$
-![](Pasted_image_20240307124803.png)
+![](/Pasted_image_20240307124803.png)
 
 And then the derivative is obtained by the difference of the means
 
@@ -138,7 +138,7 @@ $$
 
 It's difficult to localize edge in an image just by thresholding, a too low threshold could result in a poor localization of the edge (e.g. thick edges)
 
-![](Pasted_image_20240309115902.png)
+![](/Pasted_image_20240309115902.png)
 
 A better way to localize the edges is to find the local maxima of the absolute value of the derivative
 
@@ -148,7 +148,7 @@ The idea is to use the discrete representation of the gradient discussed earlier
 
 So given a point in an image
 
-![](Pasted_image_20240309120230.png)
+![](/Pasted_image_20240309120230.png)
 
 The gradient in the line from $A$ to $B$ can be approximated as follows
 

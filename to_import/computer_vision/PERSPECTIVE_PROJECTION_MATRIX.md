@@ -101,7 +101,7 @@ $$
 v = f\frac{y}{z} \rightarrow v = \frac{1}{\Delta v}f\frac{y}{z} = k_{v}f\frac{y}{z} + v_{0}
 $$
 
-![](Pasted_image_20240221201431.png)
+![](/Pasted_image_20240221201431.png)
 
 Based on this equation the $PPM$ becomes as follows
 

@@ -39,11 +39,11 @@ A possible improvement can be done by [exploiting the separability](GAUSSIAN_FIL
 
 In order to improve the **NMS** process Canny propose a 2 threshold approach $T_h$ $T_l$ where a pixel is considered an edge if it's magnitude it's above $T_h$ or it's above $T_l$ and it's a neighbor of an already edge detected pixel
 
-![](Pasted_image_20240309145141.png)
+![](/Pasted_image_20240309145141.png)
 
 ## FINAL PIPELINE
 
-![](Pasted_image_20240309145554.png)
+![](/Pasted_image_20240309145554.png)
 
 ## IMPLEMENTATION
 

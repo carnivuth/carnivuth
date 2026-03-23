@@ -49,7 +49,7 @@ Corners can be detected easily from the image by using the [Harris detector](HAR
 
 so given a set of images the WRF is taken with origin at the top-left corner of the patter(that could easily be detected)
 
-![](Pasted_image_20240222173836.png)
+![](/Pasted_image_20240222173836.png)
 
 Given this setup with the **WRF** parallel to the $Z$ axis we can consider the control point to have $z=0$ so the relation with the image points **became a [HOMOGRAPHY](HOMOGRAPHY.md)**
 

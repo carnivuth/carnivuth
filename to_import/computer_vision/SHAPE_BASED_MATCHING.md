@@ -18,7 +18,7 @@ date: "2024-04-23"
 
 Shape based matching is a technique that involves matching a specific set of corner points and their gradients to find the model image in the target
 
-![](Pasted_image_20240423154429.png)
+![](/Pasted_image_20240423154429.png)
 
 First, a set of control points, $P_{k}$, is extracted from the model image by an Edge Detection operation and the gradient direction at each $P_{k}$ is recorded.
 

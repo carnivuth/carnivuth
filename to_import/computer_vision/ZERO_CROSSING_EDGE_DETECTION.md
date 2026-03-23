@@ -18,7 +18,7 @@ date: "2024-03-09"
 
 Edge detection can also be done by detecting the zero crossing point of the second derivative
 
-![](Pasted_image_20240309153449.png)
+![](/Pasted_image_20240309153449.png)
 
 The second derivative can be computed by the Hessian matrix as $n^THm$ with
 

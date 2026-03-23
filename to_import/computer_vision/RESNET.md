@@ -18,7 +18,7 @@ date: "2024-10-01"
 
 [CNN](CONVOLUTIONAL_NEURAL_NETWORKS.md) Inspired by [VGG](VGG.md) based on the concept of [residual blocks](CONVOLUTIONAL_NEURAL_NETWORKS.md#RESIDUAL%20LEARNING%20AS%20A%20SOLUTION), each stage of a resnet consists in a combination of residual blocks
 
-![](Pasted-image-20241001122748.png)
+![](/Pasted-image-20241001122748.png)
 
 ## RESIDUAL BLOCK STRUCTURE
 
@@ -31,7 +31,7 @@ pool*) and doubles the number of channels.
 
 Input layer and output of a RB block are tensors of different shapes and cannot be added together
 
-![](Pasted-image-20241001123433.png)
+![](/Pasted-image-20241001123433.png)
 
 In order to address this situation a stage is added in the shortcut branch to increase the number of layers of the input
 

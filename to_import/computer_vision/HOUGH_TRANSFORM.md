@@ -41,7 +41,7 @@ c = \frac{ x_2y_1 - y_2x_1}{x_2 -x_1} \\
 \end{cases}
 $$
 
-![](Pasted_image_20240427142752.png)
+![](/Pasted_image_20240427142752.png)
 
 More in general with $n$ image points we get the $n(n-1)/2$  points that represents all the lines between the points
 
@@ -49,7 +49,7 @@ More in general with $n$ image points we get the $n(n-1)/2$  points that represe
 
 In the case of **image points that are in the same line** the projections in the parameter space  will met at the same point
 
-![](Pasted_image_20240427155224.png)
+![](/Pasted_image_20240427155224.png)
 
 So the problem of finding a line in the image can be translated in **finding the intersection of lines in the parameter space**
 
@@ -61,7 +61,7 @@ So the problem become **finding parameter space points in which many curves inte
 
 The implementation relies on a discrete representation of the parameter space as an **accumulator array** (**AA**) in which the curves are drawn in order to increment the values in the bins of the array, **an high number in one of the bins means that there is a high number of line passing trough that point**
 
-![](Pasted_image_20240427162503.png)
+![](/Pasted_image_20240427162503.png)
 
 In order to compute non analytical shapes the [GENERALIZED HUGH TRANSFORM](GENERALIZED_HUGH_TRANSFORM.md) is deployed
 

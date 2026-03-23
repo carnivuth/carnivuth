@@ -47,7 +47,7 @@ $$
 y(i,j) = \sum_{m=-1}^{m=1}\sum_{l=-1}^{l=1} {w(m,l)x(i+m,j+l)}
 $$
 
-![](Pasted_image_20240504170704.png)
+![](/Pasted_image_20240504170704.png)
 
 ### COLOR IMAGE AS INPUTS
 
@@ -76,34 +76,34 @@ This approach can be generalized, obtaining the **general structure of a convolu
 $$
 [K^k\times I](i,j) = \sum_{n=1}^{C_{in}}\sum_{m}\sum_{l}K^k_n(m,l)I_n(i+m,j+l)+ b^k\space with \space k=1..C_{out}
 $$
-![](Pasted_image_20240504173105.png)
+![](/Pasted_image_20240504173105.png)
 
 ### CHAINING CONVOLUTIONAL LAYERS
 
 Convolutional layers are a form of linear transformation (they can be expressed by matrix) so in order to take advantage of network depth there is the need to chain them with some form of non-linearity (e.g. [relu](DEEP_LEARNING_AND_NEURAL_NETWORKS.md#ACTIVATION%20FUNCTION))
 
-![](Pasted_image_20240504173234.png)
+![](/Pasted_image_20240504173234.png)
 
 The main advantage of chaining is that with each level of depth the number of input pixels that the layer takes into account (e.g. the **receptive field**) gets larger and larger enabling the network to detect larger patterns
 
-![](Pasted_image_20240504175829.png)
+![](/Pasted_image_20240504175829.png)
 
 ### STRIDED CONVOLUTION
 
 Convolution can be computed every $S$ (stride) positions in both directions
 
-![](Pasted_image_20240504180313.png )
+![](/Pasted_image_20240504180313.png )
 ## POOLING LAYERS
 
 Pooling layers are layers with handcrafted functions that aggregates the input neighboring values in order to downsample the output
 
-![](Pasted_image_20240504180153.png)
+![](/Pasted_image_20240504180153.png)
 
 The pooling layer introduces some more hyperparameters such as dimensions of the kernel and stride
 
 ## CNN FINAL STRUCTURE
 
-![](Pasted_image_20240504180437.png)
+![](/Pasted_image_20240504180437.png)
 
 Example of cnn's can be [LENET](LENET.md) and [ALEXNET](ALEXNET.md)
 ## NUMBER OF LEARNABLE PARAMETERS
@@ -118,7 +118,7 @@ $$
 
 Intuitively increasing depth should take better results at the price of computation cost but as shown by [VGG](VGG.md) in real testing this is not the case
 
-![](Pasted_image_20240504181754.png)
+![](/Pasted_image_20240504181754.png)
 
 ### RESIDUAL LEARNING AS A SOLUTION
 
@@ -150,13 +150,13 @@ An example of this can be found in [RESNET](RESNET.md)
 
 In order to reduce the number of parameter at the begin of the [FC layers](DEEP_LEARNING_AND_NEURAL_NETWORKS.md#FULLY%20CONNECTED%20LAYERS) the output can be processed by average pooling
 
-![](Pasted-image-20241001145533.png)
+![](/Pasted-image-20241001145533.png)
 
 ### GROUPED CONVOLUTIONS
 
 In order to improve the computational costs kernels are split into $G$ groups and each group process $\frac{C_{in}}{G}$ input channels, with this required flops and number of parameters are scaled by a $G$ factor
 
-![](Pasted_image_20240505120419.png)
+![](/Pasted_image_20240505120419.png)
 
 ## DEPTHWISE SEPARABLE CONVOLUTIONS
 

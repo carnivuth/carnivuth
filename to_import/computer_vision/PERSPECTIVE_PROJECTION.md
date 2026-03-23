@@ -18,7 +18,7 @@ date: "2024-02-18"
 
 The model that rules the conversion from a 3D scene  to an image is called perspective projection, it's based on the [pinhole camera model](https://en.wikipedia.org/wiki/Pinhole_camera_model) and it goes like follow:
 
-![](Pasted_image_20231005122554.png)
+![](/Pasted_image_20231005122554.png)
 
 from this model are derived the equation to map a 3D point to a 2D coordinate are as follow
 
@@ -46,7 +46,7 @@ In order to recover the depth information [stereo image acquisition](STEREO_IMAG
 The vanishing point of a 3D line is the image of the point at infinity of the line (i.e. the image
 of the point on the line which is infinitely distant from the optical center).
 
-![](Pasted_image_20240221202839.png)
+![](/Pasted_image_20240221202839.png)
 
 with such definition all 3D lines in the image will **share the same vanishing point**
 

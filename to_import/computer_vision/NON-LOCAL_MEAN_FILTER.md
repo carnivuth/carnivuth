@@ -18,7 +18,7 @@ date: "2024-02-29"
 
 Non linear filter which exploits similarities between different patches of the image
 
-![](Pasted_image_20240302112646.png)
+![](/Pasted_image_20240302112646.png)
 
 $$
 O(p) = \sum_{p\in S}w(p,q)I_{q} \space where
@@ -29,5 +29,5 @@ $$
 $$
 Z(p)= \sum_{q \in I} e^{\frac{\Vert N_p -N_q\Vert_2^2}{h^2}}
 $$
-![](Pasted_image_20240302112706.png)
+![](/Pasted_image_20240302112706.png)
 

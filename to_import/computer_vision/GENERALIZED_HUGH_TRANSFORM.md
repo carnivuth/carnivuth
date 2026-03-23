@@ -43,7 +43,7 @@ a --> b --> c --> d --> e --repeat for all edges--> c
 end
 ```
 
-![](Pasted_image_20240427172424.png)
+![](/Pasted_image_20240427172424.png)
 
 ## GHT with local invariant features
 
@@ -106,5 +106,5 @@ $$
 
 A 2D accumulator array is not sufficient to account for rotation and scale, the solution is to use a 4D accumulator array in order to account for scale and rotation
 
-![](Pasted_image_20240428143913.png)
+![](/Pasted_image_20240428143913.png)
 

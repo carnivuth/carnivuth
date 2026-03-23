@@ -26,7 +26,7 @@ C[compute gradient orientation histogram for each pixel]
 A --> B --> C
 ```
 
-![](Pasted_image_20240314124330.png)
+![](/Pasted_image_20240314124330.png)
 
 The descriptor is given by all of the histogram of the regions so the dimension space of a SIFT descriptor is $R^{128}$
 

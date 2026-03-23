@@ -57,5 +57,5 @@ $$
 
 points before or after the focusing plane will appear in circles called circles of confusion
 
-![](Pasted_image_20240221202723.png)
+![](/Pasted_image_20240221202723.png)
 

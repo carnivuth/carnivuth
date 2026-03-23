@@ -37,13 +37,13 @@ $$
 
 Orientation is defined as the **angle $\theta$ between the horizontal axis and the major axis of the blob**, defined as the axis of least moment of inertia (the axis perpendicular to the major axis is called minor axis)
 
-![](Pasted_image_20240303183222.png)
+![](/Pasted_image_20240303183222.png)
 
 ## ORIENTED BOUNDING BOX (MINIMUM ENCLOSING RECTANGLE)
 
 The **MER** can be computed from the major and minor axis by finding the 4 points laying at the maximum distance from the barycenter and sliding the axis towards them
 
-![](Pasted_image_20240303183704.png)
+![](/Pasted_image_20240303183704.png)
 ## LENGTH AND WIDTH
 
 

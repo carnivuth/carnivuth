@@ -50,7 +50,7 @@ d\overset{\sim}y \\
 $$
 Where the non-distorted coordinates ($\begin{bmatrix}\overset{\sim}x \\ \overset{\sim}y \\ \end{bmatrix}$) are mapped to distorted coordinates ($\begin{bmatrix}x_{'} \\ y_{'} \\ \end{bmatrix}$) through a non linear function $L(r)$ of the distance from the distortion center $r= \sqrt{(\overset{\sim}x - \overset{\sim}x_{c})^2+(\overset{\sim}x - \overset{\sim}x_{c})^2}$
 
-![](Pasted_image_20231021110250.png)
+![](/Pasted_image_20231021110250.png)
 
 The $L(r)$ function is defined for positive values of $r$ only and for $r =0 \space L(r) =1$. This non linear function is approximated by it's Taylor series:
 

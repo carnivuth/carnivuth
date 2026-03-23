@@ -18,7 +18,7 @@ date: "2024-04-04"
 
 In order to obtain a reference frame for computing the descriptor of a keypoint a local reference frame is needed, one solution is to chose the direction in which most of the gradient is found
 
-![](Pasted_image_20240314123223.png)
+![](/Pasted_image_20240314123223.png)
 
 ## [DOG](DOG_DETECTOR.md) CANONICAL ORIENTATION
 
@@ -37,5 +37,5 @@ The contribution of a single point is obtained  by the **gradient magnitude weig
 
 then the highest peak of the histogram is considered for the canonical orientation with the 2 neighbors
 
-![](Pasted_image_20240314122805.png)
+![](/Pasted_image_20240314122805.png)
 

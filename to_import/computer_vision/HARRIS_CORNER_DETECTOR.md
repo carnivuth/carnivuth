@@ -25,7 +25,7 @@ $$
 
 With $w(x,y)$ as a weight function (*gaussian function*)
 
-![](Pasted_image_20240310154904.png)
+![](/Pasted_image_20240310154904.png)
 
 
 Due to the fact that it's a continuous formulation intensity function can be approximated with it's Taylor polynomial form
@@ -72,7 +72,7 @@ $$
 
 the coefficients $\lambda_1,\lambda_2$ can be used to distinguish corners
 
-![](Pasted_image_20240310161958.png)
+![](/Pasted_image_20240310161958.png)
 
 But Computation of the eigenvector is expensive so a better approximation can be deployed
 
@@ -82,7 +82,7 @@ $$
 
 And with this corner can be detected as
 
-![](Pasted_image_20240310162230.png)
+![](/Pasted_image_20240310162230.png)
 
 So in conclusion the corner detection algorithm can be described as follows
 

@@ -24,7 +24,7 @@ p =\begin{bmatrix}u \\ v\end{bmatrix}, \space
 \forall \space p \in I \space H[I(p)]++\\
 $$
 
-![](Pasted_image_20240302130200.png)
+![](/Pasted_image_20240302130200.png)
 
 This histogram does not contain spatial information so a **different arranged set of the same pixels produces the same histogram**
 
@@ -41,7 +41,7 @@ In real case scenarios the light stability of the image is not guaranteed so the
 
 This is the simplest threshold selection method, it works only if points are evenly distributed in the histogram
 
-![](Pasted_image_20240302144849.png)
+![](/Pasted_image_20240302144849.png)
 
 #### PEAKS METHOD
 
@@ -51,7 +51,7 @@ $$
 T = argmin(h(i); i \in [i_1,i_2])
 $$
 
-![](Pasted_image_20240302145905.png)
+![](/Pasted_image_20240302145905.png)
 
 This method need the histogram smoothing to avoid been trapped in local minimums
 

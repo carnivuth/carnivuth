@@ -22,5 +22,5 @@ $$
 F(x,y,\sigma) = \sigma^2\nabla^2L(x,y,\sigma) = \sigma^2(\nabla^2G(x,y,\sigma)\ast I(x,y))
 $$
 
-![](Pasted_image_20240314101650.png)
+![](/Pasted_image_20240314101650.png)
 
