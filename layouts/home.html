@@ -9,7 +9,7 @@
     <!-- posts section -->
     {{ $posts := site.RegularPages.ByDate }}
     {{ $posts = where $posts "Params.categories" "intersect" (slice "posts") }}
-    {{ $posts = last 4 $posts }}
+    {{ $posts = last 4 $posts | collections.Reverse }}
     {{ with $posts }}
     <h2>Recent <a href="/categories/posts" >Posts</a></h2>
     {{ partial "cards" . }}
@@ -18,7 +18,7 @@
     <!-- games section -->
     {{ $games := site.RegularPages.ByDate }}
     {{ $games = where $games "Params.categories" "intersect" (slice "games") }}
-    {{ $games = last 4 $games }}
+    {{ $games = last 4 $games | collections.Reverse }}
     {{ with $games }}
     <h2>Recent thoughts on <a href="/categories/games" >Games</a> </h2>
     {{ partial "cards" . }}
@@ -27,7 +27,7 @@
     <!-- notes section -->
     {{ $notes := site.RegularPages.ByDate }}
     {{ $notes = where $notes "Params.categories" "intersect" (slice "notes") }}
-    {{ $notes = last 4 $notes }}
+    {{ $notes = last 4 $notes | collections.Reverse }}
     {{ with $notes }}
     <h2>Some of my recent <a href="/categories/notes" >Notes</a> </h2>
     {{ partial "cards" . }}
