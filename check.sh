@@ -5,7 +5,7 @@ test -z $IMAGE_DIR && IMAGE_DIR=static
 
 
 function get_fm_param(){
-  find $CONTENT_DIR -type f -name '*.md' -exec yq --front-matter=extract "$1" -r {} \; | grep -v null
+  find $CONTENT_DIR -type f -name '*.md' -exec yq --front-matter=extract "$1" -r {} \;
 }
 
 function set_aliases(){
@@ -18,6 +18,12 @@ function set_aliases(){
   done
 }
 
+# list book_order frontmatter values filtered by book vbalues
+function list_book_order(){
+  get_fm_param "select(.book == \"$BOOK\" ) | \"\(.book_order):\(.title)\"" | sort -n
+
+}
+
 function list_drafts(){
   grep -l -e '^draft: true$' $(find "$CONTENT_DIR" -type f -name '*.md')
 }
@@ -25,6 +31,7 @@ function list_drafts(){
 function count_drafts(){
   echo there are $( list_drafts | wc -l) notes in draft
 }
+
 function lint_fm(){
   test -z $DEBUG || echo "Linting front matter for all markdown files in $CONTENT_DIR"
   find $CONTENT_DIR -type f -name '*.md' -exec yq --front-matter=process -i 'sort_keys(.)' {} \;
@@ -97,6 +104,11 @@ declare -A FLAGS
 declare -A FLAGS_DESCRIPTIONS
 declare -A COMMANDS
 
+FLAGS[b]='BOOK=${OPTARG}'
+FLAGS_DESCRIPTIONS[b]='set book to filter book_order values, example -b "my_book"'
+
+FLAGS_STRING='b:'
+
 COMMANDS[help]="show this help command"
 COMMANDS["set_aliases"]="set aliases in markdown files $CONTENT_DIR"
 COMMANDS["list_drafts"]="list notes with draft:true in frontmatter"
@@ -110,6 +122,7 @@ COMMANDS["pre_commit"]="run pre-commit actions"
 COMMANDS["setup_repo_hooks"]="setup git hooks"
 COMMANDS["list_broken"]="list broken content"
 COMMANDS["list_tags"]="list tag values"
+COMMANDS["list_book_order"]="list book_order values filtered by book value"
 
 
 COMMAND="$1"
