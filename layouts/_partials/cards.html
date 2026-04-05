@@ -16,6 +16,16 @@
     {{ with .Page.Params.date_end }}
     <div class="card-date-end">to {{ . }}</div>
     {{ end }}
+    <!-- games statusses -->
+
+    {{ with .Page.Params.game_status }}
+    <div class="card-game-status">
+      {{ if .completed }}☑️{{ end }}
+      {{ if .shelved }}📚{{ end }}
+      {{ if .abbandoned }}🕹️{{ end }}
+      {{ if .wishlisted }}🎁{{ end }}
+    </div>
+    {{ end }}
 </a>
   {{ end }}
 </div>
