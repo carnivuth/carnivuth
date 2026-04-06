@@ -1,0 +1,24 @@
+
+.games-buttons{
+  display: flex;
+  flex-direction: row;
+  height: 15rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.games-button:hover{
+  cursor: pointer;
+}
+
+
+.games-button{
+  background-color: transparent;
+  border-style: none;
+  width: 10rem;
+  color: black;
+}
+
