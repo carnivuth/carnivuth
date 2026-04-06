@@ -133,12 +133,31 @@
     justify-content: center;
     align-content: center;
   }
-  .card-game-status{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: raw;
-    justify-content: center;
-    align-content: center;
-  }
+
 }
 
+.card-game-status{
+  display: flex;
+  height: 3rem;
+  margin: 0.5rem;
+  flex-direction: raw;
+  justify-content: center;
+  align-content: center;
+  gap: 0.5rem;
+}
+
+.card-game-status-playing{
+  fill: $mocha-blue;
+}
+.card-game-status-completed{
+  fill: $mocha-green;
+}
+.card-game-status-shelved{
+  fill: $mocha-yellow;
+}
+.card-game-status-abbandoned{
+  fill: $mocha-red;
+}
+.card-game-status-wishlisted{
+  fill: $mocha-pink;
+}
