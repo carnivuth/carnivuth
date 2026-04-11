@@ -7,7 +7,9 @@
   <h1>{{ .Title }}</h1>
   {{ end }}
       {{ with (.GetTerms "tags" ) }}
-        {{ partial "tags" .  }}
+        <div class="tag-container">
+          {{ partial "tags" .  }}
+        </div>
       {{ end }}
 
       {{ if .Params.show_image }}

@@ -13,18 +13,18 @@
 
     {{ if .Page.Params.slug }}
       {{ with site.GetPage .Page.Params.slug }}
-        {{ partial "tags" (.GetTerms "tags") }}
+      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "tags") }} </div>
       {{ end }}
     {{ end }}
 
     {{ if .Page.Params.slug }}
       {{ with site.GetPage .Page.Params.slug }}
-        {{ partial "tags" (.GetTerms "genres") }}
+      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "genres") }} </div>
       {{ end }}
     {{ end }}
     {{ if .Page.Params.slug }}
       {{ with site.GetPage .Page.Params.slug }}
-        {{ partial "tags" (.GetTerms "backlog_statuses") }}
+      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "backlog_statuses") }} </div>
       {{ end }}
     {{ end }}
 
