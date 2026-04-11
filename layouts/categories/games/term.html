@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $games := resources.Get "scss/games.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $games.RelPermalink }}">
+{{ $games := resources.Get "js/games.js" }}
+<script src="{{ $games.RelPermalink  }}"></script>
+
+<h1 style="text-align: center;">Gaming Backlog</h1>
+<div class="games-filters">
+<select onchange="filter()" class="games-filter-genre" name="genres" id="genres" multiple>
+  {{ range $k, $v := (.Site.Taxonomies.genres) }}
+    <option value="{{ replaceRE " " "-" $k }}">{{ replaceRE " " "-" $k }}</option>
+  {{ end }}
+</select>
+<select onchange="filter()" class="games-filter-backlog_status" name="backlog_statuses" id="backlog_statuses" multiple>
+
+  {{ range $k, $v := (.Site.Taxonomies.backlog_statuses) }}
+    <option value="{{ replaceRE " " "-" $k }}">{{ replaceRE " " "-" $k }}</option>
+  {{ end }}
+</select>
+</div>
+  <div class="games" id="games">
+    {{ partial "cards" .Pages }}
+  </div>
+{{ end }}
