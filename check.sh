@@ -100,6 +100,8 @@ grep -l 'igdb_id:' $CONTENT_DIR/*.md | while read f; do
   # setting title
   echo "setting title for  $f to $game_name"
   yq --front-matter=process ".title = \"$game_name\"" -i $f
+  echo "setting description for  $f to $game_name notes"
+  yq --front-matter=process ".description = \"$game_name notes\"" -i $f
 
   # parse genres and update front matter only if they are unset
   if [[ $(yq --front-matter=export '.genres' $f) == "null"  ]]; then
