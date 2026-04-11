@@ -87,6 +87,40 @@ function list_broken(){
     list_missing_description
 }
 
+function get_igdb_data(){
+
+# loop files with igdb_id in front matter
+grep -l 'igdb_id:' $CONTENT_DIR/*.md | while read f; do
+
+  echo "processing $f"
+  igdb_id=$(yq --front-matter=export '.igdb_id' $f);
+  game_data="$(curl -s 'https://api.igdb.com/v4/games' -d "fields *; where id=$igdb_id;" -H "Client-ID: $IGDB_CLIENT_ID" -H "Authorization: Bearer $IGDB_ACCESS_TOKEN" -H 'Accept: application/json')";
+  game_name="$(echo $game_data| jq -r '.[0].name' )"
+
+  # setting title
+  echo "setting title for  $f to $game_name"
+  yq --front-matter=process ".title = \"$game_name\"" -i $f
+
+  # parse genres and update front matter only if they are unset
+  if [[ $(yq --front-matter=export '.genres' $f) == "null"  ]]; then
+    echo "getting genres for $game_name"
+    genre_ids="$(echo $game_data | jq '.[0].genres[]' -r)";
+    genres_data="$(curl -s 'https://api.igdb.com/v4/genres' -d "fields *; where id=\($(echo $genre_ids | tr ' ' ',')\);" -H "Client-ID: $IGDB_CLIENT_ID" -H "Authorization: Bearer $IGDB_ACCESS_TOKEN" -H 'Accept: application/json')"
+    yq --front-matter=process ".genres = $(echo $genres_data| jq '.|[.[].name]')" -i $f
+  fi
+
+  if [[ $(yq --front-matter=export '.image' $f) == ""  ]]; then
+    echo "getting cover for $game_name"
+    image_id="$(curl -s 'https://api.igdb.com/v4/covers' -d "fields *; where game=$igdb_id;" -H "Client-ID: $IGDB_CLIENT_ID" -H "Authorization: Bearer $IGDB_ACCESS_TOKEN" -H 'Accept: application/json' | jq -r '.[0].image_id')"
+    yq --front-matter=process ".image = \"https://images.igdb.com/igdb/image/upload/t_1080p/${image_id}.jpg\"" -i $f
+  fi
+
+  # this is to avoid hitting igdb api rate limits
+  sleep 2
+
+done
+
+}
 
 function help(){
   echo "usage: $(basename "$0") COMMAND [$FLAGS_STRING]"
@@ -123,7 +157,7 @@ COMMANDS["setup_repo_hooks"]="setup git hooks"
 COMMANDS["list_broken"]="list broken content"
 COMMANDS["list_tags"]="list tag values"
 COMMANDS["list_book_order"]="list book_order values filtered by book value"
-
+COMMANDS["get_igdb_data"]="enrich content fetching data from igdb"
 
 COMMAND="$1"
 shift

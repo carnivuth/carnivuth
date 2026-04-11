@@ -9,6 +9,14 @@
 }
 
 
+.card-tag-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -133,5 +141,31 @@
     justify-content: center;
     align-content: center;
   }
+
 }
 
+.card-game-status{
+  display: flex;
+  height: 3rem;
+  margin: 0.5rem;
+  flex-direction: raw;
+  justify-content: center;
+  align-content: center;
+  gap: 0.5rem;
+}
+
+.card-game-status-playing{
+  fill: $mocha-blue;
+}
+.card-game-status-completed{
+  fill: $mocha-green;
+}
+.card-game-status-shelved{
+  fill: $mocha-yellow;
+}
+.card-game-status-abandoned{
+  fill: $mocha-red;
+}
+.card-game-status-wishlisted{
+  fill: $mocha-pink;
+}

@@ -1,21 +1,33 @@
 {{ $card := resources.Get "scss/card.scss" | toCSS | minify }}
 <link rel="stylesheet" href="{{ $card.RelPermalink }}">
-<div class="card-container">
+<div id="card-container" class="card-container">
   {{ range . }}
-  <a class="card" href="{{ .Page.RelPermalink }}" >
-    <div class="card-title">
-      {{ .Page.Title }}
-  </div>
+  <div class="card {{range .Page.Params.backlog_statuses }} {{ lower (replaceRE " " "-" .) }} {{ end }} {{range .Page.Params.genres }} {{ lower (replaceRE " " "-" .) }} {{ end }}" onclick="window.location='{{ .Page.RelPermalink }}';">
+    <div class="card-title"> {{ .Page.Title }} </div>
     <div class="card-description"> {{ .Page.Description }}</div>
-    {{ with .Page.Params.Image }}
-    <img class="card-image" src="{{ . }}">
+
+    {{ with .Page.Params.Image }} <img class="card-image" src="{{ . }}"> {{ end }}
+
+    {{ with .Page.Params.date_start }} <div class="card-date-start">from {{ . }}</div> {{ end }}
+    {{ with .Page.Params.date_end }} <div class="card-date-end">to {{ . }}</div> {{ end }}
+
+    {{ if .Page.Params.slug }}
+      {{ with site.GetPage .Page.Params.slug }}
+      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "tags") }} </div>
+      {{ end }}
     {{ end }}
-    {{ with .Page.Params.date_start }}
-    <div class="card-date-start">from {{ . }}</div>
+
+    {{ if .Page.Params.slug }}
+      {{ with site.GetPage .Page.Params.slug }}
+      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "genres") }} </div>
+      {{ end }}
     {{ end }}
-    {{ with .Page.Params.date_end }}
-    <div class="card-date-end">to {{ . }}</div>
+    {{ if .Page.Params.slug }}
+      {{ with site.GetPage .Page.Params.slug }}
+      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "backlog_statuses") }} </div>
+      {{ end }}
     {{ end }}
-</a>
+
+  </div>
   {{ end }}
 </div>

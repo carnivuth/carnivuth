@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ $games := resources.Get "scss/games.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $games.RelPermalink }}">
+{{ $games := resources.Get "js/games.js" }}
+<script src="{{ $games.RelPermalink  }}"></script>
+
+<h1 style="text-align: center;">Gaming Backlog</h1>
+<div class="games-filters" >
+  <div class="games-filters-container">
+    <p class="games-filters-title">Filters</p>
+    <div id="filter-controls" class="games-filters-controls">
+      {{ range $k, $v := (.Site.Taxonomies.backlog_statuses) }}
+      <label class="games-filters-label">
+        <input type="checkbox" checked onchange="filterItems()" class="backlog_status-filter games-filters-checkbox" data-filter="{{ replaceRE " " "-" $k }}">
+          {{ replaceRE " " "-" $k }}
+      </label>
+      {{ end }}
+      {{ range $k, $v := (.Site.Taxonomies.genres) }}
+      <label class="games-filters-label">
+        <input type="checkbox" checked onchange="filterItems()" class="genre-filter games-filters-checkbox" data-filter="{{ replaceRE " " "-" $k }}">
+          {{ replaceRE " " "-" $k }}
+      </label>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="games-filters-buttons">
+    <button onclick="setAll(true)" style="font-size: 12px; padding: 4px 8px; border-radius: var(--border-radius-md);">All</button>
+    <button onclick="setAll(false)" style="font-size: 12px; padding: 4px 8px; border-radius: var(--border-radius-md);">None</button>
+  </div>
+</div>
+
+<div class="games" id="games">
+  {{ partial "cards" .Pages }}
+</div>
+{{ end }}

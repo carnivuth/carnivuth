@@ -5,6 +5,13 @@
   flex-direction: row;
 }
 
+.tag-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+
 .page-content {
   display: flex;
   flex-direction: column;
