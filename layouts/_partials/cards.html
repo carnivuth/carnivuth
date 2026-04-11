@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ $card.RelPermalink }}">
 <div id="card-container" class="card-container">
   {{ range . }}
-  <div class="card {{range .Page.Params.backlog_statuses }} {{ replaceRE " " "-" . }} {{ end }} {{range .Page.Params.genres }} {{ replaceRE " " "-" . }} {{ end }}" onclick="window.location='{{ .Page.RelPermalink }}';">
+  <div class="card {{range .Page.Params.backlog_statuses }} {{ lower (replaceRE " " "-" .) }} {{ end }} {{range .Page.Params.genres }} {{ lower (replaceRE " " "-" .) }} {{ end }}" onclick="window.location='{{ .Page.RelPermalink }}';">
     <div class="card-title"> {{ .Page.Title }} </div>
     <div class="card-description"> {{ .Page.Description }}</div>
 

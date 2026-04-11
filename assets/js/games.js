@@ -14,12 +14,12 @@ function filter(){
       selectedByBacklogStatus = backlog_status_filter.selectedOptions.length == 0 ? true : false
       selectedByGenre = genre_filter.selectedOptions.length == 0 ? true : false
       for (let option of genre_filter.selectedOptions) {
-        if (card.classList.contains(option.value)) {
+        if (card.classList.contains(option.value.toLowerCase())) {
           selectedByGenre = true
         }
       }
       for (let option of backlog_status_filter.selectedOptions) {
-        if (card.classList.contains(option.value)) {
+        if (card.classList.contains(option.value.toLowerCase())) {
           selectedByBacklogStatus = true
         }
       }
