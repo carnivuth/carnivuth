@@ -15,7 +15,7 @@ function filterItems(){
           genre_filter_selected = true
         }
       }
-      card.style.display = genre_filter_selected && backlog_status_filter_selected ? 'block':'none'
+      card.style.display = genre_filter_selected && backlog_status_filter_selected ? 'flex':'none'
     });
 
 }
