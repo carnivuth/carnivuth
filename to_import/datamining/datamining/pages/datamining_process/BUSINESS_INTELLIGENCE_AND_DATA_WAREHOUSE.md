@@ -1,9 +1,11 @@
 ---
 id: BUSINESS INTELLIGENCE AND DATA WAREHOUSE
 aliases: []
-tags: []
+tags:
+  - datamining_process
 index: 1
 book: datamining
+title: business intelligence and data warehouse
 ---
 
 - process of transforming data into something useful for decision making

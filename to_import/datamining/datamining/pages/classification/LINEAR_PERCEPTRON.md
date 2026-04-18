@@ -1,9 +1,11 @@
 ---
 id: LINEAR PERCEPTRON
 aliases: []
-tags: []
+tags:
+  - classification
 index: 8
 book: datamining
+title: linear perceptron
 ---
 
 

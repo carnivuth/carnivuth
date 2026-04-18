@@ -1,9 +1,11 @@
 ---
 id: CLUSTERING SCHEME EVALUATION
 aliases: []
-tags: []
+tags:
+  - clustering
 index: 2
 book: datamining
+title: clustering scheme evaluation
 ---
 
 # CLUSTERING SCHEME EVALUATION

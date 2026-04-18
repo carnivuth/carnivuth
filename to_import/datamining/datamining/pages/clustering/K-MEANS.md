@@ -1,9 +1,11 @@
 ---
 id: K-MEANS
 aliases: []
-tags: []
+tags:
+  - clustering
 index: 3
 book: datamining
+title: k-means
 ---
 
 # K-MEANS

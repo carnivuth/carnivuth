@@ -1,9 +1,11 @@
 ---
 id: REGRESSION
 aliases: []
-tags: []
+tags:
+  - classification
 index: 6
 book: datamining
+title: regression
 ---
 
 # REGRESSION

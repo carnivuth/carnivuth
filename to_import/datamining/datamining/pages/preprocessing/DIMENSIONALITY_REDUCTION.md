@@ -1,9 +1,11 @@
 ---
 id: DIMENSIONALITY REDUCTION
 aliases: []
-tags: []
+tags:
+  - preprocessing
 index: 6
 book: datamining
+title: dimensionality reduction
 ---
 
 # DIMENSIONALITY REDUCTION

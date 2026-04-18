@@ -1,9 +1,11 @@
 ---
 id: HIERARCHICAL CLUSTERING
 aliases: []
-tags: []
+tags:
+  - clustering
 index: 4
 book: datamining
+title: hierarchical clustering
 ---
 
 # HIERARCHICAL CLUSTERING

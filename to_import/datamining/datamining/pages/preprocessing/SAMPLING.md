@@ -1,9 +1,11 @@
 ---
 id: SAMPLING
 aliases: []
-tags: []
+tags:
+  - preprocessing
 index: 8
 book: datamining
+title: sampling
 ---
 
 # SAMPLING

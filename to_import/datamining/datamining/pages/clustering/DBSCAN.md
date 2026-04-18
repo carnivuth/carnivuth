@@ -1,9 +1,11 @@
 ---
 id: DBSCAN
 aliases: []
-tags: []
+tags:
+  - clustering
 index: 7
 book: datamining
+title: dbscan
 ---
 
 # DBSCAN (DENSITY BASED SPATIAL CLUSTERING OF APPLICATION WITH NOISE)

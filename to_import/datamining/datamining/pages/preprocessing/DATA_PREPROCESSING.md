@@ -1,9 +1,11 @@
 ---
 id: DATA PREPROCESSING
 aliases: []
-tags: []
+tags:
+  - preprocessing
 index: 1
 book: datamining
+title: data preprocessing
 ---
 
 # DATA PREPROCESSING

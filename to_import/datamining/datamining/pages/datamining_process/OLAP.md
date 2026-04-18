@@ -1,9 +1,11 @@
 ---
 id: OLAP
 aliases: []
-tags: []
+tags:
+  - datamining_process
 index: 2
 book: datamining
+title: olap
 ---
 
 -  Online analitical processing allow users to interactively navigate on the DWH

@@ -1,9 +1,11 @@
 ---
 id: SCALING
 aliases: []
-tags: []
+tags:
+  - preprocessing
 index: 7
 book: datamining
+title: scaling
 ---
 
 # SCALING
