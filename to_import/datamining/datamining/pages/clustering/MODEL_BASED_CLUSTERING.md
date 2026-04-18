@@ -3,7 +3,7 @@ id: MODEL BASED CLUSTERING
 aliases: []
 tags:
   - clustering
-index: 5
+book_order: 30
 book: datamining
 title: model based clustering
 ---

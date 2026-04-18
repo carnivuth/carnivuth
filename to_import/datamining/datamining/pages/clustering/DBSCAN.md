@@ -3,7 +3,7 @@ id: DBSCAN
 aliases: []
 tags:
   - clustering
-index: 7
+book_order: 32
 book: datamining
 title: dbscan
 ---

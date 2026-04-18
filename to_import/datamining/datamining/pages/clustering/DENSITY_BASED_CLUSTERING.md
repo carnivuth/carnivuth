@@ -3,7 +3,7 @@ id: DENSITY BASED CLUSTERING
 aliases: []
 tags:
   - clustering
-index: 6
+book_order: 31
 book: datamining
 title: density based clustering
 ---
