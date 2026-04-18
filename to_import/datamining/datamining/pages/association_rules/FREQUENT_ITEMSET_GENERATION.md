@@ -5,6 +5,7 @@ tags:
   - association_rules
 index: 4
 title: frequent itemset generation
+book: datamining
 ---
 
 # FREQUENT ITEM-SET GENERATION

@@ -5,6 +5,7 @@ tags:
   - association_rules
 index: 6
 title: fp-growth
+book: datamining
 ---
 
 The Apriori Alg. needs to generate the candidates sets, whose number can be really high!

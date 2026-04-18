@@ -5,6 +5,7 @@ tags:
   - association_rules
 index: 3
 title: rules generation
+book: datamining
 ---
 
 # RULES GENERATION
