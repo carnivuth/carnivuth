@@ -3,7 +3,7 @@ id: NAIVE BAYES CLASSIFIER
 aliases: []
 tags:
   - classification
-index: 7
+book_order: 13
 book: datamining
 title: naive bayes classifier
 ---

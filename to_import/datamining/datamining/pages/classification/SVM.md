@@ -3,7 +3,7 @@ id: SVM
 aliases: []
 tags:
   - classification
-index: 9
+book_order: 15
 book: datamining
 title: svm
 ---

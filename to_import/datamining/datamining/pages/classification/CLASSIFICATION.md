@@ -3,7 +3,7 @@ id: CLASSIFICATION
 aliases: []
 tags:
   - classification
-index: 1
+book_order: 7
 book: datamining
 title: classification
 ---

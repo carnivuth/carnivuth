@@ -3,7 +3,7 @@ id: TRAINING STRATEGIES
 aliases: []
 tags:
   - classification
-index: 2
+book_order: 8
 book: datamining
 title: training strategies
 ---

@@ -3,7 +3,7 @@ id: RETI NEURALI
 aliases: []
 tags:
   - classification
-index: 10
+book_order: 16
 book: datamining
 title: reti neurali
 ---

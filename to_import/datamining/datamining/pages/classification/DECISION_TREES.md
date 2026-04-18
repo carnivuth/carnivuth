@@ -3,7 +3,7 @@ id: DECISION TREES
 aliases: []
 tags:
   - classification
-index: 4
+book_order: 10
 book: datamining
 title: decision trees
 ---

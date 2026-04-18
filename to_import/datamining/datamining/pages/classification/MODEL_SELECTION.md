@@ -5,6 +5,7 @@ tags:
   - classification
 book: datamining
 title: model selection
+book_order: 6
 ---
 
 # MODEL SELECTION
