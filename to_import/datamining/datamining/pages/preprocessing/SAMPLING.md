@@ -3,7 +3,7 @@ id: SAMPLING
 aliases: []
 tags:
   - preprocessing
-index: 8
+book_order: 24
 book: datamining
 title: sampling
 ---

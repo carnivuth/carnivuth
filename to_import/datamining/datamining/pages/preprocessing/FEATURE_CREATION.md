@@ -3,7 +3,7 @@ id: FEATURE CREATION
 aliases: []
 tags:
   - preprocessing
-index: 9
+book_order: 25
 book: datamining
 title: feature creation
 ---

@@ -3,7 +3,7 @@ id: SIMILARITY AND DISSIMILARITY
 aliases: []
 tags:
   - preprocessing
-index: 3
+book_order: 19
 book: datamining
 title: similarity and dissimilarity
 ---

@@ -3,7 +3,7 @@ id: FEATURE SUBSET SELECTION
 aliases: []
 tags:
   - preprocessing
-index: 5
+book_order: 21
 book: datamining
 title: feature subset selection
 ---
