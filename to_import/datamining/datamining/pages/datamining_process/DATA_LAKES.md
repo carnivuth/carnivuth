@@ -3,7 +3,7 @@ id: DATA LAKES
 aliases: []
 tags:
   - datamining_process
-index: 3
+book_order: 3
 book: datamining
 title: data lakes
 ---

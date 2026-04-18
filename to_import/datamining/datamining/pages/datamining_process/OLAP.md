@@ -3,7 +3,7 @@ id: OLAP
 aliases: []
 tags:
   - datamining_process
-index: 2
+book_order: 2
 book: datamining
 title: olap
 ---

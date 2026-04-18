@@ -3,7 +3,7 @@ id: CRISP DM METHODOLOGY
 aliases: []
 tags:
   - datamining_process
-index: 6
+book_order: 6
 book: datamining
 title: crisp dm methodology
 ---
