@@ -7,6 +7,12 @@ book_order: 38
 title: fp-growth
 book: datamining
 date: "2023-12-31"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 The Apriori Alg. needs to generate the candidates sets, whose number can be really high!

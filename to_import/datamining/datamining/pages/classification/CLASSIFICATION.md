@@ -7,6 +7,12 @@ book_order: 7
 book: datamining
 title: classification
 date: "2023-12-27"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # CLASSIFICATION

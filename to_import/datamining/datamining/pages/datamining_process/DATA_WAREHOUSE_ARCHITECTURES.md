@@ -7,6 +7,12 @@ book_order: 4
 book: datamining
 title: data warehouse architectures
 date: "2023-10-10"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 ## REQUIREMENTS

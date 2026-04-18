@@ -7,6 +7,12 @@ book_order: 8
 book: datamining
 title: training strategies
 date: "2023-12-30"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # TRAINING STRATEGIES

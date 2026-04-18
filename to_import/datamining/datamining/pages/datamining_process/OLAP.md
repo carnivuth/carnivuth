@@ -7,6 +7,12 @@ book_order: 2
 book: datamining
 title: olap
 date: "2023-10-08"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 -  Online analitical processing allow users to interactively navigate on the DWH

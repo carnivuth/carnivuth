@@ -7,6 +7,12 @@ book_order: 12
 book: datamining
 title: regression
 date: "2024-01-02"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # REGRESSION

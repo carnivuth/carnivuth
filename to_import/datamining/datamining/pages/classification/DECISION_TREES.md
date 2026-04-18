@@ -7,6 +7,12 @@ book_order: 10
 book: datamining
 title: decision trees
 date: "2023-11-14"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # DECISION TREES

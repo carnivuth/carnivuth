@@ -7,6 +7,12 @@ book_order: 18
 book: datamining
 title: type conversions
 date: "2024-01-09"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # TYPE CONVERSIONS
