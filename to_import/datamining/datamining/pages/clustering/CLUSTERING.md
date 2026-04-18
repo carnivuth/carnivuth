@@ -1,9 +1,11 @@
 ---
 id: CLUSTERING
 aliases: []
-tags: []
+tags:
+  - clustering
 index: 1
 book: datamining
+title: clustering
 ---
 
 # CLUSTERING

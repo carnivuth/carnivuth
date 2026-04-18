@@ -1,9 +1,11 @@
 ---
 id: DISTANCES
 aliases: []
-tags: []
+tags:
+  - preprocessing
 index: 4
 book: datamining
+title: distances
 ---
 
 # DISTANCES

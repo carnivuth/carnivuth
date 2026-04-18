@@ -1,9 +1,11 @@
 ---
 id: CLASSIFICATION
 aliases: []
-tags: []
+tags:
+  - classification
 index: 1
 book: datamining
+title: classification
 ---
 
 # CLASSIFICATION

@@ -1,9 +1,11 @@
 ---
 id: MODEL BASED CLUSTERING
 aliases: []
-tags: []
+tags:
+  - clustering
 index: 5
 book: datamining
+title: model based clustering
 ---
 
 # MODEL BASED CLUSTERING

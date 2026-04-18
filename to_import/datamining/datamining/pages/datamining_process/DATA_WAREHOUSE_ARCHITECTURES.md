@@ -1,9 +1,11 @@
 ---
 id: DATA WAREHOUSE ARCHITECTURES
 aliases: []
-tags: []
+tags:
+  - datamining_process
 index: 4
 book: datamining
+title: data warehouse architectures
 ---
 
 ## REQUIREMENTS

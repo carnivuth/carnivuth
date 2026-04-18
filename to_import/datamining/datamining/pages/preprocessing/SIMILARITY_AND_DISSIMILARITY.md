@@ -1,9 +1,11 @@
 ---
 id: SIMILARITY AND DISSIMILARITY
 aliases: []
-tags: []
+tags:
+  - preprocessing
 index: 3
 book: datamining
+title: similarity and dissimilarity
 ---
 
 # SIMILARITY AND DISSIMILARITY

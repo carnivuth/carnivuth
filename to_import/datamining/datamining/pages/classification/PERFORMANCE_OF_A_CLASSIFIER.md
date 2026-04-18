@@ -1,9 +1,11 @@
 ---
 id: PERFORMANCE OF A CLASSIFIER
 aliases: []
-tags: []
+tags:
+  - classification
 index: 3
 book: datamining
+title: performance of a classifier
 ---
 
 # PERFORMANCE OF A CLASSIFIER

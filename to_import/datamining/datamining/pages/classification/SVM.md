@@ -1,9 +1,11 @@
 ---
 id: SVM
 aliases: []
-tags: []
+tags:
+  - classification
 index: 9
 book: datamining
+title: svm
 ---
 
 # SUPPORT VECTOR MACHINE (SVM)

@@ -1,8 +1,10 @@
 ---
 id: DATA TYPES
 aliases: []
-tags: []
+tags:
+  - preprocessing
 book: datamining
+title: data types
 ---
 
 # DATA TYPES

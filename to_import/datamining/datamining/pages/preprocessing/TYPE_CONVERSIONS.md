@@ -1,9 +1,11 @@
 ---
 id: TYPE CONVERSIONS
 aliases: []
-tags: []
+tags:
+  - preprocessing
 index: 2
 book: datamining
+title: type conversions
 ---
 
 # TYPE CONVERSIONS

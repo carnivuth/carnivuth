@@ -1,8 +1,10 @@
 ---
 id: MODEL SELECTION
 aliases: []
-tags: []
+tags:
+  - classification
 book: datamining
+title: model selection
 ---
 
 # MODEL SELECTION

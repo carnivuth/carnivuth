@@ -1,9 +1,11 @@
 ---
 id: DATA LAKES
 aliases: []
-tags: []
+tags:
+  - datamining_process
 index: 3
 book: datamining
+title: data lakes
 ---
 
 

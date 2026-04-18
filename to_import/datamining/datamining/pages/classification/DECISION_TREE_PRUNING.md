@@ -1,9 +1,11 @@
 ---
 id: DECISION TREE PRUNING
 aliases: []
-tags: []
+tags:
+  - classification
 index: 5
 book: datamining
+title: decision tree pruning
 ---
 
 # DECISION TREE PRUNING

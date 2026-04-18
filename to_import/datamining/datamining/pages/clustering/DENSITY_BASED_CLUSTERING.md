@@ -1,9 +1,11 @@
 ---
 id: DENSITY BASED CLUSTERING
 aliases: []
-tags: []
+tags:
+  - clustering
 index: 6
 book: datamining
+title: density based clustering
 ---
 
 # DENSITY BASED CLUSTERING

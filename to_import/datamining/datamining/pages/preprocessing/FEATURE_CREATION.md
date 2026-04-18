@@ -1,9 +1,11 @@
 ---
 id: FEATURE CREATION
 aliases: []
-tags: []
+tags:
+  - preprocessing
 index: 9
 book: datamining
+title: feature creation
 ---
 
 # FEATURE CREATION

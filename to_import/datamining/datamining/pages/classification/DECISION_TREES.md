@@ -1,9 +1,11 @@
 ---
 id: DECISION TREES
 aliases: []
-tags: []
+tags:
+  - classification
 index: 4
 book: datamining
+title: decision trees
 ---
 
 # DECISION TREES
