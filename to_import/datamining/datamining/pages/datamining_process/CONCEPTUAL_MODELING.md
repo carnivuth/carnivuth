@@ -6,6 +6,7 @@ tags:
 book_order: 5
 book: datamining
 title: conceptual modeling
+date: "2023-10-10"
 ---
 
 # CONCEPTUAL MODELING

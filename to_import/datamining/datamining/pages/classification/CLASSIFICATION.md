@@ -6,6 +6,7 @@ tags:
 book_order: 7
 book: datamining
 title: classification
+date: "2023-12-27"
 ---
 
 # CLASSIFICATION

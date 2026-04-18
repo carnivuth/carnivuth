@@ -6,6 +6,7 @@ tags:
 book_order: 6
 book: datamining
 title: crisp dm methodology
+date: "2023-10-17"
 ---
 
 

@@ -6,6 +6,7 @@ tags:
 book_order: 11
 book: datamining
 title: decision tree pruning
+date: "2023-12-30"
 ---
 
 # DECISION TREE PRUNING

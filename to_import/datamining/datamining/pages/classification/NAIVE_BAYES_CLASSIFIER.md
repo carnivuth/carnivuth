@@ -6,6 +6,7 @@ tags:
 book_order: 13
 book: datamining
 title: naive bayes classifier
+date: "2023-12-30"
 ---
 
 

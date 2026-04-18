@@ -6,6 +6,7 @@ tags:
 book_order: 23
 book: datamining
 title: scaling
+date: "2024-01-04"
 ---
 
 # SCALING

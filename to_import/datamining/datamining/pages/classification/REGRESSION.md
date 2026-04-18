@@ -6,6 +6,7 @@ tags:
 book_order: 12
 book: datamining
 title: regression
+date: "2024-01-02"
 ---
 
 # REGRESSION

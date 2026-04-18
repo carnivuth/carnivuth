@@ -6,6 +6,7 @@ tags:
 book_order: 27
 book: datamining
 title: clustering scheme evaluation
+date: "2024-01-16"
 ---
 
 # CLUSTERING SCHEME EVALUATION

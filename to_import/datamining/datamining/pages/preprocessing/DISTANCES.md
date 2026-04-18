@@ -6,6 +6,7 @@ tags:
 book_order: 20
 book: datamining
 title: distances
+date: "2024-01-11"
 ---
 
 # DISTANCES

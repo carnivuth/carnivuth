@@ -6,6 +6,7 @@ tags:
 book_order: 21
 book: datamining
 title: feature subset selection
+date: "2024-01-04"
 ---
 
 # FEATURE SUBSET SELECTION

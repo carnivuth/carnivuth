@@ -6,6 +6,7 @@ tags:
 book_order: 10
 book: datamining
 title: decision trees
+date: "2023-11-14"
 ---
 
 # DECISION TREES

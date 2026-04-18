@@ -6,6 +6,7 @@ tags:
 book_order: 30
 book: datamining
 title: model based clustering
+date: "2024-01-18"
 ---
 
 # MODEL BASED CLUSTERING

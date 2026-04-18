@@ -6,6 +6,7 @@ tags:
 book_order: 24
 book: datamining
 title: sampling
+date: "2024-01-04"
 ---
 
 # SAMPLING

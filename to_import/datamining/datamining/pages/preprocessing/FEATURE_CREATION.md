@@ -6,6 +6,7 @@ tags:
 book_order: 25
 book: datamining
 title: feature creation
+date: "2024-01-09"
 ---
 
 # FEATURE CREATION

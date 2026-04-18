@@ -6,6 +6,7 @@ tags:
 book: datamining
 title: model selection
 book_order: 6
+date: "2023-12-30"
 ---
 
 # MODEL SELECTION

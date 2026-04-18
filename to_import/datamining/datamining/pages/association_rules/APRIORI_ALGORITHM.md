@@ -6,6 +6,7 @@ tags:
 title: apriori algorithm
 book: datamining
 book_order: 32
+date: "2023-12-30"
 ---
 
 - [~] ---

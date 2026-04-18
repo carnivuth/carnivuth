@@ -6,6 +6,7 @@ tags:
 book_order: 28
 book: datamining
 title: k-means
+date: "2024-01-11"
 ---
 
 # K-MEANS
