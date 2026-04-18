@@ -5,6 +5,7 @@ tags:
   - preprocessing
 book: datamining
 title: data types
+book_order: 16
 ---
 
 # DATA TYPES

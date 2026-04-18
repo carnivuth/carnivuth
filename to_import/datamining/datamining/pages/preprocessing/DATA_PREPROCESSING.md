@@ -3,7 +3,7 @@ id: DATA PREPROCESSING
 aliases: []
 tags:
   - preprocessing
-index: 1
+book_order: 17
 book: datamining
 title: data preprocessing
 ---

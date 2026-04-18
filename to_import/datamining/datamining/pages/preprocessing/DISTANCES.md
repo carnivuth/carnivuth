@@ -3,7 +3,7 @@ id: DISTANCES
 aliases: []
 tags:
   - preprocessing
-index: 4
+book_order: 20
 book: datamining
 title: distances
 ---

@@ -3,7 +3,7 @@ id: TYPE CONVERSIONS
 aliases: []
 tags:
   - preprocessing
-index: 2
+book_order: 18
 book: datamining
 title: type conversions
 ---
