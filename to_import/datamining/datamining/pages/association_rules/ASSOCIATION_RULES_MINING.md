@@ -5,6 +5,7 @@ tags:
   - association_rules
 index: 2
 title: association rules mining
+book: datamining
 ---
 
 # ASSOCIATION RULES MINING

@@ -4,6 +4,7 @@ aliases: []
 tags:
   - association_rules
 title: apriori algorithm
+book: datamining
 ---
 
 - [~] ---
