@@ -3,7 +3,7 @@ id: CLUSTERING SCHEME EVALUATION
 aliases: []
 tags:
   - clustering
-index: 2
+book_order: 27
 book: datamining
 title: clustering scheme evaluation
 ---

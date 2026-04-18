@@ -3,7 +3,7 @@ id: K-MEANS
 aliases: []
 tags:
   - clustering
-index: 3
+book_order: 28
 book: datamining
 title: k-means
 ---

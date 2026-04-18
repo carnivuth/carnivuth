@@ -3,7 +3,7 @@ id: CLUSTERING
 aliases: []
 tags:
   - clustering
-index: 1
+book_order: 26
 book: datamining
 title: clustering
 ---

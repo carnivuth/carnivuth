@@ -3,7 +3,7 @@ id: HIERARCHICAL CLUSTERING
 aliases: []
 tags:
   - clustering
-index: 4
+book_order: 29
 book: datamining
 title: hierarchical clustering
 ---
