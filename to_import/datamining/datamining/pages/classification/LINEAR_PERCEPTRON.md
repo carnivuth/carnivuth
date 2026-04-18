@@ -3,7 +3,7 @@ id: LINEAR PERCEPTRON
 aliases: []
 tags:
   - classification
-index: 8
+book_order: 14
 book: datamining
 title: linear perceptron
 ---

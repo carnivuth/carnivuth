@@ -3,7 +3,7 @@ id: PERFORMANCE OF A CLASSIFIER
 aliases: []
 tags:
   - classification
-index: 3
+book_order: 9
 book: datamining
 title: performance of a classifier
 ---

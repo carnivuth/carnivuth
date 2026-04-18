@@ -3,7 +3,7 @@ id: REGRESSION
 aliases: []
 tags:
   - classification
-index: 6
+book_order: 12
 book: datamining
 title: regression
 ---
