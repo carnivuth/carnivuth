@@ -3,7 +3,7 @@ id: RULES GENERATION
 aliases: []
 tags:
   - association_rules
-index: 3
+book_order: 35
 title: rules generation
 book: datamining
 ---

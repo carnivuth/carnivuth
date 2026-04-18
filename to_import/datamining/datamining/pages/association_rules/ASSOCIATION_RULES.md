@@ -3,7 +3,7 @@ id: ASSOCIATION RULES
 aliases: []
 tags:
   - association_rules
-index: 1
+book_order: 33
 title: association rules
 book: datamining
 ---

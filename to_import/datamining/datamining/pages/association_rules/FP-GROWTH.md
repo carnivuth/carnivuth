@@ -3,7 +3,7 @@ id: FP-GROWTH
 aliases: []
 tags:
   - association_rules
-index: 6
+book_order: 38
 title: fp-growth
 book: datamining
 ---

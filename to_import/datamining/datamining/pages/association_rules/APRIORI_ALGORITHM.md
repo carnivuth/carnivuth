@@ -5,13 +5,14 @@ tags:
   - association_rules
 title: apriori algorithm
 book: datamining
+book_order: 32
 ---
 
 - [~] ---
 id: APRIORI ALGORITHM
 aliases: []
 tags: []
-index: 5
+book_order: 5
 ---
 
 # APRIORI ALGORITHM

@@ -3,7 +3,7 @@ id: FREQUENT ITEMSET GENERATION
 aliases: []
 tags:
   - association_rules
-index: 4
+book_order: 36
 title: frequent itemset generation
 book: datamining
 ---
