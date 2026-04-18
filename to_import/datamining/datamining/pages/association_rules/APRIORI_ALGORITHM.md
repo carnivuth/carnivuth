@@ -7,6 +7,12 @@ title: apriori algorithm
 book: datamining
 book_order: 32
 date: "2023-12-30"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 - [~] ---

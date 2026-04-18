@@ -7,6 +7,12 @@ book: datamining
 title: data types
 book_order: 16
 date: "2023-10-22"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # DATA TYPES

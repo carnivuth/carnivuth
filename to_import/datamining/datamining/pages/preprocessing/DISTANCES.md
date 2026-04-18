@@ -7,6 +7,12 @@ book_order: 20
 book: datamining
 title: distances
 date: "2024-01-11"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # DISTANCES

@@ -7,6 +7,12 @@ book_order: 35
 title: rules generation
 book: datamining
 date: "2024-02-03"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # RULES GENERATION

@@ -7,6 +7,12 @@ book_order: 17
 book: datamining
 title: data preprocessing
 date: "2024-01-04"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # DATA PREPROCESSING

@@ -7,6 +7,12 @@ book_order: 19
 book: datamining
 title: similarity and dissimilarity
 date: "2024-01-11"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # SIMILARITY AND DISSIMILARITY

@@ -7,6 +7,12 @@ book_order: 33
 title: association rules
 book: datamining
 date: "2024-02-03"
+draft: true
+image: ""
+show_image: true
+show_right_column: true
+show_title: true
+show_toc: true
 ---
 
 # ASSOCIATION RULES
