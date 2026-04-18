@@ -6,6 +6,7 @@ tags:
 book: datamining
 title: data types
 book_order: 16
+date: "2023-10-22"
 ---
 
 # DATA TYPES

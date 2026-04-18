@@ -6,6 +6,7 @@ tags:
 book_order: 1
 book: datamining
 title: business intelligence and data warehouse
+date: "2023-10-08"
 ---
 
 - process of transforming data into something useful for decision making

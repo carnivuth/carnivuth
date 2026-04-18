@@ -6,6 +6,7 @@ tags:
 book_order: 16
 book: datamining
 title: reti neurali
+date: "2023-12-30"
 ---
 
 

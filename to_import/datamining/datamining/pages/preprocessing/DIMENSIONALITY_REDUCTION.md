@@ -6,6 +6,7 @@ tags:
 book_order: 22
 book: datamining
 title: dimensionality reduction
+date: "2024-01-04"
 ---
 
 # DIMENSIONALITY REDUCTION

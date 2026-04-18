@@ -6,6 +6,7 @@ tags:
 book_order: 34
 title: association rules mining
 book: datamining
+date: "2024-02-03"
 ---
 
 # ASSOCIATION RULES MINING

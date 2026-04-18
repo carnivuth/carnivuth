@@ -6,6 +6,7 @@ tags:
 book_order: 15
 book: datamining
 title: svm
+date: "2023-12-30"
 ---
 
 # SUPPORT VECTOR MACHINE (SVM)

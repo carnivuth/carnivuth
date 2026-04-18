@@ -6,6 +6,7 @@ tags:
 book_order: 8
 book: datamining
 title: training strategies
+date: "2023-12-30"
 ---
 
 # TRAINING STRATEGIES

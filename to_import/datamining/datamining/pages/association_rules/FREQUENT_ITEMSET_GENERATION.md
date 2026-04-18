@@ -6,6 +6,7 @@ tags:
 book_order: 36
 title: frequent itemset generation
 book: datamining
+date: "2023-12-30"
 ---
 
 # FREQUENT ITEM-SET GENERATION

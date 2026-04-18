@@ -6,6 +6,7 @@ tags:
 book_order: 4
 book: datamining
 title: data warehouse architectures
+date: "2023-10-10"
 ---
 
 ## REQUIREMENTS

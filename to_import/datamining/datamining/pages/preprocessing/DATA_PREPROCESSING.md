@@ -6,6 +6,7 @@ tags:
 book_order: 17
 book: datamining
 title: data preprocessing
+date: "2024-01-04"
 ---
 
 # DATA PREPROCESSING

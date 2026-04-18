@@ -6,6 +6,7 @@ tags:
 book_order: 14
 book: datamining
 title: linear perceptron
+date: "2023-12-30"
 ---
 
 

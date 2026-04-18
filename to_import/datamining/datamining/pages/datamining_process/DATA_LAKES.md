@@ -6,6 +6,7 @@ tags:
 book_order: 3
 book: datamining
 title: data lakes
+date: "2023-10-17"
 ---
 
 

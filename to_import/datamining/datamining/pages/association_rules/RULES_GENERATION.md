@@ -6,6 +6,7 @@ tags:
 book_order: 35
 title: rules generation
 book: datamining
+date: "2024-02-03"
 ---
 
 # RULES GENERATION

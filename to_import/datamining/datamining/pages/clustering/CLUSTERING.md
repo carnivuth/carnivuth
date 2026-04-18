@@ -6,6 +6,7 @@ tags:
 book_order: 26
 book: datamining
 title: clustering
+date: "2024-01-11"
 ---
 
 # CLUSTERING

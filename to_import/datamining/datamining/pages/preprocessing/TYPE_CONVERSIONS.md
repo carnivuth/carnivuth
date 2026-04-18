@@ -6,6 +6,7 @@ tags:
 book_order: 18
 book: datamining
 title: type conversions
+date: "2024-01-09"
 ---
 
 # TYPE CONVERSIONS

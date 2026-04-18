@@ -6,6 +6,7 @@ tags:
 book_order: 19
 book: datamining
 title: similarity and dissimilarity
+date: "2024-01-11"
 ---
 
 # SIMILARITY AND DISSIMILARITY

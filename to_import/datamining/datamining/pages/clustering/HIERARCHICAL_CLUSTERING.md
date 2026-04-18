@@ -6,6 +6,7 @@ tags:
 book_order: 29
 book: datamining
 title: hierarchical clustering
+date: "2024-01-18"
 ---
 
 # HIERARCHICAL CLUSTERING
