@@ -3,7 +3,7 @@ id: DATA WAREHOUSE ARCHITECTURES
 aliases: []
 tags:
   - datamining_process
-index: 4
+book_order: 4
 book: datamining
 title: data warehouse architectures
 ---

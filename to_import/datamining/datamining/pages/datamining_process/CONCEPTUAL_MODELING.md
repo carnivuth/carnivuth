@@ -3,7 +3,7 @@ id: CONCEPTUAL MODELING
 aliases: []
 tags:
   - datamining_process
-index: 5
+book_order: 5
 book: datamining
 title: conceptual modeling
 ---

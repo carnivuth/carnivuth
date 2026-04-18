@@ -3,7 +3,7 @@ id: BUSINESS INTELLIGENCE AND DATA WAREHOUSE
 aliases: []
 tags:
   - datamining_process
-index: 1
+book_order: 1
 book: datamining
 title: business intelligence and data warehouse
 ---
