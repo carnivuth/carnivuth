@@ -12,9 +12,9 @@ function set_aliases(){
   find $CONTENT_DIR -type f -name '*.md' | while read file; do
     slug="$(basename $file .md)"
     title=$(yq --front-matter=extract '.title' "$file" -r | tr ' ' '-')
-    category=$(yq --front-matter=extract '.categories[0]' "$file" -r | tr ' ' '-')
-    test ! -z $DEBUG && echo "setting $slug $category $title for $file"
-    yq --front-matter=process '.aliases = ["/'"$title"'","/'"$slug"'","/'"$category"'/'"$slug"'","/'"$category"'/'"$title"'"]' -i "$file"
+    book=$(yq --front-matter=extract '.book' "$file" -r | tr ' ' '-')
+    test ! -z $DEBUG && echo "setting $slug $book $title for $file"
+    yq --front-matter=process '.aliases = ["/'"$title"'","/'"$slug"'","/'"$book"'/'"$slug"'","/'"$book"'/'"$title"'"]' -i "$file"
   done
 }
 
