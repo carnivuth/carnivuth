@@ -26,7 +26,6 @@ imaging:
 
 taxonomies:
   tag: tags
-  category: categories
   genre: genres
   backlog_status: backlog_statuses
   book: book
