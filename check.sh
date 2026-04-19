@@ -9,13 +9,7 @@ function get_fm_param(){
 }
 
 function set_aliases(){
-  find $CONTENT_DIR -type f -name '*.md' | while read file; do
-    slug="$(basename $file .md)"
-    title=$(yq --front-matter=extract '.title' "$file" -r | tr ' ' '-')
-    book=$(yq --front-matter=extract '.book' "$file" -r | tr ' ' '-')
-    test ! -z $DEBUG && echo "setting $slug $book $title for $file"
-    yq --front-matter=process '.aliases = ["/'"$title"'","/'"$slug"'","/'"$book"'/'"$slug"'","/'"$book"'/'"$title"'"]' -i "$file"
-  done
+  find $CONTENT_DIR -type f -name '*.md' | parallel -q yq --front-matter=process '.aliases = [ "/" + .title | sub(" ","-"), "/" + (.slug | sub(".md", "" )), "/" + (.book | sub(" ","-")) + "/" + (.slug | sub(".md","")), "/" + (.book | sub(" ","-")) + "/" + (.title | sub(" ","-")) ]' -i {}
 }
 
 # list book_order frontmatter values filtered by book vbalues
