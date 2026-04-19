@@ -117,6 +117,17 @@ grep -l 'igdb_id:' $CONTENT_DIR/*.md | while read f; do
     yq --front-matter=process ".image = \"https://images.igdb.com/igdb/image/upload/t_1080p/${image_id}.jpg\"" -i $f
   fi
 
+  if [[  $(yq --front-matter=export '.time_to_beat' $f) == "null" || $(yq --front-matter=export '.time_to_beat' $f) == ""  ]]; then
+    echo "getting time to beat for $game_name"
+    time_to_beat="$(curl -s 'https://api.igdb.com/v4/game_time_to_beats' -d "fields *; where game_id=$igdb_id;" -H "Client-ID: $IGDB_CLIENT_ID" -H "Authorization: Bearer $IGDB_ACCESS_TOKEN" -H 'Accept: application/json' )"
+    ttb_normally="$(echo $time_to_beat | jq -r '.[0].normally')"
+    ttb_hastily="$(echo $time_to_beat | jq -r '.[0].hastily')"
+    ttb_completely="$(echo $time_to_beat | jq -r '.[0].completely')"
+    yq --front-matter=process ".time_to_beat.completely = \"${ttb_completely}\"" -i $f
+    yq --front-matter=process ".time_to_beat.hastily = \"${ttb_hastily}\"" -i $f
+    yq --front-matter=process ".time_to_beat.normally = \"${ttb_normally}\"" -i $f
+  fi
+
   # this is to avoid hitting igdb api rate limits
   sleep 2
 
