@@ -27,6 +27,11 @@
       <div class="card-tag-container"> {{ partial "tags" (.GetTerms "backlog_statuses") }} </div>
       {{ end }}
     {{ end }}
+    {{ if .Page.Params.Time_to_beat }}
+      {{ if .Page.Params.Time_to_beat.normally }}
+        <div class="card-time-to-beat">{{ printf "%.0f" (time.Duration "second" .Page.Params.Time_to_beat.normally).Hours }} Hours to beat</div>
+      {{ end }}
+    {{ end }}
 
   </div>
   {{ end }}
