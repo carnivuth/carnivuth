@@ -95,13 +95,21 @@ grep -l 'igdb_id:' $CONTENT_DIR/*.md | while read f; do
   echo "processing $f"
   igdb_id=$(yq --front-matter=export '.igdb_id' $f);
   game_data="$(curl -s 'https://api.igdb.com/v4/games' -d "fields *; where id=$igdb_id;" -H "Client-ID: $IGDB_CLIENT_ID" -H "Authorization: Bearer $IGDB_ACCESS_TOKEN" -H 'Accept: application/json')";
+  echo "$game_data" > /tmp/game_data.${igdb_id}.json
   game_name="$(echo $game_data| jq -r '.[0].name' )"
+  game_url="$(echo $game_data| jq -r '.[0].url' )"
 
   # setting title
   echo "setting title for  $f to $game_name"
   yq --front-matter=process ".title = \"$game_name\"" -i $f
-  echo "setting description for  $f to $game_name notes"
-  yq --front-matter=process ".description = \"$game_name notes\"" -i $f
+
+  # setting description
+  echo "setting description for  $f to $game_name journal"
+  yq --front-matter=process ".description = \"$game_name journal\"" -i $f
+
+  # setting references
+  echo "setting references for  $f "
+  yq --front-matter=process ".references = [{\"title\": \"$game_name igdb page\",\"url\": \"$game_url\"}]" -i $f
 
   # parse genres and update front matter only if they are unset
   if [[ $(yq --front-matter=export '.genres' $f) == "null"  ]]; then
