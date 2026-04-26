@@ -7,21 +7,21 @@
     {{ partial "author" }}
 
     <!-- posts section -->
-    {{ $posts := site.Taxonomies.book.posts | collections.Reverse | last 4 }}
+    {{ $posts := site.Taxonomies.book.posts | first 4 }}
     {{ with $posts }}
     <h2>Recent <a href="/book/posts" >Posts</a></h2>
     {{ partial "cards" . }}
     {{ end }}
 
     <!-- games section -->
-    {{ $games := site.Taxonomies.book.games | collections.Reverse | last 4 }}
+    {{ $games := site.Taxonomies.book.games | first 4 }}
     {{ with $games }}
     <h2>Gaming <a href="/book/games" >backlog</a> </h2>
     {{ partial "cards" . }}
     {{ end }}
 
     <!-- notes section -->
-    {{ $notes := site.Taxonomies.book.notes | collections.Reverse | last 4 }}
+    {{ $notes := site.Taxonomies.book.notes | first 4 }}
     {{ with $notes }}
     <h2>Some of my recent <a href="/book/notes" >Notes</a> </h2>
     {{ partial "cards" . }}
