@@ -7,7 +7,6 @@
 <h1 style="text-align: center;">Gaming Backlog</h1>
 <div class="games-filters" >
   <div class="games-filters-container">
-    <p class="games-filters-title">Filters</p>
     <div id="filter-controls" class="games-filters-controls">
       {{ range $k, $v := (.Site.Taxonomies.backlog_statuses) }}
       <label class="games-filters-label">
@@ -25,8 +24,8 @@
   </div>
 
   <div class="games-filters-buttons">
-    <button onclick="setAll(true)" style="font-size: 12px; padding: 4px 8px; border-radius: var(--border-radius-md);">All</button>
-    <button onclick="setAll(false)" style="font-size: 12px; padding: 4px 8px; border-radius: var(--border-radius-md);">None</button>
+    <input type="button" class="games-filters-button" onclick="setAll(true)" value="All"/>
+    <input type="button" class="games-filters-button" onclick="setAll(false)" value="None"/>
   </div>
 </div>
 

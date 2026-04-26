@@ -1,11 +1,9 @@
 @import "catppucin-mocha.scss";
 .games-filters{
-  background: var(--color-background-primary);
-  border: 0.5px solid var(--color-border-tertiary);
-  border-radius: var(--border-radius-lg);
-  padding: 1rem 1.25rem;
-  min-width: 180px;
-  display: flex; flex-direction: column; gap: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .games-filters-container{
@@ -26,42 +24,41 @@
   gap: 8px;
 }
 
-.games-filters-title{
-  font-weight: 500;
-  color: var(--color-text-secondary);
-  margin: 0 0 12px;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-
 .games-filters-label{
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
   font-size: 14px;
-  color: var(--color-text-primary);
+  font-weight: bold;
+  color: $mocha-green;
+  border-style: solid;
+  border-color: $mocha-green;
+  border-radius: 0.9rem;
+  padding: 0.5rem;
 }
 
 .games-filters-checkbox{
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin: 5px;
-  padding: 0.2rem;
-  border-radius: 3px;
-  border-style: solid;
-  border-color: $mocha-blue;
-  color: $mocha-blue;
   border-width: 1px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .games-filters-buttons{
-  border-top: 0.5px solid var(--color-border-tertiary);
-  margin-top: 14px;
-  padding-top: 10px;
+  padding-top: 0.5rem;
   gap: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.games-filters-button{
+
+  font-weight: bold;
+  color: $mocha-green;
+  border-style: solid;
+  border-color: $mocha-green;
+  border-radius: 0.9rem;
+  padding: 0.5rem;
+  background: transparent;
+}
+
+
