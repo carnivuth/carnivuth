@@ -3,7 +3,7 @@ SHELL=/bin/bash
 CONTENT_DIR = content
 filename = $(shell date '+%s')
 
-.PHONY: page game missing_description missing_title lint post
+.PHONY: page game missing_description missing_title lint post drafts
 
 missing_description:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.description == null or .description == \"\" ) | filename " {}'
