@@ -14,6 +14,10 @@ missing_title:
 lint:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i "sort_keys(.)" {}'
 
+.git/hooks/pre-commit:
+	echo -e "/bin/bash\nmake lint" > $@
+	chmod +x $@
+
 content/%.md:
 	hugo new $@
 
