@@ -6,10 +6,13 @@ filename = $(shell date '+%s')
 .PHONY: page game missing_description missing_title lint post
 
 missing_description:
-	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.description == null or .description == \"\" ).slug" {}'
+	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.description == null or .description == \"\" ) | filename " {}'
 
 missing_title:
-	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.title == null or .title == \"\" ).slug" {}'
+	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.title == null or .title == \"\" ) | filename" {}'
+
+drafts:
+	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.draft == true ) | filename" {}'
 
 lint:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i "sort_keys(.)" {}'
