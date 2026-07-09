@@ -18,6 +18,12 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
 
+      - name: Check for pages without title
+        run: make missing_title && exit 1
+
+      - name: Check for pages without description
+        run: make missing_description && exit 1
+
   build:
     needs: check
     runs-on: ubuntu-22.04

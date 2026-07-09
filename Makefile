@@ -20,10 +20,10 @@ endif
 .PHONY: page game missing_description missing_title lint post drafts
 
 missing_description:
-	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.description == null or .description == \"\" ) | filename " {}'
+	grep $(CONTENT_DIR) -Lr -e '^description: .*'
 
 missing_title:
-	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.title == null or .title == \"\" ) | filename" {}'
+	grep $(CONTENT_DIR) -Lr -e '^title: .*'
 
 drafts:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.draft == true ) | filename" {}'
