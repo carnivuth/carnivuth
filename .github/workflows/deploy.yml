@@ -17,6 +17,11 @@ jobs:
 
       - name: checkout repository
         uses: actions/checkout@v4
+      - name: Check for pages without title
+        run: test "$(make -s missing_title )" == ""
+
+      - name: Check for pages without description
+        run: test "$(make -s missing_description )" == ""
 
   build:
     needs: check
