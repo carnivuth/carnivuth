@@ -2,7 +2,6 @@ SHELL=/bin/bash
 
 CONTENT_DIR = content
 filename = $(shell date '+%s')
-
 ifdef igdb_id
 igdb_data := $(shell curl -s 'https://api.igdb.com/v4/games' -d "fields *; where id=$(igdb_id);" -H "Client-ID: $(IGDB_CLIENT_ID)" -H "Authorization: Bearer $(IGDB_ACCESS_TOKEN)" -H 'Accept: application/json')
 time_to_beat := $(shell curl -s 'https://api.igdb.com/v4/game_time_to_beats' -d "fields *; where game_id=$(igdb_id);" -H "Client-ID: $(IGDB_CLIENT_ID)" -H "Authorization: Bearer $(IGDB_ACCESS_TOKEN)" -H 'Accept: application/json' )
@@ -36,22 +35,26 @@ lint:
 	echo -e "/bin/bash\nmake lint" > $@
 	chmod +x $@
 
-content/%.md:
-	hugo new $@
 
 page: $(CONTENT_DIR)/$(filename).md
 
 post: $(CONTENT_DIR)/posts/$(filename).md
 
 game: $(CONTENT_DIR)/games/$(filename).md
+
+$(CONTENT_DIR)/games/%.md:
+	test -f $@ || hugo new $@
 ifdef igdb_id
-	yq --front-matter=process -i '.igdb_id=$(igdb_id)' $<
-	yq --front-matter=process ".title = \"$(game_name)\"" -i $<
-	yq --front-matter=process ".description = \"$(game_name) journal\"" -i $<
-	yq --front-matter=process ".references = [{\"title\": \"$(game_name) igdb page\",\"url\": \"$(game_url)\"}]" -i $<
-	yq --front-matter=process ".time_to_beat.completely = \"$(ttb_completely)\"" -i $<
-	yq --front-matter=process ".time_to_beat.hastily = \"$(ttb_hastily)\"" -i $<
-	yq --front-matter=process ".time_to_beat.normally = \"$(ttb_normally)\"" -i $<
-	yq --front-matter=process ".image = \"https://images.igdb.com/igdb/image/upload/t_1080p/$(image_id).jpg\"" -i $<
-	yq --front-matter=process '.genres = $(genres)' -i $<
+	yq --front-matter=process -i '.igdb_id=$(igdb_id)' $@
+	yq --front-matter=process ".title = \"$(game_name)\"" -i $@
+	yq --front-matter=process ".description = \"$(game_name) journal\"" -i $@
+	yq --front-matter=process ".references = [{\"title\": \"$(game_name) igdb page\",\"url\": \"$(game_url)\"}]" -i $@
+	yq --front-matter=process ".time_to_beat.completely = \"$(ttb_completely)\"" -i $@
+	yq --front-matter=process ".time_to_beat.hastily = \"$(ttb_hastily)\"" -i $@
+	yq --front-matter=process ".time_to_beat.normally = \"$(ttb_normally)\"" -i $@
+	yq --front-matter=process ".image = \"https://images.igdb.com/igdb/image/upload/t_1080p/$(image_id).jpg\"" -i $@
+	yq --front-matter=process '.genres = $(genres)' -i $@
 endif
+
+content/%.md:
+	test -f $@ || hugo new $@
