@@ -24,6 +24,16 @@ pagination:
 imaging:
   anchor: 'Center'
 
+security:
+  http:
+    #urls: [ '.*', '(?i)^https?://[a-z0-9]', '! ^https?://\d+\.', '! (?i)localhost', '! (?i)^https?://[^/?#]*@']
+    urls: ['^https://api\.igdb\.com/.*']
+  exec:
+    osEnv:
+      - '^IGDB.*'
+  funcs:
+    getenv:
+      - '^IGDB.*'
 taxonomies:
   tag: tags
   genre: genres
