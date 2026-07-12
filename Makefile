@@ -5,6 +5,12 @@ filename = $(shell date '+%s')
 
 .PHONY: page game missing_description missing_title lint post drafts
 
+aliases:
+	find $(CONTENT_DIR) -type f -name '*.md' | parallel yq --front-matter=process -i '.aliases = [ "/" + .title | sub(" ","-"), "/" + (.slug | sub(".md", "" )), "/" + (.book | sub(" ","-")) + "/" + (.slug | sub(".md","")), "/" + (.book | sub(" ","-")) + "/" + (.title | sub(" ","-")) ]' {}
+
+missing_slug:
+	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'grep -q "slug: {/}" {} || echo {}'
+
 missing_description:
 	grep $(CONTENT_DIR) -Lr -e '^description: .*'
 
