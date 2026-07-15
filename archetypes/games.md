@@ -56,7 +56,8 @@ genres:
         {{- errorf "%s" . }}
       {{- else with .Value }}
         {{- $image_data := . | transform.Unmarshal }}
-image: "https://images.igdb.com/igdb/image/upload/t_1080p/{{ (index $image_data 0).image_id }}.jpg"
+images:
+  - "https://images.igdb.com/igdb/image/upload/t_1080p/{{ (index $image_data 0).image_id }}.jpg"
       {{- end }}
     {{- end }}
     {{- $opts := dict

@@ -13,7 +13,7 @@
       {{ end }}
 
       {{ if .Params.show_image }}
-        {{ with .Params.Image }}
+        {{ with ( index .Params.Images 0) }}
           <img src="{{ . }}">
         {{ end }}
       {{ end }}

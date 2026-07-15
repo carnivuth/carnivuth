@@ -7,7 +7,7 @@ book_order:
 date: {{ time.Now | time.Format "2006-01-02" }}
 description:
 draft: true
-image:
+images: []
 references: []
 show_image: true
 show_right_column: true
