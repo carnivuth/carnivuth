@@ -243,7 +243,7 @@ params:
             date_start: 2023-09-01
             date_end: 2025-11-01
       - Page:
-          Title: devsecops engineer
+          Title: devsecops engineer in JMA wireless
           Description: devsecops engineer
           RelPermalink: "https://jmawireless.com/it/"
           Params:
