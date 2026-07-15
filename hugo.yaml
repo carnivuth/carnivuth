@@ -148,6 +148,9 @@ params:
           Title: "labcraft"
           Description: "homelab provisioning and maintenance operations"
           RelPermalink: "https://github.com/carnivuth/labcraft"
+          Params:
+            Images:
+              - https://github.com/carnivuth/labcraft/raw/main/torterra.jpg
       - Page:
           Title: "scripts"
           Description: "system automation scripts, dotfiles, personal tools for everyday use, playground :)"
@@ -157,7 +160,7 @@ params:
           Description: "personal toolbox"
           RelPermalink: "https://github.com/carnivuth/toolbox"
           Params:
-            images:
+            Images:
               - https://github.com/carnivuth/toolbox/raw/main/demo.gif
       - Page:
           Title: "curiel bot"
