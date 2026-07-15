@@ -79,7 +79,7 @@ params:
   displayName: "EN"
   isoCode: "en"
   rtl: false
-  dateFormat: "2 January 2006"
+  #dateFormat: "2 January 2006"
 
   author:
     name: "Matteo Longhi"
@@ -242,3 +242,10 @@ params:
           Params:
             date_start: 2023-09-01
             date_end: 2025-11-01
+      - Page:
+          Title: devsecops engineer
+          Description: devsecops engineer
+          RelPermalink: "https://jmawireless.com/it/"
+          Params:
+            date_start: 2025-02-13
+            date_end: current
