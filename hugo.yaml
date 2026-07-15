@@ -36,6 +36,7 @@ security:
       - '^IGDB.*'
 taxonomies:
   tag: tags
+  series: series
   genre: genres
   backlog_status: backlog_statuses
   book: book
@@ -70,6 +71,10 @@ tableOfContents:
   endLevel: 4
 
 params:
+  description: "Personal place where to post reflections,ideas,projects and dumb stuff"
+  images:
+    - "avatar.jpg"
+
   math: true
   displayName: "EN"
   isoCode: "en"
