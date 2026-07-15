@@ -2,6 +2,7 @@
 aliases:
  - {{ .File.ContentBaseName  }}
 book:
+locale: en-US
 book_order:
 date: {{ time.Now | time.Format "2006-01-02" }}
 description:
