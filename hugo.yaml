@@ -85,7 +85,8 @@ params:
     name: "Matteo Longhi"
     nickname: "Carnivuth"
     email: "matti200042@gmail.com"
-    image: "avatar.jpg"
+    images:
+      - "avatar.jpg"
     headline: "homelab addicted guy with a passion for Music and dogs"
     bio: "Hi, i'm Matteo, i am a software engineer specialized in DevOps, cloud,system administration and software architecture management, my knowledge also involves full stack web development datamining techniques and 3D web rendering."
     contacts:
@@ -141,7 +142,8 @@ params:
           Description: "web deception server and anti-crawler that creates fake web applications with low-hanging vulnerabilities and realistic, randomly generated decoy data"
           RelPermalink: "https://github.com/BlessedRebuS/Krawl"
           Params:
-            Image: https://github.com/BlessedRebuS/Krawl/raw/main/img/geoip_dashboard.png
+            Images:
+              - https://github.com/BlessedRebuS/Krawl/raw/main/img/geoip_dashboard.png
       - Page:
           Title: "labcraft"
           Description: "homelab provisioning and maintenance operations"
@@ -155,43 +157,50 @@ params:
           Description: "personal toolbox"
           RelPermalink: "https://github.com/carnivuth/toolbox"
           Params:
-            Image: https://github.com/carnivuth/toolbox/raw/main/demo.gif
+            images:
+              - https://github.com/carnivuth/toolbox/raw/main/demo.gif
       - Page:
           Title: "curiel bot"
           Description: "telegram bot for curiel home administration"
           RelPermalink: "https://github.com/carnivuth/curiel_bot"
           Params:
-            Image: https://github.com/carnivuth/curiel_bot/raw/main/demo.gif
+            Images:
+              - https://github.com/carnivuth/curiel_bot/raw/main/demo.gif
       - Page:
           Title: "iot architecture simulation using edgex and snmp"
           Description: "edgex environment simulation with snmp capable control nodes"
           RelPermalink: "https://github.com/carnivuth/edgex_iot_simulation"
           Params:
-            Image: https://github.com/carnivuth/edgex_iot_simulation/raw/main/img/result.jpg
+            Images:
+              - https://github.com/carnivuth/edgex_iot_simulation/raw/main/img/result.jpg
       - Page:
           Title: "lesgofile"
           Description: "just a simple project to transfer file over network"
           RelPermalink: "https://github.com/carnivuth/lesgofile"
           Params:
-            Image: "https://github.com/carnivuth/lesgofile/raw/main/demo.gif"
+            Images:
+              - "https://github.com/carnivuth/lesgofile/raw/main/demo.gif"
       - Page:
           Title: "tatodrone"
           Description: "webGL project for my computer graphics exam"
           RelPermalink: "https://github.com/carnivuth/tatodrone"
           Params:
-            Image: "https://github.com/carnivuth/tatodrone/raw/main/demo/demo.gif"
+            Images:
+              - "https://github.com/carnivuth/tatodrone/raw/main/demo/demo.gif"
       - Page:
           Title: "robot navigation using stereo camera"
           Description: "project on obstacles detection and depth sensing based on stereo matching techniques for unibo computer vision course"
           RelPermalink: "https://github.com/carnivuth/stereo_robot_navigation"
           Params:
-            Image: https://github.com/carnivuth/stereo_robot_navigation/raw/main/final_statistics.png
+            Images:
+              - https://github.com/carnivuth/stereo_robot_navigation/raw/main/final_statistics.png
       - Page:
           Title: "3DS Automated backups"
           Description: "Docker container to make backups of Nintendo 3DS consoles using FTPD"
           RelPermalink: "https://github.com/carnivuth/backup_3ds"
           Params:
-            Image: https://github.com/carnivuth/backup_3ds/raw/main/demo/demo.gif
+            Images:
+              - https://github.com/carnivuth/backup_3ds/raw/main/demo/demo.gif
     formation:
       - Page:
           Title: "high school diploma"
