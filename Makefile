@@ -29,7 +29,7 @@ modification_date:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i ".last_modified= \"$$(git log -1 --format=%ad --date=format:"%F" -- {})\"" {}'
 
 .git/hooks/pre-commit:
-	echo -e "/bin/bash\nmake aliases\nmake lint\nmake modification_date" > $@
+	echo -e "/bin/bash\nmake aliases\nmake lint" > $@
 	chmod +x $@
 
 
