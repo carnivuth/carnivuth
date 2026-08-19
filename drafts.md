@@ -1,4 +1,3 @@
-content/games/1783370043.md
 content/games/1786657904.md
 content/computer_vision/1774305268.md
 content/computer_vision/1774305269.md
@@ -52,8 +51,8 @@ content/computer_vision/1774305318.md
 content/computer_vision/1774305319.md
 content/computer_vision/1774305320.md
 content/computer_vision/1774305321.md
-content/computer_vision/1774305323.md
 content/computer_vision/1774305322.md
+content/computer_vision/1774305323.md
 content/computer_vision/1774305324.md
 content/notes/1763590889.md
 content/notes/1763743065.md
