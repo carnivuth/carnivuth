@@ -17,7 +17,7 @@ missing_title:
 missing_book:
 	grep $(CONTENT_DIR) -Lr -e '^book: .*'
 
-drafts.md:
+drafts.md: $(CONTENT_DIR)
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.draft == true ) | filename" {}' > '$@'
 
 aliases:
