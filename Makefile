@@ -21,7 +21,7 @@ drafts:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.draft == true ) | filename" {}'
 
 aliases:
-	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i ".aliases = [ \"/\" + (.title | sub(\" \",\"-\")), \"/\" + (.slug | sub(\".md\", \"\" )), \"/\" + (.book | sub(\" \",\"-\")) + \"/\" + (.slug | sub(\".md\",\"\")), \"/\" + (.book | sub(\" \",\"-\")) + \"/\" + (.title | sub(\" \",\"-\")) ]" {}'
+	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i '\''.aliases = [ "/" + (.title | sub(" ","-")), "/" + (.slug | sub(".md", "" )), "/" + (.book | sub(" ","-")) + "/" + (.slug | sub(".md","")), "/" + (.book | sub(" ","-")) + "/" + (.title | sub(" ","-")) ]'\'' {}'
 
 lint:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i "sort_keys(.)" {}'
