@@ -66,16 +66,7 @@
 
 .card:hover {
   transform: translateY(-5px) translateX(-5px);
-  box-shadow: 0 6px 15px $mocha-peach; /* Blue shadow on hover */
-  background-color: rgba($mocha-peach,0.2);
-  color: $mocha-peach;
-  .card-title a{
-    color: $mocha-peach;
-  }
-  .card-title {
-    color: $mocha-peach;
-  }
-
+  box-shadow: 0 6px 15px
 }
 
 /* Image inside the card */
