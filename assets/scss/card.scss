@@ -52,6 +52,12 @@
   text: $mocha-green;
 }
 
+.playing{
+  background-color: rgba($mocha-lavender,0.2);
+  color: $mocha-lavender;
+  text: $mocha-lavender;
+}
+
 .abandoned{
   background-color: rgba($mocha-red,0.2);
   color: $mocha-red;
