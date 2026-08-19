@@ -40,6 +40,29 @@
   margin: 10px;
   padding: 1.5rem;
 }
+.wishlisted {
+  background-color: rgba($mocha-pink,0.2);
+  color: $mocha-pink;
+  text: $mocha-pink;
+}
+
+.completed{
+  background-color: rgba($mocha-green,0.2);
+  color: $mocha-green;
+  text: $mocha-green;
+}
+
+.abandoned{
+  background-color: rgba($mocha-red,0.2);
+  color: $mocha-red;
+  text: $mocha-red;
+}
+
+.shelved{
+  background-color: rgba($mocha-yellow,0.2);
+  color: $mocha-yellow;
+  text: $mocha-yellow;
+}
 
 .card:hover {
   transform: translateY(-5px) translateX(-5px);
