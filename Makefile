@@ -20,6 +20,9 @@ missing_book:
 drafts.md: $(CONTENT_DIR)
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.draft == true ) | filename" {}' > '$@'
 
+images:
+	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq -i --front-matter=process ".images = ( .images + $$(sed -n '\''s/\!\[\](\([^ ]*\))/\1/gp'\'' {} | jq --slurp --raw-input '\''split("\n") | .[:-1]'\'') | unique )"  {} '
+
 aliases:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i '\''.aliases = [ "/" + (.title | sub(" ","-")), "/" + (.slug | sub(".md", "" )), "/" + (.book | sub(" ","-")) + "/" + (.slug | sub(".md","")), "/" + (.book | sub(" ","-")) + "/" + (.title | sub(" ","-")) ]'\'' {}'
 
