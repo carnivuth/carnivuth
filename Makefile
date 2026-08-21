@@ -24,7 +24,8 @@ aliases:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i '\''.aliases = [ "/" + (.title | sub(" ","-")), "/" + (.slug | sub(".md", "" )), "/" + (.book | sub(" ","-")) + "/" + (.slug | sub(".md","")), "/" + (.book | sub(" ","-")) + "/" + (.title | sub(" ","-")) ]'\'' {}'
 
 lint:
-	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i "sort_keys(.)" {}'
+	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i "sort_keys(.)" {};sed -i  '\''$${/^[[:space:]]*$$/d;}'\'' {}'
+
 modification_date:
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i ".last_modified= \"$$(git log -1 --format=%ad --date=format:"%F" -- {})\"" {}'
 
