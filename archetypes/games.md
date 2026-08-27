@@ -10,7 +10,6 @@ backlog_statuses:
 show_right_column: true
 show_title: true
 show_toc: true
-backlog_statuses: []
 slug: "{{ .File.ContentBaseName  }}.md"
 tags: []
 {{- $token := os.Getenv "IGDB_ACCESS_TOKEN" }}
