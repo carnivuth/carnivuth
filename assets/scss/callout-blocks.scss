@@ -13,7 +13,7 @@
     font-size: medium;
   }
 }
- .alert-error, .alert-tip, .alert-note, .alert-cite, .alert-warning{
+ .alert-error, alert-dev, .alert-tip, .alert-note, .alert-cite, .alert-warning{
   padding: 0.4rem;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -54,6 +54,9 @@
   }
 }
 
+.alert-dev{
+  display: none;
+ }
 .alert-tip{
   border-color: $mocha-green ;
   background-color: rgba($mocha-green,0.2);
