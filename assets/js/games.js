@@ -1,7 +1,7 @@
 function filterItems(){
   const backlog_status_filters = Array.from(document.querySelectorAll('input.backlog_status-filter[type="checkbox"]:checked')).map(cb => cb.dataset.filter);
   const genre_filters = Array.from(document.querySelectorAll('input.genre-filter[type="checkbox"]:checked')).map(cb => cb.dataset.filter);
-  const cards = document.querySelectorAll('.card');
+  const cards = document.querySelectorAll('.game-card');
   cards.forEach(card => {
       let backlog_status_filter_selected = backlog_status_filters.length == 0 ? true : false
       let genre_filter_selected = genre_filters.length == 0 ? true : false

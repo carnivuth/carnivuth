@@ -40,39 +40,20 @@
   margin: 10px;
   padding: 1.5rem;
 }
-.wishlisted {
-  background-color: rgba($mocha-pink,0.2);
-  color: $mocha-pink;
-  text: $mocha-pink;
-}
-
-.completed{
-  background-color: rgba($mocha-green,0.2);
-  color: $mocha-green;
-  text: $mocha-green;
-}
-
-.playing{
-  background-color: rgba($mocha-lavender,0.2);
-  color: $mocha-lavender;
-  text: $mocha-lavender;
-}
-
-.abandoned{
-  background-color: rgba($mocha-red,0.2);
-  color: $mocha-red;
-  text: $mocha-red;
-}
-
-.shelved{
-  background-color: rgba($mocha-yellow,0.2);
-  color: $mocha-yellow;
-  text: $mocha-yellow;
-}
 
 .card:hover {
   transform: translateY(-5px) translateX(-5px);
   box-shadow: 0 6px 15px
+}
+
+/* Full image card */
+.game-card-image {
+  height: auto;
+  max-height: 30rem;
+  max-width: 20rem;
+  border-radius: 8px;
+  margin: 1rem;
+  align-self: center;
 }
 
 /* Image inside the card */

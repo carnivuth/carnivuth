@@ -2,37 +2,41 @@
 <link rel="stylesheet" href="{{ $card.RelPermalink }}">
 <div id="card-container" class="card-container">
   {{ range . }}
-  <div class="card {{range .Page.Params.backlog_statuses }} {{ lower (replaceRE " " "-" .) }} {{ end }} {{range .Page.Params.genres }} {{ lower (replaceRE " " "-" .) }} {{ end }}" onclick="window.location='{{ .Page.RelPermalink }}';">
-    <div class="card-title"> {{ .Page.Title }} </div>
-    <div class="card-description"> {{ .Page.Description }}</div>
+    {{ if eq .Page.Params.book  "games" }}
+      <div class="game-card {{range .Page.Params.backlog_statuses }} {{ lower (replaceRE " " "-" .) }} {{ end }} {{range .Page.Params.genres }} {{ lower (replaceRE " " "-" .) }} {{ end }}" onclick="window.location='{{ .Page.RelPermalink }}';">{{ with (index .Page.Params.Images 0) }} <img class="game-card-image" src="{{ . }}">{{ end }}</div>
+    {{ else }}
+      <div class="card {{range .Page.Params.backlog_statuses }} {{ lower (replaceRE " " "-" .) }} {{ end }} {{range .Page.Params.genres }} {{ lower (replaceRE " " "-" .) }} {{ end }}" onclick="window.location='{{ .Page.RelPermalink }}';">
+        <div class="card-title"> {{ .Page.Title }} </div>
+        <div class="card-description"> {{ .Page.Description }}</div>
 
-    {{ with (index .Page.Params.Images 0) }} <img class="card-image" src="{{ . }}"> {{ end }}
+        {{ with (index .Page.Params.Images 0) }} <img class="card-image" src="{{ . }}"> {{ end }}
 
-    {{ with .Page.Params.date_start }} <div class="card-date-start">from {{ . }}</div> {{ end }}
-    {{ with .Page.Params.date_end }} <div class="card-date-end">to {{ . }}</div> {{ end }}
+        {{ with .Page.Params.date_start }} <div class="card-date-start">from {{ . }}</div> {{ end }}
+        {{ with .Page.Params.date_end }} <div class="card-date-end">to {{ . }}</div> {{ end }}
 
-    {{ if .Page.Params.slug }}
-      {{ with site.GetPage .Page.Params.slug }}
-      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "tags") }} </div>
-      {{ end }}
+        {{ if .Page.Params.slug }}
+          {{ with site.GetPage .Page.Params.slug }}
+          <div class="card-tag-container"> {{ partial "tags" (.GetTerms "tags") }} </div>
+          {{ end }}
+        {{ end }}
+
+        {{ if .Page.Params.slug }}
+          {{ with site.GetPage .Page.Params.slug }}
+          <div class="card-tag-container"> {{ partial "tags" (.GetTerms "genres") }} </div>
+          {{ end }}
+        {{ end }}
+        {{ if .Page.Params.slug }}
+          {{ with site.GetPage .Page.Params.slug }}
+          <div class="card-tag-container"> {{ partial "tags" (.GetTerms "backlog_statuses") }} </div>
+          {{ end }}
+        {{ end }}
+        {{ if .Page.Params.Time_to_beat }}
+          {{ if .Page.Params.Time_to_beat.normally }}
+            <div class="card-time-to-beat">{{ printf "%.0f" (time.Duration "second" .Page.Params.Time_to_beat.normally).Hours }} Hours to beat</div>
+          {{ end }}
+        {{ end }}
+
+      </div>
     {{ end }}
-
-    {{ if .Page.Params.slug }}
-      {{ with site.GetPage .Page.Params.slug }}
-      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "genres") }} </div>
-      {{ end }}
-    {{ end }}
-    {{ if .Page.Params.slug }}
-      {{ with site.GetPage .Page.Params.slug }}
-      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "backlog_statuses") }} </div>
-      {{ end }}
-    {{ end }}
-    {{ if .Page.Params.Time_to_beat }}
-      {{ if .Page.Params.Time_to_beat.normally }}
-        <div class="card-time-to-beat">{{ printf "%.0f" (time.Duration "second" .Page.Params.Time_to_beat.normally).Hours }} Hours to beat</div>
-      {{ end }}
-    {{ end }}
-
-  </div>
   {{ end }}
 </div>
