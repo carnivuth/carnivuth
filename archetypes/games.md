@@ -2,7 +2,7 @@
 book: games
 book_order:
 date: {{ time.Now | time.Format "2006-01-02" }}
-draft: true
+draft: false
 locale: en-US
 show_image: true
 backlog_statuses:
