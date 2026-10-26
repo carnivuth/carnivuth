@@ -1,0 +1,7 @@
+{{ $games := resources.Get "scss/games.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $games.RelPermalink }}">
+<div id="game-container" class="game-container">
+  {{ range . }}
+    {{ partial "game" . }}
+  {{ end }}
+</div>

@@ -1,6 +1,6 @@
 {{ define "main" }}
-{{ $games := resources.Get "scss/games.scss" | toCSS | minify }}
-<link rel="stylesheet" href="{{ $games.RelPermalink }}">
+{{ $games_term := resources.Get "scss/games-term.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $games_term.RelPermalink }}">
 {{ $games := resources.Get "js/games.js" }}
 <script src="{{ $games.RelPermalink  }}"></script>
 
@@ -33,6 +33,6 @@
 </div>
 
 <div class="games" id="games">
-  {{ partial "cards" .Pages }}
+  {{ partial "games" .Pages }}
 </div>
 {{ end }}

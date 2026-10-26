@@ -1,0 +1,18 @@
+{{ $card := resources.Get "scss/card.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $card.RelPermalink }}">
+<div class="card" onclick="window.location='{{ .Page.RelPermalink }}';">
+  <div class="card-title"> {{ .Page.Title }} </div>
+  <div class="card-description"> {{ .Page.Description }}</div>
+
+  {{ with (index .Page.Params.Images 0) }} <img class="card-image" src="{{ . }}"> {{ end }}
+
+  {{ with .Page.Params.date_start }} <div class="card-date-start">from {{ . }}</div> {{ end }}
+  {{ with .Page.Params.date_end }} <div class="card-date-end">to {{ . }}</div> {{ end }}
+
+  {{ if .Page.Params.slug }}
+    {{ with site.GetPage .Page.Params.slug }}
+      <div class="card-tag-container"> {{ partial "tags" (.GetTerms "tags") }} </div>
+    {{ end }}
+  {{ end }}
+
+</div>
