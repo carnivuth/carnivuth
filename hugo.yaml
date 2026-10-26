@@ -26,7 +26,6 @@ imaging:
 
 security:
   http:
-    #urls: [ '.*', '(?i)^https?://[a-z0-9]', '! ^https?://\d+\.', '! (?i)localhost', '! (?i)^https?://[^/?#]*@']
     urls: ['^https://api\.igdb\.com/.*']
   exec:
     osEnv:
@@ -198,12 +197,13 @@ params:
             Images:
               - https://github.com/carnivuth/stereo_robot_navigation/raw/main/final_statistics.png
       - Page:
-          Title: "3DS Automated backups"
-          Description: "Docker container to make backups of Nintendo 3DS consoles using FTPD"
-          RelPermalink: "https://github.com/carnivuth/backup_3ds"
+          Title: "console Automated backups"
+          Description: "Docker container to make backups of gaming consoles using ftp"
+          RelPermalink: "https://github.com/carnivuth/console_backupper"
           Params:
             Images:
-              - https://github.com/carnivuth/backup_3ds/raw/main/demo/demo.gif
+              - https://github.com/carnivuth/console_backupper/raw/main/demo/demo.gif
+
     formation:
       - Page:
           Title: "high school diploma"

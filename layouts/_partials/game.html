@@ -1,0 +1,7 @@
+{{ $game := resources.Get "scss/game.scss" | toCSS | minify }}
+<link rel="stylesheet" href="{{ $game.RelPermalink }}">
+<div class="game {{range .Page.Params.backlog_statuses }} {{ lower (replaceRE " " "-" .) }} {{ end }} {{range .Page.Params.genres }} {{ lower (replaceRE " " "-" .) }} {{ end }}" onclick="window.location='{{ .Page.RelPermalink }}';">
+  {{ with (index .Page.Params.Images 0) }}
+    <img class="game-image" src="{{ . }}">
+  {{ end }}
+</div>
