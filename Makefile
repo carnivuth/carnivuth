@@ -1,7 +1,6 @@
 SHELL=/bin/bash
 CONTENT_DIR = content
 filename = $(shell date '+%s')
-
 .PHONY: page game missing_description missing_title lint post
 
 
@@ -20,16 +19,16 @@ missing_book:
 drafts.md: $(shell find $(CONTENT_DIR) -type f -name '*.md')
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=query "select(.draft == true ) | filename" {}' > '$@'
 
-images:
+images: $(shell find $(CONTENT_DIR) -type f -name '*.md')
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq -i --front-matter=process ".images = ( .images + $$(sed -n '\''s/\!\[\](\([^ ]*\))/\1/gp'\'' {} | jq --slurp --raw-input '\''split("\n") | .[:-1]'\'') | unique )"  {} '
 
-aliases:
+aliases: $(shell find $(CONTENT_DIR) -type f -name '*.md')
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i '\''.aliases = [ "/" + (.title | sub(" ","-")), "/" + (.slug | sub(".md", "" )), "/" + (.book | sub(" ","-")) + "/" + (.slug | sub(".md","")), "/" + (.book | sub(" ","-")) + "/" + (.title | sub(" ","-")) ]'\'' {}'
 
-lint:
+lint: $(shell find $(CONTENT_DIR) -type f -name '*.md')
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i "sort_keys(.)" {};sed -i  '\''$${/^[[:space:]]*$$/d;}'\'' {}'
 
-modification_date:
+modification_date: $(shell find $(CONTENT_DIR) -type f -name '*.md')
 	find $(CONTENT_DIR) -type f -name '*.md' | parallel 'yq --front-matter=process -i ".last_modified= \"$$(git log -1 --format=%ad --date=format:"%F" -- {})\"" {}'
 
 .git/hooks/pre-commit:
