@@ -9,17 +9,49 @@
   align-self: center;
 }
 
-@media only screen and (max-width: 480px){
+.completed .game-image{
+  border-color: $mocha-green;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+}
 
-  .game {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 10px;
-    display: flex;
-  }
+.owned .game-image{
+  border-color: $mocha-blue;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.abandoned .game-image{
+  border-color: $mocha-surface2;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.playing .game-image{
+  border-color: $mocha-blue;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.wishlisted .game-image{
+  border-color: $mocha-pink;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.shelved .game-image{
+  border-color: $mocha-yellow;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 480px){
 
   .game-image {
     width: auto;
