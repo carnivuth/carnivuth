@@ -27,4 +27,3 @@ services:
         - path: ./archetypes/
           action: sync
           target: /site/archetypes/
-
