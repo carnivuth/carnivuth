@@ -9,6 +9,7 @@ on:
       - ".obsidian"
       - "readme.md"
       - "to_import"
+      - "docker-compose.yaml"
 
 jobs:
   check:
