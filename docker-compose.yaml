@@ -1,0 +1,25 @@
+---
+services:
+  carnivuth-site:
+    build:
+      dockerfile: ./Dockerfile
+      target: serve
+    ports:
+      - 1313:1313
+    develop:
+      watch:
+        - path: ./Dockerfile
+          action: rebuild
+        - path: ./hugo.yaml
+          action: rebuild
+        - path: ./content/
+          action: rebuild
+        - path: ./layouts/
+          action: rebuild
+        - path: ./assets/
+          action: rebuild
+        - path: ./static/
+          action: rebuild
+        - path: ./archetypes/
+          action: rebuild
+
