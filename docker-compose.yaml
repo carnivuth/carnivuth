@@ -13,13 +13,18 @@ services:
         - path: ./hugo.yaml
           action: rebuild
         - path: ./content/
-          action: rebuild
+          action: sync
+          target: /site/content/
         - path: ./layouts/
-          action: rebuild
+          action: sync
+          target: /site/layouts/
         - path: ./assets/
-          action: rebuild
+          action: sync
+          target: /site/assets/
         - path: ./static/
-          action: rebuild
+          action: sync
+          target: /site/static/
         - path: ./archetypes/
-          action: rebuild
+          action: sync
+          target: /site/archetypes/
 
