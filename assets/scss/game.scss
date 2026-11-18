@@ -1,65 +1,78 @@
 @import "catppucin-mocha.scss";
 
+.game {
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
 .game-image {
   height: auto;
   max-height: 30rem;
   max-width: 20rem;
   border-radius: 8px;
-  margin: 1rem;
   align-self: center;
 }
 
-.completed .game-image{
+.completed {
+  background-color: $mocha-green;
   border-color: $mocha-green;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 8px;
-}
-
-.owned .game-image{
-  border-color: $mocha-blue;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 8px;
-}
-
-.abandoned .game-image{
-  border-color: $mocha-surface2;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 8px;
-}
-
-.playing .game-image{
-  border-color: $mocha-blue;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 8px;
-}
-
-.wishlisted .game-image{
-  border-color: $mocha-pink;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 8px;
-}
-
-.shelved .game-image{
-  border-color: $mocha-yellow;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 8px;
-}
-
-@media only screen and (max-width: 480px){
-
-  .game-image {
-    width: auto;
-    height: auto;
-    margin: 2rem;
-    border-radius: 8px;
-    max-height: 8rem;
-    min-height: 8rem;
+  figcaption{
+    color: $mocha-base;
+    text-align: center;
+    font-weight: bold;
   }
-
 }
+
+.owned{
+  background-color: $mocha-maroon;
+  border-color: $mocha-maroon;
+  figcaption{
+    color: $mocha-base;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.abandoned {
+  background-color: $mocha-surface2;
+  border-color: $mocha-surface2;
+  figcaption{
+    color: $mocha-base;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.playing{
+  background-color: $mocha-blue;
+  border-color: $mocha-blue;
+  figcaption{
+    color: $mocha-base;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.wishlisted{
+  background-color: $mocha-pink;
+  border-color: $mocha-pink;
+  figcaption{
+    color: $mocha-base;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.shelved{
+  background-color: $mocha-yellow;
+  border-color: $mocha-yellow;
+  figcaption{
+    color: $mocha-base;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
